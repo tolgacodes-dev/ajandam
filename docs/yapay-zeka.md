@@ -35,7 +35,8 @@ Yapay zekanın eklemek ya da değiştirmek istedikleri **Öneriler** kutusuna d�
    okuttuğun dökümlerin metnini OpenAI'ye gönderir. **Kayıt özetlerini ChatGPT'ye gönder** kapalıyken her seferinde
    izin ister. ChatGPT konuşmalarına ya da hesabının başka bilgilerine erişilmez.
 
-Oturum bilgileri yalnızca bu Mac'te, yalnızca senin okuyabildiğin bir dosyada saklanır; **Çıkış yap** ile silinir.
+Oturum bilgileri yalnızca bu Mac'te saklanır: giriş jetonları macOS Anahtar Zinciri'nde, e-posta adresin yalnızca
+senin okuyabildiğin bir dosyada. **Çıkış yap** ile ikisi de silinir.
 
 ## Yerel model (Ollama, LM Studio)
 
