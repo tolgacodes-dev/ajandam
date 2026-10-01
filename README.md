@@ -83,6 +83,10 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 
 <table>
   <tr>
+    <td width="50%" valign="top"><img src="docs/ekran/sag-tik.png" alt="Hesap kartında sağ tık menüsü"><br><b>Sağ tık menüleri</b><br><sub>Hesapta, işlemde, ödemede, notta ve takvim gününde o şeye ait işlemler.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/ozet-donem.png" alt="Özet ekranı, son 6 ay"><br><b>Özet dönemleri</b><br><sub>Tek ay ya da son 3, 6, 12, 24 ay; önceki dönemle karşılaştırmalı.</sub></td>
+  </tr>
+  <tr>
     <td width="50%" valign="top"><img src="docs/ekran/hesaplar.png" alt="Hesaplar ve kredi kartı"><br><b>Hesaplar ve kartlar</b><br><sub>Kart limiti, kullanılabilir tutar, gelecek taksitler ve ekstre durumu.</sub></td>
     <td width="50%" valign="top"><img src="docs/ekran/ajanda.png" alt="Ajanda, ay görünümü"><br><b>Ajanda</b><br><sub>Etkinlikler, yapılacaklar, ödeme günleri, resmî tatiller ve arifeler.</sub></td>
   </tr>
@@ -102,15 +106,16 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 
 - **Para:** gelir ve gider, hesaplar arası transfer, kredi kartları (kesim ve son ödeme günü, taksit, asgari ödeme),
   düzenli kayıtlar, ödemeler ve faturalar, abonelikler (kendiliğinden yakalanır), bütçe, hedefler, borç ve alacak.
-- **Raporlar:** genel görünüm, nakit akışı tahmini, ay özeti, net varlık, enflasyon.
+- **Raporlar:** genel görünüm, nakit akışı tahmini, ay özeti, net varlık, enflasyon. Özet tek ay ya da son 3 ay,
+  6 ay, 1 yıl, 2 yıl için; önceki dönemle karşılaştırmalı.
 - **Hızlı ekleme:** "market 250", "telefon 24000 6 taksit kart" yaz; kategori, tarih ve hesap kendiliğinden bulunur.
   Her uygulamanın üstünde ⌃⌥A ile küçük ekleme penceresi açılır; menü çubuğundan da eklersin.
 - **İçe aktarma:** banka ve kart dökümleri (PDF, Excel), fiş fotoğrafı, CSV dışa aktarma, tam yedek ve geri yükleme.
 - **Ajanda:** ay, hafta ve liste görünümü; tekrar eden etkinlikler, yapılacaklar, hatırlatmalar. İstersen
   Anımsatıcılar üzerinden iPhone'una da düşer.
 - **Notlar:** Markdown, yapılacak listeleri, tablolar, etiketler, klasörler, sabitleme, yazdırma.
-- **Mac:** bildirimlerde "Ödendi" ve "Yarın hatırlat", Dock rozeti, Touch ID kilidi, sürükle-bırak, klavye
-  kısayolları, açık ve koyu tema.
+- **Mac:** her şeyde sağ tık menüsü (hesap, işlem, ödeme, not, takvim günü), ⌘Z ile geri alma, bildirimlerde
+  "Ödendi" ve "Yarın hatırlat", Dock rozeti, Touch ID kilidi, sürükle-bırak, klavye kısayolları, açık ve koyu tema.
 
 ## Kurulum
 
