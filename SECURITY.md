@@ -23,6 +23,9 @@ tıkla kurulduğu için çoğu kullanıcı düzeltmeyi birkaç gün içinde alı
   tutmayan güncellemeyi kurmaz. Kurulan sürüm açılamazsa önceki sürüme dönülür.
 - **Yapay zeka:**
   - Apple Intelligence ve yerel modeller (Ollama, LM Studio) Mac'in dışına veri göndermez.
+  - ChatGPT ile giriş yaptıysan Asistan, soruların için gereken özetleri ve okuttuğun dökümlerin metnini OpenAI'ye
+    gönderir; izin ayarı kapalıyken her seferinde sorar. ChatGPT oturum bilgileri yalnızca bu Mac'te, yalnızca senin
+    kullanıcı hesabının okuyabildiği bir dosyada (0600) durur.
   - Claude ve diğer MCP uygulamaları yalnızca **Ayarlar › Yapay zeka › Yapay zeka uygulamaları bağlanabilir** açıksa
     bağlanabilir. Bağlantı, yalnızca senin kullanıcı hesabının erişebildiği bir Unix soketi (0600) üzerinden olur;
     Ajandam kilitliyken istek cevaplanmaz. Yapay zekanın önerdiği eklemeler ve değişiklikler senin onayını bekler.

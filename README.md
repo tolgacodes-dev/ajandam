@@ -33,7 +33,8 @@
 - **Türkiye için yapıldı.** Kredi kartı kesim ve son ödeme günleri, taksitler, asgari ödeme (%20 / %40), TCMB azami
   faiz oranları, TÜFE ile enflasyon raporu, kira artış sınırı, resmî tatiller, vergi takvimi, BES devlet katkısı.
 - **Yapay zeka, anahtarsız.** Apple Intelligence ya da Ollama, LM Studio gibi yerel modellerle Mac'inde çalışır;
-  istersen Claude masaüstü uygulamasını bağlarsın. Önerdiği hiçbir şey sen onaylamadan kaydedilmez.
+  istersen ChatGPT hesabınla giriş yapar ya da Claude masaüstü uygulamasını bağlarsın. Önerdiği hiçbir şey sen
+  onaylamadan kaydedilmez.
 - **Para, ajanda ve notlar bir arada.** Ödeme günleri takvimde, bütçe hedefleri notlarında; hepsi aynı aramada (⌘K).
 - **Ücretsiz ve güncel.** Yeni sürüm çıkınca Ajandam haber verir; imzası doğrulanır, tek tıkla kurulur.
 
@@ -43,9 +44,10 @@
 
 ![Ajandam Asistanı: bu ayın harcamalarını geçen ayla karşılaştırıyor ve market bütçesini değiştirmeyi öneriyor](docs/ekran/asistan.png)
 
-"Bu ay en çok nereye harcadım?", "Kartımı yalnızca asgariyi ödersem ne zaman biter?" gibi soruları kayıtlarına
-bakarak cevaplar; hangi kayıtlara baktığını gösterir. Kayıt eklemeyi ya da bütçe değiştirmeyi önerebilir; sen
-**Uygula** demeden hiçbir şey değişmez. Yapay zeka kapalıyken basit soruları yine kayıtlarından cevaplar.
+Üst çubuktaki **✦ Asistan** düğmesiyle ya da ⇧⌘A ile açılır. "Bu ay en çok nereye harcadım?", "Kartımı yalnızca
+asgariyi ödersem ne zaman biter?" gibi soruları kayıtlarına bakarak cevaplar; hangi kayıtlara baktığını gösterir.
+Kayıt eklemeyi ya da bütçe değiştirmeyi önerebilir; sen **Uygula** demeden hiçbir şey değişmez. Yapay zeka kapalıyken
+basit soruları yine kayıtlarından cevaplar.
 
 ### Ekstre ve hesap dökümü içe aktarma
 
@@ -89,7 +91,7 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
     <td width="50%" valign="top"><img src="docs/ekran/ozet-acik.png" alt="Özet ekranı, açık tema"><br><b>Açık ve koyu tema</b><br><sub>Mac'in görünümünü izler; istersen cam görünüm.</sub></td>
   </tr>
   <tr>
-    <td width="50%" valign="top"><img src="docs/ekran/yapay-zeka.png" alt="Ayarlar, yapay zeka bölümü"><br><b>Yapay zeka ayarları</b><br><sub>Apple Intelligence, yerel model ve Claude bağlantısı tek yerde.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/yapay-zeka.png" alt="Ayarlar, yapay zeka bölümü"><br><b>Yapay zeka ayarları</b><br><sub>Apple Intelligence, ChatGPT, yerel model ve Claude bağlantısı tek yerde.</sub></td>
     <td width="50%" valign="top"><img src="docs/ekran/hakkinda.png" alt="Ayarlar, Hakkında bölümü"><br><b>Hakkında</b><br><sub>Sürüm, güncellemeler, destek ve gizlilik.</sub></td>
   </tr>
 </table>
@@ -146,6 +148,7 @@ Ajandam'ın yapay zekası API anahtarı istemez; **Ayarlar › Yapay zeka** böl
 |---|---|---|
 | **Apple Intelligence** | Mac'inde; kayıtların hiçbir yere gitmez | macOS 26, Apple çipli Mac |
 | **Yerel model** ([Ollama](https://ollama.com), [LM Studio](https://lmstudio.ai)) | Mac'inde | Uygulama açıkken kendiliğinden bulunur |
+| **ChatGPT** (hesabınla giriş) | OpenAI'de; yalnızca izin verdiğin özetler gider | ChatGPT planın yeter, API anahtarı gerekmez |
 | **Claude** (masaüstü uygulaması, MCP) | Claude'da | Ajandam uzantısını tek tıkla eklersin |
 
 Asistan, ekstre okuma ve kategori önerileri bu yollardan biriyle çalışır. Claude ya da Cursor gibi MCP destekleyen
@@ -155,8 +158,9 @@ senin onayını bekler. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 ## Gizlilik ve güvenlik
 
 - Kayıtlar yalnızca Mac'inde, kullanıcı hesabının klasöründe durur. Ajandam geliştiriciye hiçbir veri göndermez.
-- İnternete yalnızca güncelleme denetimi (GitHub) ve canlı döviz, altın, kripto fiyatları için çıkar; bu isteklerde
-  kayıtlarına ait bilgi yoktur. Canlı fiyatları ayarlardan kapatabilirsin.
+- İnternete yalnızca güncelleme denetimi (GitHub), canlı döviz, altın, kripto fiyatları ve senin bağladığın yapay zeka
+  için çıkar. Güncelleme ve fiyat isteklerinde kayıtlarına ait bilgi yoktur; ChatGPT'ye yalnızca sorunu cevaplamak için
+  gereken özetler, senin iznine bağlı olarak gider. Canlı fiyatları ayarlardan kapatabilirsin.
 - Güncellemelerin imzası ve SHA-256 özeti doğrulanır; tutmayan güncelleme kurulmaz, açılamayan sürümden önceki sürüme
   dönülür.
 - Bir güvenlik açığı bulduysan lütfen [SECURITY.md](SECURITY.md)'deki yolu izle.
@@ -186,8 +190,8 @@ your Mac: no account, no server, no subscription.
   subscriptions, goals, debts; bank and card statement import (PDF, Excel) with reconciliation and duplicate detection.
 - **Turkey-specific:** CPI (TÜFE) based inflation report, rent increase cap, central bank card interest rates,
   public holidays, tax calendar, private pension (BES) state contribution.
-- **AI without API keys:** Apple Intelligence or local models (Ollama, LM Studio) on your Mac, or connect the Claude
-  desktop app over MCP. Nothing is saved without your approval.
+- **AI without API keys:** Apple Intelligence or local models (Ollama, LM Studio) on your Mac, sign in with your
+  ChatGPT account, or connect the Claude desktop app over MCP. Nothing is saved without your approval.
 - **Calendar and notes:** month, week and list views, to-dos, Markdown notes with tables.
 
 **Install:** macOS 12 or later (Apple silicon and Intel). Run

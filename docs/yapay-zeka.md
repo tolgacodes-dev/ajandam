@@ -1,12 +1,13 @@
 # Yapay zeka
 
 Ajandam'ın yapay zekası API anahtarı istemez; Mac'indeki modellerle ya da zaten kullandığın uygulamalarla çalışır.
-Hangisinin kullanılacağını **Ayarlar › Yapay zeka** bölümünden seçersin. **Otomatik** seçiliyken açık bir yerel model
-(Ollama, LM Studio) varsa o, yoksa Apple Intelligence kullanılır.
+Hangisinin kullanılacağını **Ayarlar › Yapay zeka** bölümünden seçersin. **Otomatik** seçiliyken ChatGPT'ye giriş
+yaptıysan ve özet göndermeye izin verdiysen ChatGPT, yoksa açık bir yerel model (Ollama, LM Studio), o da yoksa Apple
+Intelligence kullanılır.
 
 ## Neler yapar
 
-- **Ajandam Asistanı** (⇧⌘A, menü çubuğu ya da ⌘K): "Bu ay markete ne harcadım, geçen aya göre?", "Net varlığım
+- **Ajandam Asistanı** (üst çubuktaki **✦ Asistan** düğmesi, ⇧⌘A, + menüsü, menü çubuğu ya da ⌘K): "Bu ay markete ne harcadım, geçen aya göre?", "Net varlığım
   yılbaşından beri reel olarak arttı mı?", "Kartımı sadece asgari ödersem ne zaman biter?" gibi soruları kayıtlarına
   bakarak cevaplar. Gerekirse kayıtlarını birkaç adımda sorgular, hesap yapar; ekleme ya da değişiklik önerebilir.
   Yapay zeka yoksa basit soruları ve hızlı eklemeleri yine kayıtlarından cevaplar.
@@ -25,6 +26,16 @@ Yapay zekanın eklemek ya da değiştirmek istedikleri **Öneriler** kutusuna d�
 - macOS 26 ve Apple çipli bir Mac'te, Apple Intelligence açıksa kendiliğinden kullanılır.
 - Model Mac'inde çalışır; kayıtların hiçbir yere gönderilmez.
 - Küçük bir modeldir: kısa sorular ve kategori önerileri için iyidir; uzun dökümleri parça parça okur.
+
+## ChatGPT (hesabınla giriş)
+
+1. **Ayarlar › Yapay zeka › ChatGPT ile devam et**'e bas; tarayıcıda ChatGPT hesabınla giriş yapıp Ajandam'a izin ver.
+2. Kullanım ChatGPT planından düşer; API anahtarı gerekmez. İstersen modeli de seçebilirsin.
+3. Asistan, sorunu cevaplamak için gereken özetleri (ör. ilgili ayın kategori toplamları, aradığın kayıtlar) ve
+   okuttuğun dökümlerin metnini OpenAI'ye gönderir. **Kayıt özetlerini ChatGPT'ye gönder** kapalıyken her seferinde
+   izin ister. ChatGPT konuşmalarına ya da hesabının başka bilgilerine erişilmez.
+
+Oturum bilgileri yalnızca bu Mac'te, yalnızca senin okuyabildiğin bir dosyada saklanır; **Çıkış yap** ile silinir.
 
 ## Yerel model (Ollama, LM Studio)
 
