@@ -3,6 +3,11 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [3.2.1] – 2026-10-01
+
+**Düzeltme**
+- Ayarlar › Görünüm'de **Cam görünüm** kapatılınca pencere boş kalıyordu; artık sayfa görünür kalır, açık ya da koyu düz arka planla açılır.
+
 ## [3.2.0] – 2026-10-01
 
 - **Yeni sol menü:** bölümler Para, Plan ve analiz, Notlar başlıkları altında toplandı; her bölümün Ayarlar'daki gibi kendi renkli simgesi var. Bir grubu kapatsan da geciken ödeme başlığında görünür. Çok not olduğunda ilk 30'u listelenir, gerisi "… not daha" ile açılır. Ayarlar en altta sabit durur.
