@@ -55,6 +55,28 @@ analiz yapabilir ve ekleme önerebilir.
 
 Bağlantıyı **Yapay zeka uygulamaları bağlanabilir** anahtarıyla istediğin an kapatabilirsin.
 
+## ChatGPT (masaüstü uygulaması)
+
+ChatGPT'nin Mac uygulaması da Ajandam'a [MCP](https://modelcontextprotocol.io) ile bağlanır; ChatGPT'de sohbet ederken
+kayıtlarına bakabilir, analiz yapabilir ve ekleme önerebilir. Öneriler Ajandam'da senin onayını bekler.
+
+1. **Ayarlar › Yapay zeka › ChatGPT'ye bağla** düğmesine bas; açılan pencerede **Ekle** de (bağlantı izni de açılır).
+   Ajandam, ChatGPT'nin ayar dosyasına (`~/.codex/config.toml`, ChatGPT ve Codex ortak kullanır) şu satırları yazar;
+   dosyanın eski hali `config.toml.ajandam-yedek` olarak saklanır:
+   ```toml
+   # Ajandam: kayıtlarına bakar; önerileri Ajandam'da sen onaylarsın
+   [mcp_servers.ajandam]
+   command = "/Applications/Ajandam.app/Contents/MacOS/Ajandam"
+   args = ["--mcp"]
+   ```
+2. ChatGPT'den çık (⌘Q) ve yeniden aç.
+3. ChatGPT'ye "Ajandam'a göre bu ay nereye harcadım?" gibi sorular sorabilirsin.
+
+Satırları kendin eklemek istersen pencerede **Kendim eklemek istiyorum** bölümü aynı satırları ve komutu verir.
+Bağlantıyı aynı pencereden **ChatGPT'den kaldır** ile silebilirsin. Bu yol ChatGPT'nin Mac uygulamasındaki MCP
+desteğiyle çalışır; ChatGPT planına göre görünmeyebilir. Yukarıdaki "ChatGPT hesabınla giriş" bundan ayrıdır: o yol
+Ajandam'ın kendi Asistanı ve döküm okuması içindir.
+
 ## Diğer MCP uygulamaları
 
 Cursor, LM Studio, VS Code gibi MCP destekleyen uygulamalar da bağlanabilir. Ayarlardaki **Kopyala** düğmesi şu

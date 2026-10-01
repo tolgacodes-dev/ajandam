@@ -33,8 +33,8 @@
 - **Türkiye için yapıldı.** Kredi kartı kesim ve son ödeme günleri, taksitler, asgari ödeme (%20 / %40), TCMB azami
   faiz oranları, TÜFE ile enflasyon raporu, kira artış sınırı, resmî tatiller, vergi takvimi, BES devlet katkısı.
 - **Yapay zeka, anahtarsız.** Apple Intelligence ya da Ollama, LM Studio gibi yerel modellerle Mac'inde çalışır;
-  istersen ChatGPT hesabınla giriş yapar ya da Claude masaüstü uygulamasını bağlarsın. Önerdiği hiçbir şey sen
-  onaylamadan kaydedilmez.
+  istersen ChatGPT hesabınla giriş yapar ya da Claude ve ChatGPT masaüstü uygulamalarını bağlarsın. Önerdiği hiçbir
+  şey sen onaylamadan kaydedilmez.
 - **Para, ajanda ve notlar bir arada.** Ödeme günleri takvimde, bütçe hedefleri notlarında; hepsi aynı aramada (⌘K).
 - **Ücretsiz ve güncel.** Yeni sürüm çıkınca Ajandam haber verir; imzası doğrulanır, tek tıkla kurulur.
 
@@ -115,7 +115,8 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
   Anımsatıcılar üzerinden iPhone'una da düşer.
 - **Notlar:** Markdown, yapılacak listeleri, tablolar, etiketler, klasörler, sabitleme, yazdırma.
 - **Mac:** her şeyde sağ tık menüsü (hesap, işlem, ödeme, not, takvim günü), ⌘Z ile geri alma, bildirimlerde
-  "Ödendi" ve "Yarın hatırlat", Dock rozeti, Touch ID kilidi, sürükle-bırak, klavye kısayolları, açık ve koyu tema.
+  "Ödendi" ve "Yarın hatırlat", Dock rozeti, PIN ve istersen Touch ID kilidi (PIN'i unutursan Mac parolanla
+  sıfırlarsın), sürükle-bırak, klavye kısayolları, açık ve koyu tema.
 
 ## Kurulum
 
@@ -155,8 +156,9 @@ Ajandam'ın yapay zekası API anahtarı istemez; **Ayarlar › Yapay zeka** böl
 | **Yerel model** ([Ollama](https://ollama.com), [LM Studio](https://lmstudio.ai)) | Mac'inde | Uygulama açıkken kendiliğinden bulunur |
 | **ChatGPT** (hesabınla giriş) | OpenAI'de; yalnızca izin verdiğin özetler gider | ChatGPT planın yeter, API anahtarı gerekmez |
 | **Claude** (masaüstü uygulaması, MCP) | Claude'da | Ajandam uzantısını tek tıkla eklersin |
+| **ChatGPT** (Mac uygulaması, MCP) | ChatGPT'de | Ajandam'ı ChatGPT'nin ayarlarına tek tıkla eklersin |
 
-Asistan, ekstre okuma ve kategori önerileri bu yollardan biriyle çalışır. Claude ya da Cursor gibi MCP destekleyen
+Asistan, ekstre okuma ve kategori önerileri bu yollardan biriyle çalışır. Claude, ChatGPT ya da Cursor gibi MCP destekleyen
 uygulamalar, sen izin verirsen Ajandam'daki kayıtlarına bakabilir, analiz yapabilir ve ekleme önerebilir; öneriler
 senin onayını bekler. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 
@@ -172,7 +174,8 @@ senin onayını bekler. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 
 ## Destek ve iletişim
 
-- **Hata bildirmek ya da öneride bulunmak için:** [Issues › Yeni](https://github.com/tolgacodes-dev/ajandam/issues/new/choose).
+- **Hata, öneri ya da soru için:** Ajandam'da **Yardım › Geri Bildirim Gönder…** formu GitHub'da hazır doldurulmuş
+  bir konu açar. Doğrudan [Issues › Yeni](https://github.com/tolgacodes-dev/ajandam/issues/new/choose) de olur.
   Ekran görüntüsü eklersen tutarları ve adları gizle; kayıtlarını paylaşma.
 - **İletişim:** [github.com/tolgacodes-dev](https://github.com/tolgacodes-dev)
 - **Sürüm notları:** [CHANGELOG.md](CHANGELOG.md) ve [Sürümler](https://github.com/tolgacodes-dev/ajandam/releases)
@@ -196,7 +199,7 @@ your Mac: no account, no server, no subscription.
 - **Turkey-specific:** CPI (TÜFE) based inflation report, rent increase cap, central bank card interest rates,
   public holidays, tax calendar, private pension (BES) state contribution.
 - **AI without API keys:** Apple Intelligence or local models (Ollama, LM Studio) on your Mac, sign in with your
-  ChatGPT account, or connect the Claude desktop app over MCP. Nothing is saved without your approval.
+  ChatGPT account, or connect the Claude or ChatGPT desktop app over MCP. Nothing is saved without your approval.
 - **Calendar and notes:** month, week and list views, to-dos, Markdown notes with tables.
 
 **Install:** macOS 12 or later (Apple silicon and Intel). Run

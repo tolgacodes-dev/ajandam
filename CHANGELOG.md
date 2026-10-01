@@ -3,6 +3,26 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [3.2.0] – 2026-10-01
+
+- **Yeni sol menü:** bölümler Para, Plan ve analiz, Notlar başlıkları altında toplandı; her bölümün Ayarlar'daki gibi kendi renkli simgesi var. Bir grubu kapatsan da geciken ödeme başlığında görünür. Çok not olduğunda ilk 30'u listelenir, gerisi "… not daha" ile açılır. Ayarlar en altta sabit durur.
+- **Touch ID senin seçimin:** Ayarlar › Güvenlik'te "Touch ID ile kilidi aç" anahtarı. Açarken parmak izin bir kez doğrulanır; kapalıyken kilit yalnızca PIN'le açılır. Önceden Touch ID kullanıyorsan bir kez açman yeter.
+- **PIN'ini mi unuttun?** Kilit ekranında Mac'inin parolasıyla doğrulayıp yeni bir PIN belirlersin ya da PIN'i kaldırırsın. Kayıtlarına dokunulmaz.
+- **ChatGPT uygulamasına bağlan:** Ayarlar › Yapay zeka'da Claude ve ChatGPT için iki kart var. "ChatGPT'ye bağla" Ajandam'ı ChatGPT'nin Mac uygulamasına ekler (MCP); ChatGPT kayıtlarına bakar, ekleme önerir, öneriler senin onayını bekler. ChatGPT hesabınla giriş ayrı bir seçenek olarak duruyor.
+- **Geri bildirim gönder:** hata, öneri ya da soru için kısa bir form. GitHub'da hazır doldurulmuş olarak açılır ya da metni kopyalayıp istediğin yere yapıştırırsın. İstersen sürüm ve Mac bilgisi eklenir; kayıtların eklenmez. Yardım menüsünde ve Ayarlar › Hakkında'da.
+- **Daha okunaklı:** pencere ve panel başlıkları, tablolar, düğmeler ve durum çubuğu düz yazı tipinde; tutarlar eşit genişlikte kaldı. Kategori adlarında "&" yerine "ve" (Market ve gıda); içe aktarma ve kısayol yazımları her yerde aynı.
+- **Fiş tek yerde:** yeni kayıtta "Fiş / fatura ekle" ile "Fişten doldur" yan yana.
+
+**Düzeltmeler**
+- Ayarlar penceresinin sol sütunu alttan kesik görünüyordu.
+- Hesap kartına sağ tıklayıp "Ayrıntıları göster" deyince bir şey olmuyordu; artık hesabın ayrıntılarına kayar ve kısa bir süre vurgular.
+- Özet ayın başında bu ayı geçen ayın tamamıyla karşılaştırıyordu; artık geçen ayın aynı günleriyle karşılaştırır.
+- Yenilikler penceresi alçak ekranda kartları kesiyordu; Kart araçları aşağı kaymış açılıyordu.
+- Dar pencerede takvimdeki tutarlar yandaki güne taşıyordu, Raporlar'daki tablolar kesiliyordu, grafik yazıları çok küçülüyordu, Bütçe'de "Limit yok" kesiliyordu, kilit ekranında "PIN'ini mi unuttun?" görünmüyordu.
+- Sekmeler taşınca fare tekerleğiyle kaydırılır. Kart şeridinde sağ tık menüsü bazen hemen kapanıyordu.
+- Boş ekranlarda çelişen yazılar ("Hesap yok" ile Genel hesap yan yana) ve kayıt yokken uydurma grafik ölçekleri kalktı.
+- Hakkında'daki iki güncelleme düğmesi bire indi; PIN kilidi kapalıyken ⇧⌘L uyarısı onay işaretiyle görünüyordu.
+
 ## [3.1.0] – 2026-10-01
 
 - **Sağ tık menüleri:** hesap kartına, işleme, ödemeye, düzenli kayda, aboneliğe, etkinliğe, hedefe, borca, bütçe satırına, nota, klasöre, sekmeye ya da takvim gününe sağ tıklayınca o şeyle ilgili işlemler açılır: düzenle, bakiyeyi güncelle, harcama ekle, öde, IBAN'ı kopyala, varsayılan hesap yap, arşivle. Boş yerde yeni kayıt, arama ve Asistan. Klavyeden ⇧F10 ile de açılır. Yazı alanlarında Kes, Kopyala, Yapıştır kalır; işe yaramayan "Yeniden Yükle" kalktı.

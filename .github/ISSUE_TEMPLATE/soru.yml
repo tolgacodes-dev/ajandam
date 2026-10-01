@@ -1,0 +1,21 @@
+name: Soru
+description: Ajandam'da bir şeyi nasıl yapacağını soruyorsun
+labels: [soru]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Lütfen kayıtlarındaki tutarları, adları ve hesap bilgilerini paylaşma; ekran görüntüsü eklersen bunları gizle.
+  - type: textarea
+    id: soru
+    attributes:
+      label: Sorun ne?
+      description: Neyi yapmak istiyorsun, nerede takıldın?
+    validations:
+      required: true
+  - type: input
+    id: surum
+    attributes:
+      label: Ajandam ve macOS sürümü
+      description: İsteğe bağlı. Ajandam › Ayarlar › Hakkında
+      placeholder: "Ajandam 3.2.0 · macOS 26.0"
