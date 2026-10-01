@@ -1,0 +1,36 @@
+name: Hata bildir
+description: Ajandam'da bir şey beklendiği gibi çalışmıyor
+labels: [hata]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bildirdiğin için teşekkürler. Lütfen kayıtlarındaki tutarları, adları ve hesap bilgilerini paylaşma; ekran görüntüsü eklersen bunları gizle.
+  - type: textarea
+    id: ne-oldu
+    attributes:
+      label: Ne oldu?
+      description: Ne yaptın, ne bekliyordun, ne oldu?
+      placeholder: "Ekstreyi içe aktarırken… beklediğim… olan…"
+    validations:
+      required: true
+  - type: textarea
+    id: adimlar
+    attributes:
+      label: Nasıl tekrarlanır?
+      placeholder: |
+        1. …
+        2. …
+  - type: input
+    id: surum
+    attributes:
+      label: Ajandam sürümü
+      description: Ajandam › Ayarlar › Hakkında
+      placeholder: "3.0.0"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS sürümü
+      placeholder: "macOS 26.0"

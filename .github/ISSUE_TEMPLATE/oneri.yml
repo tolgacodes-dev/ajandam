@@ -1,0 +1,16 @@
+name: Öneri
+description: Ajandam'a eklenmesini istediğin bir özellik ya da iyileştirme
+labels: [öneri]
+body:
+  - type: textarea
+    id: ne
+    attributes:
+      label: Ne istiyorsun?
+      description: Hangi işini kolaylaştıracak? Nasıl çalışmasını hayal ediyorsun?
+    validations:
+      required: true
+  - type: textarea
+    id: neden
+    attributes:
+      label: Bugün nasıl yapıyorsun?
+      description: İsteğe bağlı. Şu an bu işi nasıl hallettiğini yazarsan öneriyi daha iyi anlarım.

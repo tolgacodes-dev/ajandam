@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Destek ve iletişim
+    url: https://github.com/tolgacodes-dev/
+    about: Sorular ve iletişim için geliştiricinin GitHub sayfası.
+  - name: Yapay zeka rehberi
+    url: https://github.com/tolgacodes-dev/ajandam/blob/main/docs/yapay-zeka.md
+    about: Apple Intelligence, Claude ve yerel modellerin kurulumu.
