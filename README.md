@@ -172,7 +172,7 @@ senin onayını bekler. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 - **İletişim:** [github.com/tolgacodes-dev](https://github.com/tolgacodes-dev)
 - **Sürüm notları:** [CHANGELOG.md](CHANGELOG.md) ve [Sürümler](https://github.com/tolgacodes-dev/ajandam/releases)
 
-**Yakında:** Windows sürümü üzerinde çalışılıyor.
+**Yakında:** Windows, Linux ve mobil (iPhone ve Android) sürümleri üzerinde çalışılıyor.
 
 ## Lisans
 
@@ -198,6 +198,8 @@ your Mac: no account, no server, no subscription.
 `curl -fsSL https://raw.githubusercontent.com/tolgacodes-dev/ajandam/main/scripts/kur.sh | bash` in Terminal, or
 download [Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg). Updates are
 verified and installed with one click from inside the app. The app's interface is in Turkish.
+
+**Coming soon:** Windows, Linux and mobile (iPhone and Android) versions are in the works.
 
 **Support:** [open an issue](https://github.com/tolgacodes-dev/ajandam/issues/new/choose) ·
 [github.com/tolgacodes-dev](https://github.com/tolgacodes-dev)
