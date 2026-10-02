@@ -5,12 +5,13 @@
 <h1 align="center">Ajandam</h1>
 
 <p align="center">
-  <b>Kişisel finans, ajanda ve notlar; tek uygulamada, Mac'inde.</b><br>
+  <b>Kişisel finans, ajanda ve notlar; tek uygulamada, Mac'inde ve Windows'ta.</b><br>
   Hesap yok, sunucu yok, abonelik yok. Yapay zekası API anahtarı istemez.
 </p>
 
 <p align="center">
   <a href="https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg"><b>⬇ Mac için indir</b></a>
+  &nbsp;·&nbsp; <a href="https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe"><b>⬇ Windows için indir</b></a>
   &nbsp;·&nbsp; <a href="#kurulum">Kurulum</a>
   &nbsp;·&nbsp; <a href="#yapay-zeka">Yapay zeka</a>
   &nbsp;·&nbsp; <a href="#destek-ve-iletişim">Destek</a>
@@ -21,6 +22,7 @@
   <a href="https://github.com/tolgacodes-dev/ajandam/releases/latest"><img alt="Son sürüm" src="https://img.shields.io/github/v/release/tolgacodes-dev/ajandam?label=s%C3%BCr%C3%BCm&color=f08a3c"></a>
   <img alt="macOS 12 ve üstü" src="https://img.shields.io/badge/macOS-12%2B-1f2937?logo=apple">
   <img alt="Apple çipi ve Intel" src="https://img.shields.io/badge/Apple%20%C3%A7ipi%20%2B%20Intel-evrensel-1f2937">
+  <img alt="Windows 10 ve 11" src="https://img.shields.io/badge/Windows-10%20%2B%2011%2C%2064%20bit-1f2937">
   <img alt="Ücretsiz" src="https://img.shields.io/badge/%C3%BCcretsiz-2ea44f">
 </p>
 
@@ -28,14 +30,14 @@
 
 ## Neden Ajandam?
 
-- **Kayıtların Mac'inde kalır.** Hesap açmazsın; Ajandam kayıtlarını hiçbir sunucuya göndermez. İstersen iCloud
-  Drive'a yedekler, Touch ID ya da PIN ile kilitlenir.
+- **Kayıtların bilgisayarında kalır.** Hesap açmazsın; Ajandam kayıtlarını hiçbir sunucuya göndermez. İstersen iCloud
+  Drive'a (Windows'ta OneDrive'a) yedekler; Touch ID, Windows Hello ya da PIN ile kilitlenir.
 - **Türkiye için yapıldı.** Kredi kartı kesim ve son ödeme günleri, taksitler, asgari ödeme (%20 / %40), TCMB azami
   faiz oranları, TÜFE ile enflasyon raporu, kira artış sınırı, resmî tatiller, vergi takvimi, BES devlet katkısı.
-- **Yapay zeka, anahtarsız.** Apple Intelligence ya da Ollama, LM Studio gibi yerel modellerle Mac'inde çalışır;
-  istersen ChatGPT hesabınla giriş yapar ya da Claude ve ChatGPT masaüstü uygulamalarını bağlarsın. Önerdiği hiçbir
-  şey sen onaylamadan kaydedilmez.
-- **Para, ajanda ve notlar bir arada.** Ödeme günleri takvimde, bütçe hedefleri notlarında; hepsi aynı aramada (⌘K).
+- **Yapay zeka, anahtarsız.** Apple Intelligence (Mac) ya da Ollama, LM Studio gibi yerel modellerle bilgisayarında
+  çalışır; istersen ChatGPT hesabınla giriş yapar ya da Claude, ChatGPT gibi uygulamaları tek tuşla bağlarsın. Önerdiği
+  hiçbir şey sen onaylamadan kaydedilmez.
+- **Para, ajanda ve notlar bir arada.** Ödeme günleri takvimde, bütçe hedefleri notlarında; hepsi aynı aramada (⌘K / Ctrl+K).
 - **Ücretsiz ve güncel.** Yeni sürüm çıkınca Ajandam haber verir; imzası doğrulanır, tek tıkla kurulur.
 
 ## Ekranlar
@@ -120,6 +122,8 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 
 ## Kurulum
 
+### Mac
+
 **Gereksinimler:** macOS 12 Monterey ya da üstü; Apple çipli ve Intel Mac'ler. Apple Intelligence için macOS 26 ve
 Apple çipli bir Mac gerekir; yapay zekanın diğer yolları her Mac'te çalışır.
 
@@ -146,6 +150,25 @@ tek tıkla kurulur. Kayıtların olduğu gibi kalır. **Ajandam › Güncellemel
 **Kaldırma:** Ajandam'ı Uygulamalar klasöründen çöp sepetine taşı. Kayıtların
 `~/Library/Application Support/Ajandam` klasöründedir; onları da silmek istersen bu klasörü sil.
 
+### Windows
+
+**Gereksinimler:** Windows 10 ya da 11, 64 bit.
+
+[Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe)
+dosyasını indir ve çalıştır. Ajandam kendi kullanıcı klasörüne kurulur, yönetici izni istemez. Kurulum dosyası bir
+sertifika kuruluşunca imzalanmadığı için Windows ilk çalıştırmada "Windows kişisel bilgisayarınızı korudu" diyebilir:
+**Ek bilgi › Yine de çalıştır**. Bu yalnızca ilk kurulumda gerekir.
+
+Kayıtların Mac'teki yedekten taşınabilir: Mac'te **Ayarlar › Veriler ve yedek › Yedek indir**, Windows'ta aynı yerden
+**Yedekten geri yükle**.
+
+**Güncellemeler:** yeni sürüm arka planda indirilir, imzası ve SHA-256 özeti Ajandam'ın kendi anahtarıyla doğrulanır;
+Ajandam bildirim alanındayken ya da çıkarken kendiliğinden kurulur (istersen **Ayarlar › Hakkında**'dan kapatıp
+"Şimdi güncelle" ile kurarsın).
+
+**Kaldırma:** **Ayarlar › Uygulamalar › Yüklü uygulamalar › Ajandam › Kaldır**. Kayıtların `%APPDATA%\Ajandam`
+klasöründedir ve kaldırınca silinmez; onları da silmek istersen bu klasörü sil.
+
 ## Yapay zeka
 
 Ajandam'ın yapay zekası API anahtarı istemez; **Ayarlar › Yapay zeka** bölümünden seçersin.
@@ -153,18 +176,20 @@ Ajandam'ın yapay zekası API anahtarı istemez; **Ayarlar › Yapay zeka** böl
 | | Nerede çalışır | Ne zaman |
 |---|---|---|
 | **Apple Intelligence** | Mac'inde; kayıtların hiçbir yere gitmez | macOS 26, Apple çipli Mac |
-| **Yerel model** ([Ollama](https://ollama.com), [LM Studio](https://lmstudio.ai)) | Mac'inde | Uygulama açıkken kendiliğinden bulunur |
+| **Yerel model** ([Ollama](https://ollama.com), [LM Studio](https://lmstudio.ai)) | Bilgisayarında | Uygulama açıkken kendiliğinden bulunur |
 | **ChatGPT** (hesabınla giriş) | OpenAI'de; yalnızca izin verdiğin özetler gider | ChatGPT planın yeter, API anahtarı gerekmez |
 | **Claude** (masaüstü uygulaması, MCP) | Claude'da | Ajandam uzantısını tek tıkla eklersin |
-| **ChatGPT** (Mac uygulaması, MCP) | ChatGPT'de | Ajandam'ı ChatGPT'nin ayarlarına tek tıkla eklersin |
+| **ChatGPT** (masaüstü uygulaması, MCP) | ChatGPT'de | Ajandam'ı ChatGPT'nin ayarlarına tek tıkla eklersin |
 
 Asistan, ekstre okuma ve kategori önerileri bu yollardan biriyle çalışır. Claude, ChatGPT ya da Cursor gibi MCP destekleyen
 uygulamalar, sen izin verirsen Ajandam'daki kayıtlarına bakabilir, analiz yapabilir ve ekleme önerebilir; öneriler
-senin onayını bekler. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
+senin onayını bekler. **Ayarlar › Yapay zeka › Hangi uygulamayla çalışacaksın?** listesinden Claude, ChatGPT, Google
+Antigravity, LM Studio, Cursor, VS Code, Claude Code, OpenCode, Cline ve Kimi Code'u tek tuşla bağlar, bağlantıyı
+test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 
 ## Gizlilik ve güvenlik
 
-- Kayıtlar yalnızca Mac'inde, kullanıcı hesabının klasöründe durur. Ajandam geliştiriciye hiçbir veri göndermez.
+- Kayıtlar yalnızca bilgisayarında, kullanıcı hesabının klasöründe durur. Ajandam geliştiriciye hiçbir veri göndermez.
 - İnternete yalnızca güncelleme denetimi (GitHub), canlı döviz, altın, kripto fiyatları ve senin bağladığın yapay zeka
   için çıkar. Güncelleme ve fiyat isteklerinde kayıtlarına ait bilgi yoktur; ChatGPT'ye yalnızca sorunu cevaplamak için
   gereken özetler, senin iznine bağlı olarak gider. Canlı fiyatları ayarlardan kapatabilirsin.
@@ -180,7 +205,7 @@ senin onayını bekler. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 - **İletişim:** [github.com/tolgacodes-dev](https://github.com/tolgacodes-dev)
 - **Sürüm notları:** [CHANGELOG.md](CHANGELOG.md) ve [Sürümler](https://github.com/tolgacodes-dev/ajandam/releases)
 
-**Yakında:** Windows, Linux ve mobil (iPhone ve Android) sürümleri üzerinde çalışılıyor.
+**Yakında:** Linux ve mobil (iPhone ve Android) sürümleri üzerinde çalışılıyor.
 
 ## Lisans
 
@@ -191,23 +216,30 @@ Ajandam kişisel kullanım için ücretsizdir; kaynak kodu açık değildir ve b
 
 ## English
 
-**Ajandam** is a free personal finance, calendar and notes app for the Mac, made for Turkey. Your records stay on
-your Mac: no account, no server, no subscription.
+**Ajandam** is a free personal finance, calendar and notes app for Mac and Windows, made for Turkey. Your records
+stay on your computer: no account, no server, no subscription.
 
 - **Money:** accounts, credit cards with statement and due dates, installments and minimum payments, budgets,
   subscriptions, goals, debts; bank and card statement import (PDF, Excel) with reconciliation and duplicate detection.
 - **Turkey-specific:** CPI (TÜFE) based inflation report, rent increase cap, central bank card interest rates,
   public holidays, tax calendar, private pension (BES) state contribution.
-- **AI without API keys:** Apple Intelligence or local models (Ollama, LM Studio) on your Mac, sign in with your
-  ChatGPT account, or connect the Claude or ChatGPT desktop app over MCP. Nothing is saved without your approval.
+- **AI without API keys:** Apple Intelligence (Mac) or local models (Ollama, LM Studio) on your computer, sign in
+  with your ChatGPT account, or connect Claude, ChatGPT and other MCP apps in one click. Nothing is saved without your
+  approval.
 - **Calendar and notes:** month, week and list views, to-dos, Markdown notes with tables.
 
-**Install:** macOS 12 or later (Apple silicon and Intel). Run
+**Install on Mac:** macOS 12 or later (Apple silicon and Intel). Run
 `curl -fsSL https://raw.githubusercontent.com/tolgacodes-dev/ajandam/main/scripts/kur.sh | bash` in Terminal, or
-download [Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg). Updates are
-verified and installed with one click from inside the app. The app's interface is in Turkish.
+download [Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg).
 
-**Coming soon:** Windows, Linux and mobile (iPhone and Android) versions are in the works.
+**Install on Windows:** Windows 10 or 11 (64-bit). Download and run
+[Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe); if
+SmartScreen warns, choose **More info › Run anyway**. No administrator rights needed.
+
+Updates are verified with the app's own signing key and installed from inside the app. The app's interface is in
+Turkish.
+
+**Coming soon:** Linux and mobile (iPhone and Android) versions are in the works.
 
 **Support:** [open an issue](https://github.com/tolgacodes-dev/ajandam/issues/new/choose) ·
 [github.com/tolgacodes-dev](https://github.com/tolgacodes-dev)

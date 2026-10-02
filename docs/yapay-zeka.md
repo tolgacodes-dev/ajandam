@@ -1,9 +1,9 @@
 # Yapay zeka
 
-Ajandam'ın yapay zekası API anahtarı istemez; Mac'indeki modellerle ya da zaten kullandığın uygulamalarla çalışır.
+Ajandam'ın yapay zekası API anahtarı istemez; bilgisayarındaki modellerle ya da zaten kullandığın uygulamalarla çalışır.
 Hangisinin kullanılacağını **Ayarlar › Yapay zeka** bölümünden seçersin. **Otomatik** seçiliyken ChatGPT'ye giriş
 yaptıysan ve özet göndermeye izin verdiysen ChatGPT, yoksa açık bir yerel model (Ollama, LM Studio), o da yoksa Apple
-Intelligence kullanılır.
+Intelligence kullanılır (Mac).
 
 ## Neler yapar
 
@@ -35,52 +35,68 @@ Yapay zekanın eklemek ya da değiştirmek istedikleri **Öneriler** kutusuna d�
    okuttuğun dökümlerin metnini OpenAI'ye gönderir. **Kayıt özetlerini ChatGPT'ye gönder** kapalıyken her seferinde
    izin ister. ChatGPT konuşmalarına ya da hesabının başka bilgilerine erişilmez.
 
-Oturum bilgileri yalnızca bu Mac'te saklanır: giriş jetonları macOS Anahtar Zinciri'nde, e-posta adresin yalnızca
-senin okuyabildiğin bir dosyada. **Çıkış yap** ile ikisi de silinir.
+Oturum bilgileri yalnızca bu bilgisayarda saklanır: Mac'te giriş jetonları macOS Anahtar Zinciri'nde, Windows'ta
+yalnızca senin Windows kullanıcının açabileceği biçimde şifreli; e-posta adresin yalnızca senin okuyabildiğin bir dosyada. **Çıkış yap** ile ikisi de silinir.
 
 ## Yerel model (Ollama, LM Studio)
 
 [Ollama](https://ollama.com) ya da [LM Studio](https://lmstudio.ai) açıksa Ajandam modelleri kendiliğinden bulur;
-hangisinin kullanılacağını ayarlardan seçersin. Her şey Mac'inde kalır. Türkçeyi iyi bilen, talimat izleyen ve en az
+hangisinin kullanılacağını ayarlardan seçersin. Her şey bilgisayarında kalır. Türkçeyi iyi bilen, talimat izleyen ve en az
 7–8 milyar parametreli bir model öneririz; küçük modeller ekstre okumada satır atlayabilir (mutabakat bunu yakalar).
+
+## Hangi uygulamayla çalışacaksın?
+
+**Ayarlar › Yapay zeka**'nın ikinci bölümünde Claude, ChatGPT, Google Antigravity, LM Studio, Cursor, VS Code,
+Claude Code, OpenCode, Cline ve Kimi Code alt alta durur: bilgisayarında bulunup bulunmadığı, Ajandam'ın eklenip
+eklenmediği ve uygulamanın bağlanıp bağlanmadığı (son bağlantı ve son kullandığı araçla) görünür.
+
+1. Uygulamanın satırını aç ve **…'e Ajandam'ı bağla**'ya bas (bağlantı izni de açılır). Ajandam kendini uygulamanın
+   ayarına ekler (Claude'a uzantı olarak), ayar dosyasını yeniden okuyup doğrular ve sunucusunu uygulamanın
+   başlatacağı gibi dener.
+2. Satırda uygulamada ne yapacağın yazar (ör. ChatGPT'yi kapatıp yeniden aç, Antigravity'de MCP sunucularını yenile).
+3. Uygulamaya "Ajandam'a göre bu ay nereye harcadım?" gibi sorular sor.
+
+**Bağlantıyı test et** Ajandam'ın sunucusunun cevap verdiğini, uygulamanın ayarında Ajandam'ın olduğunu ve uygulamanın
+bağlanıp bağlanmadığını gösterir. **Kaldır** Ajandam'ı uygulamanın ayarından çıkarır. Uygulamanın diğer ayarlarına ve
+başka sunuculara dokunulmaz; ayar dosyasının eski hali `….ajandam-yedek` olarak saklanır, geçersiz bir dosya
+değiştirilmez. Bağlantıyı **Yapay zeka uygulamaları bağlanabilir** anahtarıyla istediğin an kapatabilirsin.
 
 ## Claude (masaüstü uygulaması)
 
-Claude, Ajandam'a [MCP](https://modelcontextprotocol.io) ile bağlanır; Claude'da sohbet ederken kayıtlarına bakabilir,
-analiz yapabilir ve ekleme önerebilir.
+**Claude'a Ajandam'ı bağla** Ajandam uzantısını Claude masaüstü uygulamasında açar; **Yükle**'ye (Install) bas,
+Claude'u yeniden açman gerekmez. Mac'te sürümler sayfasındaki `Ajandam-Claude.mcpb` dosyasını açmak da aynı işi
+görür. Claude uzantıyı açamıyorsa Ajandam Claude'un ayar dosyasına eklenir; Claude'dan tamamen çıkıp (Windows'ta
+bildirim alanındaki simgeden) yeniden açınca bağlanır. Uzantının yeni sürümü varsa satır "yeniden kur" der; uzantıyı
+kaldırmak için **Claude › Ayarlar › Uzantılar**.
 
-1. **Ayarlar › Yapay zeka › Claude'a bağla** düğmesine bas (bağlantı izni de açılır): Ajandam uzantısı Claude
-   masaüstü uygulamasında açılır, **Yükle** de. Sürümler sayfasındaki `Ajandam-Claude.mcpb` dosyasını açmak da aynı işi görür.
-2. Claude'a "Ajandam'a göre bu ay nereye harcadım?" gibi sorular sorabilirsin.
-
-Bağlantıyı **Yapay zeka uygulamaları bağlanabilir** anahtarıyla istediğin an kapatabilirsin.
+Claude'un "özel bağlayıcı" (custom connector) özelliği Anthropic'in sunucularından bağlandığı için bilgisayarındaki
+Ajandam'a ulaşamaz; Claude'u listeden bağla.
 
 ## ChatGPT (masaüstü uygulaması)
 
-ChatGPT'nin Mac uygulaması da Ajandam'a [MCP](https://modelcontextprotocol.io) ile bağlanır; ChatGPT'de sohbet ederken
-kayıtlarına bakabilir, analiz yapabilir ve ekleme önerebilir. Öneriler Ajandam'da senin onayını bekler.
+ChatGPT'nin masaüstü uygulaması da Ajandam'a [MCP](https://modelcontextprotocol.io) ile bağlanır: Work ve Codex
+modlarında kayıtlarına bakabilir, analiz yapabilir ve ekleme önerebilir; normal sohbet (Chat) bilgisayardaki
+uygulamalara bağlanamaz. Öneriler Ajandam'da senin onayını bekler.
 
-1. **Ayarlar › Yapay zeka › ChatGPT'ye bağla** düğmesine bas; açılan pencerede **Ekle** de (bağlantı izni de açılır).
-   Ajandam, ChatGPT'nin ayar dosyasına (`~/.codex/config.toml`, ChatGPT ve Codex ortak kullanır) şu satırları yazar;
-   dosyanın eski hali `config.toml.ajandam-yedek` olarak saklanır:
+1. **ChatGPT'ye Ajandam'ı bağla**'ya bas. Ajandam, ChatGPT'nin ayar dosyasına (`~/.codex/config.toml`; Windows'ta
+   `%USERPROFILE%\.codex\config.toml`; ChatGPT ve Codex ortak kullanır) şu satırları yazar:
    ```toml
    # Ajandam: kayıtlarına bakar; önerileri Ajandam'da sen onaylarsın
    [mcp_servers.ajandam]
    command = "/Applications/Ajandam.app/Contents/MacOS/Ajandam"
    args = ["--mcp"]
    ```
-2. ChatGPT'den çık (⌘Q) ve yeniden aç.
+   Windows'ta komut `C:\Users\<kullanıcı>\AppData\Local\Ajandam\Ajandam.exe` olur.
+2. ChatGPT'den çık (Mac'te ⌘Q, Windows'ta bildirim alanındaki simgeden) ve yeniden aç.
 3. ChatGPT'ye "Ajandam'a göre bu ay nereye harcadım?" gibi sorular sorabilirsin.
 
-Satırları kendin eklemek istersen pencerede **Kendim eklemek istiyorum** bölümü aynı satırları ve komutu verir.
-Bağlantıyı aynı pencereden **ChatGPT'den kaldır** ile silebilirsin. Bu yol ChatGPT'nin Mac uygulamasındaki MCP
-desteğiyle çalışır; ChatGPT planına göre görünmeyebilir. Yukarıdaki "ChatGPT hesabınla giriş" bundan ayrıdır: o yol
-Ajandam'ın kendi Asistanı ve döküm okuması içindir.
+Bu yol ChatGPT planına göre görünmeyebilir. Yukarıdaki "ChatGPT hesabınla giriş" bundan ayrıdır: o yol Ajandam'ın
+kendi Asistanı ve döküm okuması içindir.
 
-## Diğer MCP uygulamaları
+## Listede olmayan uygulamalar
 
-Cursor, LM Studio, VS Code gibi MCP destekleyen uygulamalar da bağlanabilir. Ayarlardaki **Kopyala** düğmesi şu
-biçimdeki yapılandırmayı verir:
+MCP destekleyen başka bir uygulamanın ayarlarına **Ayarlar › Yapay zeka › Listede olmayan uygulamalar › Kopyala**
+ile aldığın yapılandırmayı ekle:
 
 ```json
 {
@@ -93,11 +109,17 @@ biçimdeki yapılandırmayı verir:
 }
 ```
 
-`Ajandam --mcp`, standart giriş/çıkış üzerinden konuşan bir MCP sunucusudur. İstekleri çalışan Ajandam'a yalnızca
-senin kullanıcı hesabının erişebildiği yerel bir soketle iletir (Ajandam açık değilse arka planda açar). Bağlantı izni
-kapalıyken ya da Ajandam kilitliyken istekler cevaplanmaz.
+Windows'ta komut `C:\\Users\\<kullanıcı>\\AppData\\Local\\Ajandam\\Ajandam.exe` olur (JSON'da ters eğik çizgiler çift).
 
-### Araçlar
+`Ajandam --mcp`, standart giriş/çıkış üzerinden konuşan bir MCP sunucusudur. İstekleri çalışan Ajandam'a yalnızca
+senin kullanıcı hesabının erişebildiği yerel bir kanalla (Mac'te soket, Windows'ta adlandırılmış kanal) iletir;
+Ajandam açık değilse arka planda açar. Bağlantı izni kapalıyken ya da Ajandam kilitliyken istekler cevaplanmaz.
+
+**Bağlantı adresi:** sunucu eklerken adres isteyen uygulamalar için Ajandam bu bilgisayarda bir MCP adresi açar
+(`http://127.0.0.1:47821/mcp/…`; **Ayarlar › Yapay zeka › Bağlantı adresi › Kopyala**). Adres yalnızca bu
+bilgisayardan ve gizli anahtarla çalışır, tarayıcıdan gelen istekler reddedilir; paylaşma.
+
+## Araçlar
 
 | Okuma | Öneri (onayla kaydedilir) |
 |---|---|
