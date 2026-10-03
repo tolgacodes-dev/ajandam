@@ -18,32 +18,59 @@ kendiliğinden kurduğu için çoğu kullanıcı düzeltmeyi birkaç gün içind
 - **Veriler:** Kayıtlar Mac'te `~/Library/Application Support/Ajandam`, Windows'ta `%APPDATA%\Ajandam` altında,
   yalnızca senin kullanıcı hesabının okuyabildiği dosyalarda durur. Ajandam bir sunucuya kayıt göndermez; hesap,
   reklam, izleme kodu ya da kullanım istatistiği yoktur.
+- **Yedekler:** Günlük yedekler aynı klasörde durur. iCloud Drive (Windows'ta OneDrive) yedeğini açarsan yedekler kendi
+  bulut hesabına da kopyalanır. Yedeklerde kayıtların ve fiş/fatura eklerin vardır; PIN ve kilit ayarları yedeğe girmez,
+  bir yedeğe dönmek şimdiki PIN'i değiştirmez ya da kaldırmaz. **Tüm verileri sil** (önce sorar) bu bilgisayarın
+  yedeklerini, bulut yedeklerini ve eklerini de siler.
 - **Kilit:** PIN kilidi, Touch ID ve Windows Hello Ajandam'ın arayüzünü korur; diskteki dosyaları şifrelemez. Mac'inin
-  diskini FileVault, Windows'ta BitLocker (ya da Cihaz şifrelemesi) ile şifrelemeni öneririz. Ajandam kilitliyken
-  yapay zeka uygulamalarının isteklerine cevap verilmez.
+  diskini FileVault, Windows'ta BitLocker (ya da Cihaz şifrelemesi) ile şifrelemeni öneririz. PIN açıksa bilgisayar
+  uyuyunca, ekran kilitlenince ya da kullanıcı değişince Ajandam da kilitlenir ve bildirimlerde ödeme adları ve
+  tutarlar görünmez (Ayarlar › Bildirimler'den açabilirsin). Ajandam kilitliyken yapay zeka uygulamalarının
+  isteklerine cevap verilmez.
+- **Uygulama:** Arayüz sıkı bir içerik güvenliği politikasıyla (CSP) açılır: dışarıdan betik yüklenmez, sayfa
+  internete doğrudan bağlanamaz. Ajandam'ın köprüsü yalnızca kendi sayfasına cevap verir. Ekler yalnızca fotoğraf ve
+  PDF olarak saklanır ve korumalı açılır; fiş fotoğraflarındaki ve geri bildirim ekran görüntülerindeki konum ve cihaz
+  bilgisi (EXIF) silinir. CSV'ye aktarmada formül sayılabilecek hücreler metin olarak yazılır. Mac'te uygulama
+  Hardened Runtime ile imzalanır; Web Denetçisi yalnızca geliştirme derlemesinde açıktır.
 - **Güncellemeler:** Sürümler GitHub Actions'ta derlenip Ajandam'ın kendi imza anahtarıyla imzalanır.
   - Mac: uygulama indirdiği güncellemenin SHA-256 özetini `latest.json` ile, imzasını uygulamaya gömülü sertifika
     parmak iziyle doğrular. Terminal'deki kurulum betiği (`scripts/kur.sh`) de aynı iki denetimi yapar.
   - Windows: uygulama kurulum dosyasının SHA-256 özetini ve `latest-windows.json`'daki imzasını uygulamaya gömülü
-    anahtarla doğrular.
+    anahtarla doğrular. Güncelleme bilgisinin ikinci imzası sürüm numarasını, özeti ve dosya adını kapsar: eski bir
+    sürüm yeniymiş gibi sunulamaz. İndirilen kurulum dosyası doğrulandıktan sonra kurulana kadar değiştirilemez.
   - Tutmayan güncelleme kurulmaz. Mac'te kurulan sürüm açılamazsa önceki sürüme dönülür. Her sürümün dosyalarının
     özetleri `SHA256SUMS` dosyasında yayımlanır.
 - **Yapay zeka:**
-  - Apple Intelligence ve yerel modeller (Ollama, LM Studio) bilgisayarının dışına veri göndermez.
-  - ChatGPT ile giriş yaptıysan Asistan, soruların için gereken özetleri ve okuttuğun dökümlerin metnini OpenAI'ye
-    gönderir; izin ayarı kapalıyken her seferinde sorar. ChatGPT oturumu yalnızca o bilgisayarda durur: Mac'te giriş
-    jetonları macOS Anahtar Zinciri'nde, e-posta adresin yalnızca senin kullanıcı hesabının okuyabildiği bir dosyada
-    (0600); Windows'ta jetonlar Windows'un veri koruma özelliğiyle (DPAPI) yalnızca senin Windows kullanıcının
-    açabileceği biçimde şifrelenir. ChatGPT'den çıkış yapınca oturum OpenAI tarafında da kapatılır.
+  - Apple Intelligence ve yerel modeller (Ollama, LM Studio) bilgisayarının dışına veri göndermez. **Otomatik** seçimde
+    önce bunlar kullanılır.
+  - ChatGPT ile giriş yaptıysan Asistan, sorunu cevaplamak için hesap ve kategori adlarını ve soruyla ilgili kayıtlarını
+    (tarih, tutar, açıklama, toplamlar), okuttuğun dökümlerin metnini OpenAI'ye gönderir. Göndermeden önce izin ister
+    (giriş yapmak izin sayılmaz; izin Ajandam kapanana kadar geçerlidir); dökümler için ayrıca sorar, notlar yalnızca
+    **Notlarımı da gönder** açıksa gider. IBAN, TC kimlik no, kart numarası, telefon ve e-posta gönderilmeden gizlenir.
+  - ChatGPT oturumu yalnızca o bilgisayarda durur: Mac'te giriş jetonları macOS Anahtar Zinciri'nde, e-posta adresin
+    yalnızca senin kullanıcı hesabının okuyabildiği bir dosyada (0600); Windows'ta jetonlar Windows'un veri koruma
+    özelliğiyle (DPAPI) yalnızca senin Windows kullanıcının açabileceği biçimde şifrelenir. ChatGPT'den çıkış yapınca
+    oturum OpenAI tarafında da kapatılır.
+  - Kayıtlarındaki yazılar (ör. bir havale açıklaması, bir not) yapay zekaya veri olarak gider, talimat olarak değil.
+    Asistan ekleme ya da değişikliği yalnızca sen istediğinde önerir; düzenleme ve silme tek tek onaylanır.
   - Claude ve diğer MCP uygulamaları yalnızca **Ayarlar › Yapay zeka › Yapay zeka uygulamaları bağlanabilir** açıksa
-    bağlanabilir. Bağlantı Mac'te yalnızca senin kullanıcı hesabının erişebildiği bir Unix soketi (0600), Windows'ta
-    uzak bağlantıları reddeden ve gizli bir anahtar isteyen bir adlandırılmış kanal (named pipe) üzerinden olur.
-  - Adresle bağlanan uygulamalar için `http://127.0.0.1:<kapı>/mcp/<anahtar>` adresi yalnızca bu bilgisayardan ve
-    gizli anahtarı bilen tarafından kullanılabilir; web sitelerinden (tarayıcıdan) ve başka bir ana bilgisayar adıyla
-    gelen istekler reddedilir. Anahtar yalnızca senin kullanıcı hesabının okuyabildiği bir dosyada durur ve günlüklere
-    yazılmaz.
-  - Yapay zekanın önerdiği eklemeler ve değişiklikler senin onayını bekler.
-- **Canlı fiyatlar ve kurlar:** Yalnızca herkese açık fiyat ve kur verisi indirilir; istekte kayıtlarına ait bir bilgi
-  yoktur.
+    bağlanabilir; Mac'te bu izin ve başka bir uygulamanın ayar dosyasına yazmak Mac'in kendi onay penceresiyle
+    istenir. Bağlantı Mac'te yalnızca senin kullanıcı hesabının erişebildiği bir Unix soketi (0600), Windows'ta
+    yalnızca senin Windows hesabına açık, uzak bağlantıları reddeden ve gizli bir anahtar isteyen bir adlandırılmış
+    kanal (named pipe) üzerinden olur.
+  - Adresle bağlanan uygulamalar için `http://127.0.0.1:<kapı>/mcp/<anahtar>` adresi ayrı bir ayarla
+    (**Bağlantı adresi**) açılır; varsayılanı kapalıdır. Adres yalnızca bu bilgisayardan ve gizli anahtarı bilen
+    tarafından kullanılabilir (anahtar adreste ya da `Authorization: Bearer` başlığında); web sitelerinden (tarayıcıdan)
+    ve başka bir ana bilgisayar adıyla gelen istekler reddedilir. Kapı başka bir programdaysa Ajandam adresi kendiliğinden
+    başka kapıya taşımaz. Anahtar yalnızca senin kullanıcı hesabının okuyabildiği bir dosyada durur, günlüklere yazılmaz
+    ve **Anahtarı yenile** ile değiştirilebilir. Windows'ta panoya kopyalanan adres ve IBAN, pano geçmişine ve bulut
+    panosuna girmez.
+  - Başka uygulamaların ayar dosyaları (ör. Claude Code'un `~/.claude.json`'ı) yerinde düzenlenir: dosya izinleri,
+    yorumlar ve diğer ayarlar korunur; eski hali yalnızca senin okuyabileceğin izinlerle yanında saklanır.
+  - Yapay zekanın önerdiği eklemeler ve değişiklikler senin onayını bekler. **Onaysız kaydet** uygulama başına açılır;
+    kayıt düzenleme, silme, kategori ve bütçe değişiklikleri ve ekstre içe aktarmaları her zaman onay ister. Adresle
+    bağlanan ya da Ajandam'ın tanıyamadığı bir program onaysız kaydedemez.
+- **Canlı fiyatlar ve kurlar:** Yalnızca herkese açık fiyat ve kur verisi indirilir (geçmiş tarihli kur için TCMB
+  arşivinden o günün kur dosyası); istekte kayıtlarına ait bir bilgi yoktur.
 - **Geri bildirim:** Yalnızca sen gönderdiğinde, formda yazdıkların (ve eklediğin ekran görüntüsü) Google Apps Script
   üzerinden Ajandam'ın destek adresine e-postayla gider; kayıtların eklenmez.

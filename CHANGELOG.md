@@ -3,6 +3,53 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [3.5.0] – 2026-10-03
+
+Bu sürüm, Ajandam'ın baştan sona denetiminde bulunan sorunları gideriyor: her düzeltme önce sorunu gösteren bir testle başladı. Öne çıkanlar:
+
+- **Hızlı ekleme seni anlıyor:** "yarın 9 doktor" artık ₺9'luk gider değil, yarın 09:00'da bir etkinlik. "akşam 7'de yemek" 19:00, "haftaya salı", "dün", "10:00-11:30" ve "$5" ya da "5 €" anlaşılır. "her ayın 5'i kira 12.000" düzenli kayıt, "her pazartesi 10:00 toplantı" tekrarlayan etkinlik olur. Emin olamazsa iki seçenek gösterir (Tab ile değişir). Komut paleti, Özet'teki yazarak ekleme ve Windows'ta bildirim alanındaki **Yazarak ekle** de etkinlik, yapılacak ve not ekler.
+- **Tekrarlayan etkinlikler:** her gün, N günde ya da haftada bir, seçtiğin günler, ayın son cuması; bitiş tarihiyle ya da sayıyla. Değiştirirken ve silerken **Yalnızca bu**, **Bu ve sonrakiler** ya da **Tümü**; önceki tekrarlar silinmez. Tüm gün kayıtlara da hatırlatma kurulur (ör. doğum gününden bir gün önce 09:00).
+- **Bildirimler:** etkinlik ve yapılacak hatırlatmalarında **Yapıldı** ve **10 dk ertele** düğmeleri; geciken yapılacaklar sabah özetinde; sabah özeti ve hatırlatmalar ayrı ayrı kapatılabilir. PIN açıkken bildirimlerde ad ve tutar görünmez (istersen Ayarlar › Bildirimler'den açarsın). iPhone'da tamamlanan fatura tamamlandığı günle yazılır, tahmini tutar önce onaylatılır.
+- **İlk açılış:** PIN artık isteğe bağlı: Ajandam önce karşılar, PIN'i istersen belirlersin; Touch ID ya da Windows Hello aynı ekranda. Mac'te ilk açılışta Ajandam tanıtılır, boş Özet'te bir "Başlarken" listesi var. Açılış animasyonu yalnızca kurulumdan ve güncellemeden sonra oynar; sonraki açılışlarda beklemezsin.
+- **Kart ve nakit:** BDDK'nın yeni asgari ödeme sınırı uygulanır (kart limiti 100.000 ₺'ye kadar %20, üstü %40). Asgariyi ödediysen ekstre "gecikti" yerine "asgari ödendi · kalan faize girer" der. Nakit akışı ve gelecek aylar kira, aidat gibi tekrarlayan ödemeleri her ay sayar; Özet ve Bütçe aynı ay sonu tahminini (günlük harcama dahil) gösterir.
+- **Döviz:** geçmiş tarihli dövizli kayıtlar ve geçmiş ayların net varlığı o günün TCMB kuruyla hesaplanır. Kur alınamazsa tutar kendi para biriminde görünür, ₺0 sayılmaz. Düzenli kayıtlar da dövizli olabilir (ör. 3.000 $ maaş).
+- **Dökümler:** Excel'deki tarihler gün ile ay karışmadan, B/A sütunu ve "CR" ekleri doğru okunur. Taksitteki kuruş farkı ikinci bir plan açmaz, aynı mağazadan ayrı alışverişler birleşmez. Her dosyada toplamlar denetlenir; tutmazsa söylenir ve bakiye kendiliğinden eşitlenmez. Ay adlı ve yılsız tarihler, UTF-16 dosyalar ve iki para birimli ekstreler de okunur.
+- **Yedekler:** günlük, iCloud ve OneDrive yedeklerinde fiş ve fatura ekleri de var. PIN yedeğe girmez; bir yedeğe dönmek kilidi kaldırmaz. Yedekten geri yükleme önce neyin değişeceğini gösterir, eski kopya yeni kaydın üzerine yazmaz ve geri alınabilir. "Tüm verileri sil" yedekleri ve ekleri de siler (önce sorar).
+- **Asistan:** kayıtlarındaki yazılar (ör. bir havale açıklaması) asistana talimat veremez; değişiklik yalnızca sen istediğinde önerilir, düzenleme ve silme tek tek onaylanır. **Durdur** isteği gerçekten keser. IBAN, kart numarası, TC kimlik no, telefon ve e-posta buluta gitmeden gizlenir; notlar ve dökümler için ayrı izin var, ChatGPT'ye giriş yapmak izin sayılmaz. **Otomatik** önce bilgisayarındaki modeli kullanır.
+- **Yapay zeka uygulamaları:** Claude, ChatGPT ve diğerleri hedefleri, borç ve alacakları ve düzenli kayıtları da görür; ödemeyi ödendi işaretlemeyi, yapılacağı tamamlamayı, kayıt düzenleme ve silmeyi, nota eklemeyi önerebilir (hepsi onayınla). Uzun listeler sayfa sayfa gelir, aynı istek iki kez kaydedilmez, onaysız kaydetme uygulama başına seçilir. Bağlantı adresi ayrı bir ayarla açılır ve gizli anahtarı yenilenebilir. MCP'nin 2026-07-28 sürümü desteklenir.
+- **Notlar:** kod blokları, `[metin](adres)` bağlantıları, iç içe listeler ve ~~üstü çizili~~ yazı. Büyük notlarda yazmak hızlandı; arama bütün sözcükleri sırasız ve Türkçe harfleri her yazılışıyla bulur.
+- **Mac ve Windows:** Mac açılınca başlat (macOS 13 ve üstü). Bilgisayar uyuyunca, ekran kilitlenince (Windows'ta Win+L) ya da kullanıcı değişince Ajandam da kilitlenir (PIN açıksa). Windows'ta kurumsal ağlarda Windows'un vekil sunucu ayarı ve sertifika deposu kullanılır.
+- **Arayüz:** kenar çubuğundan açılan bölümler tek bir önizleme sekmesinde açılır, çift tıklayınca kalıcı olur. Klavye için "İçeriğe geç", F6 ve oklar; tek tuşlu kısayollar kapatılabilir. Açık temada düğmeler ve yazılar daha okunaklı; yeni kurulumda tema sistemin görünümünü izler. Binlerce kayıtta "Tüm aylar" ve arama takılmıyor.
+
+---
+
+**Güvenlik**
+- Sayfa sıkı bir içerik güvenliği politikasıyla (CSP) açılır; Ajandam'ın köprüsü yalnızca kendi sayfasına cevap verir. Ekler yalnızca fotoğraf ve PDF olarak saklanır ve korumalı açılır.
+- Mac: yapay zeka bağlantısını açmak ve başka uygulamaların ayar dosyalarına yazmak Mac'in kendi onay penceresiyle olur. Uygulama Hardened Runtime ile imzalanır; Web Denetçisi yalnızca geliştirme derlemesinde açık.
+- Windows: güncelleme bilgisinin imzası sürüm numarasını da kapsar, eski bir sürüme geri döndürülemez; indirilen kurulum dosyası kurulana kadar değiştirilemez. Yapay zeka bağlantı kanalı yalnızca senin hesabına açık. Panoya kopyalanan IBAN ve bağlantı anahtarı Windows'un pano geçmişine ve bulut panosuna girmez.
+- Başka uygulamaların ayar dosyaları (ör. Claude Code'un `~/.claude.json`'ı) yerinde düzenlenir: izinleri, yorumları ve anahtar sırası korunur; yedekleri de yalnızca senin okuyabileceğin izinlerle yazılır.
+- Fiş fotoğraflarındaki ve geri bildirim ekran görüntülerindeki konum ve cihaz bilgisi (EXIF) silinir. CSV'ye aktarmada formül sayılabilecek hücreler metin olarak yazılır.
+
+**Düzeltmeler**
+- Yedekten geri yüklemede (ör. Mac'ten Windows'a taşırken) dövizli işlemlerin kuru kayboluyor, dolar hesabının bakiyesi değişiyordu.
+- Taksitlerdeki kuruş farkı ikinci bir taksit planı açıyor, ₺10.000'lik alışveriş ₺18.333 olarak kaydediliyordu; aynı mağazadan aynı tutarlı ayrı alışverişler tek alışveriş sayılıyordu.
+- Excel'deki gün.ay.yıl biçimli tarihler gün ile ayı karıştırıyor, bazı satırlar kayboluyordu; tamsayı biçimli hücrelerde kuruşlar düşüyordu. PDF'teki B/A sütunu okunmuyor, gelen paralar gider sayılıyordu.
+- Nakit akışı tahmini kira gibi tekrarlayan ödemeleri yalnızca bir kez sayıyor, ay sonu bakiyesini olduğundan yüksek gösteriyordu.
+- Kur alınamadığında dövizli hesaplar ₺0 sayılıyor, dövizli kartın gecikmiş ekstresi hatırlatmalardan düşüyordu.
+- Hızlı eklemede "yarın 9 doktor" ₺9'luk gider, "1.5 kg peynir 450" Mayıs ayına gider, "her ayın 5'i kira 12.000" bugüne tek seferlik gider olarak kaydediliyordu.
+- Tekrarlayan bir etkinliğin yalnızca bir gününü değiştirmek önceki bütün tekrarlarını siliyordu.
+- Etkinlik hatırlatmaları iki kez geliyor, "Sessiz" seçimine uyulmuyordu; iPhone'a eşitlenen faturalar için üç ayrı uyarı gelebiliyordu. PIN kilidi açıkken bildirimlerde ödeme adları ve tutarlar görünüyordu.
+- Yapay zeka seçilmemişken Asistan "Market bütçemi 6.000 TL yap" isteğini ₺6.000'lik gider olarak öneriyordu.
+- Mac'te güncellemeden sonra ChatGPT için Anahtar Zinciri parolası sorulup Ajandam donabiliyordu.
+- Asistan uzun sorularda modelin sınırını aşan metin gönderiyordu; **Durdur** isteği kesmiyordu.
+- Fiş ve fatura ekleri hiçbir yedeğe girmiyordu; yeni bilgisayarda yedekten dönünce ekler kayboluyordu.
+- Disk dolunca "Bağlantını kontrol et" deniyor, kaydedilmiş görünen değişiklikler kaybolabiliyordu.
+- "Tüm verileri sil" yedekleri ve ekleri bırakıyordu. Mac'te kilitliyken **Yedekten Geri Dön** menüsü çalışıyordu.
+- Windows'ta kaldırırken "Uygulama verilerini sil" işaretlense de kayıtlar silinmiyordu; Ajandam açılamadığında hiçbir ileti göstermeden kapanıyor, WebView2 çökünce sayfa boş kalıyordu.
+- Yapay zeka uygulamalarından gelen aynı istek iki öneri oluşturuyordu; "Onaysız kaydet" açıkken kategori ve bütçe değişiklikleri de onaysız uygulanıyordu.
+- Açık temada birincil düğmelerin yazısı, uyarı rengi ve menülerdeki klavye odağı zor okunuyordu; açık renkli kartlardaki küçük yazılar okunmuyordu. Kenar çubuğundaki her tıklama yeni bir sekme açıyordu.
+- 2029'dan sonraki resmî tatiller tanınmıyordu; Kart araçları kısmi ödemeden sonra asgari ödemeyi ve faizi yanlış hesaplıyordu.
+
 ## [3.4.1] – 2026-10-03
 
 - **ChatGPT'de başka bir hesapla giriş:** Ayarlar › Yapay zeka'da oturumu kapanmış hesabın yanında **Başka bir hesapla** var. Giriş beklenirken tarayıcıda "Bu hesap bu uygulamaya erişemez" ya da "Gerekli bir izin kullanılamıyor" görürsen **Başka bir hesapla dene** ya da **Vazgeç**. ChatGPT planını Ajandam'da kullanmak için Plus ya da Pro aboneliği gerektiği (OpenAI'nin kuralı) giriş düğmesinin yanında yazar; plan uygun değilse ya da giriş yarıda kalırsa Ajandam nedenini söyler.

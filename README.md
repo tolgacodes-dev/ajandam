@@ -32,7 +32,7 @@
 
 - **Kayıtların bilgisayarında kalır.** Hesap açmazsın; Ajandam kayıtlarını hiçbir sunucuya göndermez (yalnızca senin
   bağladığın yapay zekaya, senin izin verdiğin kadarı gider). İstersen iCloud Drive'a (Windows'ta OneDrive'a)
-  yedekler; Touch ID, Windows Hello ya da PIN ile kilitlenir.
+  yedekler; istersen PIN, Touch ID ya da Windows Hello ile kilitlenir.
 - **Türkiye için yapıldı.** Kredi kartı kesim ve son ödeme günleri, taksitler, asgari ödeme (%20 / %40), TCMB azami
   faiz oranları, TÜFE ile enflasyon raporu, kira artış sınırı, resmî tatiller, vergi takvimi, BES devlet katkısı.
 - **Yapay zeka, anahtarsız.** Apple Intelligence (Mac) ya da Ollama, LM Studio gibi yerel modellerle bilgisayarında
@@ -50,8 +50,9 @@
 
 Üst çubuktaki **✦ Asistan** düğmesiyle ya da ⇧⌘A (Windows'ta Ctrl+Shift+A) ile açılır. "Bu ay en çok nereye harcadım?", "Kartımı yalnızca
 asgariyi ödersem ne zaman biter?" gibi soruları kayıtlarına bakarak cevaplar; hangi kayıtlara baktığını gösterir.
-Kayıt eklemeyi ya da bütçe değiştirmeyi önerebilir; sen **Uygula** demeden hiçbir şey değişmez. Yapay zeka kapalıyken
-basit soruları yine kayıtlarından cevaplar.
+İstersen kayıt eklemeyi ya da bütçe değiştirmeyi önerir; sen **Ekle** ya da **Uygula** demeden hiçbir şey değişmez.
+Kayıtlarındaki yazılar (ör. bir havale açıklaması) asistana talimat veremez. Yapay zeka kapalıyken basit soruları
+yine kayıtlarından cevaplar.
 
 ### Dövizli hesaplar ve harcamalar
 
@@ -128,19 +129,25 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 - **Raporlar:** genel görünüm, nakit akışı tahmini, ay özeti, net varlık, enflasyon. Özet tek ay ya da son 3 ay,
   6 ay, 1 yıl, 2 yıl için; önceki dönemle karşılaştırmalı.
 - **Hızlı ekleme:** "market 250", "telefon 24000 6 taksit kart" yaz; kategori, tarih ve hesap kendiliğinden bulunur.
-  Hangi uygulamada olursan ol küçük bir ekleme penceresi açılır: Mac'te ⌃⌥A (menü çubuğundan da), Windows'ta
-  Ctrl+Alt+Space (bildirim alanından ve görev çubuğundan da); kısayolu değiştirebilirsin.
-- **İçe aktarma:** banka ve kart dökümleri (PDF, Excel, CSV), fiş fotoğrafı, CSV dışa aktarma, tam yedek ve geri
-  yükleme.
-- **Ajanda:** ay, hafta ve liste görünümü; tekrar eden etkinlikler, yapılacaklar, hatırlatmalar. Mac'te istersen
-  Anımsatıcılar üzerinden iPhone'una da düşer.
-- **Notlar:** Markdown, yapılacak listeleri, tablolar, etiketler, klasörler, sabitleme, yazdırma.
+  "yarın 9 doktor" etkinlik, "her ayın 5'i kira 12.000" düzenli kayıt, "her pazartesi 10:00 toplantı" tekrarlayan
+  etkinlik olur; "$5", "akşam 7'de", "haftaya salı" da anlaşılır. Hangi uygulamada olursan ol küçük bir ekleme
+  penceresi açılır: Mac'te ⌃⌥A (menü çubuğundan da), Windows'ta Ctrl+Alt+Space (bildirim alanından ve görev
+  çubuğundan da); kısayolu değiştirebilirsin.
+- **İçe aktarma:** banka ve kart dökümleri (PDF, Excel, CSV), fiş fotoğrafı, CSV dışa aktarma, tam yedek (fiş ve
+  fatura ekleriyle) ve geri yükleme; geri yüklemeden önce neyin değişeceği gösterilir.
+- **Ajanda:** ay, hafta ve liste görünümü; yapılacaklar ve hatırlatmalar. Tekrarlayan etkinlikler: her gün, N günde
+  ya da haftada bir, seçtiğin günler, ayın son cuması; değiştirirken "yalnızca bu", "bu ve sonrakiler" ya da "tümü".
+  Mac'te istersen Anımsatıcılar üzerinden iPhone'una da düşer.
+- **Notlar:** Markdown (kod blokları, bağlantılar, iç içe listeler), yapılacak listeleri, tablolar, etiketler,
+  klasörler, sabitleme, yazdırma.
 - **Mac:** her şeyde sağ tık menüsü (hesap, işlem, ödeme, not, takvim günü), ⌘Z ile geri alma, bildirimlerde
-  "Ödendi" ve "Yarın hatırlat", Ajandam'ın kendi bildirim sesleri, Dock rozeti, PIN ve istersen Touch ID kilidi
-  (PIN'i unutursan Mac parolanla sıfırlarsın), sürükle-bırak, klavye kısayolları, açık ve koyu tema.
+  "Ödendi", "Yarın hatırlat", "Yapıldı" ve "10 dk ertele", Ajandam'ın kendi bildirim sesleri, Dock rozeti, Mac açılınca
+  başlat (macOS 13 ve üstü), istersen PIN ve Touch ID kilidi (Mac uyuyunca ya da ekran kilitlenince Ajandam da
+  kilitlenir; PIN'i unutursan Mac parolanla sıfırlarsın), sürükle-bırak, klavye kısayolları, açık ve koyu tema.
 - **Windows:** Dosya, Düzen, Görünüm, Git ve Yardım menüleri (Alt tuşlarıyla), her şeyde sağ tık menüsü, Ctrl+Z ile
-  geri alma, bildirimlerde "Ödendi" ve "Yarın hatırlat", bildirim alanı ve görev çubuğu rozeti, PIN ve istersen
-  Windows Hello kilidi (PIN'i unutursan Windows Hello ile sıfırlarsın), sürükle-bırak, klavye kısayolları.
+  geri alma, bildirimlerde "Ödendi", "Yarın hatırlat", "Yapıldı" ve "10 dk ertele", bildirim alanı ve görev çubuğu
+  rozeti, istersen PIN ve Windows Hello kilidi (Win+L ile Ajandam da kilitlenir; PIN'i unutursan Windows Hello ile
+  sıfırlarsın), sürükle-bırak, klavye kısayolları; kurumsal ağlarda Windows'un vekil sunucu ayarı kullanılır.
 - **Senin Ajandan:** kilit ekranında adın, 24 kart rengi, dört uygulama simgesi, her bildirim türüne ayrı ses.
 
 ## Kurulum
@@ -196,7 +203,8 @@ Ajandam bildirim alanındayken ya da çıkarken kendiliğinden kurulur (istersen
 "Şimdi güncelle" ile kurarsın).
 
 **Kaldırma:** **Ayarlar › Uygulamalar › Yüklü uygulamalar › Ajandam › Kaldır**. Kayıtların `%APPDATA%\Ajandam`
-klasöründedir ve kaldırınca silinmez; onları da silmek istersen bu klasörü sil.
+klasöründedir; kaldırma penceresinde **Uygulama verilerini sil**'i işaretlersen onlar da silinir, işaretlemezsen
+kalır. Ajandam'ın zamanlanmış bildirimleri her durumda kaldırılır.
 
 ## Yapay zeka
 
@@ -206,13 +214,13 @@ Ajandam'ın yapay zekası API anahtarı istemez; **Ayarlar › Yapay zeka** böl
 |---|---|---|
 | **Apple Intelligence** | Mac'inde; kayıtların hiçbir yere gitmez | macOS 26, Apple çipli Mac |
 | **Yerel model** ([Ollama](https://ollama.com), [LM Studio](https://lmstudio.ai)) | Bilgisayarında | Uygulama açıkken kendiliğinden bulunur |
-| **ChatGPT** (hesabınla giriş) | OpenAI'de; yalnızca izin verdiğin özetler gider | ChatGPT Plus ya da Pro planın yeter, API anahtarı gerekmez |
+| **ChatGPT** (hesabınla giriş) | OpenAI'de; soruyla ilgili kayıtların senin izninle gider, IBAN ve kart numarası gizlenir | ChatGPT Plus ya da Pro planın yeter, API anahtarı gerekmez |
 | **Claude** (masaüstü uygulaması, MCP) | Claude'da | Ajandam uzantısını tek tıkla eklersin |
 | **ChatGPT** (masaüstü uygulaması, MCP) | ChatGPT'de | Ajandam'ı ChatGPT'nin ayarlarına tek tıkla eklersin |
 
-Asistan, ekstre okuma ve kategori önerileri bu yollardan biriyle çalışır. Claude, ChatGPT ya da Cursor gibi MCP destekleyen
-uygulamalar, sen izin verirsen Ajandam'daki kayıtlarına bakabilir, analiz yapabilir ve ekleme önerebilir; öneriler
-senin onayını bekler. **Ayarlar › Yapay zeka › Hangi uygulamayla çalışacaksın?** listesinden Claude, ChatGPT, Google
+Asistan, ekstre okuma ve kategori önerileri bu yollardan biriyle çalışır; **Otomatik** seçiliyken önce
+bilgisayarındaki model kullanılır. Claude, ChatGPT ya da Cursor gibi MCP destekleyen uygulamalar, sen izin verirsen
+Ajandam'daki kayıtlarına bakabilir, analiz yapabilir, ekleme ve değişiklik önerebilir; öneriler senin onayını bekler. **Ayarlar › Yapay zeka › Hangi uygulamayla çalışacaksın?** listesinden Claude, ChatGPT, Google
 Antigravity, LM Studio, Cursor, VS Code, Claude Code, OpenCode, Cline ve Kimi Code'u tek tuşla bağlar, bağlantıyı
 test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 
@@ -223,9 +231,10 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 - Ajandam internetsiz de çalışır; internete yalnızca şunlar için çıkar:
   - güncelleme denetimi ve indirme (GitHub),
   - canlı kripto, döviz ve altın fiyatları ile döviz kurları: herkese açık kaynaklar (Binance, Truncgil, TCMB ve
-    jsDelivr'deki günlük kur listesi; ona ulaşılamazsa aynı listenin currency-api.pages.dev'deki kopyası),
-  - senin bağladığın yapay zeka: ChatGPT'ye yalnızca sorunu cevaplamak için gereken özetler, senin iznine bağlı olarak
-    gider,
+    jsDelivr'deki günlük kur listesi; ona ulaşılamazsa aynı listenin currency-api.pages.dev'deki kopyası); geçmiş
+    tarihli dövizli kayıtlar için o günün TCMB kuru,
+  - senin bağladığın yapay zeka: ChatGPT'ye yalnızca sorunu cevaplamak için gereken kayıtlar, senin iznine bağlı olarak
+    gider (IBAN, TC kimlik no, kart numarası, telefon ve e-posta gizlenir; notlar ayrı izinle),
   - geri bildirim: yalnızca sen gönderdiğinde, formda yazdıkların (ve eklediğin ekran görüntüsü) Google'ın Apps Script
     hizmeti üzerinden Ajandam'ın destek adresine e-postayla iletilir.
 
@@ -269,9 +278,11 @@ stay on your computer: no account, no server, no subscription.
 - **AI without API keys:** Apple Intelligence (Mac) or local models (Ollama, LM Studio) on your computer, sign in
   with your ChatGPT Plus or Pro account, or connect Claude, ChatGPT and other MCP apps in one click. Nothing is saved
   without your approval.
-- **Calendar and notes:** month, week and list views, to-dos, Markdown notes with tables.
-- **Privacy:** no account, no ads, no tracking. The app goes online only for update checks (GitHub), public price and
-  exchange-rate feeds, the AI service you connect, and feedback you choose to send.
+- **Calendar and notes:** month, week and list views, flexible recurring events, to-dos with reminders, quick add in
+  plain Turkish ("yarın 9 doktor"), Markdown notes with tables and code blocks.
+- **Privacy:** no account, no ads, no tracking. Optional PIN, Touch ID or Windows Hello lock. The app goes online only
+  for update checks (GitHub), public price and exchange-rate feeds, the AI service you connect, and feedback you
+  choose to send.
 
 **Install on Mac:** macOS 12 or later (Apple silicon and Intel). Run
 `curl -fsSL https://raw.githubusercontent.com/tolgacodes-dev/ajandam/main/scripts/kur.sh | bash` in Terminal, or

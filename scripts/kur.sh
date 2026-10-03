@@ -9,8 +9,11 @@
 set -uo pipefail
 
 DEPO="tolgacodes-dev/ajandam"
-PARMAK="2575E5843426FBFCBA00BA0BE45B394554A107AA"   # app/imza/ajandam-imza.cer (SHA-1)
-GEREK="identifier \"app.ajandam.mac\" and certificate leaf = H\"$PARMAK\""
+# kabul edilen imza sertifikaları (app/imza/*.cer, SHA-1); anahtar değişirken eskisi ve yenisi birlikte
+PARMAKLAR="2575E5843426FBFCBA00BA0BE45B394554A107AA"
+GEREK=""
+for P in $PARMAKLAR; do GEREK="${GEREK:+$GEREK or }certificate leaf = H\"$P\""; done
+GEREK="identifier \"app.ajandam.mac\" and ($GEREK)"
 
 hata() { printf '\n  ✗ %s\n\n' "$1" >&2; exit 1; }
 IZIN_IPUCU="macOS izin vermediyse: Sistem Ayarları › Gizlilik ve Güvenlik › Uygulama Yönetimi'nde Terminal'i aç ve yeniden dene."
@@ -42,7 +45,18 @@ curl -fL --retry 3 --progress-bar "$ZIP" -o "$IS/Ajandam.zip" || hata "İndirme 
 adim "3/5 Doğrulanıyor"
 GERCEK="$(shasum -a 256 "$IS/Ajandam.zip" | cut -d' ' -f1)"
 [ "$GERCEK" = "$(printf '%s' "$OZET" | tr 'A-F' 'a-f')" ] || hata "İndirilen dosyanın SHA-256 özeti tutmadı; kurulmadı."
+# açmadan önce paketteki adlar (uygulamadaki güncelleyici gibi): mutlak yol ya da ".." yok, her şey Ajandam.app altında
+ADLAR="$(zipinfo -1 "$IS/Ajandam.zip" 2>/dev/null)" || hata "Paket okunamadı."
+[ -n "$ADLAR" ] || hata "Paket boş."
+while IFS= read -r AD; do
+  case "$AD" in
+    /*|..|../*|*/../*|*/..) hata "Paket beklenen biçimde değil; kurulmadı." ;;
+    Ajandam.app/*|Ajandam.app) ;;
+    *) hata "Paket beklenen biçimde değil; kurulmadı." ;;
+  esac
+done <<<"$ADLAR"
 ditto -x -k "$IS/Ajandam.zip" "$IS/x" || hata "Paket açılamadı."
+[ -L "$IS/x/Ajandam.app" ] && hata "Paket beklenen biçimde değil; kurulmadı."
 [ -d "$IS/x/Ajandam.app" ] || hata "Pakette Ajandam.app yok."
 codesign --verify --deep --strict -R="$GEREK" "$IS/x/Ajandam.app" 2>/dev/null || hata "Uygulamanın imzası Ajandam'ın değil; kurulmadı."
 
