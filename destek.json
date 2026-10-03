@@ -1,0 +1,5 @@
+{
+  "aciklama": "Ajandam'ın Geri bildirim formu mesajı bu adrese gönderir (Google Apps Script, kaynak: scripts/destek-aktarici.gs). Yalnızca script.google.com adresi kabul edilir.",
+  "adres": "https://script.google.com/macros/s/AKfycbzlPMwJe992j8-u7Qf8ibU9MKmeJyKvXEVVHf4AO1n9FnnLOEAa5nS6afIMsq6lY2fVkQ/exec",
+  "alici": "ajandamuygulamasi@gmail.com"
+}

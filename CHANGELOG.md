@@ -3,6 +3,22 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [3.3.2] – 2026-10-03
+
+- **Geri bildirim doğrudan gelir:** Ayarlar › Hakkında › Geri bildirim gönder'de yazdıkların tek tıkla Ajandam'ın destek adresine (ajandamuygulamasi@gmail.com) gider; istersen yanıt alacağın e-posta adresini ve bir ekran görüntüsünü ekle. E-posta uygulamanla göndermek ya da metni kopyalamak da mümkün. Kayıtların eklenmez.
+- **Güncelleme ilerlemesi:** yeni sürüm inerken üst çubukta yüzdesi, Ayarlar › Hakkında'da indirilen MB ve kalan süre görünür; doğrulanırken ve kurulurken ne olduğu yazar. Mac'te Ajandam Hakkında penceresinde de ilerleme çubuğu var.
+- **Kart limiti her yerde:** kredi kartlarında limit ve kullanılabilir tutar hem Özet'teki hem Hesaplar'daki kartlarda görünür; Kart borçları kutusu toplam limiti ve kullanılabilir tutarı da söyler.
+- **IBAN:** banka ve birikim hesabına IBAN'ı tam olarak yazabilirsin: yazarken dörtlü gruplanır, yapıştırınca boşluklar düzelir, yanlış bir rakamda uyarır, bankayı IBAN'dan tanıyıp kendisi seçer. Hesap ayrıntısında IBAN'ı tek tıkla kopyalarsın.
+- **Animasyonlar:** Ayarlar › Görünüm › Animasyonlar: sisteme göre, her zaman ya da sade. Sade kipte de kısa solmalar ve bekleme simgeleri sürer.
+
+**Düzeltmeler**
+- **Windows bildirimleri gelmiyordu:** Windows, bir uygulamayı bildirim listesine ilk bildiriminden sonra ekler; Ajandam ise bu durumu "bildirimler kapalı" sanıp hiç bildirim planlamıyordu. Artık ilk açılışta bir tanıtım bildirimi gösterilir, Ajandam Windows'un bildirim listesine eklenir ve hatırlatmalar planlanır. Ayarlar › Bildirimler'deki **Deneme bildirimi gönder** ile hemen deneyebilirsin; bildirimler kapalıysa nedeni (yalnızca Ajandam için mi, bütün uygulamalar için mi, kuruluşun ilkesiyle mi) söylenir.
+- **Windows'ta animasyonlar oynamıyordu:** Windows'un "Animasyon efektleri" kapalıyken (çoğu zaman "en iyi performans" ayarından) Ajandam bekleme simgeleri dahil bütün hareketleri durduruyordu. Artık bir kez söylenir ve istersen yalnızca Ajandam'da açarsın; kapalı kalırsa da solmalar ve bekleme simgeleri sürer.
+- Büyük tutarlarda kutucuklar ve kartlar kayıyordu: tutar satır atlıyor, kutusundan taşıyor ya da sayarken genişleyip daralıyordu. Artık tutar önce küçülür, sığmazsa "₺13,8 milyar" diye kısalır (tamamı üzerine gelince görünür); sayarken genişlik zıplamaz. Kripto ve döviz formunda miktar büyüdükçe satırlar kaymaz, dar kartlarda limit satırı taşmaz.
+- Banka hesabına IBAN elle eklenemiyordu (yalnızca döküm içe aktarınca geliyordu, çoğu zaman yıldızlı haliyle).
+- Güncelleme inerken hiçbir ilerleme görünmüyordu; Şimdi güncelle'ye basınca Ajandam kapanana kadar bir şey olmuyormuş gibi duruyordu.
+- Windows'ta e-postayla geri bildirim gönderirken metindeki boşluklar "+" olarak görünebiliyordu. Mac'te Ajandam kilitliyken Hakkında'daki Geri Bildirim Gönder GitHub'ı açıyordu; artık e-posta uygulamasını açar.
+
 ## [3.3.1] – 2026-10-03
 
 - **Uygulama simgesini sen seç:** Ayarlar › Görünüm › Uygulama simgesi'nde dört simge var: Lacivert, Gece, Turuncu, Beyaz. Mac'te Dock'ta, Finder'da ve bildirimlerde; Windows'ta görev çubuğunda, Başlat menüsünde, masaüstü kısayolunda, bildirim alanında ve bildirimlerde seçtiğin görünür. Tercih yalnızca o bilgisayarda saklanır.
