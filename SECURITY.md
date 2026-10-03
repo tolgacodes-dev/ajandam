@@ -34,7 +34,7 @@ kendiliğinden kurduğu için çoğu kullanıcı düzeltmeyi birkaç gün içind
     gönderir; izin ayarı kapalıyken her seferinde sorar. ChatGPT oturumu yalnızca o bilgisayarda durur: Mac'te giriş
     jetonları macOS Anahtar Zinciri'nde, e-posta adresin yalnızca senin kullanıcı hesabının okuyabildiği bir dosyada
     (0600); Windows'ta jetonlar Windows'un veri koruma özelliğiyle (DPAPI) yalnızca senin Windows kullanıcının
-    açabileceği biçimde şifrelenir.
+    açabileceği biçimde şifrelenir. ChatGPT'den çıkış yapınca oturum OpenAI tarafında da kapatılır.
   - Claude ve diğer MCP uygulamaları yalnızca **Ayarlar › Yapay zeka › Yapay zeka uygulamaları bağlanabilir** açıksa
     bağlanabilir. Bağlantı Mac'te yalnızca senin kullanıcı hesabının erişebildiği bir Unix soketi (0600), Windows'ta
     uzak bağlantıları reddeden ve gizli bir anahtar isteyen bir adlandırılmış kanal (named pipe) üzerinden olur.

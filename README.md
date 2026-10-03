@@ -206,7 +206,7 @@ Ajandam'ın yapay zekası API anahtarı istemez; **Ayarlar › Yapay zeka** böl
 |---|---|---|
 | **Apple Intelligence** | Mac'inde; kayıtların hiçbir yere gitmez | macOS 26, Apple çipli Mac |
 | **Yerel model** ([Ollama](https://ollama.com), [LM Studio](https://lmstudio.ai)) | Bilgisayarında | Uygulama açıkken kendiliğinden bulunur |
-| **ChatGPT** (hesabınla giriş) | OpenAI'de; yalnızca izin verdiğin özetler gider | ChatGPT planın yeter, API anahtarı gerekmez |
+| **ChatGPT** (hesabınla giriş) | OpenAI'de; yalnızca izin verdiğin özetler gider | ChatGPT Plus ya da Pro planın yeter, API anahtarı gerekmez |
 | **Claude** (masaüstü uygulaması, MCP) | Claude'da | Ajandam uzantısını tek tıkla eklersin |
 | **ChatGPT** (masaüstü uygulaması, MCP) | ChatGPT'de | Ajandam'ı ChatGPT'nin ayarlarına tek tıkla eklersin |
 
@@ -267,8 +267,8 @@ stay on your computer: no account, no server, no subscription.
 - **Turkey-specific:** CPI (TÜFE) based inflation report, rent increase cap, central bank card interest rates,
   public holidays, tax calendar, private pension (BES) state contribution.
 - **AI without API keys:** Apple Intelligence (Mac) or local models (Ollama, LM Studio) on your computer, sign in
-  with your ChatGPT account, or connect Claude, ChatGPT and other MCP apps in one click. Nothing is saved without your
-  approval.
+  with your ChatGPT Plus or Pro account, or connect Claude, ChatGPT and other MCP apps in one click. Nothing is saved
+  without your approval.
 - **Calendar and notes:** month, week and list views, to-dos, Markdown notes with tables.
 - **Privacy:** no account, no ads, no tracking. The app goes online only for update checks (GitHub), public price and
   exchange-rate feeds, the AI service you connect, and feedback you choose to send.

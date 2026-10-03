@@ -3,6 +3,15 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [3.4.1] – 2026-10-03
+
+- **ChatGPT'de başka bir hesapla giriş:** Ayarlar › Yapay zeka'da oturumu kapanmış hesabın yanında **Başka bir hesapla** var. Giriş beklenirken tarayıcıda "Bu hesap bu uygulamaya erişemez" ya da "Gerekli bir izin kullanılamıyor" görürsen **Başka bir hesapla dene** ya da **Vazgeç**. ChatGPT planını Ajandam'da kullanmak için Plus ya da Pro aboneliği gerektiği (OpenAI'nin kuralı) giriş düğmesinin yanında yazar; plan uygun değilse ya da giriş yarıda kalırsa Ajandam nedenini söyler.
+- **Kullanım koşulları:** döviz kurlarının yedek kaynağı ve Windows uygulamasının açık kaynak bileşenleri (Tauri ve Rust kütüphaneleri) eklendi. Bileşenlerin tam listesi ve lisans metinleri indirme sayfasındaki ACIK-KAYNAK-LISANSLARI.txt dosyasında; Windows'ta aynı dosya Ajandam'ın kurulduğu klasörde de var.
+
+**Düzeltmeler**
+- ChatGPT'ye bir hesapla bağlandıktan sonra başka bir hesapla ya da başka bir çalışma alanıyla giriş yapılamıyordu: tarayıcıda "Bu hesap bu uygulamaya erişemez" çıkıyor, Ajandam girişi beklemeye devam ediyordu.
+- ChatGPT'den çıkış yapınca oturum yalnızca bilgisayardan siliniyordu; artık OpenAI tarafında da kapatılır.
+
 ## [3.4.0] – 2026-10-03
 
 - **Dövizli hesaplar:** banka, nakit ve birikim hesabını ya da kredi kartını dolar, euro veya 150'den fazla para biriminden biriyle açabilirsin; para birimi Türkçe adıyla ya da koduyla aranır. Bakiye kendi para biriminde, TL karşılığı altında görünür; net varlık, bütçe ve raporlar TL'ye çevrilerek hesaplanır. Döküm ve ekstre içe aktarma şimdilik TL hesaplarda.
