@@ -3,6 +3,23 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [3.4.0] – 2026-10-03
+
+- **Dövizli hesaplar:** banka, nakit ve birikim hesabını ya da kredi kartını dolar, euro veya 150'den fazla para biriminden biriyle açabilirsin; para birimi Türkçe adıyla ya da koduyla aranır. Bakiye kendi para biriminde, TL karşılığı altında görünür; net varlık, bütçe ve raporlar TL'ye çevrilerek hesaplanır. Döküm ve ekstre içe aktarma şimdilik TL hesaplarda.
+- **Harcamayı kendi parasıyla yaz:** yurt dışı harcamasını $49,99 diye gir; o günün kuruyla TL karşılığı hesaplanıp kayda yazılır, **Kuru değiştir** ile bankanın uyguladığı kuru girebilirsin. Euro kartla dolar harcamada çapraz kur gösterilir. Kurlar TCMB, Truncgil ve jsDelivr'deki günlük kur listesinden alınır; internet yoksa son bilinen kur kullanılır.
+- **Kilit ekranında adın:** Ayarlar › Güvenlik › Kilit ekranı'nda adını yaz, kilit ekranı "Tolga'nın Ajandası" diye açılsın. Türkçe ek adına göre kendiliğinden seçilir; istersen başlığı elle düzeltirsin. Arkada kayan bir ışık, yazılır gibi gelen başlık, tuşladıkça dolan noktalar; doğru PIN'de noktalar yeşerir, kilit yukarı kalkar.
+- **Açılış animasyonu:** Ajandam açılırken simgesi belirir, adı yazılır, simge yerine (PIN varsa kilit ekranına) süzülür ve ekran yerleşir; seçtiğin uygulama simgesiyle. Animasyonlar sadeyse kısa bir solma.
+- **Bildirim sesleri:** Ayarlar › Bildirimler'de sabah özeti, ödeme ve ekstre hatırlatmaları, gecikmiş ödemeler ve etkinlikler için ayrı ses seç. Mac'te altı yeni ses (Ajandam, Kristal, Damla, Zil, Nabız, Esinti), macOS sesi ya da sessiz; Windows'ta Windows'un bildirim sesleri ya da sessiz. **Dinle** ile seçmeden önce duyarsın.
+- **Windows'ta menü çubuğu:** pencerenin üstünde Dosya, Düzen, Görünüm, Git ve Yardım menüleri. Alt+D, Alt+Z, Alt+G, Alt+İ ve Alt+Y ile açılır, oklarla gezilir; kısayollar menüde yazar. Dar pencerede tek bir menü düğmesine dönüşür. Görünüm menüsünden ya da Ayarlar › Windows'tan gizlesen de Alt tuşuyla açılır.
+- **24 kart rengi ve banka tonu:** hesap ve hedef renklerinde koyu, canlı, metalik ve yumuşak tonlar. Banka seçince bankanın rengine yakın bir ton önerilir (logo kullanılmaz); formdaki küçük kart, hesabın nasıl görüneceğini gösterir.
+- **Sürüm notları ve kullanım koşulları uygulamada:** Ayarlar › Hakkında › Sürüm notları GitHub'a gitmeden açılır; indirilmiş, kurulmayı bekleyen sürüm en üstte. Güncelleme penceresindeki **Tüm sürüm notları** da burayı açar. Kullanım koşulları kısa bir özet ve 13 başlıkla; içindekilerden istediğin başlığa atlarsın. İkisi de Yardım menüsünde.
+- **Geri bildirim gönderildi:** gönderdikten sonra türüne göre bir teşekkür ve gönderdiğinin özeti görünür; kapatabilir ya da yeni bir geri bildirim yazabilirsin.
+
+**Düzeltmeler**
+- Kredi kartlarının üstündeki çip çok küçük görünüyordu.
+- Windows'ta Alt tuşuna tek başına basınca pencere görünmez bir menü kipine geçiyor, sonraki tuşlar Ajandam'a ulaşmıyordu.
+- Hesap formunda tür değişince kart görselinin rengi güncellenmiyordu.
+
 ## [3.3.2] – 2026-10-03
 
 - **Geri bildirim doğrudan gelir:** Ayarlar › Hakkında › Geri bildirim gönder'de yazdıkların tek tıkla Ajandam'ın destek adresine (ajandamuygulamasi@gmail.com) gider; istersen yanıt alacağın e-posta adresini ve bir ekran görüntüsünü ekle. E-posta uygulamanla göndermek ya da metni kopyalamak da mümkün. Kayıtların eklenmez.

@@ -108,6 +108,7 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 
 - **Para:** gelir ve gider, hesaplar arası transfer, kredi kartları (kesim ve son ödeme günü, taksit, asgari ödeme),
   düzenli kayıtlar, ödemeler ve faturalar, abonelikler (kendiliğinden yakalanır), bütçe, hedefler, borç ve alacak.
+  Dövizli hesaplar ve harcamalar: 150'den fazla para birimi; TL karşılığı o günün kuruyla, istersen kendi kurunla.
 - **Raporlar:** genel görünüm, nakit akışı tahmini, ay özeti, net varlık, enflasyon. Özet tek ay ya da son 3 ay,
   6 ay, 1 yıl, 2 yıl için; önceki dönemle karşılaştırmalı.
 - **Hızlı ekleme:** "market 250", "telefon 24000 6 taksit kart" yaz; kategori, tarih ve hesap kendiliğinden bulunur.
@@ -117,8 +118,11 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
   Anımsatıcılar üzerinden iPhone'una da düşer.
 - **Notlar:** Markdown, yapılacak listeleri, tablolar, etiketler, klasörler, sabitleme, yazdırma.
 - **Mac:** her şeyde sağ tık menüsü (hesap, işlem, ödeme, not, takvim günü), ⌘Z ile geri alma, bildirimlerde
-  "Ödendi" ve "Yarın hatırlat", Dock rozeti, PIN ve istersen Touch ID kilidi (PIN'i unutursan Mac parolanla
-  sıfırlarsın), sürükle-bırak, klavye kısayolları, açık ve koyu tema.
+  "Ödendi" ve "Yarın hatırlat", Ajandam'ın kendi bildirim sesleri, Dock rozeti, PIN ve istersen Touch ID kilidi
+  (PIN'i unutursan Mac parolanla sıfırlarsın), sürükle-bırak, klavye kısayolları, açık ve koyu tema.
+- **Windows:** Dosya, Düzen, Görünüm, Git ve Yardım menüleri (Alt tuşlarıyla), bildirim alanı ve görev çubuğu
+  rozeti, bildirimlerde "Ödendi", PIN ve istersen Windows Hello kilidi, sürükle-bırak, klavye kısayolları.
+- **Senin Ajandan:** kilit ekranında adın, 24 kart rengi, dört uygulama simgesi, her bildirim türüne ayrı ses.
 
 ## Kurulum
 
@@ -199,9 +203,10 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 
 ## Destek ve iletişim
 
-- **Hata, öneri ya da soru için:** Ajandam'da **Yardım › Geri Bildirim Gönder…** formu GitHub'da hazır doldurulmuş
-  bir konu açar. Doğrudan [Issues › Yeni](https://github.com/tolgacodes-dev/ajandam/issues/new/choose) de olur.
-  Ekran görüntüsü eklersen tutarları ve adları gizle; kayıtlarını paylaşma.
+- **Hata, öneri ya da soru için:** Ajandam'da **Yardım › Geri Bildirim Gönder…** formuna yazdıkların doğrudan
+  Ajandam'ın destek adresine gider; istersen yanıt adresini ve bir ekran görüntüsü eklersin. GitHub'da
+  [Issues › Yeni](https://github.com/tolgacodes-dev/ajandam/issues/new/choose) de olur. Ekran görüntüsü eklersen
+  tutarları ve adları gizle; kayıtlarını paylaşma.
 - **İletişim:** [github.com/tolgacodes-dev](https://github.com/tolgacodes-dev)
 - **Sürüm notları:** [CHANGELOG.md](CHANGELOG.md) ve [Sürümler](https://github.com/tolgacodes-dev/ajandam/releases)
 
@@ -220,7 +225,8 @@ Ajandam kişisel kullanım için ücretsizdir; kaynak kodu açık değildir ve b
 stay on your computer: no account, no server, no subscription.
 
 - **Money:** accounts, credit cards with statement and due dates, installments and minimum payments, budgets,
-  subscriptions, goals, debts; bank and card statement import (PDF, Excel) with reconciliation and duplicate detection.
+  subscriptions, goals, debts; foreign-currency accounts and expenses (150+ currencies, converted at the day's rate);
+  bank and card statement import (PDF, Excel) with reconciliation and duplicate detection.
 - **Turkey-specific:** CPI (TÜFE) based inflation report, rent increase cap, central bank card interest rates,
   public holidays, tax calendar, private pension (BES) state contribution.
 - **AI without API keys:** Apple Intelligence (Mac) or local models (Ollama, LM Studio) on your computer, sign in
