@@ -26,19 +26,21 @@
   <img alt="Ücretsiz" src="https://img.shields.io/badge/%C3%BCcretsiz-2ea44f">
 </p>
 
-![Ajandam'ın Özet ekranı: ayın geliri ve gideri, ay sonu tahmini, net varlık, hesap kartları ve yaklaşan ödemeler](docs/ekran/ozet.png)
+![Ajandam'ın Özet ekranı: ayın geliri ve gideri, ay sonu tahmini, net varlık, dolar hesabı dahil hesap kartları ve yaklaşan ödemeler](docs/ekran/ozet.png)
 
 ## Neden Ajandam?
 
-- **Kayıtların bilgisayarında kalır.** Hesap açmazsın; Ajandam kayıtlarını hiçbir sunucuya göndermez. İstersen iCloud
-  Drive'a (Windows'ta OneDrive'a) yedekler; Touch ID, Windows Hello ya da PIN ile kilitlenir.
+- **Kayıtların bilgisayarında kalır.** Hesap açmazsın; Ajandam kayıtlarını hiçbir sunucuya göndermez (yalnızca senin
+  bağladığın yapay zekaya, senin izin verdiğin kadarı gider). İstersen iCloud Drive'a (Windows'ta OneDrive'a)
+  yedekler; Touch ID, Windows Hello ya da PIN ile kilitlenir.
 - **Türkiye için yapıldı.** Kredi kartı kesim ve son ödeme günleri, taksitler, asgari ödeme (%20 / %40), TCMB azami
   faiz oranları, TÜFE ile enflasyon raporu, kira artış sınırı, resmî tatiller, vergi takvimi, BES devlet katkısı.
 - **Yapay zeka, anahtarsız.** Apple Intelligence (Mac) ya da Ollama, LM Studio gibi yerel modellerle bilgisayarında
   çalışır; istersen ChatGPT hesabınla giriş yapar ya da Claude, ChatGPT gibi uygulamaları tek tuşla bağlarsın. Önerdiği
   hiçbir şey sen onaylamadan kaydedilmez.
 - **Para, ajanda ve notlar bir arada.** Ödeme günleri takvimde, bütçe hedefleri notlarında; hepsi aynı aramada (⌘K / Ctrl+K).
-- **Ücretsiz ve güncel.** Yeni sürüm çıkınca Ajandam haber verir; imzası doğrulanır, tek tıkla kurulur.
+- **Ücretsiz ve güncel.** Yeni sürüm arka planda iner, imzası doğrulanır ve kendiliğinden kurulur; istersen
+  kendiliğinden kurmayı kapatıp tek tıkla kurarsın.
 
 ## Ekranlar
 
@@ -46,10 +48,19 @@
 
 ![Ajandam Asistanı: bu ayın harcamalarını geçen ayla karşılaştırıyor ve market bütçesini değiştirmeyi öneriyor](docs/ekran/asistan.png)
 
-Üst çubuktaki **✦ Asistan** düğmesiyle ya da ⇧⌘A ile açılır. "Bu ay en çok nereye harcadım?", "Kartımı yalnızca
+Üst çubuktaki **✦ Asistan** düğmesiyle ya da ⇧⌘A (Windows'ta Ctrl+Shift+A) ile açılır. "Bu ay en çok nereye harcadım?", "Kartımı yalnızca
 asgariyi ödersem ne zaman biter?" gibi soruları kayıtlarına bakarak cevaplar; hangi kayıtlara baktığını gösterir.
 Kayıt eklemeyi ya da bütçe değiştirmeyi önerebilir; sen **Uygula** demeden hiçbir şey değişmez. Yapay zeka kapalıyken
 basit soruları yine kayıtlarından cevaplar.
+
+### Dövizli hesaplar ve harcamalar
+
+![Yeni gider: kredi kartına 49,99 dolar; o günün kuruyla TL karşılığı, kur ve Kuru değiştir bağlantısı](docs/ekran/doviz.png)
+
+Hesabı dolar, euro ya da 150'den fazla para biriminden biriyle açarsın; bakiyesi kendi para biriminde, TL karşılığı
+altında görünür. Yurt dışı harcamasını kartına $49,99 diye yazarsın: o günün kuruyla TL karşılığı hesaplanır, bankanın
+uyguladığı kuru biliyorsan **Kuru değiştir** ile girersin. Euro kartla dolar harcamada çapraz kur gösterilir. Net
+varlık, bütçe ve raporlar TL'ye çevrilerek hesaplanır.
 
 ### Ekstre ve hesap dökümü içe aktarma
 
@@ -72,7 +83,8 @@ Asgari ödeme (limite göre %20 ya da %40), akdi ve gecikme faizi, KKDF ve BSMV 
 ![Net varlık raporu: iki yıllık ay sonu net varlık grafiği, enflasyondan arındırılmış çizgi, varlık türleri ve hesaplar](docs/ekran/net-varlik.png)
 
 Banka, birikim, döviz ve altın, kripto, fon ve BES hesaplarının toplamı; kart borçları düşülür. Döviz, altın ve
-kripto canlı fiyatla hesaplanır. Bir yılda ne kadar arttığını enflasyondan arındırılmış olarak da görürsün.
+kripto canlı fiyatla, dövizli hesaplar güncel kurla TL'ye çevrilir. Bir yılda ne kadar arttığını enflasyondan
+arındırılmış olarak da görürsün.
 
 ### Enflasyon ve kira artışı
 
@@ -94,11 +106,15 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
   </tr>
   <tr>
     <td width="50%" valign="top"><img src="docs/ekran/notlar.png" alt="Not, önizleme"><br><b>Notlar</b><br><sub>Markdown, yapılacak listeleri, tablolar, etiketler ve klasörler.</sub></td>
-    <td width="50%" valign="top"><img src="docs/ekran/ozet-acik.png" alt="Özet ekranı, açık tema"><br><b>Açık ve koyu tema</b><br><sub>Mac'in görünümünü izler; istersen cam görünüm.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/ozet-acik.png" alt="Özet ekranı, açık tema"><br><b>Açık ve koyu tema</b><br><sub>Mac'in ya da Windows'un görünümünü izler; Mac'te istersen cam görünüm.</sub></td>
   </tr>
   <tr>
-    <td width="50%" valign="top"><img src="docs/ekran/yapay-zeka.png" alt="Ayarlar, yapay zeka bölümü"><br><b>Yapay zeka ayarları</b><br><sub>Apple Intelligence, ChatGPT, yerel model ve Claude bağlantısı tek yerde.</sub></td>
-    <td width="50%" valign="top"><img src="docs/ekran/hakkinda.png" alt="Ayarlar, Hakkında bölümü"><br><b>Hakkında</b><br><sub>Sürüm, güncellemeler, destek ve gizlilik.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/yapay-zeka.png" alt="Ayarlar, yapay zeka bölümü: Ajandam'a bağlanan uygulamalar"><br><b>Yapay zeka ayarları</b><br><sub>Apple Intelligence, ChatGPT, yerel modeller ve Ajandam'a bağlanan uygulamalar tek yerde.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/hakkinda.png" alt="Ayarlar, Hakkında bölümü"><br><b>Hakkında</b><br><sub>Sürüm, güncellemeler, sürüm notları, destek, gizlilik ve kullanım koşulları.</sub></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><img src="docs/ekran/kilit.png" alt="Kilit ekranı: Deniz'in Ajandası, PIN tuşları ve Touch ID ile aç"><br><b>Kilit ekranında adın</b><br><sub>PIN, Touch ID ya da Windows Hello; kilit ekranı adınla açılır.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/windows.png" alt="Windows'ta Ajandam: pencerenin üstünde Dosya, Düzen, Görünüm, Git ve Yardım menüleri"><br><b>Windows'ta</b><br><sub>Aynı Ajandam; menü çubuğu, bildirim alanı, görev çubuğu ve Windows bildirimleriyle.</sub></td>
   </tr>
 </table>
 
@@ -112,16 +128,19 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 - **Raporlar:** genel görünüm, nakit akışı tahmini, ay özeti, net varlık, enflasyon. Özet tek ay ya da son 3 ay,
   6 ay, 1 yıl, 2 yıl için; önceki dönemle karşılaştırmalı.
 - **Hızlı ekleme:** "market 250", "telefon 24000 6 taksit kart" yaz; kategori, tarih ve hesap kendiliğinden bulunur.
-  Her uygulamanın üstünde ⌃⌥A ile küçük ekleme penceresi açılır; menü çubuğundan da eklersin.
-- **İçe aktarma:** banka ve kart dökümleri (PDF, Excel), fiş fotoğrafı, CSV dışa aktarma, tam yedek ve geri yükleme.
-- **Ajanda:** ay, hafta ve liste görünümü; tekrar eden etkinlikler, yapılacaklar, hatırlatmalar. İstersen
+  Hangi uygulamada olursan ol küçük bir ekleme penceresi açılır: Mac'te ⌃⌥A (menü çubuğundan da), Windows'ta
+  Ctrl+Alt+Space (bildirim alanından ve görev çubuğundan da); kısayolu değiştirebilirsin.
+- **İçe aktarma:** banka ve kart dökümleri (PDF, Excel, CSV), fiş fotoğrafı, CSV dışa aktarma, tam yedek ve geri
+  yükleme.
+- **Ajanda:** ay, hafta ve liste görünümü; tekrar eden etkinlikler, yapılacaklar, hatırlatmalar. Mac'te istersen
   Anımsatıcılar üzerinden iPhone'una da düşer.
 - **Notlar:** Markdown, yapılacak listeleri, tablolar, etiketler, klasörler, sabitleme, yazdırma.
 - **Mac:** her şeyde sağ tık menüsü (hesap, işlem, ödeme, not, takvim günü), ⌘Z ile geri alma, bildirimlerde
   "Ödendi" ve "Yarın hatırlat", Ajandam'ın kendi bildirim sesleri, Dock rozeti, PIN ve istersen Touch ID kilidi
   (PIN'i unutursan Mac parolanla sıfırlarsın), sürükle-bırak, klavye kısayolları, açık ve koyu tema.
-- **Windows:** Dosya, Düzen, Görünüm, Git ve Yardım menüleri (Alt tuşlarıyla), bildirim alanı ve görev çubuğu
-  rozeti, bildirimlerde "Ödendi", PIN ve istersen Windows Hello kilidi, sürükle-bırak, klavye kısayolları.
+- **Windows:** Dosya, Düzen, Görünüm, Git ve Yardım menüleri (Alt tuşlarıyla), her şeyde sağ tık menüsü, Ctrl+Z ile
+  geri alma, bildirimlerde "Ödendi" ve "Yarın hatırlat", bildirim alanı ve görev çubuğu rozeti, PIN ve istersen
+  Windows Hello kilidi (PIN'i unutursan Windows Hello ile sıfırlarsın), sürükle-bırak, klavye kısayolları.
 - **Senin Ajandan:** kilit ekranında adın, 24 kart rengi, dört uygulama simgesi, her bildirim türüne ayrı ses.
 
 ## Kurulum
@@ -148,15 +167,18 @@ kendi sertifikasıyla imzalanır; bu yüzden ilk açılışta macOS uyarır:
 Bu yalnızca ilk kurulumda gerekir. Ajandam ilk açılışta boştur; kayıtlarını sen girersin ya da dökümlerini içe
 aktarırsın.
 
-**Güncellemeler:** yeni sürüm çıkınca Ajandam arka planda indirir, imzasını ve özetini doğrular, haber verir;
-tek tıkla kurulur. Kayıtların olduğu gibi kalır. **Ajandam › Güncellemeleri Denetle…** ile hemen bakabilirsin.
+**Güncellemeler:** yeni sürüm çıkınca Ajandam arka planda indirir, imzasını ve özetini doğrular; Ajandam menü
+çubuğundayken (pencere 10 dakikadır kapalıyken) kendiliğinden kurar. İstersen **Ayarlar › Hakkında**'dan kapatıp
+"Şimdi güncelle" ile kurarsın. Kayıtların olduğu gibi kalır. **Ajandam › Güncellemeleri Denetle…** ile hemen
+bakabilirsin.
 
 **Kaldırma:** Ajandam'ı Uygulamalar klasöründen çöp sepetine taşı. Kayıtların
 `~/Library/Application Support/Ajandam` klasöründedir; onları da silmek istersen bu klasörü sil.
 
 ### Windows
 
-**Gereksinimler:** Windows 10 ya da 11, 64 bit.
+**Gereksinimler:** Windows 10 ya da 11, 64 bit. Ajandam, Windows'taki Microsoft Edge WebView2 bileşenini kullanır;
+bilgisayarında yoksa (çoğunda vardır) kurulum dosyası onu indirip kurar, bunun için internet gerekir.
 
 [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe)
 dosyasını indir ve çalıştır. Ajandam kendi kullanıcı klasörüne kurulur, yönetici izni istemez. Kurulum dosyası bir
@@ -165,6 +187,9 @@ sertifika kuruluşunca imzalanmadığı için Windows ilk çalıştırmada "Wind
 
 Kayıtların Mac'teki yedekten taşınabilir: Mac'te **Ayarlar › Veriler ve yedek › Yedek indir**, Windows'ta aynı yerden
 **Yedekten geri yükle**.
+
+İndirdiğin dosyayı elle doğrulamak istersen her sürümün **SHA256SUMS** dosyasındaki özetle karşılaştır
+(Mac'te `shasum -a 256 Ajandam.dmg`, Windows'ta `certutil -hashfile Ajandam-Kurulum.exe SHA256`).
 
 **Güncellemeler:** yeni sürüm arka planda indirilir, imzası ve SHA-256 özeti Ajandam'ın kendi anahtarıyla doğrulanır;
 Ajandam bildirim alanındayken ya da çıkarken kendiliğinden kurulur (istersen **Ayarlar › Hakkında**'dan kapatıp
@@ -193,12 +218,20 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 
 ## Gizlilik ve güvenlik
 
-- Kayıtlar yalnızca bilgisayarında, kullanıcı hesabının klasöründe durur. Ajandam geliştiriciye hiçbir veri göndermez.
-- İnternete yalnızca güncelleme denetimi (GitHub), canlı döviz, altın, kripto fiyatları ve senin bağladığın yapay zeka
-  için çıkar. Güncelleme ve fiyat isteklerinde kayıtlarına ait bilgi yoktur; ChatGPT'ye yalnızca sorunu cevaplamak için
-  gereken özetler, senin iznine bağlı olarak gider. Canlı fiyatları ayarlardan kapatabilirsin.
-- Güncellemelerin imzası ve SHA-256 özeti doğrulanır; tutmayan güncelleme kurulmaz, açılamayan sürümden önceki sürüme
-  dönülür.
+- Kayıtlar yalnızca bilgisayarında, kullanıcı hesabının klasöründe durur. Ajandam hesap açtırmaz; reklam, izleme kodu
+  ya da kullanım istatistiği içermez. Kayıtlarından hiçbir şey geliştiriciye gönderilmez.
+- Ajandam internetsiz de çalışır; internete yalnızca şunlar için çıkar:
+  - güncelleme denetimi ve indirme (GitHub),
+  - canlı kripto, döviz ve altın fiyatları ile döviz kurları: herkese açık kaynaklar (Binance, Truncgil, TCMB ve
+    jsDelivr'deki günlük kur listesi; ona ulaşılamazsa aynı listenin currency-api.pages.dev'deki kopyası),
+  - senin bağladığın yapay zeka: ChatGPT'ye yalnızca sorunu cevaplamak için gereken özetler, senin iznine bağlı olarak
+    gider,
+  - geri bildirim: yalnızca sen gönderdiğinde, formda yazdıkların (ve eklediğin ekran görüntüsü) Google'ın Apps Script
+    hizmeti üzerinden Ajandam'ın destek adresine e-postayla iletilir.
+
+  Güncelleme ve fiyat isteklerinde kayıtlarına ait bilgi yoktur. Canlı fiyatları ayarlardan kapatabilirsin.
+- Güncellemelerin imzası ve SHA-256 özeti doğrulanır; tutmayan güncelleme kurulmaz. Mac'te açılamayan sürümden önceki
+  sürüme dönülür.
 - Bir güvenlik açığı bulduysan lütfen [SECURITY.md](SECURITY.md)'deki yolu izle.
 
 ## Destek ve iletişim
@@ -207,15 +240,19 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
   Ajandam'ın destek adresine gider; istersen yanıt adresini ve bir ekran görüntüsü eklersin. GitHub'da
   [Issues › Yeni](https://github.com/tolgacodes-dev/ajandam/issues/new/choose) de olur. Ekran görüntüsü eklersen
   tutarları ve adları gizle; kayıtlarını paylaşma.
+- **E-posta:** ajandamuygulamasi@gmail.com
 - **İletişim:** [github.com/tolgacodes-dev](https://github.com/tolgacodes-dev)
-- **Sürüm notları:** [CHANGELOG.md](CHANGELOG.md) ve [Sürümler](https://github.com/tolgacodes-dev/ajandam/releases)
+- **Sürüm notları:** uygulamada **Ayarlar › Hakkında › Sürüm notları**; ayrıca [CHANGELOG.md](CHANGELOG.md) ve
+  [Sürümler](https://github.com/tolgacodes-dev/ajandam/releases)
 
 **Yakında:** Linux ve mobil (iPhone ve Android) sürümleri üzerinde çalışılıyor.
 
 ## Lisans
 
-Ajandam kişisel kullanım için ücretsizdir; kaynak kodu açık değildir ve bütün hakları saklıdır. Ayrıntılar:
-[LICENSE](LICENSE)
+Ajandam kişisel kullanım için ücretsizdir; kaynak kodu açık değildir ve bütün hakları saklıdır. Kullanım koşullarının
+tamamı [LICENSE](LICENSE) dosyasında; aynı metin uygulamada **Ayarlar › Hakkında › Kullanım koşulları**'ndadır.
+Ajandam'ın içindeki açık kaynak bileşenlerin listesi ve lisans metinleri:
+[ACIK-KAYNAK-LISANSLARI.txt](ACIK-KAYNAK-LISANSLARI.txt)
 
 ---
 
@@ -226,13 +263,15 @@ stay on your computer: no account, no server, no subscription.
 
 - **Money:** accounts, credit cards with statement and due dates, installments and minimum payments, budgets,
   subscriptions, goals, debts; foreign-currency accounts and expenses (150+ currencies, converted at the day's rate);
-  bank and card statement import (PDF, Excel) with reconciliation and duplicate detection.
+  bank and card statement import (PDF, Excel, CSV) with reconciliation and duplicate detection.
 - **Turkey-specific:** CPI (TÜFE) based inflation report, rent increase cap, central bank card interest rates,
   public holidays, tax calendar, private pension (BES) state contribution.
 - **AI without API keys:** Apple Intelligence (Mac) or local models (Ollama, LM Studio) on your computer, sign in
   with your ChatGPT account, or connect Claude, ChatGPT and other MCP apps in one click. Nothing is saved without your
   approval.
 - **Calendar and notes:** month, week and list views, to-dos, Markdown notes with tables.
+- **Privacy:** no account, no ads, no tracking. The app goes online only for update checks (GitHub), public price and
+  exchange-rate feeds, the AI service you connect, and feedback you choose to send.
 
 **Install on Mac:** macOS 12 or later (Apple silicon and Intel). Run
 `curl -fsSL https://raw.githubusercontent.com/tolgacodes-dev/ajandam/main/scripts/kur.sh | bash` in Terminal, or
@@ -242,12 +281,15 @@ download [Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest
 [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe); if
 SmartScreen warns, choose **More info › Run anyway**. No administrator rights needed.
 
-Updates are verified with the app's own signing key and installed from inside the app. The app's interface is in
-Turkish.
+Updates are verified with the app's own signing key and installed automatically in the background (you can turn this
+off in Ayarlar › Hakkında, i.e. Settings › About). Each release lists SHA-256 checksums in **SHA256SUMS**. The app's interface is in Turkish.
 
 **Coming soon:** Linux and mobile (iPhone and Android) versions are in the works.
 
-**Support:** [open an issue](https://github.com/tolgacodes-dev/ajandam/issues/new/choose) ·
+**Support:** use **Yardım › Geri Bildirim Gönder** (Help › Send Feedback) in the app; it goes straight to the support
+address. You can also email ajandamuygulamasi@gmail.com or
+[open an issue](https://github.com/tolgacodes-dev/ajandam/issues/new/choose) ·
 [github.com/tolgacodes-dev](https://github.com/tolgacodes-dev)
 
-<sub>© 2026 tolgacodes-dev. All rights reserved. Free for personal use; see [LICENSE](LICENSE).</sub>
+<sub>© 2026 tolgacodes-dev. All rights reserved. Free for personal use; see [LICENSE](LICENSE) and
+[ACIK-KAYNAK-LISANSLARI.txt](ACIK-KAYNAK-LISANSLARI.txt) for bundled open source components.</sub>

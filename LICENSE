@@ -1,39 +1,158 @@
 Ajandam — Kullanım Koşulları
 Copyright © 2026 tolgacodes-dev. Tüm hakları saklıdır.
+Son güncelleme: 3 Ekim 2026
 
-1. Ücretsiz kullanım. Ajandam'ı kişisel kullanımın için ücretsiz indirebilir, kurabilir ve kullanabilirsin.
+Aynı metin Ajandam'da Ayarlar › Hakkında › Kullanım koşulları'nda da okunur.
 
-2. Hakları saklı. Ajandam'ın ve kaynak kodunun bütün hakları tolgacodes-dev'e aittir. Ajandam'ı ya da bir
-   parçasını kopyalayıp dağıtamaz, satamaz, kiralayamaz, değiştiremez ve yasaların izin verdiği durumlar dışında
-   tersine mühendislik yapamazsın. Paylaşmak istersen bu indirme sayfasının bağlantısını paylaş:
-   https://github.com/tolgacodes-dev/ajandam
+Kısaca
+- Ajandam ücretsizdir; kişisel kullanımın içindir.
+- Kayıtların yalnızca senin cihazında saklanır; geliştirici onları göremez.
+- Faiz, kur ve vergi gibi hesaplar bilgi amaçlıdır; finansal danışmanlık değildir.
+- Ajandam her gün yedek alır, yine de önemli kayıtların için kendi yedeğini de sakla.
 
-3. Kayıtların senin. Kayıtların yalnızca senin cihazında saklanır ve sana aittir. Ajandam geliştiriciye hiçbir
-   veri göndermez.
+1. Kapsam
 
-4. Bilgi amaçlı hesaplar. Faiz, asgari ödeme, enflasyon, kira artışı ve vergi tarihleri gibi hesaplar bilgi
-   amaçlıdır; finansal, hukuki ya da vergi danışmanlığı değildir. Önemli kararlarda bankanın ve resmî kurumların
-   güncel bilgilerini esas al.
+   Bu koşullar Ajandam'ın Mac ve Windows uygulamalarını ve claude.ai'deki sürümünü kapsar. Ajandam'ı
+   indirerek, kurarak ya da kullanarak bu koşulları kabul etmiş olursun.
 
-5. Garanti yok. Ajandam olduğu gibi sunulur. Yasaların izin verdiği ölçüde geliştirici, Ajandam'ın kullanımından
-   doğabilecek zararlardan sorumlu tutulamaz. Kayıtlarını düzenli yedekle.
+   Metinde “Ajandam” uygulamayı, “geliştirici” Ajandam'ı geliştiren tolgacodes-dev'i, “kayıtlar”
+   uygulamaya girdiğin işlemleri, hesapları, ödemeleri, notları ve diğer bilgileri anlatır.
 
-6. Açık kaynak bileşenler. Ajandam'ın içindeki açık kaynak bileşenler kendi lisanslarıyla gelir; lisans metinleri
-   uygulamanın içindedir (Ajandam.app/Contents/Resources/Web/vendor ve fonts):
-   - pdf.js — Apache License 2.0
-   - SheetJS Community Edition — Apache License 2.0
-   - IBM Plex Sans — SIL Open Font License 1.1
-   - JetBrains Mono — SIL Open Font License 1.1
+2. Kullanım hakkı
+
+   Ajandam'ı kişisel kullanımın için ücretsiz indirebilir, kurabilir ve kullanabilirsin. Bu hak sana
+   özeldir, devredilemez.
+
+   Ajandam'ın ve kaynak kodunun bütün hakları geliştiriciye aittir. Yasaların açıkça izin verdiği
+   durumlar dışında şunları yapamazsın:
+
+   - Ajandam'ı ya da bir parçasını kopyalayıp dağıtmak, satmak, kiralamak
+   - Değiştirilmiş bir kopyasını Ajandam adıyla yayımlamak
+   - Tersine mühendislik yapmak, imzasını ya da güncelleme denetimini atlatmaya çalışmak
+
+   Ajandam'ı birine önermek istersen indirme sayfasının bağlantısını paylaşman yeterli.
+
+3. Kayıtların ve gizlilik
+
+   Kayıtların yalnızca senin cihazında saklanır: Mac'te ~/Library/Application Support/Ajandam,
+   Windows'ta %APPDATA%\Ajandam klasöründe. claude.ai sürümünde kayıtlar claude.ai hesabına bağlı
+   olarak saklanır.
+
+   Ajandam hesap açtırmaz; reklam, izleme kodu ya da kullanım istatistiği içermez. Geliştirici
+   kayıtlarını göremez, kayıtlarından hiçbir şey geliştiriciye gönderilmez.
+
+   Kayıtlar sana aittir. Ayarlar › Veriler ve yedek'ten istediğin zaman yedek indirebilir, CSV
+   olarak dışa aktarabilir ya da silebilirsin.
+
+4. İnternet bağlantıları
+
+   Ajandam internetsiz de çalışır. Yalnızca şunlar için internete çıkar:
+
+   - Güncelleme denetimi ve indirme: GitHub
+   - Canlı kripto, döviz ve altın fiyatları ile döviz kurları: herkese açık kaynaklar (Binance,
+     Truncgil, TCMB ve jsDelivr'deki günlük kur listesi; ona ulaşılamazsa aynı listenin
+     currency-api.pages.dev'deki kopyası); bu isteklerde kayıtlarından hiçbir şey gönderilmez
+   - Senin bağladığın yapay zeka hizmetleri (bkz. Yapay zeka)
+   - Geri bildirim: yalnızca sen gönderdiğinde, formda yazdıkların Google'ın Apps Script hizmeti
+     üzerinden Ajandam'ın destek adresine e-postayla iletilir
+
+   Bu hizmetlerin her biri kendi koşullarına ve gizlilik politikasına tabidir.
+
+5. Yapay zeka
+
+   Apple Intelligence ve yerel modeller (LM Studio, Ollama) senin cihazında çalışır; kayıtların
+   cihazından çıkmaz.
+
+   ChatGPT hesabınla giriş yaparsan, sorunu yanıtlamak için gereken özetler senin iznin olduğunda
+   OpenAI'ye gönderilir.
+
+   Claude, ChatGPT ya da başka bir uygulamayı Ajandam'a bağlarsan o uygulama, senin izin verdiğin
+   ölçüde kayıtlarına bakabilir ve ekleme önerebilir; öneriler senin onayını bekler. Bağlantıyı
+   istediğin zaman kaldırabilirsin.
+
+   Yapay zekanın yanıtları ve ekstreden okuduğu satırlar hatalı olabilir; kaydetmeden önce kontrol
+   et.
+
+6. Bilgi amaçlı hesaplar
+
+   Faiz, asgari ödeme, gecikme faizi, enflasyon, kur çevirisi, kira artışı ve vergi tarihleri gibi
+   hesaplar bilgi amaçlıdır; yatırım, finansal, hukuki ya da vergi danışmanlığı değildir.
+
+   Fiyatlar ve kurlar gecikmeli ya da hatalı olabilir. Önemli kararlarda bankanın ve resmî
+   kurumların güncel bilgilerini esas al.
+
+7. Güvenlik
+
+   PIN, Touch ID ve Windows Hello kayıtlarını başkalarının görmesini zorlaştırır; cihazının
+   güvenliği (parolası, disk şifrelemesi, sistem güncellemeleri) senin sorumluluğundadır.
+
+   PIN'ini unutursan bilgisayarının parolasıyla ya da Windows Hello ile yeni PIN belirleyebilirsin;
+   kayıtlarına dokunulmaz.
+
+8. Yedekler ve veri kaybı
+
+   Ajandam her gün kayıtlarının yedeğini alır ve son 30 günü tutar; istersen iCloud Drive'a ya da
+   OneDrive'a da kopyalar.
+
+   Cihaz arızası, yanlışlıkla silme ya da başka yazılımlar yüzünden veri kaybı olabilir. Önemli
+   kayıtların için düzenli olarak yedek indir ve başka bir yerde sakla.
+
+9. Güncellemeler
+
+   Yeni sürümler GitHub'da yayımlanır. Ajandam yalnızca imzası doğrulanan güncellemeyi kurar;
+   Kendiliğinden kur açıksa hazır güncelleme Ajandam arka plandayken sessizce kurulur. Bunu
+   Ayarlar › Hakkında'dan kapatabilirsin.
+
+   Ajandam'ın özellikleri yeni sürümlerle değişebilir, eklenebilir ya da kaldırılabilir.
+
+10. Garanti ve sorumluluk
+
+   Ajandam ücretsiz ve “olduğu gibi” sunulur; kesintisiz ya da hatasız çalışacağı garanti edilmez.
+
+   Yürürlükteki mevzuatın izin verdiği ölçüde geliştirici, Ajandam'ın kullanımından ya da
+   kullanılamamasından doğabilecek doğrudan ya da dolaylı zararlardan sorumlu tutulamaz. Mevzuattan
+   doğan vazgeçilemez hakların saklıdır.
+
+11. Açık kaynak bileşenler ve markalar
+
+   Ajandam'ın içindeki açık kaynak bileşenler kendi lisanslarıyla gelir: pdf.js ve SheetJS (Apache
+   License 2.0), IBM Plex Sans ve JetBrains Mono (SIL Open Font License 1.1), LobeHub Icons ve
+   Devicon (MIT). Windows uygulaması ayrıca Tauri ve kullandığı Rust kütüphaneleriyle (çoğu MIT ya
+   da Apache License 2.0) derlenir.
+
+   Bileşenlerin tam listesi ve lisans metinleri indirme sayfasındaki ACIK-KAYNAK-LISANSLARI.txt
+   dosyasındadır; Windows'ta aynı dosya Ajandam'ın kurulduğu klasörde de bulunur.
+
+   Banka, uygulama ve hizmet adları ile simgeleri sahiplerinin markalarıdır; yalnızca neyin
+   kastedildiğini göstermek için kullanılır.
+
+12. Değişiklikler
+
+   Bu koşullar yeni sürümlerle güncellenebilir. Önemli değişiklikler Yenilikler penceresinde
+   duyurulur; güncel metin her zaman Ayarlar › Hakkında'dadır.
+
+13. İletişim
+
+   Soru, öneri ve hata bildirimleri için Ayarlar › Hakkında › Geri bildirim gönder'i kullanabilir ya
+   da ajandamuygulamasi@gmail.com adresine yazabilirsin.
 
 ---
 
-Ajandam — Terms of Use
+Ajandam — Terms of Use (summary in English)
 Copyright © 2026 tolgacodes-dev. All rights reserved.
 
+This is a summary; the Turkish text above is the full terms, the same as in the app (Ayarlar › Hakkında ›
+Kullanım koşulları).
+
 Ajandam is free to download, install and use for personal purposes. You may not copy, redistribute, sell, rent or
-modify Ajandam or any part of it, or reverse engineer it except where the law allows. Your records stay on your own
-device and belong to you; Ajandam sends no data to the developer. Calculations are for information only and are not
-financial, legal or tax advice. Ajandam is provided "as is", without warranty of any kind; to the extent permitted by
-law, the developer is not liable for any damages arising from its use. Bundled open source components (pdf.js and
-SheetJS under Apache License 2.0, IBM Plex Sans and JetBrains Mono under SIL Open Font License 1.1) are distributed
-under their own licenses, included in the app.
+modify Ajandam or any part of it, publish a modified copy under the Ajandam name, or reverse engineer it or circumvent
+its signature or update checks, except where the law allows. Your records stay on your own device and belong to you;
+Ajandam has no accounts, ads, tracking or usage statistics, and nothing from your records is sent to the developer.
+The app goes online only for update checks (GitHub), public price and exchange-rate feeds, the AI services you
+connect, and feedback you choose to send (delivered by e-mail to the support address through Google Apps Script).
+Calculations are for information only and are not investment, financial, legal or tax advice. Ajandam is provided
+"as is", without warranty of any kind; to the extent permitted by law, the developer is not liable for any damages
+arising from its use or inability to use it. Keep your own backups. Bundled open source components (pdf.js and SheetJS
+under Apache License 2.0, IBM Plex Sans and JetBrains Mono under SIL Open Font License 1.1, LobeHub Icons and Devicon
+under MIT, and in the Windows app Tauri and other Rust libraries, mostly under MIT or Apache License 2.0) are
+distributed under their own licenses; see ACIK-KAYNAK-LISANSLARI.txt. Contact: ajandamuygulamasi@gmail.com
