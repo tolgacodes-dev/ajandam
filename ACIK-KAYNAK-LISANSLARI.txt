@@ -1,9 +1,14 @@
-Ajandam — Açık kaynak bileşenler ve lisansları
-Ajandam — Open source components and licenses
+Ajandam — Üçüncü taraf yazılım bildirimleri
+Ajandam — Third-party software notices
+Copyright © 2026 tolgacodes-dev
 
-Ajandam'ın Mac ve Windows uygulamalarındaki açık kaynak bileşenler ve lisans metinleri. Bu dosya
-scripts/acik_kaynak.py ile üretilir. Ajandam'ın kendisi açık kaynak değildir; kullanım koşulları LICENSE
-dosyasındadır.
+Ajandam'ın Mac ve Windows uygulamaları aşağıdaki açık kaynak bileşenleri içerir. Her bileşen kendi lisansıyla
+dağıtılır; bileşenlerin listesi ve lisans metinleri bu dosyadadır. Ajandam'ın kendisi açık kaynak değildir;
+kullanım koşulları LICENSE dosyasındadır.
+
+Ajandam's Mac and Windows apps include the open source components listed below. Each component is distributed
+under its own license; the list and the full license texts follow. Ajandam itself is not open source; see LICENSE
+for its terms of use.
 
 ----------------------------------------------------------------------------------------------------
 1. Uygulamanın arayüzü (Mac ve Windows)
@@ -801,8 +806,8 @@ Yapay zeka bölümündeki uygulama simgeleri
 =========================================
 
 Ajandam, bağlandığı yapay zeka uygulamalarını (Claude, ChatGPT, Cursor, VS Code ve diğerleri) tanıtmak için
-bu uygulamaların kendi simgelerini gösterir. Simgeler aşağıdaki açık kaynak paketlerden alınmıştır
-(scripts/marka_uret.py). Markalar ve logolar sahiplerine aittir; yalnızca uygulamayı tanıtmak için kullanılır.
+bu uygulamaların kendi simgelerini gösterir. Simgeler aşağıdaki açık kaynak paketlerden alınmıştır. Markalar
+ve logolar sahiplerine aittir; yalnızca uygulamayı tanıtmak için kullanılır.
 
 The AI section shows each connected app's own logo to identify it. Logos are trademarks of their
 respective owners and are used for identification only. The SVG files come from the packages below.

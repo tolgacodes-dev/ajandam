@@ -3,6 +3,27 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [3.5.1] – 2026-10-06
+
+Bu bakım sürümü Eylül TÜFE'sini ekliyor ve 3.5.0'dan sonraki denetimde bulunan sorunları gideriyor.
+
+- **TÜFE:** Eylül 2026 verisi eklendi (TÜİK, 5 Ekim 2026). Enflasyon raporu, kira artışı ve yapay zeka uygulamalarına giden bilgiler bununla hesaplanır.
+- **Kira artışı:** Ajandam'da henüz olmayan bir ayın oranı için artık "bir sonraki güncellemeyle eklenecek" denmez; TÜİK'in açıkladığı 12 aylık ortalamayı yazarak hesaplayabilirsin (TÜİK'e bağlantı da var).
+- **Fiyatlar:** altın ya da kripto fiyat kaynağı cevap vermeyince eski fiyat "az önce" alınmış gibi görünmez; hesapta ne zaman alındığı ve "güncellenemedi" yazar.
+- **Yedekler:** bilgisayarın saati aylarca ileri kaysa bile en yeni 10 günlük yedek silinmez.
+
+---
+
+**Düzeltmeler**
+- Claude, ChatGPT gibi uygulamalara TÜİK'in açıkladığı ama Ajandam'da henüz olmayan ay için "TÜFE henüz açıklanmadı" deniyordu.
+- Tatile ya da hafta sonuna denk gelen kart son ödeme günü Ajanda'da kaydığı iş gününde değil, özgün gününde görünüyordu.
+- "29 şubat" yazınca "29 Şubat diye bir gün yok" deniyordu; artık sonraki 29 Şubat'ın yılı söylenir.
+- "Güncelleme hazır", yapay zeka önerileri ve kilit düğmeleri birlikteyken orta genişlikteki pencerelerde üst çubuk taşıyor, "+" düğmesi görünmüyordu.
+- Kart faiz oranlarının ayı geçince ve henüz bilinmeyen yılın BES devlet katkısı sınırı kullanılırken "güncel olmayabilir" diye yazılır.
+- Döviz kurlarının yedek kaynağına ulaşılamayınca kurların alınması uzayabiliyordu; jsDelivr'ın ikinci adresi eklendi, Türkiye'de erişime kapatılabilen adres en sona alındı.
+- Güncelleme bilgisi geçici olarak bulunamayınca "Henüz yayımlanmış bir sürüm yok" deniyordu.
+- Üçüncü taraf yazılım bildirimleri dosyasının başı düzenlendi.
+
 ## [3.5.0] – 2026-10-03
 
 Bu sürüm, Ajandam'ın baştan sona denetiminde bulunan sorunları gideriyor: her düzeltme önce sorunu gösteren bir testle başladı. Öne çıkanlar:
