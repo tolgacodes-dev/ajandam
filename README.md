@@ -26,6 +26,10 @@
   <img alt="Ücretsiz" src="https://img.shields.io/badge/%C3%BCcretsiz-2ea44f">
 </p>
 
+<p align="center">
+  <a href="https://tolgacodes-dev.github.io/tr/#film"><img src="docs/tanitim-filmi.jpg" width="820" alt="Ajandam tanıtım filmi, 2 dakika 53 saniye: Türkçe seslendirme ve altyazı. İzlemek için tıkla."></a>
+</p>
+
 ![Ajandam'ın Özet ekranı: ayın geliri ve gideri, ay sonu tahmini, net varlık, dolar hesabı dahil hesap kartları ve yaklaşan ödemeler](docs/ekran/ozet.png)
 
 ## Neden Ajandam?
@@ -275,6 +279,9 @@ Ajandam'ın içindeki açık kaynak bileşenlerin listesi ve lisans metinleri:
 
 **Ajandam** is a free personal finance, calendar and notes app for Mac and Windows, made for Turkey. Your records
 stay on your computer: no account, no server, no subscription.
+
+**Film:** a three-minute tour (Turkish voice-over, English captions) on
+[tolgacodes-dev.github.io](https://tolgacodes-dev.github.io/#film).
 
 - **Money:** accounts, credit cards with statement and due dates, installments and minimum payments, budgets,
   subscriptions, goals, debts; foreign-currency accounts and expenses (150+ currencies, converted at the day's rate);
