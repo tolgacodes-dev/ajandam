@@ -3,6 +3,33 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [3.6.0] – 2026-10-06
+
+Bu sürüm Ajandam'ın temelini sağlamlaştırıyor, notları büyütüyor ve Windows 11'e yeni bir başlık çubuğu getiriyor. Öne çıkanlar:
+
+- **Notlarını şifrele:** istediğin notu not menüsünden şifreleyebilirsin. Tek bir not parolası var, başlık da gizlenebilir. Ajandam kilitlenince, bilgisayar uyuyunca ya da bir süre dokunulmayınca şifreli notlar yeniden kilitlenir. Şifreli notun metni aramaya, yapay zeka uygulamalarına ve yedeklere açık hâliyle girmez. Parolayı unutursan şifreli not açılamaz.
+- **Notlar daha güçlü:** **Son silinenler** (silinen not 30 gün durur, geri getirilir), **Not geçmişi** (notun önceki hallerine dönersin), `[[Başlık]]` ile not bağlantıları ve "bu nota bağlananlar", notta **bul ve değiştir** (Ctrl+F / ⌘F), **şablonlar** (Toplantı notu, Günlük, Yapılacaklar, Alışveriş ve kendi şablonların), içindekiler ve karakter sayısı.
+- **Windows 11'de yeni başlık çubuğu:** menü (≡), arama, düğmeler ve pencere düğmeleri tek satırda. Boş yerinden tutup taşırsın, çift tıklayınca ekranı kaplar, ekranı kapla düğmesinde Windows'un yerleşim önerileri açılır. Windows 10'da ve klasik görünümde menüler ayrı satırda değil, üst çubukta. Ayarlar › Windows'tan Tümleşik ya da Klasik seçilir; bir sorun olursa Ajandam kendiliğinden klasiğe döner ve söyler.
+- **Türkiye verileri güncelleme beklemez:** TÜFE, kart faiz oranları, asgari ödeme sınırı, BES tavanı ve bayram günleri Ajandam'ın imzalı veri kanalından gelir. Ajandam imzayı doğrular, yalnızca kendindekinden yeni olanı kullanır; internet yoksa kendi verisiyle devam eder. Önemli kısa duyurular da uygulamanın üstünde gösterilir.
+- **Sorun giderme:** Yardım › Sorun giderme en sık karşılaşılan sorunları tek tıklık denetimleriyle anlatır. Kişisel bilgi içermeyen tanılama bilgisini kopyalayabilir ya da geri bildirime ekleyebilirsin; ne gideceğini önce görürsün.
+- **Kayıtları denetle:** Ayarlar › Veri'de yinelenen, silinmiş bir hesaba bağlı ya da tutarı okunamayan kayıtları bulur. Düzeltmeden önce yedek alır, düzeltme geri alınabilir.
+- **Güncellemeler takılmaz:** kendiliğinden güncelleme iki haftadır yapılamıyorsa söylenir ve elle indirme bağlantısı verilir. Yavaş bir Mac'te güncelleme yanlışlıkla geri alınmaz, disk dolunca "Diskte yer kalmadı" denir. Windows'ta kurulum başlatılamayınca her açılışta yeniden indirilip denenmez.
+
+---
+
+**ChatGPT**
+- OpenAI'deki geçici sorunlar "kullanım sınırı doldu" diye görünmez. Oturum OpenAI'de kapatıldıysa Ayarlar doğrudan "Yeniden giriş yap" gösterir; bağlantı kopunca oturum silinmez.
+- İlk girişte kullanımın ChatGPT planından düştüğü söylenir; Ayarlar'da "Kullanımı yönet" bağlantısı var.
+- OpenAI Ajandam'ın kaydını geçersiz sayarsa yeniden giriş yeni bir kayıtla başlar.
+
+**Yedekler**
+- Yedekler hangi kayıt biçimiyle yazıldığını taşır. Daha yeni bir Ajandam sürümünün yedeğine dönmeden ya da onu geri yüklemeden önce uyarılır; istersen yine de yapılır.
+
+**Güvenlik**
+- Türkiye veri kanalının her dosyası Ajandam'ın yayın anahtarıyla imzalı; imzası tutmayan veri kullanılmaz ve uygulamanın kendi verisinden eski veri onun yerine geçmez.
+- Windows güncelleyicisi Mac'teki gibi birden çok imza sertifikasını tanır (ileride yedek bir anahtar eklenebilsin diye).
+- Windows'ta şifreli nottan kopyalanan metin pano geçmişine ve bulut panosuna girmez.
+
 ## [3.5.1] – 2026-10-06
 
 Bu bakım sürümü Eylül TÜFE'sini ekliyor ve 3.5.0'dan sonraki denetimde bulunan sorunları gideriyor.

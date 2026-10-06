@@ -1,6 +1,6 @@
 Ajandam — Kullanım Koşulları
 Copyright © 2026 tolgacodes-dev. Tüm hakları saklıdır.
-Son güncelleme: 3 Ekim 2026
+Son güncelleme: 6 Ekim 2026
 
 Aynı metin Ajandam'da Ayarlar › Hakkında › Kullanım koşulları'nda da okunur.
 
@@ -49,6 +49,9 @@ Kısaca
    Ajandam internetsiz de çalışır. Yalnızca şunlar için internete çıkar:
 
    - Güncelleme denetimi ve indirme: GitHub
+   - Türkiye verileri (TÜFE, kart faiz oranları, asgari ödeme sınırı, bayramlar ve kısa duyurular):
+     GitHub'daki, Ajandam'ın imzasıyla yayımlanan veri dosyası; güncelleme denetimi açıkken alınır
+     ve bu istekte kayıtlarından hiçbir şey gönderilmez
    - Canlı kripto, döviz ve altın fiyatları ile döviz kurları: herkese açık kaynaklar (Binance,
      Truncgil, TCMB ve jsDelivr'deki günlük kur listesi; ona ulaşılamazsa aynı listenin
      currency-api.pages.dev'deki kopyası); bu isteklerde kayıtlarından hiçbir şey gönderilmez
@@ -148,8 +151,8 @@ Ajandam is free to download, install and use for personal purposes. You may not 
 modify Ajandam or any part of it, publish a modified copy under the Ajandam name, or reverse engineer it or circumvent
 its signature or update checks, except where the law allows. Your records stay on your own device and belong to you;
 Ajandam has no accounts, ads, tracking or usage statistics, and nothing from your records is sent to the developer.
-The app goes online only for update checks (GitHub), public price and exchange-rate feeds, the AI services you
-connect, and feedback you choose to send (delivered by e-mail to the support address through Google Apps Script).
+The app goes online only for update checks and the signed Turkey data feed (GitHub), public price and exchange-rate
+feeds, the AI services you connect, and feedback you choose to send (delivered by e-mail to the support address through Google Apps Script).
 Calculations are for information only and are not investment, financial, legal or tax advice. Ajandam is provided
 "as is", without warranty of any kind; to the extent permitted by law, the developer is not liable for any damages
 arising from its use or inability to use it. Keep your own backups. Bundled open source components (pdf.js and SheetJS

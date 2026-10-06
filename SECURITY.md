@@ -40,6 +40,12 @@ kendiliğinden kurduğu için çoğu kullanıcı düzeltmeyi birkaç gün içind
     sürüm yeniymiş gibi sunulamaz. İndirilen kurulum dosyası doğrulandıktan sonra kurulana kadar değiştirilemez.
   - Tutmayan güncelleme kurulmaz. Mac'te kurulan sürüm açılamazsa önceki sürüme dönülür. Her sürümün dosyalarının
     özetleri `SHA256SUMS` dosyasında yayımlanır.
+- **Türkiye veri kanalı (3.6):** TÜFE, kart faiz oranları, bayramlar ve kısa duyurular bu depodaki
+  `veri/turkiye.json` dosyasından gelir. Dosya GitHub Actions'ta güncellemelerle aynı anahtarla imzalanır
+  (`veri/turkiye.json.imza`); uygulama imzayı gömülü sertifikayla ya da anahtarla doğrular, yalnızca kendindekinden
+  yeni sürümü kabul eder. Sayfa her değeri ayrıca denetler ve yalnızca kendi tablolarından yeni olanı kullanır;
+  duyurular düz metin olarak gösterilir, dosyadan hiçbir şey kod olarak çalıştırılmaz. İmzası tutmayan dosya kullanılmaz,
+  uygulama kendi verisiyle devam eder.
 - **Yapay zeka:**
   - Apple Intelligence ve yerel modeller (Ollama, LM Studio) bilgisayarının dışına veri göndermez. **Otomatik** seçimde
     önce bunlar kullanılır.

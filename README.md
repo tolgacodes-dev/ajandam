@@ -139,13 +139,15 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
   ya da haftada bir, seçtiğin günler, ayın son cuması; değiştirirken "yalnızca bu", "bu ve sonrakiler" ya da "tümü".
   Mac'te istersen Anımsatıcılar üzerinden iPhone'una da düşer.
 - **Notlar:** Markdown (kod blokları, bağlantılar, iç içe listeler), yapılacak listeleri, tablolar, etiketler,
-  klasörler, sabitleme, yazdırma.
+  klasörler, sabitleme, yazdırma; istediğin notu not parolasıyla şifreleme, Son silinenler (30 gün), not geçmişi,
+  `[[Başlık]]` ile not bağlantıları, şablonlar, notta bul ve değiştir, içindekiler.
 - **Mac:** her şeyde sağ tık menüsü (hesap, işlem, ödeme, not, takvim günü), ⌘Z ile geri alma, bildirimlerde
   "Ödendi", "Yarın hatırlat", "Yapıldı" ve "10 dk ertele", Ajandam'ın kendi bildirim sesleri, Dock rozeti, Mac açılınca
   başlat (macOS 13 ve üstü), istersen PIN ve Touch ID kilidi (Mac uyuyunca ya da ekran kilitlenince Ajandam da
   kilitlenir; PIN'i unutursan Mac parolanla sıfırlarsın), sürükle-bırak, klavye kısayolları, açık ve koyu tema.
-- **Windows:** Dosya, Düzen, Görünüm, Git ve Yardım menüleri (Alt tuşlarıyla), her şeyde sağ tık menüsü, Ctrl+Z ile
-  geri alma, bildirimlerde "Ödendi", "Yarın hatırlat", "Yapıldı" ve "10 dk ertele", bildirim alanı ve görev çubuğu
+- **Windows:** Windows 11'de menü, arama ve pencere düğmeleri tek satırda (tümleşik başlık çubuğu, yerleşim
+  önerileriyle; istersen klasik başlık), Dosya, Düzen, Görünüm, Git ve Yardım menüleri (Alt tuşlarıyla), her şeyde
+  sağ tık menüsü, Ctrl+Z ile geri alma, bildirimlerde "Ödendi", "Yarın hatırlat", "Yapıldı" ve "10 dk ertele", bildirim alanı ve görev çubuğu
   rozeti, istersen PIN ve Windows Hello kilidi (Win+L ile Ajandam da kilitlenir; PIN'i unutursan Windows Hello ile
   sıfırlarsın), sürükle-bırak, klavye kısayolları; kurumsal ağlarda Windows'un vekil sunucu ayarı kullanılır.
 - **Senin Ajandan:** kilit ekranında adın, 24 kart rengi, dört uygulama simgesi, her bildirim türüne ayrı ses.
@@ -230,6 +232,9 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
   ya da kullanım istatistiği içermez. Kayıtlarından hiçbir şey geliştiriciye gönderilmez.
 - Ajandam internetsiz de çalışır; internete yalnızca şunlar için çıkar:
   - güncelleme denetimi ve indirme (GitHub),
+  - Türkiye verileri: TÜFE, kart faiz oranları, asgari ödeme sınırı, bayramlar ve kısa duyurular GitHub'daki,
+    Ajandam'ın imzasıyla yayımlanan bir veri dosyasından gelir (güncelleme denetimi açıkken; imzası tutmayan veri
+    kullanılmaz),
   - canlı kripto, döviz ve altın fiyatları ile döviz kurları: herkese açık kaynaklar (Binance, Truncgil, TCMB ve
     jsDelivr'deki günlük kur listesi; ona ulaşılamazsa aynı listenin currency-api.pages.dev'deki kopyası); geçmiş
     tarihli dövizli kayıtlar için o günün TCMB kuru,
@@ -238,7 +243,8 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
   - geri bildirim: yalnızca sen gönderdiğinde, formda yazdıkların (ve eklediğin ekran görüntüsü) Google'ın Apps Script
     hizmeti üzerinden Ajandam'ın destek adresine e-postayla iletilir.
 
-  Güncelleme ve fiyat isteklerinde kayıtlarına ait bilgi yoktur. Canlı fiyatları ayarlardan kapatabilirsin.
+  Güncelleme, Türkiye verileri ve fiyat isteklerinde kayıtlarına ait bilgi yoktur. Canlı fiyatları ayarlardan
+  kapatabilirsin.
 - Güncellemelerin imzası ve SHA-256 özeti doğrulanır; tutmayan güncelleme kurulmaz. Mac'te açılamayan sürümden önceki
   sürüme dönülür.
 - Bir güvenlik açığı bulduysan lütfen [SECURITY.md](SECURITY.md)'deki yolu izle.
@@ -274,15 +280,17 @@ stay on your computer: no account, no server, no subscription.
   subscriptions, goals, debts; foreign-currency accounts and expenses (150+ currencies, converted at the day's rate);
   bank and card statement import (PDF, Excel, CSV) with reconciliation and duplicate detection.
 - **Turkey-specific:** CPI (TÜFE) based inflation report, rent increase cap, central bank card interest rates,
-  public holidays, tax calendar, private pension (BES) state contribution.
+  public holidays, tax calendar, private pension (BES) state contribution; updated between releases through a signed
+  data feed.
 - **AI without API keys:** Apple Intelligence (Mac) or local models (Ollama, LM Studio) on your computer, sign in
   with your ChatGPT Plus or Pro account, or connect Claude, ChatGPT and other MCP apps in one click. Nothing is saved
   without your approval.
 - **Calendar and notes:** month, week and list views, flexible recurring events, to-dos with reminders, quick add in
-  plain Turkish ("yarın 9 doktor"), Markdown notes with tables and code blocks.
+  plain Turkish ("yarın 9 doktor"), Markdown notes with tables and code blocks, per-note encryption, recently deleted
+  notes, note history and links.
 - **Privacy:** no account, no ads, no tracking. Optional PIN, Touch ID or Windows Hello lock. The app goes online only
-  for update checks (GitHub), public price and exchange-rate feeds, the AI service you connect, and feedback you
-  choose to send.
+  for update checks and the signed Turkey data feed (GitHub), public price and exchange-rate feeds, the AI service you
+  connect, and feedback you choose to send.
 
 **Install on Mac:** macOS 12 or later (Apple silicon and Intel). Run
 `curl -fsSL https://raw.githubusercontent.com/tolgacodes-dev/ajandam/main/scripts/kur.sh | bash` in Terminal, or
