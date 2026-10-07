@@ -44,7 +44,8 @@
   hiçbir şey sen onaylamadan kaydedilmez.
 - **Para, ajanda ve notlar bir arada.** Ödeme günleri takvimde, bütçe hedefleri notlarında; hepsi aynı aramada (⌘K / Ctrl+K).
 - **Ücretsiz ve güncel.** Yeni sürüm arka planda iner, imzası doğrulanır ve kendiliğinden kurulur; istersen
-  kendiliğinden kurmayı kapatıp tek tıkla kurarsın.
+  kendiliğinden kurmayı kapatıp tek tıkla kurarsın (Windows'ta bilgisayardaki herkes için kurduysan **Şimdi kur** ile,
+  Windows'un izniyle).
 
 ## Ekranlar
 
@@ -165,6 +166,15 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 
 ## Kurulum
 
+| Dosya | Ne için |
+|---|---|
+| [Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg) | Mac: disk görüntüsü; açıp Ajandam'ı **Uygulamalar** klasörüne sürüklersin |
+| `kur.sh` (aşağıdaki Terminal satırı) | Mac: son sürümü indirir, doğrular, **Uygulamalar** klasörüne kurar (önerilen) |
+| [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe) | Windows 10 ve 11 (64 bit): kurulum dosyası |
+| `Ajandam-<sürüm>.zip`, `latest.json`, `latest-windows.json` | Ajandam'ın güncelleyicileri için; elle kurulumda gerekmez |
+| `Ajandam-Claude.mcpb` | Claude masaüstü uzantısı; Ajandam'ın içinden tek tıkla eklenir |
+| `SHA256SUMS` | Bütün dosyaların SHA-256 özetleri |
+
 ### Mac
 
 **Gereksinimler:** macOS 12 Monterey ya da üstü; Apple çipli ve Intel Mac'ler. Apple Intelligence için macOS 26 ve
@@ -178,19 +188,27 @@ curl -fsSL https://raw.githubusercontent.com/tolgacodes-dev/ajandam/main/scripts
 ```
 
 **Disk görüntüsüyle:** [Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg)
-dosyasını indir, aç ve Ajandam'ı **Uygulamalar** klasörüne sürükle. Ajandam bir Apple geliştirici hesabıyla değil,
-kendi sertifikasıyla imzalanır; bu yüzden ilk açılışta macOS uyarır:
+dosyasını indir ve aç. Açılan pencerede Ajandam'ı oktaki gibi yanındaki **Uygulamalar** klasörüne sürükle, sonra
+Uygulamalar'dan ya da Launchpad'den aç. Ajandam'ı sürüklemeden, disk görüntüsünden ya da İndirilenler'den açarsan
+Ajandam taşımayı önerir (**Uygulamalar klasörüne taşı**): kendini Uygulamalar'a kopyalar, oradan yeniden açılır ve
+disk görüntüsünü çıkarır; İndirilenler'deki kopya Çöp Sepeti'ne gider. İstemezsen **Şimdi değil** de; **Bir daha
+sorma**'yı işaretlersen bir daha sormaz. Disk görüntüsünden ya da İndirilenler'den (taşınmadan) açılan Ajandam kendini
+güncelleyemez.
+
+Ajandam bir Apple geliştirici hesabıyla değil, kendi sertifikasıyla imzalanır (Apple'ın onayından, "notarization"dan
+geçmez); bu yüzden disk görüntüsüyle kurunca ilk açılışta macOS uyarır:
 
 1. Ajandam'ı bir kez aç; macOS "açılamadı" derse **Bitti**'ye bas.
 2. **Sistem Ayarları › Gizlilik ve Güvenlik** bölümünün altındaki **Yine de Aç** düğmesine bas ve onayla.
 
-Bu yalnızca ilk kurulumda gerekir. Ajandam ilk açılışta boştur; kayıtlarını sen girersin ya da dökümlerini içe
-aktarırsın.
+Bu yalnızca ilk kurulumda gerekir; Terminal satırıyla kurarsan hiç gerekmez. Ajandam ilk açılışta boştur;
+kayıtlarını sen girersin ya da dökümlerini içe aktarırsın.
 
 **Güncellemeler:** yeni sürüm çıkınca Ajandam arka planda indirir, imzasını ve özetini doğrular; Ajandam menü
-çubuğundayken (pencere 10 dakikadır kapalıyken) kendiliğinden kurar. İstersen **Ayarlar › Hakkında**'dan kapatıp
-"Şimdi güncelle" ile kurarsın. Kayıtların olduğu gibi kalır. **Ajandam › Güncellemeleri Denetle…** ile hemen
-bakabilirsin.
+çubuğundayken (pencere 10 dakikadır kapalıyken; ⌘H ile gizlediğin pencere açık sayılır) kendiliğinden kurar. İstersen
+**Ayarlar › Hakkında**'dan kapatıp "Şimdi güncelle" ile kurarsın. Kayıtların olduğu gibi kalır; kaydedilemeyen bir
+değişiklik varken (ör. disk doluyken) kendiliğinden kurulmaz, bir günü aşarsa Ajandam haber verir. **Ajandam ›
+Güncellemeleri Denetle…** ile hemen bakabilirsin.
 
 **Kaldırma:** Ajandam'ı Uygulamalar klasöründen çöp sepetine taşı. Kayıtların
 `~/Library/Application Support/Ajandam` klasöründedir; onları da silmek istersen bu klasörü sil.
@@ -201,9 +219,41 @@ bakabilirsin.
 bilgisayarında yoksa (çoğunda vardır) kurulum dosyası onu indirip kurar, bunun için internet gerekir.
 
 [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe)
-dosyasını indir ve çalıştır. Ajandam kendi kullanıcı klasörüne kurulur, yönetici izni istemez. Kurulum dosyası bir
-sertifika kuruluşunca imzalanmadığı için Windows ilk çalıştırmada "Windows kişisel bilgisayarınızı korudu" diyebilir:
-**Ek bilgi › Yine de çalıştır**. Bu yalnızca ilk kurulumda gerekir.
+dosyasını indir ve çalıştır. Kurulum tek pencere: **Kur**'a basman yeter, bitince **Aç**. **Seçenekler**'den
+kurulacağı klasörü değiştirebilir, masaüstüne kısayol koyup koymamayı ve Windows açılınca başlatmayı seçebilirsin.
+
+**Nereye kurulur:** Windows'un kullanıcı başına kurulan uygulamalar için ayırdığı klasöre,
+`%LOCALAPPDATA%\Programs\Ajandam`'a (VS Code, Obsidian ve Notion da buraya kurulur). Bu yüzden yönetici izni istemez,
+güncellemeler sorusuz kurulur ve bilgisayardaki başka kullanıcılar etkilenmez. Kayıtların ayrı bir klasörde,
+`%APPDATA%\Ajandam`'dadır; kurulum ve güncelleme onlara dokunmaz. 3.7 ve öncesi `%LOCALAPPDATA%\Ajandam`'a kurulurdu:
+Ajandam güncellenince kendiliğinden yeni yerine taşınır; Başlat menüsündeki, masaüstündeki ve görev çubuğuna
+sabitlediğin kısayollar, Windows açılınca başlatma ve yapay zeka uygulamalarındaki Ajandam ayarları yeni yeri gösterir.
+Kurulumda kendin başka bir klasör seçtiysen Ajandam orada kalır.
+
+**Bu bilgisayardaki herkes için:** **Seçenekler**'de **Bu bilgisayardaki herkes için (Program Files; yönetici izni
+ister)**'i seçersen Ajandam `C:\Program Files\Ajandam`'a kurulur; Başlat menüsünde ve masaüstünde bilgisayardaki herkese
+görünür. **Kur**'a basınca Windows yönetici izni ister; kurulum dosyası bir sertifika kuruluşunca imzalanmadığı için
+izin penceresinde yayımcı **Bilinmeyen yayımcı** görünür. Herkesin kayıtları yine kendi hesabında (`%APPDATA%\Ajandam`)
+kalır; kimse başkasının kayıtlarını görmez. Bu kurulum güncellemeleri kendiliğinden kuramaz: yeni sürüm indirilip
+doğrulanınca Ajandam "Güncelleme hazır; kurmak için Windows izin isteyecek" der, **Şimdi kur**'a basınca Windows yine
+izin ister (izin vermezsen güncelleme hazır bekler, Ajandam sonra yeniden hatırlatır). Bilgisayarda tek Ajandam kalsın
+diye kurulum öbür kopyayı kaldırır (yalnızca senin için kuruluyken herkes için kurarsan ya da tersi); kısayolların,
+Windows açılınca başlatma ve yapay zeka uygulamalarındaki Ajandam ayarları kalan kopyayı gösterir. Diğer kullanıcıların
+kendi hesaplarına kurduğu kopyalar kalır. Kaldırmak da yönetici izni ister; **Kayıtlarımı da sil** yalnızca kaldıran
+kullanıcının kayıtlarını siler.
+
+**Komut satırından (BT yöneticileri için):** `Ajandam-Kurulum.exe /S` sessiz kurar (kurulu Ajandam'ın kapsamında, hiç
+yoksa yalnızca bu kullanıcı için); `/S /ALLUSERS` bilgisayardaki herkes için, `/S /CURRENTUSER` yalnızca bu kullanıcı
+için kurar; `/D=<klasör>` (en sonda, tırnaksız) kurulum yerini seçer. Herkes için sessiz kurulum ve kaldırma yönetici
+olarak açılmış komut isteminde çalışır; değilse hiçbir şey yapmaz (kurulum 740 koduyla, ERROR_ELEVATION_REQUIRED,
+çıkar). Sessiz kaldırma: `"C:\Program Files\Ajandam\uninstall.exe" /S` (kayıtlar kalır).
+
+**İlk çalıştırma:** kurulum dosyası bir sertifika kuruluşunca imzalanmadığı için Windows ilk çalıştırmada "Windows
+kişisel bilgisayarınızı korudu" diyebilir: **Ek bilgi › Yine de çalıştır**. Bu yalnızca ilk kurulumda gerekir.
+Windows 11'de **Akıllı Uygulama Denetimi** (Smart App Control) açıksa imzasız dosyalar "Yine de çalıştır" seçeneği
+olmadan engellenir; Ajandam'ı kurmak için onu **Windows Güvenliği › Uygulama ve tarayıcı denetimi**'nden kapatman
+gerekir. Kapatmadan önce Microsoft'un açıklamasını oku: bazı Windows sürümlerinde yeniden açmak için Windows'u
+sıfırlamak gerekir.
 
 Kayıtların Mac'teki yedekten taşınabilir: Mac'te **Ayarlar › Veriler ve yedek › Yedek indir**, Windows'ta aynı yerden
 **Yedekten geri yükle**.
@@ -213,11 +263,14 @@ Kayıtların Mac'teki yedekten taşınabilir: Mac'te **Ayarlar › Veriler ve ye
 
 **Güncellemeler:** yeni sürüm arka planda indirilir, imzası ve SHA-256 özeti Ajandam'ın kendi anahtarıyla doğrulanır;
 Ajandam bildirim alanındayken ya da çıkarken kendiliğinden kurulur (istersen **Ayarlar › Hakkında**'dan kapatıp
-"Şimdi güncelle" ile kurarsın).
+"Şimdi güncelle" ile kurarsın). Kaydedilemeyen bir değişiklik varken (ör. disk doluyken) kendiliğinden kurulmaz; bir
+günü aşarsa Ajandam haber verir. Bilgisayardaki herkes için kurulu Ajandam'da **Şimdi kur** Windows'un iznini ister
+(yukarıda).
 
-**Kaldırma:** **Ayarlar › Uygulamalar › Yüklü uygulamalar › Ajandam › Kaldır**. Kayıtların `%APPDATA%\Ajandam`
-klasöründedir; kaldırma penceresinde **Uygulama verilerini sil**'i işaretlersen onlar da silinir, işaretlemezsen
-kalır. Ajandam'ın zamanlanmış bildirimleri her durumda kaldırılır.
+**Kaldırma:** **Ayarlar › Uygulamalar › Yüklü uygulamalar › Ajandam › Kaldır**. Kaldırma penceresinde **Kayıtlarımı
+da sil (geri alınamaz)**'ı işaretlersen kayıtların
+(`%APPDATA%\Ajandam`) da silinir; işaretlemezsen kalır ve Ajandam'ı yeniden kurunca kaldığın yerden devam edersin.
+Ajandam'ın zamanlanmış bildirimleri ve pencere bileşeninin önbelleği her durumda kaldırılır.
 
 ## Yapay zeka
 
@@ -310,12 +363,25 @@ stay on your computer: no account, no server, no subscription.
   connect, and feedback you choose to send.
 
 **Install on Mac:** macOS 12 or later (Apple silicon and Intel). Run
-`curl -fsSL https://raw.githubusercontent.com/tolgacodes-dev/ajandam/main/scripts/kur.sh | bash` in Terminal, or
-download [Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg).
+`curl -fsSL https://raw.githubusercontent.com/tolgacodes-dev/ajandam/main/scripts/kur.sh | bash` in Terminal
+(recommended: it verifies the download and installs into Applications), or download
+[Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg) and drag Ajandam onto
+the Applications folder next to it. Opened from the disk image or Downloads, Ajandam offers to move itself into
+Applications.
 
 **Install on Windows:** Windows 10 or 11 (64-bit). Download and run
-[Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe); if
-SmartScreen warns, choose **More info › Run anyway**. No administrator rights needed.
+[Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe) and
+click **Kur** (Install). Ajandam installs per user into `%LOCALAPPDATA%\Programs\Ajandam`, Windows' folder for
+per-user apps, so no administrator rights are needed; earlier installs in `%LOCALAPPDATA%\Ajandam` move there on
+update. If SmartScreen warns, choose **More info › Run anyway**; with Smart App Control on, Windows 11 blocks
+unsigned installers without that option.
+
+To install for everyone on the PC, open **Seçenekler** (Options) and choose **Bu bilgisayardaki herkes için** (For
+everyone on this computer): Ajandam goes to `C:\Program Files\Ajandam` and Windows asks for administrator permission
+(the installer is not code-signed, so the prompt shows "Unknown publisher"). Each user's records stay in their own
+account. Such installs don't update silently: when an update is ready, **Şimdi kur** (Install now) asks Windows for
+permission. For IT: `Ajandam-Kurulum.exe /S /ALLUSERS` from an elevated prompt (`/S /CURRENTUSER` for the current user
+only); uninstall silently with `"C:\Program Files\Ajandam\uninstall.exe" /S`.
 
 Updates are verified with the app's own signing key and installed automatically in the background (you can turn this
 off in Ayarlar › Hakkında, i.e. Settings › About). Each release lists SHA-256 checksums in **SHA256SUMS**. The app's interface is in Turkish.

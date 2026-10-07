@@ -3,6 +3,75 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [3.8.0] – 2026-10-08
+
+Bu sürüm Ajandam'ı hızlandırıyor, kapsamlı bir denetimde bulunan hataları düzeltiyor ve Windows ile Mac'e yeni, modern bir kurulum getiriyor. Öne çıkanlar:
+
+- **Yeni kurulum (Windows):** tek pencereli, sade kurulum. Ajandam artık Windows'un programlar klasörüne kurulur: varsayılan olarak yalnızca senin için (yönetici izni istemez, güncellemeler sessiz kurulur), istersen Seçenekler'den bu bilgisayardaki herkes için Program Files'a. Mevcut kurulumun güncellemeyle kendiliğinden taşınır; kayıtların, kısayolların, görev çubuğuna sabitlediğin simge, "Windows açılınca başlat" ve yapay zeka bağlantıların korunur.
+- **Yeni disk görüntüsü (Mac):** Ajandam'ı Uygulamalar klasörüne sürüklemeni gösteren yeni pencere. Ajandam'ı İndirilenler'den ya da disk görüntüsünden açarsan Uygulamalar klasörüne taşımayı önerir.
+- **Daha hızlı:** çok kayıtta açılış, kaydetme, geri alma, komut paleti ve not araması belirgin şekilde hızlandı; büyük dökümler ve Excel dosyaları daha hızlı okunur.
+- **Bildirimler kaybolmuyor:** vaktinden hemen önce bir değişiklik olunca sabah özeti, son gün ve etkinlik hatırlatmaları artık düşmüyor.
+- **Daha güvenli kayıt:** Ajandam kapanırken bekleyen kayıtların hepsini yazar; kaydedilemeyen bir değişiklik varsa açık kalmayı önerir. "Geri al" sonradan yapılan değişikliği ezmez; yedeğe dönüş yarıda kalsa da kayıtlar bozulmaz.
+- **Para hesapları:** kart iadesi, sonraki ekstre, bütçe, kredi planı, dövizli düzenli kayıtlar ve nakit akışında bulunan hatalar düzeltildi.
+
+---
+
+**Kurulum ve güncelleme**
+- Windows: kurulum tek pencere; Seçenekler'de kurulum yeri, kimin için kurulacağı, masaüstü kısayolu ve Windows açılınca başlatma. Başlat menüsünde klasörsüz tek kısayol. Kaldırma penceresinde "Kayıtlarımı da sil (geri alınamaz)" seçeneği; kaldırınca indirilmiş güncellemeler ve önbellek de silinir.
+- Windows: bilgisayardaki herkes için kurulan Ajandam'da güncelleme hazır olunca haber verilir; "Şimdi kur" Windows'un yönetici iznini ister. Yalnızca senin için kurulan Ajandam'da güncellemeler eskisi gibi sessiz kurulur.
+- Windows: güncellemeden sonra Claude gibi bağlı yapay zeka uygulamaları Ajandam'ı eski dosyayla açmıyor; "Windows açılınca başlat" güncellemeden sonra da çalışıyor. Güncelleme yavaş internette de iniyor.
+- Mac: ⌘H ile gizlenen Ajandam'a güncelleme kendiliğinden kurulup açık işi bölmüyor. Uygulama simgesi eski macOS sürümlerinde de bütün boyutlarda keskin.
+
+**Hız**
+- Birkaç gün sonra açılınca birikmiş düzenli kayıtlar işlenirken Ajandam artık donmuyor.
+- Çok kayıtta bir işlemi kaydetmek, geri almak ve toplu değiştirmek 2–3 kat hızlı; bölümler arası geçiş büyük verilerde 2–5 kat hızlı.
+- Komut paletinde ve not aramasında yazarken takılma kalmadı; uzun bir notta yazarken ekran donmuyor. Notlar binlerce notta da hızlı açılıyor; sonuçlar 200'er gösteriliyor ("… not daha").
+- Ajanda'nın ay ve hafta görünümü daha hızlı. Pencere kapalıyken fiyatlar arka planda yenilenmiyor; pencere açılınca güncelleniyor.
+- OneDrive ve iCloud yedeği, kayıtlar değişmediyse saatte bir yeniden okunmuyor. iCloud yedeğine dönerken ekler birlikte iniyor. Mac'te büyük bir ek kaydedilirken pencere donmuyor.
+
+**Para**
+- Kesimden sonra iade edilen alışveriş kart borcunu sıfırladığında ekstre artık "gecikti" görünmüyor.
+- Bütçe harcaması Bütçe ekranında, Ajandam'a sor'da, ay özetinde, sabah özetinde ve yapay zeka uygulamalarında aynı.
+- Ajandam kapalıyken geçen dönemlerin dövizli düzenli kayıtları kendi gününün kuruyla yazılıyor.
+- Ödemeler'deki "sonraki ekstre" kesime kadar karta düşecek taksitleri ve düzenli harcamaları da sayıyor (Nakit akışı ile aynı). Nakit akışı hafta sonuna denk gelen kart ödemesini ve mevduat vadesini ilk iş gününe koyuyor.
+- Dövizli kartta asgari ödeme oranı limitin TL karşılığıyla doğru hesaplanıyor; yapay zekanın kart hesabı Kart araçları penceresiyle aynı oranları söylüyor.
+- Kredi hesaplayıcıda uzun vadeli planın son taksiti artık kaymıyor.
+- Yılın özetinde ve Raporlar › Genel'de kategori payları toplamı tam %100.
+- Ay özeti, dolar fiyatı değişmeyen aboneliğe "zamlandı" demiyor ve iade edilen alışverişi "olağan dışı" saymıyor; ay sonu tahmini takibe ara verildiğinde günlük harcamayı küçük göstermiyor.
+- Hızlı eklemede "kahve 7.5" harcama olur, gelecek yılın etkinliği değil; "1,5 milyon" ve "2 milyon 500 bin" doğru tutar olur.
+- Tarih alanına 1900'den önceki ya da 2100'den sonraki bir yıl yazılınca (ör. "0202") kayıt görünmeyen bir aya yazılmıyor, uyarılıyor. Tutar kabul edilmeyince ileti nedenini söylüyor.
+
+**Kayıtlar ve yedekler**
+- Kapanırken bekleyen kayıtların hepsi yazılıyor; disk doluyken ya da yazılamayan bir değişiklik varsa Ajandam nedenini söyleyip açık kalmayı öneriyor, güncellemeyi sonraya bırakıyor.
+- Emojiyle biten uzun açıklamalar artık o ayın kaydedilmesini engellemiyor.
+- Kaydın tarihini başka aya alırken Ajandam kapanırsa ya da hemen geri alınırsa kayıt kaybolmuyor, iki kez sayılmıyor. Vade onayı ve taksitli iade yarıda kalsa da kayıtlar tutarsız kalmıyor.
+- "Geri al" sonradan başka bir yerden (yapay zeka, başka bir düzenleme) yapılan değişikliği silmiyor.
+- Yedekten geri yüklemede uzun notlar kesilmiyor, not şablonları da geri geliyor; okunamayan kayıtlar atlanıp nedeniyle söyleniyor; önizleme yedekte olmayanları gösteriyor.
+- Windows: yedeğe dönüş yarıda kalırsa (Ajandam kapanır, bilgisayar yeniden başlar) açılışta tamamlanıyor ya da eski hal geri geliyor; dönüş sürerken gelen yazımlar geri dönülen kayıtların üzerine yazılmıyor. Açılışta okunamayan bir kayıt dosyasının üzerine yarım hali yazılmıyor.
+- Windows: disk doluyken eklenen fiş ya da resim için yer kalmadığı söyleniyor; yarım kalan yazımların geçici dosyaları temizleniyor; eski geri dönüş yedekleri 30 günde siliniyor. 380 MB'tan büyük not arşivi kaydedilmeye çalışılmadan nedeni söyleniyor.
+- "Tüm verileri sil" geride iz bırakmıyor; okunamayan kayıtlar Ayarlar › Veri'de sayılıyor.
+
+**İçe aktarma**
+- Çok geniş satırlı Excel dökümü artık Ajandam'ı dondurmuyor; açıldığında aşırı büyüyen bozuk ya da zararlı Excel dosyası okunmadan reddediliyor.
+- CSV dökümünde tek tırnak sonraki işlemleri kaybettirmiyor; az Türkçe harfli dökümler doğru okunuyor. Dışa aktarılan CSV'de boşlukla başlayan formüller de etkisizleştiriliyor.
+- Büyük dökümler daha hızlı okunuyor ve eşleştiriliyor.
+
+**Notlar**
+- Notta uzun sayı listesi ya da kapanmayan vurgu yazarken editör donmuyor.
+- Not önizlemesinde bazı bağlantılar ve "#5tl" gibi etiketler düzgün görünüyor. Tek notun Markdown dosyası Windows'ta geçersiz adla kaydedilmiyor.
+
+**Bildirimler**
+- Sabah özeti, son gün ve etkinlik hatırlatmaları vaktinden hemen önce bir değişiklik olunca artık kaybolmuyor; bildirim planı her tıklamadan sonra yeniden hesaplanmıyor.
+
+**Yapay zeka uygulamaları**
+- Claude, ChatGPT gibi uygulamalar ₺0'lık kayıt yazamaz, 1900–2100 dışında tarih veremez; çok uzun not sessizce kesilmez.
+
+**Arayüz ve güvenlik**
+- Ay seçici açıkken kısayolla açılan pencere artık seçicinin altında kalmıyor; tek Esc kapatıyor. Rozetten açılan pencere kapanınca klavye odağı kayıt satırına dönüyor.
+- Aynı işler her yerde aynı adla geçiyor; dar pencerede kesilen yer tutucular kısaldı, uzun adlar üzerine gelince okunuyor.
+- Windows: betik sayfayı tıklanmadan dış bir adrese yönlendirirse o adres artık tarayıcıda açılmıyor. Mac: yerel bağlantı adresi çok sayıda boşta bağlantıda Ajandam'ı yavaşlatmıyor.
+- claude.ai sürümünde sayfa dili Türkçe; 1000 not sınırına yaklaşınca uyarılıyor.
+
 ## [3.7.0] – 2026-10-07
 
 Bu sürüm para tarafına uzun süredir beklenen araçları getiriyor ve notları büyütüyor. Öne çıkanlar:
