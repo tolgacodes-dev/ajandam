@@ -26,7 +26,15 @@ kendiliğinden kurduğu için çoğu kullanıcı düzeltmeyi birkaç gün içind
   diskini FileVault, Windows'ta BitLocker (ya da Cihaz şifrelemesi) ile şifrelemeni öneririz. PIN açıksa bilgisayar
   uyuyunca, ekran kilitlenince ya da kullanıcı değişince Ajandam da kilitlenir ve bildirimlerde ödeme adları ve
   tutarlar görünmez (Ayarlar › Bildirimler'den açabilirsin). Ajandam kilitliyken yapay zeka uygulamalarının
-  isteklerine cevap verilmez.
+  isteklerine cevap verilmez. **Tutarları gizle** yalnızca ekrandaki tutarları gizler; kayıtları şifrelemez.
+- **Şifreli notlar:** İstediğin not, not parolanın PBKDF2-SHA256 türeviyle (600 000 tur) AES-256-GCM ile şifrelenir;
+  parola hiçbir yerde saklanmaz ve unutulursa not açılamaz. Şifreli notun metni aramaya, yapay zeka uygulamalarına ve
+  yedeklere açık hâliyle girmez; ondan kopyalanan metin pano geçmişine ve bulut panosuna (Mac'te Evrensel Pano'ya)
+  girmez. 3.7'den istersen Touch ID ya da Windows Hello ile açılır: bunun için parola değil, parolanın türevi olan
+  anahtar yalnızca o bilgisayarda saklanır (Mac'te eşitlenmeyen bir Anahtar Zinciri kaydında, Windows'ta veri koruma
+  özelliğiyle (DPAPI) şifrelenmiş bir dosyada) ve ancak parmak izi ya da yüz doğrulamasından sonra okunur. Anahtar
+  yedeklere ve buluta girmez; parola değişince, seçenek kapatılınca ya da **Tüm verileri sil** ile silinir. Bu bir
+  kolaylıktır: o bilgisayarda kullanıcı hesabına giriş yapmış biri çabayla anahtarı okuyabilir.
 - **Uygulama:** Arayüz sıkı bir içerik güvenliği politikasıyla (CSP) açılır: dışarıdan betik yüklenmez, sayfa
   internete doğrudan bağlanamaz. Ajandam'ın köprüsü yalnızca kendi sayfasına cevap verir. Ekler yalnızca fotoğraf ve
   PDF olarak saklanır ve korumalı açılır; fiş fotoğraflarındaki ve geri bildirim ekran görüntülerindeki konum ve cihaz
@@ -69,8 +77,8 @@ kendiliğinden kurduğu için çoğu kullanıcı düzeltmeyi birkaç gün içind
     tarafından kullanılabilir (anahtar adreste ya da `Authorization: Bearer` başlığında); web sitelerinden (tarayıcıdan)
     ve başka bir ana bilgisayar adıyla gelen istekler reddedilir. Kapı başka bir programdaysa Ajandam adresi kendiliğinden
     başka kapıya taşımaz. Anahtar yalnızca senin kullanıcı hesabının okuyabildiği bir dosyada durur, günlüklere yazılmaz
-    ve **Anahtarı yenile** ile değiştirilebilir. Windows'ta panoya kopyalanan adres ve IBAN, pano geçmişine ve bulut
-    panosuna girmez.
+    ve **Anahtarı yenile** ile değiştirilebilir. Panoya kopyalanan adres ve IBAN, pano geçmişine ve bulut panosuna
+    girmez (Mac'te 3.7'den).
   - Başka uygulamaların ayar dosyaları (ör. Claude Code'un `~/.claude.json`'ı) yerinde düzenlenir: dosya izinleri,
     yorumlar ve diğer ayarlar korunur; eski hali yalnızca senin okuyabileceğin izinlerle yanında saklanır.
   - Yapay zekanın önerdiği eklemeler ve değişiklikler senin onayını bekler. **Onaysız kaydet** uygulama başına açılır;

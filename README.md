@@ -130,21 +130,27 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 - **Para:** gelir ve gider, hesaplar arası transfer, kredi kartları (kesim ve son ödeme günü, taksit, asgari ödeme),
   düzenli kayıtlar, ödemeler ve faturalar, abonelikler (kendiliğinden yakalanır), bütçe, hedefler, borç ve alacak.
   Dövizli hesaplar ve harcamalar: 150'den fazla para birimi; TL karşılığı o günün kuruyla, istersen kendi kurunla.
-- **Raporlar:** genel görünüm, nakit akışı tahmini, ay özeti, net varlık, enflasyon. Özet tek ay ya da son 3 ay,
-  6 ay, 1 yıl, 2 yıl için; önceki dönemle karşılaştırmalı.
+  Etiketler (#tatil), iade kaydı (iade gelir sayılmaz, kategorisinin harcamasından düşer), harcama bölme, vadeli
+  mevduat (faiz, stopaj, net getiri, vade dolunca onay), kredi hesaplayıcı (KKDF ve BSMV), gelişmiş filtreler ve
+  kayıtlı görünümler, kategori kuralları.
+- **Raporlar:** genel görünüm, nakit akışı tahmini, ay özeti, net varlık, enflasyon, etiketler ve yılın özeti. Özet
+  tek ay ya da son 3 ay, 6 ay, 1 yıl, 2 yıl için; önceki dönemle karşılaştırmalı. Sabah özetinde bütçe uyarısı.
 - **Hızlı ekleme:** "market 250", "telefon 24000 6 taksit kart" yaz; kategori, tarih ve hesap kendiliğinden bulunur.
   "yarın 9 doktor" etkinlik, "her ayın 5'i kira 12.000" düzenli kayıt, "her pazartesi 10:00 toplantı" tekrarlayan
   etkinlik olur; "$5", "akşam 7'de", "haftaya salı" da anlaşılır. Hangi uygulamada olursan ol küçük bir ekleme
   penceresi açılır: Mac'te ⌃⌥A (menü çubuğundan da), Windows'ta Ctrl+Alt+Space (bildirim alanından ve görev
   çubuğundan da); kısayolu değiştirebilirsin.
-- **İçe aktarma:** banka ve kart dökümleri (PDF, Excel, CSV), fiş fotoğrafı, CSV dışa aktarma, tam yedek (fiş ve
-  fatura ekleriyle) ve geri yükleme; geri yüklemeden önce neyin değişeceği gösterilir.
+- **İçe aktarma:** banka ve kart dökümleri (PDF, Excel, CSV; okunamayan dosyada sütunları kendin seçersin), fiş
+  fotoğrafı, CSV dışa aktarma, takvime aktarma (.ics), tam yedek (fiş ve fatura ekleriyle) ve geri yükleme; geri
+  yüklemeden önce neyin değişeceği gösterilir.
 - **Ajanda:** ay, hafta ve liste görünümü; yapılacaklar ve hatırlatmalar. Tekrarlayan etkinlikler: her gün, N günde
   ya da haftada bir, seçtiğin günler, ayın son cuması; değiştirirken "yalnızca bu", "bu ve sonrakiler" ya da "tümü".
   Mac'te istersen Anımsatıcılar üzerinden iPhone'una da düşer.
 - **Notlar:** Markdown (kod blokları, bağlantılar, iç içe listeler), yapılacak listeleri, tablolar, etiketler,
-  klasörler, sabitleme, yazdırma; istediğin notu not parolasıyla şifreleme, Son silinenler (30 gün), not geçmişi,
-  `[[Başlık]]` ile not bağlantıları, şablonlar, notta bul ve değiştir, içindekiler.
+  alt klasörler, sürükle-bırak, arşiv, sabitleme, yazdırma; vurgulama, fotoğraf, işlem, etkinlik ve ödemelere
+  bağlantı, yapılacak satırını ajandaya ekleme, hatırlatıcı; istediğin notu not parolasıyla şifreleme (istersen Touch
+  ID ya da Windows Hello ile açarsın), Son silinenler (30 gün), not geçmişi, `[[Başlık]]` ile not bağlantıları,
+  şablonlar, notta bul ve değiştir, içindekiler; .md ve .txt içe aktarma, bütün notları .zip olarak dışa aktarma.
 - **Mac:** her şeyde sağ tık menüsü (hesap, işlem, ödeme, not, takvim günü), ⌘Z ile geri alma, bildirimlerde
   "Ödendi", "Yarın hatırlat", "Yapıldı" ve "10 dk ertele", Ajandam'ın kendi bildirim sesleri, Dock rozeti, Mac açılınca
   başlat (macOS 13 ve üstü), istersen PIN ve Touch ID kilidi (Mac uyuyunca ya da ekran kilitlenince Ajandam da
@@ -155,6 +161,7 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
   rozeti, istersen PIN ve Windows Hello kilidi (Win+L ile Ajandam da kilitlenir; PIN'i unutursan Windows Hello ile
   sıfırlarsın), sürükle-bırak, klavye kısayolları; kurumsal ağlarda Windows'un vekil sunucu ayarı kullanılır.
 - **Senin Ajandan:** kilit ekranında adın, 24 kart rengi, dört uygulama simgesi, her bildirim türüne ayrı ses.
+  **Tutarları gizle** (Mac'te ⇧⌘H, Windows'ta Ctrl+Shift+H) ekrandaki bütün tutarları ₺••• yapar.
 
 ## Kurulum
 
@@ -285,17 +292,20 @@ stay on your computer: no account, no server, no subscription.
 
 - **Money:** accounts, credit cards with statement and due dates, installments and minimum payments, budgets,
   subscriptions, goals, debts; foreign-currency accounts and expenses (150+ currencies, converted at the day's rate);
-  bank and card statement import (PDF, Excel, CSV) with reconciliation and duplicate detection.
+  tags, refunds, split transactions, time deposits with withholding tax, a loan calculator, saved filters and
+  category rules; bank and card statement import (PDF, Excel, CSV) with reconciliation and duplicate detection.
 - **Turkey-specific:** CPI (TÜFE) based inflation report, rent increase cap, central bank card interest rates,
   public holidays, tax calendar, private pension (BES) state contribution; updated between releases through a signed
   data feed.
 - **AI without API keys:** Apple Intelligence (Mac) or local models (Ollama, LM Studio) on your computer, sign in
   with your ChatGPT Plus or Pro account, or connect Claude, ChatGPT and other MCP apps in one click. Nothing is saved
   without your approval.
-- **Calendar and notes:** month, week and list views, flexible recurring events, to-dos with reminders, quick add in
-  plain Turkish ("yarın 9 doktor"), Markdown notes with tables and code blocks, per-note encryption, recently deleted
-  notes, note history and links.
-- **Privacy:** no account, no ads, no tracking. Optional PIN, Touch ID or Windows Hello lock. The app goes online only
+- **Calendar and notes:** month, week and list views, flexible recurring events, to-dos with reminders, calendar
+  export (.ics), quick add in plain Turkish ("yarın 9 doktor"), Markdown notes with tables, highlights, images and
+  links to records, nested folders and an archive, per-note encryption (optionally unlocked with Touch ID or Windows
+  Hello), recently deleted notes, note history, import and export.
+- **Privacy:** no account, no ads, no tracking. Optional PIN, Touch ID or Windows Hello lock, and a privacy mode that
+  hides every amount on screen. The app goes online only
   for update checks and the signed Turkey data feed (GitHub), public price and exchange-rate feeds, the AI service you
   connect, and feedback you choose to send.
 

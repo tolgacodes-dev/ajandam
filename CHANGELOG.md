@@ -3,6 +3,57 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [3.7.0] – 2026-10-07
+
+Bu sürüm para tarafına uzun süredir beklenen araçları getiriyor ve notları büyütüyor. Öne çıkanlar:
+
+- **Etiketler:** işlemlere #tatil, #tadilat gibi etiketler ekle; hızlı eklemede "otel 4500 #tatil" yazman yeter. Raporlar › Etiketler her etiketin harcamasını ve gelirini gösterir.
+- **İade ve harcama bölme:** bir harcamaya sağ tıklayıp "İade kaydet…" de: iade gelir sayılmaz, o kategorinin harcamasından düşer; net ve bakiyeler değişmez. "Böl…" ile bir alışverişi kuruşu kuruşuna kategorilere ayırırsın.
+- **Vadeli mevduat:** birikim hesabını vadeli yap; faiz, stopaj ve vade sonunda eline geçecek net tutar kendiliğinden hesaplanır. Vade dolunca haber verilir; sen onaylamadan hiçbir şey değişmez.
+- **Kredi hesaplayıcı:** ihtiyaç, taşıt ve konut kredisinin taksitini, faizini, KKDF ve BSMV'sini gör; istersen taksiti düzenli gider olarak kaydet.
+- **Tutarları gizle:** üst çubuktaki göz düğmesiyle (Mac'te ⇧⌘H, Windows'ta Ctrl+Shift+H) ekrandaki bütün tutarlar ₺••• olur. Yanında biri varken ya da ekran paylaşırken işe yarar.
+- **Filtreler, görünümler ve kurallar:** İşlemler'de dönem, tutar, kategori, hesap ve etiketle süz, sık kullandığını görünüm olarak kaydet, listelenenlere toplu etiket ya da kategori ver. Kategori kurallarını gör, değiştir; "içinde geçerse" kuralı ekle.
+- **Takvime aktar ve yılın özeti:** etkinliklerini ve son ödeme günlerini Google, Apple ya da Outlook takvimine aktar. Raporlar'da yılın özeti; sabah özetinde bütçe uyarısı.
+- **Notlar büyüdü:** alt klasörler, sürükle-bırak, arşiv; vurgulama, tablo, fotoğraf, işlem ve etkinliklere bağlantı, ajandaya ekleme ve hatırlatıcı. Notlarını .zip olarak dışa aktar, .md ve .txt dosyalarını içe al. Şifreli notları Touch ID ya da Windows Hello ile açabilirsin.
+
+---
+
+**Para**
+- Etiketler kayıt formunda (öneriyle) ve hızlı eklemede; taksitli alışverişte etiket bütün taksitlere uygulanır. Ayarlar › Kategoriler'de yeniden adlandırılır, birleştirilir ya da kaldırılır; hepsi geri alınabilir.
+- İşlemler'de gelişmiş filtreler: dönem, tutar aralığı, birden çok kategori, hesap ve etiket, iadeler, bölünmüş ve fişli kayıtlar. Filtreyi görünüm olarak kaydedersin. "Bu N kayda uygula" önce ne değişeceğini gösterir, tek seferde uygulanır ve geri alınır; transferler, kart ödemeleri ve iadeler sen seçmedikçe değişmez.
+- İade: kısmi iadeler; dövizli alışverişin iadesi alışverişin para biriminde, iade günü kuruyla (kur farkı gösterilir); taksitli alışverişte "kalan taksitleri iptal et" ya da "tamamı tek seferde". Kartta hesap kesiminden sonra gelen iade kesilmiş ekstrenin ödemesi sayılmaz, sonraki ekstreden düşer.
+- Bölme: parçalar ayrı kayıtlardır, toplamlar her yerde doğru kalır; "Birleştir" ile geri toplanır. Farklı hesaba taşınmış parçalar birleştirilmez.
+- Ekstre aktarımında iade satırları iade olarak gelir ve "Alışverişe bağla" önerilir; bölünmüş alışveriş yeniden yüklemede iki kez yazılmaz.
+- Vadeli mevduat: stopaj oranları güncel (%17,5 altı aya kadar, %15 bir yıla kadar, %10 bir yıldan uzun); vade tatile denk gelirse bankanın ödeme günü dikkate alınır; banka dökümündeki faiz, brüt faiz ve stopaj satırları ile aktarım iki kez sayılmaz. Vadesinden önce bozulan mevduat da kaydedilir.
+- Okunamayan CSV ve Excel dökümlerinde sütunları kendin seçersin; seçim aynı bankanın sonraki dosyaları için hatırlanır. Ondalık ayırıcı sütunun tamamına bakılarak okunur, iki türlü okunabilen değerler önizlemede söylenir.
+- Kategori kuralları penceresi: öğrenilen kuralları ara, kategorisini değiştir, kapat ya da sil; "içinde geçerse" kuralı ekle (yazarken kaç kayda uyduğu görünür) ve geçmiş kayıtlara uygula. Bir kaydın kategorisini değiştirince benzer kayıtları da aynı kategoriye almak önerilir.
+
+**Raporlar ve bildirimler**
+- Raporlar › Etiketler ve Raporlar › Yılın özeti (geçen yılla ve enflasyonla karşılaştırma); yılın özeti 15 Aralık ile 31 Ocak arasında Özet'te hatırlatılır.
+- Sabah özetinde bütçe uyarısı: bir kategorinin bütçesinin %90'ı dolunca ya da aşılınca; Ayarlar › Bildirimler'den kapatılabilir. Vade dolunca bildirim gelir.
+- Takvime aktar (.ics): etkinlikler, ödemelerin ve kart ekstrelerinin son günleri, borç vadeleri, mevduat vadeleri; tutarlar yalnızca istersen eklenir.
+
+**Gizlilik**
+- Tutarları gizle bildirimlerde, menü çubuğunda ve bildirim alanında da geçerlidir; açık bir pencere varsa bulanıklaşır. Yapay zeka uygulamalarına ve dışa aktarılan dosyalara giden tutarlar etkilenmez.
+- Şifreli notları Touch ID ya da Windows Hello ile açma isteğe bağlıdır ve yalnızca o bilgisayardadır: başka bilgisayarda ve yedekten dönünce yine not parolan gerekir.
+- Mac'te şifreli nottan, IBAN'dan ve bağlantı adresinden kopyaladığın metin pano geçmişi tutan uygulamalara ve Evrensel Pano'ya gitmez.
+
+**Notlar**
+- Not klasörlerinin içine alt klasör (5 düzeye kadar); notları ve klasörleri sürükleyip bırakarak ya da Taşı… ile taşırsın. Arşivlenen notlar listelerde ve aramada görünmez, istediğinde geri alırsın.
+- Vurgulama (`==metin==`, Mac'te ⇧⌘E, Windows'ta Ctrl+Shift+E), Tablo ekle (tabloda Tab ile hücreden hücreye), başlıkların altını daraltma, isteğe bağlı yazım denetimi (şifreli notlarda hep kapalı).
+- Notta işlem, etkinlik ve ödemelere bağlantı: güncel tutar ve tarih görünür, tıklayınca kayıt açılır. Yapılacak satırını ajandaya ekleme ve nota hatırlatıcı kurma.
+- Notlara fotoğraf: seç, yapıştır ya da sürükle bırak.
+- .md ve .txt dosyalarını Notlar'a bırakarak ya da Notları içe aktar… ile not yaparsın. Tüm notları dışa aktar… klasörleriyle bir .zip hazırlar; fotoğraflar `ekler/` klasörüne konur, şifreli notlar şifreli kalır.
+
+**Yapay zeka uygulamaları**
+- Claude, ChatGPT gibi uygulamalar etikete göre arayabilir ve harcamayı etikete göre gruplayabilir, kayda etiket ekleyebilir, iadeyi alışverişine bağlayabilir; vadeli mevduatın vadesini ve net getirisini görür.
+
+**Mac menüleri**
+- Tutarları Gizle (⇧⌘H), Takvime Aktar…, Kredi Hesaplayıcı, Kategori Kuralları, Notları İçe Aktar…, Tüm Notları Dışa Aktar…
+
+**Yedekler**
+- Yedeklerin kayıt biçimi 3 oldu: 3.6'da 3.7'nin yedeğine dönmeden ya da onu geri yüklemeden önce uyarılır.
+
 ## [3.6.0] – 2026-10-06
 
 Bu sürüm Ajandam'ın temelini sağlamlaştırıyor, notları büyütüyor ve Windows 11'e yeni bir başlık çubuğu getiriyor. Öne çıkanlar:
