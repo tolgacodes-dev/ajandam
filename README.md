@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg"><b>⬇ Mac için indir</b></a>
-  &nbsp;·&nbsp; <a href="https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe"><b>⬇ Windows için indir</b></a>
+  &nbsp;·&nbsp; <a href="https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR"><b>⬇ Windows için: Microsoft Store</b></a>
   &nbsp;·&nbsp; <a href="#kurulum">Kurulum</a>
   &nbsp;·&nbsp; <a href="#yapay-zeka">Yapay zeka</a>
   &nbsp;·&nbsp; <a href="#destek-ve-iletişim">Destek</a>
@@ -170,6 +170,7 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 |---|---|
 | [Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg) | Mac: disk görüntüsü; açıp Ajandam'ı **Uygulamalar** klasörüne sürüklersin |
 | `kur.sh` (aşağıdaki Terminal satırı) | Mac: son sürümü indirir, doğrular, **Uygulamalar** klasörüne kurar (önerilen) |
+| [Microsoft Store](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR) | Windows 10 ve 11 (64 bit): Microsoft Store'dan kurulur (önerilen); Windows uyarısı çıkmaz, güncellemeleri Store yapar |
 | [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe) | Windows 10 ve 11 (64 bit): kurulum dosyası |
 | `Ajandam-<sürüm>.zip`, `latest.json`, `latest-windows.json` | Ajandam'ın güncelleyicileri için; elle kurulumda gerekmez |
 | `Ajandam-Claude.mcpb` | Claude masaüstü uzantısı; Ajandam'ın içinden tek tıkla eklenir |
@@ -217,7 +218,14 @@ Güncellemeleri Denetle…** ile hemen bakabilirsin.
 **Gereksinimler:** Windows 10 ya da 11, 64 bit. Ajandam, Windows'taki Microsoft Edge WebView2 bileşenini kullanır;
 bilgisayarında yoksa (çoğunda vardır) kurulum dosyası onu indirip kurar, bunun için internet gerekir.
 
-[Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe)
+**Microsoft Store'dan (önerilen):** [Ajandam'ı Microsoft Store'da aç](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR) ve yükle. Microsoft
+imzaladığı için Windows uyarısı çıkmaz, yönetici izni istemez; güncellemeleri Microsoft Store kendiliğinden kurar.
+Daha önce kurulum dosyasıyla kurduysan Store'dan gelen Ajandam ilk açılışta kayıtlarını kendine kopyalar (eskilerine
+dokunmaz); sonra eski Ajandam'ı **Ayarlar › Uygulamalar › Yüklü uygulamalar**'dan kaldır, yoksa iki Ajandam ayrı
+kayıtlarla çalışır ve ikisi de hatırlatma gönderir. Store'dan kurulan Ajandam'ı kaldırmak kayıtlarını da siler: önce
+**Ayarlar › Veriler ve yedek › Yedek indir**. Microsoft Store sayfası şimdilik yalnızca Türkiye'de açık.
+
+**Kurulum dosyasıyla:** [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe)
 dosyasını indir ve çalıştır. Kurulum tek pencere: **Kur**'a basman yeter, bitince **Aç**. **Seçenekler**'den
 kurulacağı klasörü değiştirebilir, masaüstüne kısayol koyup koymamayı ve Windows açılınca başlatmayı seçebilirsin.
 
@@ -252,7 +260,7 @@ kişisel bilgisayarınızı korudu" diyebilir: **Ek bilgi › Yine de çalışt�
 Windows 11'de **Akıllı Uygulama Denetimi** (Smart App Control) açıksa imzasız dosyalar "Yine de çalıştır" seçeneği
 olmadan engellenir; Ajandam'ı kurmak için onu **Windows Güvenliği › Uygulama ve tarayıcı denetimi**'nden kapatman
 gerekir. Kapatmadan önce Microsoft'un açıklamasını oku: bazı Windows sürümlerinde yeniden açmak için Windows'u
-sıfırlamak gerekir.
+sıfırlamak gerekir. Microsoft Store'dan kurunca bu uyarıların hiçbiri çıkmaz.
 
 Kayıtların Mac'teki yedekten taşınabilir: Mac'te **Ayarlar › Veriler ve yedek › Yedek indir**, Windows'ta aynı yerden
 **Yedekten geri yükle**.
@@ -261,8 +269,9 @@ Kayıtların Mac'teki yedekten taşınabilir: Mac'te **Ayarlar › Veriler ve ye
 (Mac'te `shasum -a 256 Ajandam.dmg`, Windows'ta `certutil -hashfile Ajandam-Kurulum.exe SHA256`). Mac'te Apple'ın
 onayını `spctl -a -vv /Applications/Ajandam.app` ile görebilirsin: `source=Notarized Developer ID` yazar.
 
-**Güncellemeler:** yeni sürüm arka planda indirilir, imzası ve SHA-256 özeti Ajandam'ın kendi anahtarıyla doğrulanır;
-Ajandam bildirim alanındayken ya da çıkarken kendiliğinden kurulur (istersen **Ayarlar › Hakkında**'dan kapatıp
+**Güncellemeler:** Microsoft Store'dan kurulan Ajandam'ı Microsoft Store günceller. Kurulum dosyasıyla kurulanda yeni
+sürüm arka planda indirilir, imzası ve SHA-256 özeti Ajandam'ın kendi anahtarıyla doğrulanır; Ajandam bildirim
+alanındayken ya da çıkarken kendiliğinden kurulur (istersen **Ayarlar › Hakkında**'dan kapatıp
 "Şimdi güncelle" ile kurarsın). Kaydedilemeyen bir değişiklik varken (ör. disk doluyken) kendiliğinden kurulmaz; bir
 günü aşarsa Ajandam haber verir. Bilgisayardaki herkes için kurulu Ajandam'da **Şimdi kur** Windows'un iznini ister
 (yukarıda).
@@ -271,6 +280,8 @@ günü aşarsa Ajandam haber verir. Bilgisayardaki herkes için kurulu Ajandam'd
 da sil (geri alınamaz)**'ı işaretlersen kayıtların
 (`%APPDATA%\Ajandam`) da silinir; işaretlemezsen kalır ve Ajandam'ı yeniden kurunca kaldığın yerden devam edersin.
 Ajandam'ın zamanlanmış bildirimleri ve pencere bileşeninin önbelleği her durumda kaldırılır.
+Microsoft Store'dan kurulan Ajandam'da kaldırma penceresi yoktur: Windows uygulamayla birlikte kayıtlarını da siler,
+önce **Ayarlar › Veriler ve yedek › Yedek indir**.
 
 ## Yapay zeka
 
@@ -370,7 +381,9 @@ the Applications folder next to it. Opened from the disk image or Downloads, Aja
 Applications. Since 3.8.1 the app is signed with an Apple Developer ID and notarized by Apple, so macOS opens it
 without the **Open Anyway** step.
 
-**Install on Windows:** Windows 10 or 11 (64-bit). Download and run
+**Install on Windows:** Windows 10 or 11 (64-bit). In Turkey, get it from the
+[Microsoft Store](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR): no SmartScreen warning, and the Store keeps it up to
+date. Or download and run
 [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe) and
 click **Kur** (Install). Ajandam installs per user into `%LOCALAPPDATA%\Programs\Ajandam`, Windows' folder for
 per-user apps, so no administrator rights are needed; earlier installs in `%LOCALAPPDATA%\Ajandam` move there on

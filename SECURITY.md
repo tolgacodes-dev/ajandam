@@ -72,6 +72,8 @@ Ajandam güncellemeyi hazır olunca haber verir; kurmak için **Şimdi kur** ve 
     Bilgisayardaki herkes için kurulu Ajandam kendini sessizce güncellemez: hazır güncelleme **Şimdi kur** ile
     Windows'un yönetici izniyle başlatılır; imzalı bilgi, özet ve dosyanın değiştirilemez tutulması başlatmadan önce
     aynen denetlenir. İzin verilmezse güncelleme hazır bekler.
+  - Microsoft Store'dan kurulan Ajandam: paketi Microsoft imzalar ve Microsoft Store günceller; Ajandam'ın kendi
+    güncelleyicisi bu baskıda derlenmez.
   - Tutmayan güncelleme kurulmaz. Mac'te kurulan sürüm açılamazsa önceki sürüme dönülür. Her sürümün dosyalarının
     özetleri `SHA256SUMS` dosyasında yayımlanır.
 - **Türkiye veri kanalı (3.6):** TÜFE, kart faiz oranları, bayramlar ve kısa duyurular bu depodaki
