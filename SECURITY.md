@@ -54,7 +54,9 @@ Ajandam güncellemeyi hazır olunca haber verir; kurmak için **Şimdi kur** ve 
   internete doğrudan bağlanamaz. Ajandam'ın köprüsü yalnızca kendi sayfasına cevap verir. Ekler yalnızca fotoğraf ve
   PDF olarak saklanır ve korumalı açılır; fiş fotoğraflarındaki ve geri bildirim ekran görüntülerindeki konum ve cihaz
   bilgisi (EXIF) silinir. CSV'ye aktarmada formül sayılabilecek hücreler metin olarak yazılır. Mac'te uygulama
-  Hardened Runtime ile imzalanır; Web Denetçisi yalnızca geliştirme derlemesinde açıktır. Ajandam'ın penceresi kendi
+  Hardened Runtime ile imzalanır; 3.8.1'den imza Apple'ın Developer ID sertifikasıyladır ve uygulama Apple'ın
+  onayından geçer (notarization; onay belgesi uygulamaya, disk görüntüsüne ve güncelleme paketine iliştirilir). Web Denetçisi
+  yalnızca geliştirme derlemesinde açıktır. Ajandam'ın penceresi kendi
   sayfasından başka bir adrese gidemez; dış bağlantılar tarayıcıda açılır. Mac'te yalnızca tıklanan bağlantı açılır;
   Windows'ta 3.8'den betik sayfayı tıklanmadan dış bir adrese yönlendirirse o adres tarayıcıda açılmaz.
 - **Güncellemeler:** Sürümler GitHub Actions'ta derlenip Ajandam'ın kendi imza anahtarıyla imzalanır.
@@ -62,7 +64,8 @@ Ajandam güncellemeyi hazır olunca haber verir; kurmak için **Şimdi kur** ve 
     parmak iziyle doğrular. Terminal'deki kurulum betiği (`scripts/kur.sh`) de aynı iki denetimi yapar. 3.8'den
     güncelleyici ve `kur.sh`, Ajandam'ın anahtarıyla imzalanmış sürüm bilgisi bir Apple ekip kimliği taşıyorsa o ekibin
     Developer ID sertifikasıyla imzalanmış paketi de kabul eder; ekip kimliği yoksa yalnızca Ajandam'ın kendi
-    sertifikasıyla imzalı olanı kabul eder.
+    sertifikasıyla imzalı olanı kabul eder. 3.8.1'den Mac sürümleri bu yolla, Developer ID'li ve Apple onaylı
+    yayımlanır; 3.7 ve öncesi için aynı derlemenin Ajandam sertifikasıyla imzalı kopyası ayrı pakette durur.
   - Windows: uygulama kurulum dosyasının SHA-256 özetini ve `latest-windows.json`'daki imzasını uygulamaya gömülü
     anahtarla doğrular. Güncelleme bilgisinin ikinci imzası sürüm numarasını, özeti ve dosya adını kapsar: eski bir
     sürüm yeniymiş gibi sunulamaz. İndirilen kurulum dosyası doğrulandıktan sonra kurulana kadar değiştirilemez.

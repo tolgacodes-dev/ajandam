@@ -3,6 +3,20 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [3.8.1] – 2026-10-08
+
+Bu sürümle Ajandam Mac'te Apple'ın onayıyla geliyor:
+
+- **Apple imzalı ve onaylı (Mac):** Ajandam artık Apple Developer ID sertifikasıyla imzalanıyor ve Apple tarafından denetlenip onaylanıyor (notarization). İndirdiğin disk görüntüsünü açınca "Apple doğrulayamadı" uyarısı ve Sistem Ayarları'ndaki "Yine de Aç" adımı yok.
+- Güncellemeden sonraki ilk açılışta macOS, ChatGPT oturumu ve şifreli notların anahtarı için Anahtar Zinciri'ne bir kez erişim izni isteyebilir: "Her Zaman İzin Ver" demen yeterli. Anımsatıcılar izni de yeniden sorulabilir. Kayıtların bundan etkilenmez.
+- Windows'ta bu sürümde değişiklik yok; Ajandam iki sistemde de aynı sürüm numarasını taşır.
+
+---
+
+**Mac**
+- Uygulama, disk görüntüsü ve uygulama içi güncelleme paketi Developer ID ile imzalı ve Apple'ın onay belgesi iliştirilmiş. Güncelleyici yeni imzayı, Ajandam'ın imzaladığı sürüm bilgisindeki ekip kimliğiyle doğrular.
+- 3.7 ve önceki sürümler bu güncellemeyi aynı derlemenin eski imzalı kopyasıyla alır; bir sonraki güncellemede Apple imzalı pakete geçer.
+
 ## [3.8.0] – 2026-10-08
 
 Bu sürüm Ajandam'ı hızlandırıyor, kapsamlı bir denetimde bulunan hataları düzeltiyor ve Windows ile Mac'e yeni, modern bir kurulum getiriyor. Öne çıkanlar:

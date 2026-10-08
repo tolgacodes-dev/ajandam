@@ -195,14 +195,13 @@ disk görüntüsünü çıkarır; İndirilenler'deki kopya Çöp Sepeti'ne gider
 sorma**'yı işaretlersen bir daha sormaz. Disk görüntüsünden ya da İndirilenler'den (taşınmadan) açılan Ajandam kendini
 güncelleyemez.
 
-Ajandam bir Apple geliştirici hesabıyla değil, kendi sertifikasıyla imzalanır (Apple'ın onayından, "notarization"dan
-geçmez); bu yüzden disk görüntüsüyle kurunca ilk açılışta macOS uyarır:
+3.8.1'den Ajandam Apple'ın Developer ID sertifikasıyla imzalanır ve Apple'ın onayından ("notarization") geçer: disk
+görüntüsüyle kurunca ilk açılışta macOS yalnızca İnternet'ten indirildiğini söyler, **Aç**'a basman yeter; Sistem
+Ayarları'ndaki **Yine de Aç** adımı yoktur. 3.8.0 ya da öncesinden güncelleyince imza bir kez değiştiği için macOS,
+ChatGPT oturumu ve şifreli notların anahtarı için Anahtar Zinciri iznini ve Anımsatıcılar iznini bir kez yeniden
+sorabilir; kayıtların etkilenmez.
 
-1. Ajandam'ı bir kez aç; macOS "açılamadı" derse **Bitti**'ye bas.
-2. **Sistem Ayarları › Gizlilik ve Güvenlik** bölümünün altındaki **Yine de Aç** düğmesine bas ve onayla.
-
-Bu yalnızca ilk kurulumda gerekir; Terminal satırıyla kurarsan hiç gerekmez. Ajandam ilk açılışta boştur;
-kayıtlarını sen girersin ya da dökümlerini içe aktarırsın.
+Ajandam ilk açılışta boştur; kayıtlarını sen girersin ya da dökümlerini içe aktarırsın.
 
 **Güncellemeler:** yeni sürüm çıkınca Ajandam arka planda indirir, imzasını ve özetini doğrular; Ajandam menü
 çubuğundayken (pencere 10 dakikadır kapalıyken; ⌘H ile gizlediğin pencere açık sayılır) kendiliğinden kurar. İstersen
@@ -259,7 +258,8 @@ Kayıtların Mac'teki yedekten taşınabilir: Mac'te **Ayarlar › Veriler ve ye
 **Yedekten geri yükle**.
 
 İndirdiğin dosyayı elle doğrulamak istersen her sürümün **SHA256SUMS** dosyasındaki özetle karşılaştır
-(Mac'te `shasum -a 256 Ajandam.dmg`, Windows'ta `certutil -hashfile Ajandam-Kurulum.exe SHA256`).
+(Mac'te `shasum -a 256 Ajandam.dmg`, Windows'ta `certutil -hashfile Ajandam-Kurulum.exe SHA256`). Mac'te Apple'ın
+onayını `spctl -a -vv /Applications/Ajandam.app` ile görebilirsin: `source=Notarized Developer ID` yazar.
 
 **Güncellemeler:** yeni sürüm arka planda indirilir, imzası ve SHA-256 özeti Ajandam'ın kendi anahtarıyla doğrulanır;
 Ajandam bildirim alanındayken ya da çıkarken kendiliğinden kurulur (istersen **Ayarlar › Hakkında**'dan kapatıp
@@ -367,7 +367,8 @@ stay on your computer: no account, no server, no subscription.
 (recommended: it verifies the download and installs into Applications), or download
 [Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg) and drag Ajandam onto
 the Applications folder next to it. Opened from the disk image or Downloads, Ajandam offers to move itself into
-Applications.
+Applications. Since 3.8.1 the app is signed with an Apple Developer ID and notarized by Apple, so macOS opens it
+without the **Open Anyway** step.
 
 **Install on Windows:** Windows 10 or 11 (64-bit). Download and run
 [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe) and
