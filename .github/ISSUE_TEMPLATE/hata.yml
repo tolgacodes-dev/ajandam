@@ -21,16 +21,34 @@ body:
       placeholder: |
         1. …
         2. …
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Nerede kullanıyorsun?
+      options:
+        - Mac
+        - Windows (kurulum dosyasıyla)
+        - Windows (Microsoft Store'dan)
+        - claude.ai
+    validations:
+      required: true
   - type: input
     id: surum
     attributes:
       label: Ajandam sürümü
-      description: Ajandam › Ayarlar › Hakkında
-      placeholder: "3.0.0"
+      description: Ayarlar › Hakkında
+      placeholder: "3.8.2"
     validations:
       required: true
   - type: input
     id: macos
     attributes:
       label: macOS sürümü
+      description: "Mac'te kullanıyorsan: Apple menüsü › Bu Mac Hakkında"
       placeholder: "macOS 26.0"
+  - type: input
+    id: windows
+    attributes:
+      label: Windows sürümü
+      description: "Windows'ta kullanıyorsan: Windows tuşu + R, winver yaz, Enter"
+      placeholder: "Windows 11 24H2 (26100.4061)"

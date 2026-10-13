@@ -22,7 +22,7 @@
   <a href="https://github.com/tolgacodes-dev/ajandam/releases/latest"><img alt="Son sürüm" src="https://img.shields.io/github/v/release/tolgacodes-dev/ajandam?label=s%C3%BCr%C3%BCm&color=f08a3c"></a>
   <img alt="macOS 12 ve üstü" src="https://img.shields.io/badge/macOS-12%2B-1f2937?logo=apple">
   <img alt="Apple çipi ve Intel" src="https://img.shields.io/badge/Apple%20%C3%A7ipi%20%2B%20Intel-evrensel-1f2937">
-  <img alt="Windows 10 ve 11" src="https://img.shields.io/badge/Windows-10%20%2B%2011%2C%2064%20bit-1f2937">
+  <img alt="Windows 10 (1607 ve sonrası) ve 11, x64" src="https://img.shields.io/badge/Windows-10%20%2B%2011%2C%20x64-1f2937">
   <img alt="Ücretsiz" src="https://img.shields.io/badge/%C3%BCcretsiz-2ea44f">
 </p>
 
@@ -35,8 +35,9 @@
 ## Neden Ajandam?
 
 - **Kayıtların bilgisayarında kalır.** Hesap açmazsın; Ajandam kayıtlarını hiçbir sunucuya göndermez (yalnızca senin
-  bağladığın yapay zekaya, senin izin verdiğin kadarı gider). İstersen iCloud Drive'a (Windows'ta OneDrive'a)
-  yedekler; istersen PIN, Touch ID ya da Windows Hello ile kilitlenir.
+  bağladığın yapay zekaya, senin izin verdiğin kadarı gider). Her gün yedekler (son 14 gün, 8 hafta ve 12 ay); istersen
+  iCloud Drive'a (Windows'ta OneDrive'a) ya da seçtiğin bir klasöre (USB bellek, ağ diski) de, istersen yedek parolasıyla
+  şifreli; istersen PIN, Touch ID ya da Windows Hello ile kilitlenir.
 - **Türkiye için yapıldı.** Kredi kartı kesim ve son ödeme günleri, taksitler, asgari ödeme (%20 / %40), TCMB azami
   faiz oranları, TÜFE ile enflasyon raporu, kira artış sınırı, resmî tatiller, vergi takvimi, BES devlet katkısı.
 - **Yapay zeka, anahtarsız.** Apple Intelligence (Mac) ya da Ollama, LM Studio gibi yerel modellerle bilgisayarında
@@ -77,6 +78,12 @@ borcuyla karşılaştırılır, daha önce girdiğin kayıtlar ikinci kez eklenm
 planlanır. Kurallarla okunamayan ya da taranmış dökümleri yapay zeka okur; tanımadığı iş yerlerine kategori önerir.
 Bir kategoriyi düzeltirsen Ajandam öğrenir, sonraki dökümlerde kendiliğinden uygular.
 
+Başka bir bütçe uygulamasından geçiyorsan **Ayarlar › Veriler ve yedek › Başka uygulamadan taşı** bütün defterini getirir:
+o uygulamanın dışa aktardığı çok hesaplı CSV, Excel ya da QIF dosyası. Dosyadaki hesapları ve kategorileri Ajandam'dakilerle
+eşlersin (tanımadığı kategoriyi kendiliğinden açmaz), iki hesap arasındaki para hareketleri tek transfer olur, etiketler ve
+notlar da gelir. Önce neyin ekleneceğini görürsün; aynı dosyayı yeniden yüklersen kayıtlar çoğalmaz, tek dokunuşla geri
+alırsın.
+
 ### Kredi kartı araçları
 
 ![Kart araçları: güncel borç, son ekstre, asgari ödeme, TCMB faiz oranları ve yalnızca asgari ödenirse borcun ne zaman biteceği](docs/ekran/kart-araclari.png)
@@ -88,9 +95,16 @@ Asgari ödeme (limite göre %20 ya da %40), akdi ve gecikme faizi, KKDF ve BSMV 
 
 ![Net varlık raporu: iki yıllık ay sonu net varlık grafiği, enflasyondan arındırılmış çizgi, varlık türleri ve hesaplar](docs/ekran/net-varlik.png)
 
-Banka, birikim, döviz ve altın, kripto, fon ve BES hesaplarının toplamı; kart borçları düşülür. Döviz, altın ve
-kripto canlı fiyatla, dövizli hesaplar güncel kurla TL'ye çevrilir. Bir yılda ne kadar arttığını enflasyondan
-arındırılmış olarak da görürsün.
+Banka, birikim, döviz ve altın, kripto, fon ve BES hesaplarının toplamı; kart ve banka kredisi borçları düşülür.
+İstersen kişilerle borç ve alacakların da katılır. Döviz, altın ve kripto canlı fiyatla, dövizli hesaplar güncel kurla
+TL'ye çevrilir. Bir yılda ne kadar arttığını enflasyondan arındırılmış olarak da görürsün. Net varlığını dolar ya da
+euro olarak da izleyebilirsin: her ay sonu o günün TCMB kuruyla çevrilir. Her ayın değişimi tasarruf, kur etkisi,
+piyasa etkisi ve diğer olarak ayrılır; artışın ne kadarının biriktirdiğinden, ne kadarının kurdan geldiğini görürsün.
+
+Alım-satımlarını girersen kripto, döviz ve altın, fon ve hisse (TEFAS, BIST) için ortalama maliyet, gerçekleşen ve
+gerçekleşmemiş kâr/zarar, temettü hesaplanır; enflasyondan arındırılmışı da. Fon ve hisse fiyatlarını sen girersin (birden
+çok satırı yapıştırarak ya da aracı kurumun CSV'sinden). BES'te devlet katkısı ayrı alt bakiye: hak ediş, yıllık tavan ve
+devreden katkıyla; karttan ödenen katkı payını onayınla katkıya çevirirsin. Kâr/zarar vergi hesabı değildir.
 
 ### Enflasyon ve kira artışı
 
@@ -129,40 +143,87 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 ## Özellikler
 
 - **Para:** gelir ve gider, hesaplar arası transfer, kredi kartları (kesim ve son ödeme günü, taksit, asgari ödeme),
-  düzenli kayıtlar, ödemeler ve faturalar, abonelikler (kendiliğinden yakalanır), bütçe, hedefler, borç ve alacak.
+  banka kredileri (kalan anapara borç olarak, taksit planı, ara ödeme ve erken kapama; taksidin yalnızca faizi gider),
+  düzenli kayıtlar, ödemeler ve faturalar, abonelikler (kendiliğinden yakalanır), bütçe, hedefler (istersen birikim
+  ya da fon hesabına bağlanır: katkı o hesaba transfer olarak yazılır, her ay otomatik katkı kurulur), kişilerle borç ve
+  alacak (istersen hesaptan düşülür, net varlığa katılır, taksit planıyla izlenir).
   Dövizli hesaplar ve harcamalar: 150'den fazla para birimi; TL karşılığı o günün kuruyla, istersen kendi kurunla.
   Etiketler (#tatil), iade kaydı (iade gelir sayılmaz, kategorisinin harcamasından düşer), harcama bölme, vadeli
   mevduat (faiz, stopaj, net getiri, vade dolunca onay), kredi hesaplayıcı (KKDF ve BSMV), gelişmiş filtreler ve
-  kayıtlı görünümler, kategori kuralları.
-- **Raporlar:** genel görünüm, nakit akışı tahmini, ay özeti, net varlık, enflasyon, etiketler ve yılın özeti. Özet
-  tek ay ya da son 3 ay, 6 ay, 1 yıl, 2 yıl için; önceki dönemle karşılaştırmalı. Sabah özetinde bütçe uyarısı.
+  kayıtlı görünümler, kategori kuralları, alt kategoriler (Market altında Kasap gibi; raporlarda ve bütçede üstünde
+  toplanır). Bütçede her limit yazıldığı aydan başlayarak geçerli (geçmiş aylar kendi limitleriyle), istersen geçen
+  ayın artanı ya da aşımı devreder; aylık toplam tavan ve tatil, giyim gibi harcamalar için yıllık bütçe. Hanede
+  kimin harcadığını ayırmak için kişi etiketleri (#eşim), Kişi süzgeci ve raporu.
+- **Yatırımlar:** alım, satım, temettü ve bölünme; ortalama maliyetle kâr/zarar (enflasyondan arındırılmışı da), fon ve
+  hisse fiyatları elle, yapıştırarak ya da CSV'den; BES'te devlet katkısı, hak ediş ve yıllık tavan.
+- **Raporlar:** genel görünüm, nakit akışı tahmini, ay özeti, net varlık, enflasyon, etiketler, kişiler ve yılın özeti. Özet
+  tek ay ya da son 3 ay, 6 ay, 1 yıl, 2 yıl için; önceki dönemle karşılaştırmalı. Sabah özetinde bütçe uyarısı. Nakit
+  akışı 30 günden 12 aya kadar; "ya şöyle olursa" senaryolarıyla (tek seferlik gider, kira artışı, kart ek ödemesi,
+  kredinin erken kapanması) iki tahmini yan yana görürsün. Yılın özetinde konut kira gelirinin beyan tahmini: istisna,
+  götürü ve gerçek gider karşılaştırması, tahmini vergi ve iki taksit (istersen vergi takvimine öneri olarak); işyeri
+  kirası (#işyeri etiketi) için yalnızca bilgi notu. 2025 ve 2026 gelirleri için; vergi danışmanlığı değildir, beyandan
+  önce bir mali müşavire doğrulat.
 - **Hızlı ekleme:** "market 250", "telefon 24000 6 taksit kart" yaz; kategori, tarih ve hesap kendiliğinden bulunur.
   "yarın 9 doktor" etkinlik, "her ayın 5'i kira 12.000" düzenli kayıt, "her pazartesi 10:00 toplantı" tekrarlayan
   etkinlik olur; "$5", "akşam 7'de", "haftaya salı" da anlaşılır. Hangi uygulamada olursan ol küçük bir ekleme
-  penceresi açılır: Mac'te ⌃⌥A (menü çubuğundan da), Windows'ta Ctrl+Alt+Space (bildirim alanından ve görev
-  çubuğundan da); kısayolu değiştirebilirsin.
-- **İçe aktarma:** banka ve kart dökümleri (PDF, Excel, CSV; okunamayan dosyada sütunları kendin seçersin), fiş
-  fotoğrafı, CSV dışa aktarma, takvime aktarma (.ics), tam yedek (fiş ve fatura ekleriyle) ve geri yükleme; geri
-  yüklemeden önce neyin değişeceği gösterilir.
-- **Ajanda:** ay, hafta ve liste görünümü; yapılacaklar ve hatırlatmalar. Tekrarlayan etkinlikler: her gün, N günde
-  ya da haftada bir, seçtiğin günler, ayın son cuması; değiştirirken "yalnızca bu", "bu ve sonrakiler" ya da "tümü".
-  Mac'te istersen Anımsatıcılar üzerinden iPhone'una da düşer.
+  penceresi açılır: Mac'te ⌥⌘A (menü çubuğundan da; 3.9'dan önce kurulduysa ⌃⌥A), Windows'ta Ctrl+Alt+Space (bildirim
+  alanından ve görev çubuğundan da); kısayolu değiştirebilirsin.
+- **İçe aktarma:** banka ve kart dökümleri (PDF, Excel, CSV; okunamayan dosyada sütunları kendin seçersin), başka bir
+  bütçe uygulamasından taşıma (çok hesaplı CSV, Excel ya da QIF; hesaplar, kategoriler, etiketler ve transferlerle), fiş
+  fotoğrafı, CSV dışa aktarma, takvim dosyası (.ics) içe ve dışa aktarma, tam yedek (fiş ve fatura ekleriyle tek bir
+  .zip arşivi; her dosyanın SHA-256 özetiyle) ve geri yükleme; geri yüklemeden önce neyin değişeceği gösterilir,
+  **Yedeği doğrula** bir arşivin ya da yedeğin sağlam olduğunu hiçbir şey yazmadan denetler. **Yedek parolası**
+  belirlersen bilgisayarından çıkan kopyalar (arşiv, iCloud Drive ya da OneDrive, yedek klasörü) AES-256 ile şifrelenir
+  (.ajandamyedek); parolanı unutursan kurulurken verilen kurtarma anahtarıyla açarsın.
+- **Ajanda:** ay, hafta ve liste görünümü (liste önümüzdeki 14 günü ya da bu ayı gösterir); yapılacaklar ve
+  hatırlatmalar. Yapılacaklarda öncelik (öncelikliler önce gelir; hızlı eklemede "!!" ya da "!") ve alt görevler
+  (satırda 2/5). Tekrarlayan etkinlikler: her gün, N günde ya da haftada bir, seçtiğin günler, ayın son cuması;
+  değiştirirken "yalnızca bu", "bu ve sonrakiler" ya da "tümü". Birden çok gün süren etkinlikler (tatil, kamp, fuar) ay
+  ve hafta görünümünde şerit olarak. Google Takvim, Apple Takvim ya da Outlook'tan dışa aktardığın takvim dosyasını
+  (.ics) içe aktarırsın: tekrarlar, istisnalar ve hatırlatmalar gelir, önce ne ekleneceği gösterilir, aynı dosyayı yeniden
+  aktarınca kayıtlar çoğalmaz. Fikstür, okul ya da tatil takvimi gibi paylaşılan takvimlere abone olursun (webcal):
+  Ajandam yalnızca senin eklediğin adresi 6 saatte bir indirir, etkinlikler ayrı renkte, salt okunur görünür, istediğini
+  ajandana kopyalarsın. Mac'te istersen Takvim uygulamasındaki etkinliklerin de (iCloud, Google, Exchange hesapların)
+  ajandada görünür; Ajandam Takvim'e bir şey yazmaz. İki yönlü eşitleme yok. Mac'te istersen ödemelerin ve yapılacakların
+  (önceliğiyle; ayrıca açarsan etkinliklerin ve borçların da) Anımsatıcılar üzerinden iPhone'una da düşer; Windows'ta
+  takvim dosyasıyla ödemeler ve borçlar da telefonunun takviminde hatırlatılır. Etkinliğin notundaki toplantı bağlantısı
+  (Zoom, Meet, Teams) ajandada "Katıl" ile açılır.
 - **Notlar:** Markdown (kod blokları, bağlantılar, iç içe listeler), yapılacak listeleri, tablolar, etiketler,
-  alt klasörler, sürükle-bırak, arşiv, sabitleme, yazdırma; vurgulama, fotoğraf, işlem, etkinlik ve ödemelere
-  bağlantı, yapılacak satırını ajandaya ekleme, hatırlatıcı; istediğin notu not parolasıyla şifreleme (istersen Touch
-  ID ya da Windows Hello ile açarsın), Son silinenler (30 gün), not geçmişi, `[[Başlık]]` ile not bağlantıları,
-  şablonlar, notta bul ve değiştir, içindekiler; .md ve .txt içe aktarma, bütün notları .zip olarak dışa aktarma.
+  alt klasörler, sürükle-bırak, arşiv, sabitleme, yazdırma; vurgulama, fotoğraf ve PDF ekleme, dipnotlar, not kutuları
+  (`> [!NOT]`, `> [!UYARI]`, `> [!İPUCU]`), işlem, etkinlik ve ödemelere
+  bağlantı, yapılacak satırını ajandaya ekleme, hatırlatıcı, etkinlikten tek tıkla toplantı notu (iki yönlü bağlantılı),
+  bugünün günlüğü (Git menüsünde de); istediğin notu not parolasıyla şifreleme (parola güç
+  ölçeriyle; istersen Touch ID ya da Windows Hello ile açarsın), Son silinenler (30 gün), not geçmişi, `[[Başlık]]` ile
+  not bağlantıları, şablonlar, notta bul ve değiştir, içindekiler; .md ve .txt içe aktarma, bütün notları .zip olarak
+  dışa aktarma.
 - **Mac:** her şeyde sağ tık menüsü (hesap, işlem, ödeme, not, takvim günü), ⌘Z ile geri alma, bildirimlerde
   "Ödendi", "Yarın hatırlat", "Yapıldı" ve "10 dk ertele", Ajandam'ın kendi bildirim sesleri, Dock rozeti, Mac açılınca
   başlat (macOS 13 ve üstü), istersen PIN ve Touch ID kilidi (Mac uyuyunca ya da ekran kilitlenince Ajandam da
-  kilitlenir; PIN'i unutursan Mac parolanla sıfırlarsın), sürükle-bırak, klavye kısayolları, açık ve koyu tema.
+  kilitlenir; PIN'i unutursan Mac parolanla sıfırlarsın), sürükle-bırak, klavye kısayolları, açık ve koyu tema. Dock'taki
+  simgeye sağ tıklayınca Hızlı Ekle, Yeni Not ve Bugün; bir uygulamada seçtiğin metin sağ tık › Servisler ile Ajandam'a not
+  olur ya da hızlı ekleme penceresinde açılır (ör. bankanın harcama SMS'i; Enter'a basmadan bir şey eklenmez). İstersen not
+  ve ajanda başlıkların Spotlight'ta çıkar (varsayılan kapalı; yalnızca başlıklar, PIN kilidi açıkken hiçbiri).
 - **Windows:** Windows 11'de menü, arama ve pencere düğmeleri tek satırda (tümleşik başlık çubuğu, yerleşim
-  önerileriyle; istersen klasik başlık), Dosya, Düzen, Görünüm, Git ve Yardım menüleri (Alt tuşlarıyla), her şeyde
+  önerileriyle; istersen klasik başlık) ve istersen Mica görünüm (pencerenin zemini masaüstünün renklerini hafifçe alır;
+  **Ayarlar › Görünüm**), Dosya, Düzen, Görünüm, Git ve Yardım menüleri (Alt tuşlarıyla), her şeyde
   sağ tık menüsü, Ctrl+Z ile geri alma, bildirimlerde "Ödendi", "Yarın hatırlat", "Yapıldı" ve "10 dk ertele", bildirim alanı ve görev çubuğu
   rozeti, istersen PIN ve Windows Hello kilidi (Win+L ile Ajandam da kilitlenir; PIN'i unutursan Windows Hello ile
-  sıfırlarsın), sürükle-bırak, klavye kısayolları; kurumsal ağlarda Windows'un vekil sunucu ayarı kullanılır.
+  sıfırlarsın, Windows Hello yoksa kilit ekranı Ajandam'ı kapatıp veri klasöründeki `guvenlik.json` dosyasını silmeni
+  söyler ve klasörün yolunu gösterir), sürükle-bırak, klavye kısayolları; kurumsal ağlarda Windows'un ara sunucu
+  (proxy) ayarı kullanılır: elle girilen ara sunucu, otomatik yapılandırma betiği (PAC) ve ayarları otomatik algılama
+  (WPAD). Ara sunucu kullanıcı adı ve parola istiyorsa **Ayarlar › Windows › Ağ**'dan girersin (yalnızca o sunucuya
+  gönderilir; NTLM ve Kerberos isteyen ara sunucular desteklenmez); **Sorun giderme › Ağ tanılama** hangi yolun
+  seçildiğini gösterir.
 - **Senin Ajandan:** kilit ekranında adın, 24 kart rengi, dört uygulama simgesi, her bildirim türüne ayrı ses.
   **Tutarları gizle** (Mac'te ⇧⌘H, Windows'ta Ctrl+Shift+H) ekrandaki bütün tutarları ₺••• yapar.
+- **Erişilebilirlik:** **Ayarlar › Görünüm › Yazı boyutu** yazıları %90, %100, %115 ya da %130 yapar (yalnızca yazılar
+  büyür; boşluklar ve simgeler aynı kalır, ekran düzeni bozulmaz). Sayfanın tamamını büyüten yakınlaştırma da var: Mac'te
+  ⌘+, Windows'ta Ctrl++. Grafikler klavyeyle gezilir ve tablo olarak da okunur; Ajandam sistemin daha fazla karşıtlık ve
+  hareketi azaltma ayarlarına uyar.
+- **Örneklerle dene:** ilk açılışta ya da **Ayarlar › Hakkında › Yardım**'dan Ajandam'ı iki yıllık uydurma kayıtlarla
+  (hesaplar, kredi kartı, ödemeler, bütçe, raporlar, ajanda, notlar) dene. Kendi kayıtlarına dokunulmaz: örnekler ve
+  denemede yaptıkların yalnızca bellekte durur, üstteki şeritten **Çık** deyince silinir. Denemede bildirim, yedek, dışa
+  aktarma ve yapay zeka uygulamalarının bağlantısı kapalı; PIN kilidin denemede de geçerli.
 
 ## Kurulum
 
@@ -170,8 +231,8 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 |---|---|
 | [Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg) | Mac: disk görüntüsü; açıp Ajandam'ı **Uygulamalar** klasörüne sürüklersin |
 | `kur.sh` (aşağıdaki Terminal satırı) | Mac: son sürümü indirir, doğrular, **Uygulamalar** klasörüne kurar (önerilen) |
-| [Microsoft Store](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR) | Windows 10 ve 11 (64 bit): Microsoft Store'dan kurulur (önerilen); Windows uyarısı çıkmaz, güncellemeleri Store yapar |
-| [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe) | Windows 10 ve 11 (64 bit): kurulum dosyası |
+| [Microsoft Store](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR) | Windows 10 (1809 ve sonrası) ve Windows 11, x64: Microsoft Store'dan kurulur (önerilen); Windows uyarısı çıkmaz, güncellemeleri Store yapar |
+| [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe) | Windows 10 (1607 ve sonrası) ve Windows 11, x64: kurulum dosyası |
 | `Ajandam-<sürüm>.zip`, `latest.json`, `latest-windows.json` | Ajandam'ın güncelleyicileri için; elle kurulumda gerekmez |
 | `Ajandam-Claude.mcpb` | Claude masaüstü uzantısı; Ajandam'ın içinden tek tıkla eklenir |
 | `SHA256SUMS` | Bütün dosyaların SHA-256 özetleri |
@@ -215,8 +276,11 @@ Güncellemeleri Denetle…** ile hemen bakabilirsin.
 
 ### Windows
 
-**Gereksinimler:** Windows 10 ya da 11, 64 bit. Ajandam, Windows'taki Microsoft Edge WebView2 bileşenini kullanır;
-bilgisayarında yoksa (çoğunda vardır) kurulum dosyası onu indirip kurar, bunun için internet gerekir.
+**Gereksinimler:** Windows 10 (1607 ve sonrası) ve Windows 11; Microsoft Store'dan kurmak için Windows 10 1809 ve
+sonrası. Ajandam yalnızca x64 (Intel ve AMD işlemciler) için derlenir: ARM işlemcili Windows 11 bilgisayarlarda
+Windows'un öykünmesiyle (emülasyon) çalışır, ARM işlemcili Windows 10'da çalışmaz. Ajandam, Windows'taki Microsoft Edge
+WebView2 bileşenini kullanır; bilgisayarında yoksa (çoğunda vardır) kurulum dosyası onu indirip kurar, bunun için
+internet gerekir.
 
 **Microsoft Store'dan (önerilen):** [Ajandam'ı Microsoft Store'da aç](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR) ve yükle. Microsoft
 imzaladığı için Windows uyarısı çıkmaz, yönetici izni istemez; güncellemeleri Microsoft Store kendiliğinden kurar.
@@ -225,7 +289,8 @@ dokunmaz); sonra eski Ajandam'ı **Ayarlar › Uygulamalar › Yüklü uygulamal
 kayıtlarla çalışır ve ikisi de hatırlatma gönderir. Store'dan kurulan Ajandam'ı kaldırmak kayıtlarını da siler: önce
 **Ayarlar › Veriler ve yedek › Yedek indir**. Microsoft Store sayfası şimdilik yalnızca Türkiye'de açık.
 
-**Kurulum dosyasıyla:** [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe)
+**Kurulum dosyasıyla** (Microsoft Store'u kullanamıyorsan, ör. Store'u kapatılmış bir iş bilgisayarında, Windows 10
+1607–1803'te ya da Türkiye dışında): [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe)
 dosyasını indir ve çalıştır. Kurulum tek pencere: **Kur**'a basman yeter, bitince **Aç**. **Seçenekler**'den
 kurulacağı klasörü değiştirebilir, masaüstüne kısayol koyup koymamayı ve Windows açılınca başlatmayı seçebilirsin.
 
@@ -263,7 +328,9 @@ gerekir. Kapatmadan önce Microsoft'un açıklamasını oku: bazı Windows sür�
 sıfırlamak gerekir. Microsoft Store'dan kurunca bu uyarıların hiçbiri çıkmaz.
 
 Kayıtların Mac'teki yedekten taşınabilir: Mac'te **Ayarlar › Veriler ve yedek › Yedek indir**, Windows'ta aynı yerden
-**Yedekten geri yükle**.
+**Yedekten geri yükle**. İndirilen .zip arşivi fiş, fatura ve nottaki resim ve PDF'leri de taşır (yalnızca kayıtlar için
+**Daha fazla › JSON yedek indir**; ona bunlar girmez). Mac'te yedek parolası belirlediysen arşiv şifrelidir
+(.ajandamyedek): Windows'ta yedek parolasıyla ya da kurtarma anahtarıyla açılır.
 
 İndirdiğin dosyayı elle doğrulamak istersen her sürümün **SHA256SUMS** dosyasındaki özetle karşılaştır
 (Mac'te `shasum -a 256 Ajandam.dmg`, Windows'ta `certutil -hashfile Ajandam-Kurulum.exe SHA256`). Mac'te Apple'ın
@@ -283,6 +350,24 @@ Ajandam'ın zamanlanmış bildirimleri ve pencere bileşeninin önbelleği her d
 Microsoft Store'dan kurulan Ajandam'da kaldırma penceresi yoktur: Windows uygulamayla birlikte kayıtlarını da siler,
 önce **Ayarlar › Veriler ve yedek › Yedek indir**.
 
+### İki bilgisayarda nasıl kullanılır
+
+Kayıtlar her bilgisayarda ayrı durur ve kendiliğinden eşitlenmez (Ajandam'ın sunucusu yok). Evdeki Mac'le işteki Windows
+gibi iki bilgisayarı birlikte kullanmak için:
+
+1. İkisinde de **Ayarlar › Veriler ve yedek › Yedek klasörü**'nden aynı klasörü seç (Dropbox, OneDrive, iCloud Drive, ağ
+   diski ya da USB bellek). İki Mac'te iCloud Drive yedeği, iki Windows'ta OneDrive yedeği de olur. Her bilgisayar kendi
+   klasörüne yazar.
+2. Öbür bilgisayarın en yeni yedeği aynı yerde görünür. **Bunu birleştir…** önce ne değişeceğini gösterir: burada olmayan
+   kayıtlar eklenir, orada daha yeni olanlar güncellenir, burada daha yeni olanlara dokunulmaz. Ayarlardan yalnızca burada
+   olmayanlar gelir (ör. bütçeler, Asistan'a notların); yapay zeka uygulamalarının izinleri gelmez, her bilgisayarda ayrı
+   verilir. Geri alınabilir.
+3. Bir bilgisayardan öbürüne geçince önce son çalıştığın yerin yedeğini birleştir. Birinde sildiğin kayıt öbüründe
+   silinmez. Burada sildiğin kayıtlar öbür cihazın yedeğinde duruyorsa geri gelir; silmeler henüz taşınmıyor. Fiş ve
+   fatura ekleri gelmez (onlar için **Yedek indir**'in arşivini öbüründe **Yedekten geri yükle**).
+
+Yedek parolası belirlediysen kopyalar şifrelidir; öbür bilgisayarda yedek parolasıyla ya da kurtarma anahtarıyla açılır.
+
 ## Yapay zeka
 
 Ajandam'ın yapay zekası API anahtarı istemez; **Ayarlar › Yapay zeka** bölümünden seçersin.
@@ -291,7 +376,7 @@ Ajandam'ın yapay zekası API anahtarı istemez; **Ayarlar › Yapay zeka** böl
 |---|---|---|
 | **Apple Intelligence** | Mac'inde; kayıtların hiçbir yere gitmez | macOS 26, Apple çipli Mac |
 | **Yerel model** ([Ollama](https://ollama.com), [LM Studio](https://lmstudio.ai)) | Bilgisayarında | Uygulama açıkken kendiliğinden bulunur |
-| **ChatGPT** (hesabınla giriş) | OpenAI'de; soruyla ilgili kayıtların senin izninle gider, IBAN ve kart numarası gizlenir | ChatGPT Plus ya da Pro planın yeter, API anahtarı gerekmez |
+| **ChatGPT** (hesabınla giriş) | OpenAI'de; soruyla ilgili kayıtların senin izninle gider (IBAN, kart ve TC kimlik numarası, telefon ve e-posta gizlenir; kişi adları gizlenmez) | ChatGPT Plus ya da Pro planın yeter, API anahtarı gerekmez |
 | **Claude** (masaüstü uygulaması, MCP) | Claude'da | Ajandam uzantısını tek tıkla eklersin |
 | **ChatGPT** (masaüstü uygulaması, MCP) | ChatGPT'de | Ajandam'ı ChatGPT'nin ayarlarına tek tıkla eklersin |
 
@@ -305,6 +390,14 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 
 - Kayıtlar yalnızca bilgisayarında, kullanıcı hesabının klasöründe durur. Ajandam hesap açtırmaz; reklam, izleme kodu
   ya da kullanım istatistiği içermez. Kayıtlarından hiçbir şey geliştiriciye gönderilmez.
+- Kayıtlar ve bilgisayarındaki yedekler şifrelenmez (not parolasıyla şifrelediğin notlar dışında). **Yedek parolası**
+  belirlersen bilgisayarından çıkan kopyalar (iCloud Drive ve OneDrive kopyaları, seçtiğin yedek klasöründeki kopyalar ve
+  **Yedek indir**'in arşivi) şifrelenir; parola ve kurtarma anahtarı hiçbir yerde saklanmaz. Belirlemediysen yedek
+  klasörünü (USB bellek, ağ diski) ve arşivi güvendiğin bir yerde sakla. PIN kilidi Ajandam'ın ekranını korur. Diskini
+  FileVault ya da BitLocker ile şifrelemeni öneririz. Ayrıntılar [SECURITY.md](SECURITY.md)'de.
+- **Spotlight'ta göster** (Ayarlar › Güvenlik; varsayılan kapalı) açıksa not ve ajanda kayıtlarının yalnızca başlıkları
+  bu bilgisayarın aramasında görünür (Ajandam'ın kilidinin dışında); not metni, şifreli notlar ve tutarlar girmez, PIN
+  kilidi açıkken dizin boş tutulur, kapatınca silinir.
 - Ajandam internetsiz de çalışır; internete yalnızca şunlar için çıkar:
   - güncelleme denetimi ve indirme (GitHub),
   - Türkiye verileri: TÜFE, kart faiz oranları, asgari ödeme sınırı, bayramlar ve kısa duyurular GitHub'daki,
@@ -314,7 +407,7 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
     jsDelivr'deki günlük kur listesi; ona ulaşılamazsa aynı listenin currency-api.pages.dev'deki kopyası); geçmiş
     tarihli dövizli kayıtlar için o günün TCMB kuru,
   - senin bağladığın yapay zeka: ChatGPT'ye yalnızca sorunu cevaplamak için gereken kayıtlar, senin iznine bağlı olarak
-    gider (IBAN, TC kimlik no, kart numarası, telefon ve e-posta gizlenir; notlar ayrı izinle),
+    gider (IBAN, TC kimlik no, kart numarası, telefon ve e-posta gizlenir, kişi adları gizlenmez; notlar ayrı izinle),
   - geri bildirim: yalnızca sen gönderdiğinde, formda yazdıkların (ve eklediğin ekran görüntüsü) Google'ın Apps Script
     hizmeti üzerinden Ajandam'ın destek adresine e-postayla iletilir.
 
@@ -357,21 +450,34 @@ stay on your computer: no account, no server, no subscription.
 - **Money:** accounts, credit cards with statement and due dates, installments and minimum payments, budgets,
   subscriptions, goals, debts; foreign-currency accounts and expenses (150+ currencies, converted at the day's rate);
   tags, refunds, split transactions, time deposits with withholding tax, a loan calculator, saved filters and
-  category rules; bank and card statement import (PDF, Excel, CSV) with reconciliation and duplicate detection.
+  category rules; bank and card statement import (PDF, Excel, CSV) with reconciliation and duplicate detection; move
+  your whole ledger from another budgeting app (multi-account CSV, Excel or QIF, with categories, tags and transfers).
+- **Investments:** buys, sells, dividends and splits with average-cost gains (also adjusted for inflation); fund and stock
+  prices entered by hand, pasted or read from a broker CSV; private pension (BES) state contribution and vesting.
 - **Turkey-specific:** CPI (TÜFE) based inflation report, rent increase cap, central bank card interest rates,
   public holidays, tax calendar, private pension (BES) state contribution; updated between releases through a signed
   data feed.
 - **AI without API keys:** Apple Intelligence (Mac) or local models (Ollama, LM Studio) on your computer, sign in
   with your ChatGPT Plus or Pro account, or connect Claude, ChatGPT and other MCP apps in one click. Nothing is saved
   without your approval.
-- **Calendar and notes:** month, week and list views, flexible recurring events, to-dos with reminders, calendar
-  export (.ics), quick add in plain Turkish ("yarın 9 doktor"), Markdown notes with tables, highlights, images and
+- **Calendar and notes:** month, week and list views (the list shows the next 14 days or the month), flexible
+  recurring events, to-dos with priorities, subtasks and reminders, calendar export (.ics), quick add in plain Turkish
+  ("yarın 9 doktor"), Markdown notes with tables, highlights, images, PDF attachments, footnotes, callouts and
   links to records, nested folders and an archive, per-note encryption (optionally unlocked with Touch ID or Windows
-  Hello), recently deleted notes, note history, import and export.
+  Hello), recently deleted notes, note history, import and export. On the Mac: a Dock menu, macOS Services for selected
+  text (add it as a note or open it in quick add) and optional Spotlight search of note and event titles (off by
+  default; titles only).
+- **Try it with sample data:** "Örneklerle dene" (on first launch or in Settings › About) opens two years of made-up
+  records. Your own records are untouched; the samples live in memory only and are gone when you leave.
+- **Accessibility:** text size in Settings › Appearance (Ayarlar › Görünüm › Yazı boyutu: 90%, 100%, 115% or 130%; only
+  the text grows, spacing and icons stay, so the layout holds), besides whole-page zoom (⌘+ on the Mac, Ctrl++ on Windows).
+  Charts can be explored with the keyboard or read as tables; the app follows the system's increased-contrast and
+  reduce-motion settings.
 - **Privacy:** no account, no ads, no tracking. Optional PIN, Touch ID or Windows Hello lock, and a privacy mode that
-  hides every amount on screen. The app goes online only
-  for update checks and the signed Turkey data feed (GitHub), public price and exchange-rate feeds, the AI service you
-  connect, and feedback you choose to send.
+  hides every amount on screen. The lock protects the app's screen only: apart from password-protected notes, records
+  and backups (including the iCloud Drive or OneDrive copies and downloaded backup files) are not encrypted, so use
+  FileVault or BitLocker. The app goes online only for update checks and the signed Turkey data feed (GitHub), public
+  price and exchange-rate feeds, the AI service you connect, and feedback you choose to send.
 
 **Install on Mac:** macOS 12 or later (Apple silicon and Intel). Run
 `curl -fsSL https://raw.githubusercontent.com/tolgacodes-dev/ajandam/main/scripts/kur.sh | bash` in Terminal
@@ -381,7 +487,8 @@ the Applications folder next to it. Opened from the disk image or Downloads, Aja
 Applications. Since 3.8.1 the app is signed with an Apple Developer ID and notarized by Apple, so macOS opens it
 without the **Open Anyway** step.
 
-**Install on Windows:** Windows 10 or 11 (64-bit). In Turkey, get it from the
+**Install on Windows:** Windows 10 (version 1607 or later; 1809 or later from the Microsoft Store) or Windows 11. Builds
+are x64 only: on Windows 11 on Arm they run under Windows' x64 emulation. In Turkey, get it from the
 [Microsoft Store](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR): no SmartScreen warning, and the Store keeps it up to
 date. Or download and run
 [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe) and

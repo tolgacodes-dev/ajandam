@@ -1,6 +1,6 @@
 Ajandam — Kullanım Koşulları
 Copyright © 2026 tolgacodes-dev. Tüm hakları saklıdır.
-Son güncelleme: 6 Ekim 2026
+Son güncelleme: 9 Ekim 2026
 
 Aynı metin Ajandam'da Ayarlar › Hakkında › Kullanım koşulları'nda da okunur.
 
@@ -34,9 +34,10 @@ Kısaca
 
 3. Kayıtların ve gizlilik
 
-   Kayıtların yalnızca senin cihazında saklanır: Mac'te ~/Library/Application Support/Ajandam,
-   Windows'ta %APPDATA%\Ajandam klasöründe. claude.ai sürümünde kayıtlar claude.ai hesabına bağlı
-   olarak saklanır.
+   Kayıtların yalnızca senin cihazında, Ajandam'ın klasöründe saklanır: Mac'te ~/Library/Application
+   Support/Ajandam (Mac App Store'dan kurulan Ajandam'da ~/Library/Containers/app.ajandam.mac
+   içinde), Windows'ta %APPDATA%\Ajandam (Microsoft Store'dan kurulan Ajandam'da Ajandam paketinin
+   klasöründe). claude.ai sürümünde kayıtlar claude.ai hesabına bağlı olarak saklanır.
 
    Ajandam hesap açtırmaz; reklam, izleme kodu ya da kullanım istatistiği içermez. Geliştirici
    kayıtlarını göremez, kayıtlarından hiçbir şey geliştiriciye gönderilmez.
@@ -48,7 +49,8 @@ Kısaca
 
    Ajandam internetsiz de çalışır. Yalnızca şunlar için internete çıkar:
 
-   - Güncelleme denetimi ve indirme: GitHub
+   - Güncelleme denetimi ve indirme: GitHub (Mac App Store'dan ya da Microsoft Store'dan kurulan
+     Ajandam'ı Store günceller)
    - Türkiye verileri (TÜFE, kart faiz oranları, asgari ödeme sınırı, bayramlar ve kısa duyurular):
      GitHub'daki, Ajandam'ın imzasıyla yayımlanan veri dosyası; güncelleme denetimi açıkken alınır
      ve bu istekte kayıtlarından hiçbir şey gönderilmez
@@ -94,15 +96,16 @@ Kısaca
 
 8. Yedekler ve veri kaybı
 
-   Ajandam her gün kayıtlarının yedeğini alır ve son 30 günü tutar; istersen iCloud Drive'a ya da
-   OneDrive'a da kopyalar.
+   Ajandam her gün kayıtlarının yedeğini alır ve son 30 günü tutar; istersen iCloud Drive'a (Mac App
+   Store'dan kurulan Ajandam'da yok) ya da OneDrive'a da kopyalar.
 
    Cihaz arızası, yanlışlıkla silme ya da başka yazılımlar yüzünden veri kaybı olabilir. Önemli
    kayıtların için düzenli olarak yedek indir ve başka bir yerde sakla.
 
 9. Güncellemeler
 
-   Yeni sürümler GitHub'da yayımlanır. Ajandam yalnızca imzası doğrulanan güncellemeyi kurar;
+   Yeni sürümler GitHub'da yayımlanır; Mac App Store'dan ya da Microsoft Store'dan kurulan Ajandam'ı
+   Store günceller. Ajandam kendini güncellerken yalnızca imzası doğrulanan güncellemeyi kurar;
    Kendiliğinden kur açıksa hazır güncelleme Ajandam arka plandayken sessizce kurulur. Bunu
    Ayarlar › Hakkında'dan kapatabilirsin.
 

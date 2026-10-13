@@ -3,12 +3,234 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [3.9.0] – 2026-10-13
+
+Bu sürüm Ajandam'ın bugüne kadarki en büyük güncellemesi: banka kredileri ve bütün borçlar tek yerde, yatırımlar, takvim abonelikleri, şifreli ve ekleriyle tek dosyalık yedek, iki bilgisayar arasında birleştirme, başka uygulamalardan taşıma ve örneklerle deneme geliyor; bütçe, ajanda, hedefler, nakit akışı, net varlık ve yapay zeka uygulamaları genişliyor. Öne çıkanlar:
+
+- **Banka kredisi ve borçlar:** konut, taşıt ya da ihtiyaç kredisini hesap olarak ekle; kalan anapara net varlıktan düşülüyor, taksit planı (anapara, faiz, KKDF ve BSMV) çıkarılıyor, ara ödeme ve erken kapama var. Kişilerle borç ve alacak bir hesaptan düşülebiliyor ve taksitle izleniyor. Kart, kredi, ek hesap (KMH) ve kişilere borçların hepsi tek panelde, aylık yükü ve borç/gelir oranıyla; harcamayı kişilerle **Bölüş…**.
+- **Bütçe:** limit değişince geçmiş aylar kendi limitleriyle kalıyor, artan ya da aşım istersen sonraki aya devrediyor; aylık toplam tavan, yıllık bütçe, alt kategoriler ve kişi etiketleri (#eşim). Kayıt eklerken bütçenin %90'ı dolarsa ya da aşılırsa, tutar olağan dışıysa, abonelik zamlandıysa ya da karta yalnızca asgari ödendiyse hemen söyleniyor; Özet'te "Bugün ~₺450" bugün ne kadar harcayabileceğini gösteriyor.
+- **Takvim ve ajanda:** Google, Apple ya da Outlook'un takvim dosyasını (.ics) içe aktar; fikstür, okul ya da tatil takvimine abone ol (webcal); Mac'te istersen Takvim uygulamasındaki etkinlikler de görünüyor. Tarihi olmayan yapılacaklar için Gelen kutusu, tek dokunuşla Bugüne, Yarına ya da Haftaya al, tür süzgeci, öncelik ve alt görevler, birden çok gün süren etkinlikler ve 90 güne kadar önceden hatırlatma. Toplantı bağlantısı "Katıl" ile açılıyor, etkinlikten toplantı notu oluşturuluyor.
+- **Yedekler ve iki bilgisayar:** Yedek indir artık fiş, fatura ve not ekleriyle tek bir .zip; **Yedeği doğrula**, USB bellek ya da ağ diski için **yedek klasörü**, 8 haftalık ve 12 aylık yedekler. Yedek parolası belirlersen cihazından çıkan kopyalar AES-256 ile şifreleniyor (kurtarma anahtarıyla). Aynı yedek klasöründe ya da iCloud Drive / OneDrive'da öbür bilgisayarın en yeni yedeğini **Bunu birleştir…** ile alırsın; yedeğin iki haftadır bilgisayarın dışına çıkmadıysa hatırlatılıyor.
+- **Yatırımlar:** kripto, döviz ve altın, fon ve BES hesaplarına alış, satış, temettü ve bölünme gir; ortalama maliyet, gerçekleşen ve gerçekleşmemiş kâr/zarar enflasyondan arındırılmışıyla hesaplanıyor. Fon ve hisse fiyatını elle, yapıştırarak ya da aracı kurumunun CSV'siyle girersin; BES'te devlet katkısı ayrı izleniyor. Kâr/zarar vergi hesabı değildir.
+- **Hedefler, nakit akışı, net varlık:** hedefi bir hesaba bağla, katkı transfer olarak yazılsın, "Her ay … TL" ile otomatik katkı kur; nakit akışı 12 aya kadar ve "ya şöyle olursa" senaryolarıyla; net varlık dolar ya da euro olarak, değişimi tasarruf, kur ve piyasa etkisine ayrılıyor; mülkünü ve aracını da ekleyebilirsin.
+- **Raporlar ve vergi:** Özet, Bütçe ve Raporlar'ı etikete göre daralt ("#iş hariç", "yalnız #iş"); bir ayın ya da yılın kayıtlarını Excel ve CSV olarak, fiş ve faturalarıyla ve özetiyle tek .zip dosyasında muhasebecine gönder. Kira geliri beyanı (tahmini): istisna, götürü ve gerçek gider karşılaştırması, tahmini vergi ve iki taksit; vergi danışmanlığı değildir, beyandan önce bir mali müşavire doğrulat.
+- **Yapay zeka uygulamaları:** her uygulamanın paraya, ajandaya, notlara ve borçlara bakıp bakamayacağını ayrı seç; erişim günlüğü hangi uygulamanın ne zaman ne sorduğunu gösteriyor. Uygulamalar artık hedefe katkı, borç ödemesi, düzenli kayıt ve borç eklemeyi, ajanda kaydını ya da ödemeyi düzenlemeyi ve silmeyi de önerebiliyor; her biri senin onayınla. Asistan'a kendi notlarını yazabilirsin.
+- **Taşı ve dene:** başka bir bütçe uygulamasından çok hesaplı CSV, Excel ya da QIF dosyası hesapları, kategorileri, etiketleri ve transferleriyle geliyor, tek dokunuşla geri alınıyor. Ajandam'ı iki yıllık örnek kayıtlarla dene; kendi kayıtlarına dokunulmuyor, çıkınca her şey siliniyor.
+- **Her gün:** Geri al her yerde (kayıt ve ödeme düzenleme, düzenli kayıt, hedef, borç, bütçe limiti); İşlemler'de sıralama, çoklu seçim ve haftalık dönemler; düzenli kayıtta "N kez" ve "Bu dönemi atla"; ödemede bitiş ve kısmi ödeme; kart limitinin %80'ine varınca uyarı ve asgari ödemede tahmini akdi faiz.
+- **Mac ve Windows:** Mac'te Dock menüsü, Servisler (seçtiğin metni, ör. bankanın harcama SMS'ini Ajandam'a ekle), Spotlight ve `ajandam://ekle`; Windows'ta kurumsal vekil sunucu (otomatik yapılandırma ve kimlik) ve Mica görünüm. "Tüm verileri sil" Ajandam'ın bilgisayardaki öteki izlerini de siliyor.
+- **Erişilebilirlik:** yazı boyutu %90–%130 ve büyük hedefler; grafikler klavyeyle geziliyor ve tablo olarak okunuyor, takvim ızgarası ve form hataları ekran okuyucuda doğru okunuyor, "Karşıtlığı artır" açıkken yazılar daha belirgin.
+
+---
+
+**Banka kredisi ve borçlar**
+- Kredi hesabında taksit tutarı faiz, vade ve krediden hesaplanabiliyor; KKDF ve BSMV kredi türüne göre (konutta yok). Taksitler bekleyen ödemeler gibi görünüyor, ödenince bağlı hesaptan transfer ve faiz gideri olarak yazılıyor.
+- Ara ödeme kalan taksitlerin tutarını düşürüyor (taksit sayısı aynı kalıyor), erken kapama kalan anaparayı kapatıyor; "Planı düzelt" ile bankanın planına uydurabiliyorsun. Önceki bir Ajandam sürümünde düzenlenen kredi hesabı "Banka"ya döner; bu sürüm onu taksitlerinden tanıyıp geri çevirmeyi öneriyor.
+- Kişilerle borçta ödeme bir hesaptan düşülebiliyor (ya da alacak hesaba eklenebiliyor), taksit planı çıkarılıyor; taksitler ajandada, nakit akışında ve takvime aktarımda görünüyor.
+- Toplam borç (Borç ve alacak'ın üstünde): kart, banka kredisi, eksi bakiyeli ek hesap ve kişilere borçlar ayrı satırlarda; her birinin aylık yükü ve son ödeme günü, son 3 ayın ortalama gelirine göre borç/gelir oranı (yaklaşık; banka değerlendirmesi değildir). Yapay zekanın borçlar aracı da bunları veriyor (para izni varsa).
+- Ek hesap (KMH) limiti: banka hesabına limit girince kartında kullanım çubuğu, ayrıntıda kalan ve tahmini aylık faiz. Nakit akışı ve sabah özeti limit içindeki eksi bakiyeyi değil, limitin %80'inin dolmasını ve aşılmasını uyarıyor (Ayarlar › Bildirimler).
+- Bölüş…: bir harcamayı formdan ya da sağ tıkla kişilerle bölüş; harcama senin payına iniyor, öteki paylar kişi başına alacak oluyor. Hesap bakiyesi ve kart borcu değişmiyor; hepsi tek Geri al'la geri alınıyor. Bölüşülen harcamayı silince bölüşmeden doğan alacaklar da siliniyor (yine tek Geri al).
+- Kişiler görünümü: kişi başına net bakiye (alacak − borç) ve geçmiş; kişi alanında önceki adlar öneriliyor.
+- Alacağın vade günü ve gecikince haftada bir sabah özetinde hatırlatılıyor (Ayarlar › Bildirimler › Alacak vadesi); kayıtlar değişmiyor.
+
+**Bütçe ve kategoriler**
+- Bir limiti değiştirdiğinde değişiklik o aydan başlıyor; geçmiş aylar kendi limitleriyle gösteriliyor.
+- Devir: istersen geçen ayın artanı bu aya ekleniyor, aşım bu aydan düşülüyor. Aylık toplam tavan bütün kategorilerin toplamına sınır koyuyor.
+- Yıllık bütçe: tatil, giyim, bakım gibi yılda birkaç kez yapılan harcamalar için yıl boyu toplam.
+- Alt kategoriler raporlarda ve bütçede üst kategoride toplanıyor. Kişi etiketleri (#eşim, #çocuk) için İşlemler'de Kişi süzgeci ve Raporlar'da kişiler.
+- Kayıt eklerken bildirimin altında tek satır: kategorinin ya da aylık toplam tavanın %90'ı doldu ("Market bütçesinin %92'si doldu, ₺460 kaldı") ya da aşıldı, tutar olağan dışı ("Olağan dışı: Market için genelde ₺1.200") ya da abonelik zamlandı ("Netflix ₺230 → ₺260 (+₺30)"). Yalnızca eşiği geçiren kayıtta; Özet'te yazarak eklerken kaydetmeden önce, Mac ve Windows'un hızlı ekleme penceresinde de görünüyor.
+- Bugün ne kadar harcayabilirsin: Özet'te ay sonu tahmininin altında ve sabah özetinde "Bugün ~₺450"; ayın serbest kalan parası (gelirden ya da aylık toplam tavandan harcananlar, düzenli giderler, bekleyen ödemeler ve abonelikler düşülür) kalan günlere bölünüyor (Ayarlar › Bildirimler › Bugünkü harcama payı).
+- Kim? çipleri: kişi etiketleri kayıt formunda ve hızlı eklemede tek dokunuşla.
+- Kapsam: Özet, Bütçe ve Raporlar'ı bir etikete göre daralt ("#iş hariç", "yalnız #iş"); toplamlar, bütçe kullanımı, ay sonu tahmini ve raporlar kapsamla hesaplanıyor, başlıkta rozet görünüyor; bakiyeler ve net varlık değişmiyor. Seçim bu cihazda; sabah özeti ve yapay zeka uygulamaları bütün kayıtlarla çalışıyor.
+
+**Takvim ve görevler**
+- Takvim dosyası içe aktarılırken tekrarlar, istisnalar ve hatırlatmalar geliyor; önce ne ekleneceği gösteriliyor, aynı dosyayı yeniden aktarınca kayıtlar çoğalmıyor. Saatli etkinlikler cihazın saat dilimine çevriliyor.
+- Abonelikler: Ajandam yalnızca senin eklediğin adresi indiriyor (eklerken ayrıca soruyor), etkinlikler ayrı renkte; istediğini kendi ajandana kopyalayabilirsin. Mac'te Takvim uygulamasının etkinlikleri de salt okunur görünebiliyor; Ajandam Takvim'e bir şey yazmıyor.
+- Birden çok gün süren etkinlik (bitiş tarihiyle) kapsadığı her günde görünüyor; sabah özetinde ve menü çubuğunda "sürüyor".
+- Yapılacaklarda öncelik ve alt görevler (satırda 2/5); öncelikliler önce geliyor ve Anımsatıcılar'a önceliğiyle gidiyor. Liste görünümü önümüzdeki 14 günü ya da bu ayı gösteriyor.
+- Notlarda PDF eki (kart olarak; tıklayınca açılıyor), dipnotlar ve not kutuları (`> [!NOT]`, `> [!UYARI]`, `> [!İPUCU]`).
+- Gelen kutusu: "Tarih yok" ile (hızlı eklemede "tarihsiz: …") eklenen yapılacaklar Ajanda'nın listesinde ve Özet'te; gecikmiş sayılmıyor, bildirim gelmiyor, takvime aktarılmıyor. Tarih verince ya da "Bugüne al" deyince ajandaya geçiyor.
+- Bugüne al, Yarına al, Haftaya al: etkinlik ve yapılacakların sağ tık menüsünde ve geciken yapılacakların satırında; tekrarlayanda yalnızca o tekrar taşınıyor, saat korunuyor, tek Geri al yetiyor.
+- Ajanda'da tür süzgeci: Etkinlik, Yapılacak, Ödeme, Borç, Tatil/vergi ve takvim abonelikleri; seçim bu cihazda hatırlanıyor.
+- Tüm gün kayıtlarda 30, 60 ya da 90 gün önce hatırlatma (pasaport, ehliyet, sözleşme yenileme).
+- Toplantı bağlantısı: notundaki Zoom, Meet ya da Teams adresi ajandada, gün panelinde ve Özet'te "Katıl" ile, etkinlik penceresinde "Bağlantıyı aç" ile açılıyor; açmadan önce adres soruluyor. Takvim dosyası içe aktarılırken yer ve bağlantı notun başına yazılıyor ("Konum: …").
+- Toplantı notu oluştur (etkinlik penceresinde ve sağ tık menüsünde): not etkinliğin başlığı, günü ve saatiyle açılıyor, etkinlik ve not birbirine bağlanıyor.
+- Takvime aktarmada "Hatırlatmalar" açıksa ödemeler, kart ekstreleri ve borçlar da telefonun takviminde son günden önce sabah hatırlatılıyor (Windows'ta telefona hatırlatmanın yolu). Mac'te Anımsatıcılar'a tekrarlayan yapılacaklar da gidiyor; iPhone'da tamamlanan tekrarın o günü Ajandam'da bitti oluyor. Önümüzdeki iki haftanın etkinlikleri ve borç ve alacak vadeleri yalnızca istersen gidiyor: Ayarlar › Mac › iPhone'a hatırlatma'nın altında "Etkinlikleri de gönder" ve "Borç ve alacak vadelerini de gönder" (ikisi de kapalı başlar; kapatınca gönderilmiş olanlar Anımsatıcılar'da tamamlandı olur).
+
+**Yedekler**
+- Yedek indir, kayıtlarla birlikte ekleri de içeren bir .zip arşivi indiriyor; Yedekten geri yükle arşivi alıyor ve eksik ekleri arşivden getiriyor. Arşivdeki yedek.json eski Ajandam sürümlerinde de geri yükleniyor. Yalnızca kayıtlar için Daha fazla › JSON yedek indir.
+- Yedeği doğrula: arşivin ya da yedeğin her dosyası özetiyle karşılaştırılıyor, hiçbir şey yazılmıyor.
+- Yedek klasörü: seçtiğin klasöre her gün JSON yedeği (özetiyle) ve haftada bir arşiv yazılıyor; klasöre ulaşılamazsa söyleniyor. Yedeğe dön bu klasördeki ve öteki cihazların yedeklerini de listeliyor.
+- Günlük yedekler en çok 14 gün; ayrıca son 8 haftanın ve 12 ayın birer yedeği tutuluyor.
+- İki bilgisayarda: aynı yedek klasöründe ya da iCloud Drive / OneDrive'da öbür bilgisayarın en yeni yedeği Ayarlar › Veriler ve yedek'te görünüyor. **Bunu birleştir…** önce ne değişeceğini gösteriyor, olmayanları ekliyor, daha yenileri güncelliyor, geri alınabiliyor. Silinenler ve ekler henüz taşınmıyor.
+- Yedek 14 gündür bilgisayarın dışına (yedek klasörü, iCloud Drive / OneDrive, Yedek indir) çıkmadıysa Özet'te ve sabah özetinde hatırlatılıyor, 30. günde daha belirgin; "Sonra hatırlat" bir hafta erteliyor.
+
+**Yapay zeka uygulamaları**
+- Ayarlar › Yapay zeka › Uygulama izinleri: Para, Ajanda, Notlar, Borçlar ve Kişisel bilgileri gizle uygulama başına. Yeni bağlanan uygulamalarda notlar kapalı başlıyor.
+- Erişim günlüğü: zaman, uygulama, araç, kaç kayıt döndüğü ve sonuç; kayıtlarının içeriği tutulmuyor, günlük yalnızca bu cihazda (en çok 30 gün).
+- Yeni öneri araçları: hedefe katkı, borç ödemesi ve düzenli kayıt ekleme (her zaman onayınla).
+- Yatırımlar için yeni okuma aracı (`yatirimlar`, Para izniyle); hedefe katkı bağlı hedefte transfer de öneriyor (kaynak hesap seçilebiliyor); nakit akışı 180 ve 365 gün, net varlık dolar ve euro ve değişimin kaynaklarıyla. Kira beyanı tahmini yapay zeka uygulamalarına açık değil.
+- Yeni öneri araçları: ajanda kaydını ya da bekleyen ödemeyi düzenleme ve silme, kişiyle borç ya da alacak ekleme. Düzenleme ve silme her zaman tek tek onaylanıyor, "Onaysız kaydet"e girmiyor ve geri alınabiliyor; tekrarlayan kayıtta yalnızca o gün ya da bütün tekrarlar.
+- Ödeme eklerken bitiş tarihi ya da ödeme sayısı verilebiliyor; ödemeler listesi bitişi söylüyor.
+- Asistan'a notlarım: Ayarlar › Yapay zeka'da Asistan'ın her soruda dikkate alacağı kısa notlar (en çok 500 harf); kuralları değiştiremiyorlar. ChatGPT seçiliyse notlar her soruyla OpenAI'ye gidiyor, kişisel bilgiler gizlenerek. Notlar yedeğe giriyor.
+
+**Hedefler, nakit akışı ve net varlık**
+- Hedef isteğe bağlı olarak bir birikim, vadeli ya da fon/BES hesabına bağlanıyor; katkı seçtiğin hesaptan o hesaba transfer olarak yazılıyor (para zaten hesaptaysa "Transfer yazma"). Biriken hedefe yaptığın katkılardır, hesap bakiyesi değil; birden çok hedef aynı hesabı paylaşabilir.
+- "Her ay … TL" otomatik katkı aylık düzenli transfer olarak kuruluyor ve hedef tarihinde bitiyor; önerilen tutar hedef tarihine göre. Bağlı transferi İşlemler'de silmek ya da düzenlemek hedefteki katkıyı da değiştiriyor; tek Geri al ikisini birlikte getiriyor.
+- Nakit akışında 6 ve 12 aylık tahmin: haftalık çizgi ve ay ay giriş, çıkış ve ayın en düşük bakiyesi. Senaryolar (tek seferlik gelir ya da gider, bir aydan sonra aylık değişim, kart ek ödemesi, kredinin erken kapanması) iki çizgi ve fark tablosuyla; kaydedilmiyor.
+- Net varlık TL, dolar ya da euro olarak (her ay sonu o günün TCMB kuruyla; kuru bulunamayan ay "yaklaşık"); değişim tasarruf, kur etkisi, piyasa etkisi ve diğer olarak tablo ve yığılmış grafikle.
+- Net varlıkta dönem: 6, 12, 24 ay ya da Tümü (bu cihazda hatırlanıyor); eğri ve "Değişim nereden geldi?" seçilen dönemi gösteriyor.
+- Kur farkı: dövizli hesapların kur farkı hesap hesap ve para birimine göre, bir yıl ya da bir ay için ("Dolar hesabı: bu yıl +₺…").
+- Mülk ve araç: Fon ve BES hesabında "Mülk" ya da "Araç" seç, değerini elle güncelle; net varlıkta ayrı grupta, banka ve nakit toplamına ve nakit akışına girmiyor. Konut ya da taşıt kredin varsa evini ya da aracını eklemen öneriliyor.
+- Nakit akışı senaryosunda "Aylık gider (N ay)" (ör. taşıt kredisinin taksiti); kredi hesaplayıcıdan tek tıkla "Nakit akışı senaryosuna ekle". Kredi hesaplayıcıda KYK gibi faizsiz ve ertelemeli planlar için not.
+
+**Yatırımlar**
+- Hesap ayrıntısında "Alım-satım ve kâr/zarar": alış, satış, temettü, bölünme ve bedelsiz; ortalama maliyet, gerçekleşen ve gerçekleşmemiş kâr/zarar ve temettü, enflasyondan arındırılmışıyla. Raporlar › Net varlık'ta Yatırımlar.
+- Alım-satımın para hareketi istersen transfer, temettü gelir olarak birlikte kaydediliyor; Geri al ikisini birlikte geri alıyor.
+- BES'te devlet katkısı ayrı alt bakiye: hak ediş yüzdesi, yıllık tavan ve tavanı aşan katkının sonraki yıla devri. Kartla ödenen "BES KATKI PAYI" için öneri çıkıyor; "BES katkısı say…" onayladıklarını BES hesabına transfere çeviriyor.
+- Önceki Ajandam sürümleri miktarları görmeye devam ediyor; maliyet ve geçmiş yeni bölümde.
+
+**Taşıma ve içe aktarma**
+- Başka uygulamadan taşı (Ayarlar › Veriler ve yedek, komut paleti, Dosya menüsü): dosyadaki hesaplar ve kategoriler Ajandam'dakilerle eşleniyor; tanınmayan kategori yalnızca "Yeni kategori" seçersen açılıyor. Eşlemeler hatırlanıyor.
+- İki hesaptaki aynı gün, aynı tutarlı ters hareketler tek transfer oluyor, önizlemede ayrılabiliyor. Yeni hesabın açılış bakiyesi yazılıyor ya da bugünkü bakiyeden hesaplanıyor. Aynı dosya yeniden yüklenince kayıtlar çoğalmıyor; taşıma Ayarlar'dan bütünüyle kaldırılabiliyor.
+- Hızlı ekleme: banka SMS'ini yapıştırınca kullanılabilir limit, güncel bakiye ya da toplam borç tutar sanılmıyor; gelen para ("hesabınıza … geldi") gelir oluyor, "harcama" sözcüğü kategoriyi Vergi ve harç yapmıyor; tarih ve saatli SMS'te harcama önde.
+
+**Deneme kipi**
+- Örneklerle dene (ilk açılışta, Ayarlar › Hakkında › Yardım'da ya da komut paletinde): örnekler ve denemede yaptıkların yalnızca bellekte; üstteki şeritten Çık deyince siliniyor. Denemede bildirim, yedek, dışa aktarma, yazdırma, canlı fiyat, takvim abonelikleri ve yapay zeka uygulamalarının bağlantısı kapalı; PIN kilidin geçerli.
+
+**Vergi**
+- Kira geliri beyanı (tahmini): 2025 ve 2026 gelirleri için konut istisnası, götürü ve gerçek gider karşılaştırması, matrah, tahmini vergi ve iki taksit (istersen vergi takviminde öneri olarak). İşyeri kirasını #işyeri etiketiyle ayırırsın; işyeri için yalnızca beyan sınırı notu. Yeni yılın tutarları uygulama güncellemesini beklemeden Türkiye verileriyle gelebiliyor.
+
+**Güvenlik**
+- Yedek parolası: kurtarma anahtarı bir kez gösteriliyor ve "yazdım" onayı isteniyor; bu cihaz kopyaları sormadan yazıp açıyor. Yedekten geri yükle, Yedeği doğrula ve Yedeğe dön şifreli yedekleri de açıyor; Yedek indir › Daha fazla'da şifresiz arşiv.
+- Parola güç ölçeri (not parolası ve yedek parolası): sık kullanılan parolaları, Türkçe ad ve sözcükleri, klavye dizilerini, tarihleri ve telefon numaralarını tanıyor; zayıf parola bir kez onay istiyor, engellenmiyor.
+
+**Ödemeler ve kartlar**
+- Kısmi ödeme: faturanın bir kısmını ödediğinde kalan, aynı son günle "(kalan)" olarak bekleyen ödemelerde duruyor; Özet'te, uyarılarda ve bildirimlerde görünüyor.
+- Tekrarlayan ödemenin sonraki dönemi tam tutarıyla açılıyor; "Ödenmedi yap" bekleyen kalanı kaldırıyor. Tutarı tahmini ödemede (ör. değişken fatura) kalan, Ödendi penceresindeki kutuyla açılıyor.
+- Kart limiti uyarısı dövizli kartta kartın para biriminde; limitsiz ve arşivdeki kartlar sayılmıyor. Sabah özetindeki uyarı Ayarlar › Bildirimler › Kart limiti uyarısı'ndan kapatılabiliyor; Kart durumu çubuğu da %80'de kırmızı.
+- Tahmini akdi faiz TCMB'nin azami oranıyla (kademeye göre, KKDF ve BSMV dahil) hesaplanıyor; Ödemeler, Özet, Kart araçları, Nakit akışı ve Ajandam'a sor'da "tahmini" diye yazıyor. Bankanın oranı daha düşük olabilir; dövizli kartta hesaplanmıyor.
+- Ekstre içe aktarma: her kartı ayrı seçiyorsun, son 4 hanesi aynı kayıtlı kart öneriliyor; birden çok kart, aynı karta giden iki ekstre ya da kart numarası farklı ekstre için uyarı var.
+- Yılın özeti: 2022 öncesi yıllar için TÜFE verisi olmadığından enflasyondan arındırılmış karşılaştırma yerine not gösteriliyor.
+- Tekrarlayan ödemeye bitiş: bir tarihte ya da belirli sayıda (ör. 9 taksit); son dönemden sonra yenisi açılmıyor, satırda "2/9" görünüyor.
+- Aidat, okul, servis gibi tekrarlayan bir ödeme önceki dönemden pahalıysa satırda "+%12 (önceki ₺2.500)", Ödendi penceresinde ve ay özetinde ("Zamlanan ödeme") söyleniyor.
+- Kart ayrıntısında Ekstre geçmişi: son 12 ekstrenin borcu, dönem harcaması, ödenen ve kalanı; kesim gününe tıklayınca o dönemin kayıtları açılıyor.
+- Döküm içe aktarılırken bir gider bekleyen bir ödemeyle (ör. talimatlı elektrik faturası) eşleşiyorsa "… ödendi sayılsın" kutusu çıkıyor; işaretlersen ödeme ödendi sayılıyor, kayıt ona bağlanıyor ve sonraki dönem açılıyor, işaretlemezsen hiçbir şey bağlanmıyor. Geri al ve İçe aktarmayı kaldır bunu da geri alıyor.
+- Karta yapılan ödeme asgariyi karşılayıp ekstreyi kapatmıyorsa bildirimde "Asgari ödendi: kalan ₺X faize girer, tahmini faiz ₺Y"; bir kartın son iki ekstresinde yalnızca asgari ödendiyse son ödeme günü yaklaşırken sabah özetinde (Ayarlar › Bildirimler › Asgari ödeme uyarısı).
+
+**Geri alma**
+- Tek kaydın düzenlemesi geri alınınca o düzenlemenin öğrettiği kategori kuralı da eski haline dönüyor.
+- Düzenli kaydın eklenmesi ya da sürdürülmesi geri alınınca bu arada eklenen kayıtlar da siliniyor.
+- Kayıt bu arada başka bir yerden değiştiyse geri alma yapılmıyor, o değişiklik korunuyor.
+
+**Düzenli kayıtlar**
+- Formda Bitiş: yok, bir tarihte ya da belirli sayıda; "Kaç kez"in altında son kaydın günü görünüyor.
+- Listede kalan sayı, son kayıt ve atlanacak dönemler var; atladığın dönemi formda işaretini kaldırarak geri getirebilirsin.
+- Bu ayın tahmini, nakit akışı ve abonelikler atlanan dönemi saymıyor; yapay zeka uygulamaları kaç kez, kalan sayı ve atlanacak dönemleri görüyor.
+
+**İşlemler**
+- Sıralama (tarihe göre yeni → eski ya da eski → yeni, tutara göre büyük → küçük ya da küçük → büyük) bu cihazda hatırlanıyor.
+- Seçimde klavye: ↑ ↓ ile gez, boşlukla seç, ⇧ ile aralık, ⌘A / Ctrl+A hepsi, Delete sil, Esc çık; ekran okuyucu seçili sayıyı duyuruyor.
+- Seçilenleri silmeden önce ne olacağı söyleniyor: bağlı ödeme yeniden bekler, taksitte yalnızca seçilenler silinir.
+- Bu hafta, Geçen hafta ve Son 7 gün dönemleri.
+- Hatırlat…: sağ tıkta ve kayıt formunda; işlemin tarihinden 14 gün, 30 gün, 1 yıl, 2 yıl sonra (ör. garanti bitişi) ya da seçtiğin güne ajandaya tüm gün hatırlatma ve kısa not; ajandadaki kayıttan işleme dönülüyor.
+
+**Raporlar**
+- Dönem paketi: Raporlar › Ay özeti, Yılın özeti ve Genel'den bir ayın ya da yılın kayıtları tek .zip dosyasında: Excel (Gelir, Gider ve Hesaplar sayfaları) ve CSV, o kayıtların fiş ve faturaları ve ayın ya da yılın özeti (yazdırılabilir sayfa). Kapsam seçiliyse paket de ona göre hazırlanıyor.
+
+**Erişilebilirlik**
+- Tutarlar gizliyken ekran okuyucu tutarları "tutar gizli" diye okuyor; kayıt kaydedilemezse durum ekran okuyucuya bir kez söyleniyor.
+- Hafta görünümünde boş bir saate klavyeyle etkinlik eklenebiliyor: oklarla saatler ve günler arasında gez, Enter'a bas.
+- Grafikler klavyede tek durak: oklarla noktalar arasında geziliyor, her nokta okunuyor. Raporlar'daki grafiklerin ve net varlık eğrisinin tablo görünümü var.
+- macOS'ta "Karşıtlığı artır" açıksa ikincil yazılar ve kenarlıklar daha belirgin.
+- Yazı boyutu: Ayarlar › Görünüm › Yazı boyutu ile yazıları %90, %100, %115 ya da %130 yap; yalnızca yazılar büyüyor, boşluklar ve simgeler aynı kalıyor. Tercih yalnızca bu cihazda; yazdırma etkilenmiyor. Sayfanın tamamını büyüten yakınlaştırma (Mac'te ⌘+, Windows'ta Ctrl++) eskisi gibi; Ayarlar'daki adı artık Yakınlaştırma.
+- Büyük yazıda hesap kartları içeriğe göre uzuyor, hafta görünümünde etkinliğin adı ve saati sığıyor, Ayarlar satırları açıklamayı sıkıştırmıyor.
+- Ay görünümü ekran okuyucuda takvim ızgarası: gün hücresi o günün ilk üç kaydını saatiyle ve durumuyla söylüyor; Enter ile gün seçince odak takvimde kalıyor.
+- Formlarda hata olunca ekran okuyucu iletiyi hemen okuyor ve hatalı alanları söylüyor ("2 alan hatalı: Tutar, Tarih").
+- Ayarlar › Görünüm › Büyük hedefler: simge ve küçük düğmeler, kenar çubuğu, işaretleme kutuları ve anahtarlar büyüyor; dokunmatik ekranda kendiliğinden. Yapılacak kutusunun, sekme kapatma düğmesinin ve anahtarların tıklama alanı büyüdü.
+
+**Ajanda ve notlar**
+- Komut paletinde ve Git menüsünde "Bugünün günlüğü": bugünün günlüğü varsa açılıyor, yoksa Günlük şablonuyla oluşturuluyor.
+- Takvime aktar: saatli kayıtlar Türkiye dışında ve yaz saatinde de doğru saatte görünüyor.
+- Açık bir nota sürüklenen PDF nota ekleniyor (ekstre içe aktarması açılmıyor); şifreli not neden eklemediğini söylüyor.
+
+**Mac**
+- "Tüm verileri sil" Ajandam'ın bu Mac'teki bütün izlerini siliyor: ChatGPT oturumu, yapay zeka uygulamalarının ayarlarındaki Ajandam girdisi, Anımsatıcılar'daki Ajandam listesi, günlükler ve bağlantı onayları.
+- Ajandam beklenmedik şekilde kapandıysa sonraki açılışta söyleniyor; tanılama bilgisi uygulamanın günlüğünü de içeriyor.
+- Finder'dan ya da Dock'tan .md ve .markdown not olarak açılıyor; .txt dökümse içe aktarılıyor, değilse not oluyor; açılamayan dosyanın nedeni söyleniyor.
+- Hızlı ekleme ve Ajandam Hakkında penceresi Ajandam'ın temasını izliyor.
+- Düzen › Bul… (⌘F) açık notta buluyor, değilse arıyor; hızlı eklemede VoiceOver eklenen kaydı okuyor.
+- Bildirim izni kapalıysa "Sistem Ayarları'nı aç" düğmesi Ajandam'ın bildirim ayarlarını açıyor.
+- Pencere menüsünde Sonraki Sekme (⌃⇥) ve Önceki Sekme (⌃⇧⇥); ⌘⇧] ve ⌘⇧[ de çalışıyor.
+- Güncelleyici daha az enerji harcıyor; hücresel bağlantıda ya da Düşük Veri Modu'nda güncellemeyi kendiliğinden indirmiyor.
+- Anımsatıcılar'daki Ajandam listesi yeni oluşturulurken iCloud'da açılıyor, iPhone'da da görünüyor (var olan liste taşınmıyor).
+- Pencere yalnızca Ajandam'ı gösteriyor; ekler kendi uygulamasında açılıyor, Yeniden Yükle her zaman Ajandam'ı açıyor.
+- Dock menüsü: Hızlı Ekle, Yeni Not, Bugün; PIN kilidi açıkken Kilitle.
+- Servisler: "Ajandam'a not olarak ekle" seçili metni yeni not yapıyor; "Ajandam'da kayıt olarak ekle" hızlı ekleme penceresini metinle açıyor, Enter'a basmadan bir şey eklenmiyor. Ajandam kilitliyse metin kilidi açınca görünüyor.
+- Ayarlar › Güvenlik › Spotlight'ta göster (varsayılan kapalı): not ve ajanda kayıtlarının yalnızca başlıkları Mac'in aramasında, tıklayınca açılıyor. Not metni, şifreli notlar ve tutarlar girmiyor; PIN kilidi açıkken dizin boş, kapatınca ve Tüm verileri sil'de siliniyor.
+- Mac App Store'dan kurulan Ajandam'da şifreli notları Touch ID ile açmanın anahtarı macOS'un yalnızca Touch ID doğrulanınca verdiği bir Anahtar Zinciri kaydında; parmak izlerin değişince not parolanı bir kez yeniden giriyorsun.
+- Yeni kurulumda her yerden hızlı ekleme kısayolu ⌥⌘A (⌃⌥ VoiceOver'ın tuşları); ⌥⌘N de seçilebiliyor. VoiceOver açıkken ⌃⌥'li kısayol Ayarlar › Mac'te uyarılıyor ve tek tıkla değiştiriliyor; var olan kısayolun değişmiyor.
+- ajandam://ekle?metin=… (Kestirmeler, Raycast, Alfred) hızlı ekleme penceresini metinle açıyor; kayıt yalnızca Enter'a basınca yazılıyor, Ajandam kilitliyse önce kilit açılıyor.
+- Hızlı ekleme penceresi kaydın bütçe ya da asgari ödeme uyarısını okunacak kadar gösteriyor; pencere açıkken yeniden yazılırsa kapanmıyor.
+
+**Windows**
+- "Tüm verileri sil" ChatGPT oturumunu, bağlanan uygulamaların listesini, Ajandam'ın günlüğünü, Türkiye verilerinin önbelleğini ve yapay zeka uygulamalarının ayar dosyalarındaki Ajandam girdisini de siliyor (bu dosyalardaki öteki ayarlar yerinde kalıyor); Ajandam bir uygulamanın ayar dosyasından çıkarılamazsa hangisi olduğu söyleniyor.
+- Ajandam beklenmedik şekilde kapanırsa sonraki açılışta bunu söylüyor ve Sorun giderme'ye götürüyor.
+- "Birlikte aç" listesinde ODS, metin (.txt) ve Markdown (.md) dosyaları da var; Markdown dosyası not oluyor. Açılamayan dosyanın nedeni söyleniyor.
+- Ay özetinde "Yapay zekayla yorumla" Windows'ta da var: Ayarlar › Yapay zeka'da seçtiğin model yazıyor; ChatGPT'ye göndermeden önce izin isteniyor.
+- Yapay zeka bağlantı adresi aynı anda en çok 16 bağlantı kabul ediyor; bağlanan uygulama Ajandam'ın kendi bulduğu süreçlerden tanınıyor.
+- Kayıt dosyası kısa süre kilitliyken (virüs tarayıcısı, eşitleme aracı) Ajandam yazmayı yaklaşık 2 saniye yeniden deniyor.
+- Ayarlar › Windows'ta telefonun takvimine aktarma; Microsoft Store'dan kurulan Ajandam'da OneDrive yedeğinin neden önerildiği yazıyor.
+- Kurulum dosyasıyla gelen Ajandam Windows 10 1607 ve sonrasını istiyor (Microsoft Store: 1809); yalnızca x64. 1607'den eski Windows'ta güncelleme sunulmuyor.
+- Kurumsal ağlarda vekil sunucu: Ajandam Windows'un otomatik yapılandırma betiğini (PAC) ve otomatik algılamayı (WPAD) izliyor. Ara sunucu kullanıcı adı ve parola istiyorsa Ayarlar › Windows › Ağ'dan girilebiliyor (Basic; yalnızca girdiğin sunucuya gönderiliyor, bu bilgisayarda Windows'un korumasıyla saklanıyor, yedeklere girmiyor). Sorun giderme'de İnternete bağlanamıyor ve Ağ tanılama.
+- Windows 11'de Mica görünüm (Ayarlar › Görünüm; varsayılan kapalı): pencerenin arkası masaüstünün rengini alıyor; Ajandam yeniden başlayınca geçerli oluyor.
+- `Ajandam.exe --ekle "metin"` ve ajandam://ekle?metin=… (AutoHotkey, PowerToys) "Yazarak ekle"yi metinle açıyor, Ajandam açıksa açık olana iletiliyor; kayıt yalnızca Enter'a basınca yazılıyor.
+- Hızlı ekleme penceresi kaydın uyarısını gösteriyor; Git menüsünde Bugünün günlüğü.
+
+**Belgeler**
+- Gizlilik ve güvenlik: yedekler (günlük, iCloud Drive/OneDrive kopyaları, Yedek indir) şifrelenmiyor; şifreli notun şifrelemeden önceki hâli yedeklerde 30 gün kadar kalabiliyor, not resimleri şifrelenmiyor.
+- Gizlilik politikası: yapay zeka uygulamalarının önerileri içerikleriyle saklanıyor (bekleyenler karar verilene kadar, sonuçlananlar 14 gün, en çok 60) ve yedeklere giriyor; ChatGPT'ye giderken kişi adları gizlenmiyor.
+- Güvenlik: yapay zeka uygulamalarıyla yerel bağlantının neye karşı koruduğu ve önerilenler.
+- README: Windows Hello yoksa PIN'in nasıl sıfırlanacağı ve hangi vekil sunucuların desteklenmediği.
+- Gizlilik ve güvenlik: Yedek indir'in arşivi ve yedek klasöründeki kopyalar da şifrelenmiyor; arşivdeki SHA-256 özetleri bozulmayı yakalar, değiştirmeye karşı koruma değildir. Yapay zeka uygulamalarının izinleri ve erişim günlüğü anlatılıyor.
+- Her sürümle Windows uygulamasının yazılım malzeme listesi (SBOM, CycloneDX) de yayımlanıyor.
+- README: Windows'ta önerilen yol Microsoft Store; kurulum dosyası Store'u kullanamayanlar için. Gizlilik ve güvenlik: şifreli yedeğin biçimi, Spotlight'a ne yazıldığı ve vekil sunucu kimliğinin nasıl saklandığı.
+- Gizlilik politikası: Mac'te Anımsatıcılar'a (dolayısıyla iCloud'a) etkinlikler (notlarıyla) ve borç ve alacak vadeleri (ad, tutar) yalnızca ayrıca açarsan gidiyor; Asistan'a notların ChatGPT seçiliyse OpenAI'ye gidiyor.
+- README: iki bilgisayarda nasıl kullanılır (yedek klasörü ve Bunu birleştir…).
+
+## [3.8.2] – 2026-10-09
+
+Bu sürüm Ajandam'ı Microsoft Store'a bağlıyor ve bir kaynak denetiminde bulunan hataları düzeltiyor:
+
+- **Microsoft Store (Windows):** Ajandam artık Microsoft Store'da. Kurulum dosyasıyla kurduysan **Ayarlar › Hakkında**'dan Store sayfasını açabilirsin: Store'dan kurulan Ajandam kayıtlarını ilk açılışta kendine kopyalar, güncellemelerini Microsoft Store yapar.
+- **Ekstre içe aktarma:** kart ekstresinde borçtaki "FATURA OTOMATIK ODEME", "HGS ODEME" gibi satırlar artık harcama, alacaktaki "KART ODEMESI", "EFT GELEN" kart ödemesi, "GERI ODEME" iade. Excel ve ODS dökümlerinde üç ondalıklı tutarlar (ör. −6,175 TL) artık bin kat büyük okunmuyor.
+- **Daha güvenli yedekten dönüş:** başkasından gelen bozuk ya da kötü niyetli bir yedek sayfaya bağlantı ya da görünmez katman sokamıyor, ekranları boş bırakamıyor.
+- **Yapay zeka uygulamaları:** "Onaysız kaydet" yalnızca yeni kayıtlar için; ödendi ya da yapıldı işaretleme ve nota ekleme her zaman onayını bekler. Claude, Cursor, VS Code ve Codex'in ayar dosyalarında yorumların ve kendi ayarların korunuyor.
+
+---
+
+**Windows**
+- Ayarlar › Hakkında › Güncellemeler'de Microsoft Store satırı (yalnızca kurulum dosyasıyla kurulan Ajandam'da).
+- "Bozuk" klasörüne taşınamayan bozuk bir kayıt dosyasının üzerine yazılmıyor (Mac'teki gibi); dosya sonra taşınınca yedekteki hali yerine konuyor.
+- Microsoft Store'dan kurulan Claude'da Ajandam, `%APPDATA%\Claude`'daki ayarlarını gizleyen yeni bir dosya oluşturmuyor.
+
+**Ekstre içe aktarma**
+- Kart ekstresinde satırın yönü belliyse (Borç/Alacak sütunu, B/A, CR eki ya da işaret) önce ona bakılıyor; borçtaki ödeme ya da iade sözlü satır alacağın işaretini çevirmiyor. "KYK BORC ODEME" gibi başkasına borç ödemesi harcama, "KART BORC ODEME" kart ödemesi.
+- Borç/Alacak sütunlarında boş sütuna "0,00" yazan ekstrede alacaklar düşmüyor.
+- Excel/ODS'in sayı hücrelerindeki tutar ve bakiye metne çevrilmeden okunuyor; kuruşa doğru yuvarlanıyor (1,005 → 1,01).
+
+**Kayıtlar ve yedekler**
+- Yedekten geri yüklemede ve kayıtlı veride kimlik olmayan anahtarlar ve bağlantılar alınmıyor; "constructor", "__proto__" gibi adlar Özet'i, Hesaplar'ı ve Asistan'ı çökertmiyor; kimlikler, taksit sayıları ve hesap adı ekrana her yerde kaçışlı yazılıyor.
+
+**Yapay zeka uygulamaları**
+- Onaysız kaydet yalnızca ekleyen araçlarda (işlem, ödeme, etkinlik, not ekleme); yapay zeka bir nota şifreli not bloğu yazamıyor.
+- Başka uygulamaların ayar dosyalarında (Mac ve Windows): yorumlar kalıyor, Güncelle yalnızca Ajandam'ın alanlarını değiştiriyor, kapattığın Ajandam girdisini yeniden açmıyor; Codex'in config.toml'u tek tırnaklı yazıldığında da tanınıyor ve değişiklik yoksa yazılmıyor; dosyanın Ajandam'dan önceki yedeği (`.ajandam-yedek`) sonraki yazımlarda ezilmiyor.
+
 ## [3.8.1] – 2026-10-08
 
 Bu sürümle Ajandam Mac'te Apple'ın onayıyla geliyor:
 
 - **Apple imzalı ve onaylı (Mac):** Ajandam artık Apple Developer ID sertifikasıyla imzalanıyor ve Apple tarafından denetlenip onaylanıyor (notarization). İndirdiğin disk görüntüsünü açınca "Apple doğrulayamadı" uyarısı ve Sistem Ayarları'ndaki "Yine de Aç" adımı yok.
-- Güncellemeden sonraki ilk açılışta macOS, ChatGPT oturumu ve şifreli notların anahtarı için Anahtar Zinciri'ne bir kez erişim izni isteyebilir: "Her Zaman İzin Ver" demen yeterli. Anımsatıcılar izni de yeniden sorulabilir. Kayıtların bundan etkilenmez.
+- Güncellemeden sonraki ilk açılışta macOS, ChatGPT oturumu ve şifreli notların anahtarı için Anahtar Zinciri'ne bir kez erişim izni isteyebilir: "Her Zaman İzin Ver" demen yeterli. Anımsatıcılar izni de yeniden sorulabilir. Kayıtların bundan etkilenmez. 3.7 ya da öncesinden güncelliyorsan bu izinler, Apple imzalı pakete geçeceğin bir sonraki güncellemede bir kez daha sorulabilir.
 - Windows'ta bu sürümde değişiklik yok; Ajandam iki sistemde de aynı sürüm numarasını taşır.
 
 ---

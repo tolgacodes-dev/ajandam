@@ -16,6 +16,6 @@ body:
   - type: input
     id: surum
     attributes:
-      label: Ajandam ve macOS sürümü
-      description: İsteğe bağlı. Ajandam › Ayarlar › Hakkında
-      placeholder: "Ajandam 3.2.0 · macOS 26.0"
+      label: Ajandam ve işletim sistemi sürümü
+      description: İsteğe bağlı. Ajandam'da Ayarlar › Hakkında; Mac mi, Windows mu, claude.ai mi?
+      placeholder: "Ajandam 3.8.2 · macOS 26.0 (ya da Windows 11 24H2)"
