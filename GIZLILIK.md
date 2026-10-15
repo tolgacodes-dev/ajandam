@@ -1,17 +1,23 @@
 # Ajandam gizlilik politikası
 
-Son güncelleme: 12 Ekim 2026
+Son güncelleme: 15 Ekim 2026
 
 Ajandam'ı tolgacodes-dev geliştirir. Bu politika Ajandam'ın Mac uygulamasını (Mac App Store'dan ya da indirme sayfasından
-kurulan) ve Windows uygulamasını (Microsoft Store'dan ya da kurulum dosyasıyla kurulan) kapsar.
+kurulan), Windows uygulamasını (Microsoft Store'dan ya da kurulum dosyasıyla kurulan), iPhone ve iPad uygulamasını (App
+Store) ve Android uygulamasını (Google Play) kapsar.
 
-**Kayıtların bilgisayarında kalır.** Girdiğin işlemler, hesaplar, ödemeler, etkinlikler, notlar ve ekler yalnızca bu
-bilgisayarda, Ajandam'ın klasöründe saklanır:
+**Kayıtların cihazında kalır.** Girdiğin işlemler, hesaplar, ödemeler, etkinlikler, notlar ve ekler yalnızca bu
+cihazda, Ajandam'ın klasöründe saklanır:
 
 - Mac App Store'dan kurulan Ajandam: `~/Library/Containers/app.ajandam.mac` (macOS'un Ajandam'a ayırdığı klasör)
 - indirme sayfasından kurulan Mac uygulaması: `~/Library/Application Support/Ajandam`
 - Microsoft Store'dan kurulan Ajandam: `%LOCALAPPDATA%\Packages\<Ajandam paketi>\LocalState`
 - kurulum dosyasıyla kurulan Windows uygulaması: `%APPDATA%\Ajandam`
+- iPhone ve iPad: Ajandam'ın uygulama alanı (Dosyalar'da görünmez; cihazın iCloud ya da bilgisayar yedeğine, iOS'un
+  yedeğiyle birlikte girer)
+- Android: Ajandam'ın uygulama alanı (öteki uygulamalar ulaşamaz). Telefonun Google yedeği açıksa Android kayıtlarını
+  (ekler ve Ajandam'ın kendi yedekleri hariç) Google hesabına da yedekler; bunu yalnızca telefonda ekran kilidi varken,
+  uçtan uca şifreli olarak yapar (Google'ın koşullarına tabi). Yeni telefona aktarırken ekler ve yedekler de taşınır.
 
 Ajandam aynı klasörde her gün kayıtlarının ve eklerinin bir yedeğini de alır (son 14 gün, ayrıca son 8 haftanın ve 12
 ayın birer yedeği). İstersen Ayarlar › Veriler ve yedek › Yedek klasörü'nde seçtiğin bir klasöre (USB bellek, ağ diski,
@@ -21,15 +27,17 @@ yalnızca dosya yazarak ulaşır, ağ diskine ya da Dropbox'a kendisi bağlanmaz
 cihazdan çıkan kopyalar (Yedek indir'in arşivi, iCloud Drive ya da OneDrive kopyası, yedek klasöründeki kopyalar) yedek
 parolanla şifrelenir (.ajandamyedek); parolan ve kurulurken verilen kurtarma anahtarı hiçbir yerde saklanmaz, yalnızca
 türevleri bu cihazda durur (yedeklere girmez). Belirlemezsen bu kopyalar da şifrelenmez. Not parolasıyla şifrelediğin
-notlar yedeklerde de şifreli kalır, ama şifrelemeden önceki hâlleri yedeklerde 30 gün kadar durabilir.
+notlar yedeklerde de şifreli kalır, ama şifrelemeden önceki hâlleri yedeklerde 30 gün kadar durabilir. Android
+uygulamasında bu sürümde yedek klasörü ve yedek parolası yoktur: Yedek indir'in arşivi şifrelenmez.
 
-İstersen (Ayarlar › Güvenlik › Spotlight'ta göster; varsayılan kapalı) not ve ajanda kayıtlarının yalnızca başlıkları bu
-bilgisayarın arama dizinine de (Spotlight) yazılır: dizin bu bilgisayardadır, not metni, şifreli notlar ve tutarlar girmez,
-PIN kilidi açıkken boş tutulur, seçeneği kapatınca silinir.
+İstersen (Mac, iPhone ve iPad; Ayarlar › Güvenlik › Spotlight'ta göster; varsayılan kapalı) not ve ajanda kayıtlarının
+yalnızca başlıkları bu cihazın arama dizinine de (Spotlight) yazılır: dizin bu cihazdadır, not metni, şifreli notlar ve
+tutarlar girmez, PIN kilidi açıkken boş tutulur, seçeneği kapatınca silinir.
 
 Ajandam hesap açtırmaz; reklam, izleme kodu, kullanım istatistiği ya da geliştiriciye gönderilen çökme raporu içermez.
 Geliştirici kayıtlarını göremez. Mac App Store'dan kurulan Ajandam'ı Launchpad'den silmek, Microsoft Store'dan kurulanı
-kaldırmak ya da Windows Ayarları'nda sıfırlamak bu kayıtları da siler; önce yedek indir.
+kaldırmak ya da Windows Ayarları'nda sıfırlamak, iPhone'da ya da iPad'de Ajandam'ı silmek, Android'de kaldırmak ya da
+uygulama verilerini temizlemek bu kayıtları da siler; önce yedek indir.
 
 **Ajandam'ın internete çıktığı yerler.** Ajandam internetsiz de çalışır. Aşağıdakiler dışında hiçbir bağlantı kurmaz:
 
@@ -41,41 +49,47 @@ kaldırmak ya da Windows Ayarları'nda sıfırlamak bu kayıtları da siler; ön
 2. *Türkiye verileri* (TÜFE, kart faiz oranları, asgari ödeme sınırı, bayramlar, kısa duyurular; açılıştan kısa süre sonra
    ve 6 saatte bir, Ayarlar › Hakkında › Türkiye verileri açıkken): Ajandam'ın GitHub'daki indirme deposundan
    (`raw.githubusercontent.com`), Ajandam'ın imzasıyla doğrulanan bir veri dosyası. Kayıtlarından hiçbir şey gönderilmez.
-3. *Güncellemeler:* Mac App Store'dan kurulan Ajandam'ı Mac App Store, Microsoft Store'dan kurulanı Microsoft Store
-   günceller; Ajandam bunlarda güncelleme denetlemez. İndirme sayfasından ya da kurulum dosyasıyla kurulan Ajandam yeni
-   sürümü aynı depodan (`github.com`) denetler ve indirir; bu istekte kayıtlarından hiçbir şey gönderilmez.
-4. *ChatGPT ile giriş* (isteğe bağlı): girişi tarayıcında OpenAI'nin sayfasında yaparsın (`auth.openai.com`). Asistan bir
-   soruyu yanıtlamak, ekstre okumak ya da kategori önermek için gereken bilgiyi (sorun, hesap ve kategori adları, ilgili
-   kayıtların tarihi, tutarı ve açıklaması, toplamlar ve yazdıysan Ayarlar › Yapay zeka › "Asistan'a notlarım"daki metin;
-   notlar yalnızca Ayarlar'dan izin verirsen) senin iznin olduğunda
-   OpenAI'ye (`api.openai.com`) gönderir. IBAN, TC kimlik, kart ve telefon numaraları ve e-posta adresleri gönderilmeden
-   gizlenir (IBAN ve kart numarasının son dört hanesi kalır); kişi adları (ör. bir açıklamadaki ya da borç kaydındaki ad)
-   gizlenmez. İzin Ajandam kapanana kadar geçerlidir; Ayarlar › Yapay zeka'dan her zaman kapatabilir, oturumu
-   kapatabilirsin. Oturum anahtarları bu bilgisayarda saklanır: Mac'te Anahtar Zinciri'nde, Windows'ta Windows'un
-   şifrelemesiyle (DPAPI). OpenAI'ye gidenler OpenAI'nin koşullarına ve gizlilik politikasına tabidir.
-5. *Cihazda çalışan yapay zeka:* Apple Intelligence (Mac'te, macOS 26 ve Apple çipli Mac'lerde) ve yerel modeller (Ollama,
-   LM Studio; `127.0.0.1`) bu bilgisayarda çalışır; kayıtların bilgisayardan çıkmaz. Fiş fotoğrafındaki yazı da
-   bilgisayarında okunur (Mac'te macOS'un, Windows'ta Windows'un metin tanımasıyla).
-6. *Ajandam'a bağladığın yapay zeka uygulamaları* (Claude, ChatGPT, Cursor gibi; Ayarlar › Yapay zeka'da "bağlanabilir"
-   açıksa): uygulama Ajandam'la bu bilgisayarda konuşur (MCP; isteğe bağlı yerel adres yalnızca `127.0.0.1`). O uygulamanın
-   gördüğü kayıtları kendi hizmetine göndermesi o uygulamanın gizlilik politikasına tabidir. Her uygulamanın neye
-   bakabileceğini Ayarlar › Yapay zeka › Uygulama izinleri'nde ayrı ayrı seçersin: para kayıtları, ajanda, notlar ve
-   kişilerle borç ve alacaklar; yeni bağlanan ve Ajandam'ın tanıyamadığı uygulamalar notlarını göremez. "Kişisel bilgileri
-   gizle" açıksa IBAN, TC kimlik, kart ve telefon numaraları ve e-posta adresleri o uygulamaya gitmeden gizlenir (IBAN ve
-   kart numarasının son dört hanesi kalır). Borçları kapatmak da, kişisel bilgileri gizlemek de işlem açıklamalarındaki ya
-   da notlardaki kişi adlarını (ör. "Ayşe'ye EFT") gizlemez. Ajandam bu bilgisayarda bağlanan uygulamanın adını ve
-   sürümünü saklar, her isteği de bir erişim günlüğüne yazar (Ayarlar › Yapay zeka › Erişim günlüğü): zamanı, uygulamayı,
-   aracı, isteğin alan adlarını, istenen tarih aralığını, kaç kayıt döndüğünü ve sonucu. Kayıtlarının içeriği ve isteğe
-   verilen öteki değerler (ör. aranan sözcük, tutar) günlüğe yazılmaz. Günlük son 30 günü (en çok 1.000 istek) tutar,
-   yedeklere girmez. Uygulamanın gönderdiği ekleme ve değişiklik önerileri ise içerikleriyle (ör. eklenecek işlemin tutarı
-   ve açıklaması, notun metni) Ayarlar › Yapay zeka › Öneriler'de saklanır: bekleyenler sen karar verene kadar,
-   sonuçlananlar 14 gün (en çok 60 tane). Öneriler günlük ve bulut yedeklerine de girer; Ayarlar › Veriler ve yedek › Tüm
-   verileri sil onları da, erişim günlüğünü de siler. Bağlantıyı istediğin zaman kaldırırsın. Mac App Store'dan kurulan
-   Ajandam bu uygulamaların ayar dosyalarına (ev klasöründe) yalnızca senin bir kez verdiğin izinle ve yalnızca Ajandam'ı
-   eklemek ya da çıkarmak için yazar.
+3. *Güncellemeler:* Mac App Store'dan kurulan Ajandam'ı Mac App Store, Microsoft Store'dan kurulanı Microsoft Store,
+   iPhone ve iPad uygulamasını App Store, Android uygulamasını Google Play günceller; Ajandam bunlarda güncelleme
+   denetlemez. İndirme sayfasından ya da kurulum dosyasıyla kurulan Ajandam yeni sürümü aynı depodan (`github.com`)
+   denetler ve indirir; bu istekte kayıtlarından hiçbir şey gönderilmez.
+4. *ChatGPT ile giriş* (isteğe bağlı; Mac ve Windows): girişi tarayıcında OpenAI'nin sayfasında yaparsın
+   (`auth.openai.com`). Asistan bir soruyu yanıtlamak, ekstre okumak ya da kategori önermek için gereken bilgiyi
+   (sorun, hesap ve kategori adları, ilgili kayıtların tarihi, tutarı ve açıklaması, toplamlar ve yazdıysan Ayarlar ›
+   Yapay zeka › "Asistan'a notlarım"daki metin; notlar yalnızca Ayarlar'dan izin verirsen) senin iznin olduğunda
+   OpenAI'ye (`api.openai.com`) gönderir. IBAN, TC kimlik, kart ve telefon numaraları ve e-posta adresleri
+   gönderilmeden gizlenir (IBAN ve kart numarasının son dört hanesi kalır); kişi adları (ör. bir açıklamadaki ya da
+   borç kaydındaki ad) gizlenmez. İzin Ajandam kapanana kadar geçerlidir; Ayarlar › Yapay zeka'dan her zaman
+   kapatabilir, oturumu kapatabilirsin. Oturum anahtarları bu bilgisayarda saklanır: Mac'te Anahtar Zinciri'nde,
+   Windows'ta Windows'un şifrelemesiyle (DPAPI). OpenAI'ye gidenler OpenAI'nin koşullarına ve gizlilik politikasına
+   tabidir.
+5. *Cihazda çalışan yapay zeka:* Apple Intelligence (Mac'te macOS 26 ve Apple çipli Mac'lerde; iPhone ve iPad'de iOS 26
+   ve Apple Intelligence'ı destekleyen cihazlarda) ve yerel modeller (Mac ve Windows'ta Ollama, LM Studio; `127.0.0.1`) bu
+   cihazda çalışır; kayıtların cihazdan çıkmaz. Fiş fotoğrafındaki yazı da cihazında okunur (Mac'te macOS'un, iPhone ve
+   iPad'de iOS'un, Windows'ta Windows'un metin tanımasıyla). Android uygulamasında bu sürümde yapay zeka ve fiş okuma
+   yoktur.
+6. *Ajandam'a bağladığın yapay zeka uygulamaları* (Mac ve Windows; Claude, ChatGPT, Cursor gibi; Ayarlar › Yapay
+   zeka'da "bağlanabilir" açıksa): uygulama Ajandam'la bu bilgisayarda konuşur (MCP; isteğe bağlı yerel adres yalnızca
+   `127.0.0.1`). O uygulamanın gördüğü kayıtları kendi hizmetine göndermesi o uygulamanın gizlilik politikasına
+   tabidir. Her uygulamanın neye bakabileceğini Ayarlar › Yapay zeka › Uygulama izinleri'nde ayrı ayrı seçersin: para
+   kayıtları, ajanda, notlar ve kişilerle borç ve alacaklar; yeni bağlanan ve Ajandam'ın tanıyamadığı uygulamalar
+   notlarını göremez. "Kişisel bilgileri gizle" açıksa IBAN, TC kimlik, kart ve telefon numaraları ve e-posta
+   adresleri o uygulamaya gitmeden gizlenir (IBAN ve kart numarasının son dört hanesi kalır). Borçları kapatmak da,
+   kişisel bilgileri gizlemek de işlem açıklamalarındaki ya da notlardaki kişi adlarını (ör. "Ayşe'ye EFT") gizlemez.
+   Ajandam bu bilgisayarda bağlanan uygulamanın adını ve sürümünü saklar, her isteği de bir erişim günlüğüne yazar
+   (Ayarlar › Yapay zeka › Erişim günlüğü): zamanı, uygulamayı, aracı, isteğin alan adlarını, istenen tarih aralığını,
+   kaç kayıt döndüğünü ve sonucu. Kayıtlarının içeriği ve isteğe verilen öteki değerler (ör. aranan sözcük, tutar)
+   günlüğe yazılmaz. Günlük son 30 günü (en çok 1.000 istek) tutar, yedeklere girmez. Uygulamanın gönderdiği ekleme ve
+   değişiklik önerileri ise içerikleriyle (ör. eklenecek işlemin tutarı ve açıklaması, notun metni) Ayarlar › Yapay
+   zeka › Öneriler'de saklanır: bekleyenler sen karar verene kadar, sonuçlananlar 14 gün (en çok 60 tane). Öneriler
+   günlük ve bulut yedeklerine de girer; Ayarlar › Veriler ve yedek › Tüm verileri sil onları da, erişim günlüğünü de
+   siler. Bağlantıyı istediğin zaman kaldırırsın. Mac App Store'dan kurulan Ajandam bu uygulamaların ayar dosyalarına
+   (ev klasöründe) yalnızca senin bir kez verdiğin izinle ve yalnızca Ajandam'ı eklemek ya da çıkarmak için yazar.
 7. *Geri bildirim* (yalnızca sen gönderdiğinde): formda yazdıkların, istersen sürüm ve sistem bilgisi, istersen yanıt
    adresin ve en çok üç ekran görüntüsü Google'ın Apps Script hizmeti (`script.google.com`) üzerinden geliştiriciye
    e-postayla iletilir. Kayıtlarından hiçbir şey eklenmez. Yanıt vermek dışında kullanılmaz, kimseyle paylaşılmaz.
+   Android uygulamasında geri bildirim yalnızca e-posta uygulamanla gider: Ajandam bir şey göndermez, e-postayı sen
+   gönderirsin.
 8. *Bulut yedeği* (isteğe bağlı): günlük yedek bilgisayarındaki iCloud Drive (indirme sayfasından kurulan Mac
    uygulaması) ya da OneDrive (Windows) klasörüne yazılır; iCloud Drive onu Apple hesabına, OneDrive Microsoft hesabına
    eşitler (onların koşullarına tabi). Ajandam bu hizmetlere doğrudan bağlanmaz. Yedek parolası belirlemediysen bu kopya
@@ -93,19 +107,26 @@ kaldırmak ya da Windows Ayarları'nda sıfırlamak bu kayıtları da siler; ön
 10. *Takvim abonelikleri* (isteğe bağlı, Ayarlar › Takvim): abone olduğun takvimin adresini sen yazarsın, Ajandam kendi
     penceresinde ayrıca onaylatır; o adres (ör. Google Takvim'in, okulunun ya da kulübünün sunucusu) Ajandam açıkken
     6 saatte bir indirilir. Bu istekte kayıtlarından hiçbir şey gönderilmez; adresin kendisi o sunucuya gider. İndirilen
-    etkinlikler bu bilgisayarda saklanır ve günlük yedeğe girer; aboneliği silince ajandadan kalkar.
-11. *Takvim uygulaması* (isteğe bağlı, Mac): açarsan Ajandam macOS'un Takvim uygulamasındaki etkinlikleri yalnızca okuyarak
-    ajandada gösterir. Bu etkinlikler Ajandam'da saklanmaz, yedeklere girmez, yapay zeka uygulamalarına ve hiçbir hizmete
-    gönderilmez; Ajandam Takvim'e bir şey yazmaz. İzni Sistem Ayarları › Gizlilik ve Güvenlik › Takvimler'den geri
+    etkinlikler bu cihazda saklanır ve günlük yedeğe girer; aboneliği silince ajandadan kalkar.
+11. *Takvim uygulaması* (isteğe bağlı; Mac, iPhone ve iPad): açarsan Ajandam Takvim uygulamasındaki etkinlikleri
+    yalnızca okuyarak ajandada gösterir. Bu etkinlikler Ajandam'da saklanmaz, yedeklere girmez, yapay zeka
+    uygulamalarına ve hiçbir hizmete gönderilmez; Ajandam Takvim'e bir şey yazmaz. İzni Mac'te Sistem Ayarları ›
+    Gizlilik ve Güvenlik › Takvimler'den, iPhone ve iPad'de Ayarlar › Gizlilik ve Güvenlik › Takvimler'den geri
     alabilirsin.
-12. Ajandam'ın ekranı Mac'te macOS'un WebKit'i, Windows'ta Microsoft Edge WebView2 ile çalışır; WebView2'nin kendi
-    güncellemeleri ve güvenlik denetimleri Microsoft'un gizlilik bildirimine tabidir. Bağlantılar (ör. GitHub)
+12. Ajandam'ın ekranı Mac'te macOS'un, iPhone ve iPad'de iOS'un WebKit'i, Windows'ta Microsoft Edge WebView2, Android'de
+    Android System WebView ile çalışır; WebView2'nin ve Android System WebView'in kendi güncellemeleri ve güvenlik
+    denetimleri Microsoft'un ve Google'ın gizlilik bildirimlerine tabidir. Bağlantılar (ör. GitHub)
     yalnızca sen tıklayınca tarayıcında açılır.
 13. *Ara sunucu (proxy, Windows):* yukarıdaki bağlantılar Windows'un ara sunucu ayarını izler. Windows'ta otomatik
     yapılandırma betiği (PAC) ya da ayarları otomatik algılama açıksa hangi ara sunucunun kullanılacağını Windows'un
     kendisi bulur (betiği Windows'un ayarındaki adresten indirir). Ara sunucu için Ayarlar › Windows › Ağ'da girdiğin
     kullanıcı adı ve parola bu bilgisayarda Windows'un şifrelemesiyle (DPAPI) saklanır, yedeklere girmez ve yalnızca adını
     girdiğin ara sunucuya gönderilir; Tüm verileri sil onu da siler.
+
+**İzinler (iPhone, iPad ve Android).** Ajandam yalnızca senin açtığın özellikler için izin ister: bildirimler (ödeme ve
+etkinlik hatırlatmaları), Face ID, Touch ID ya da parmak izi ve yüz tanıma (kilidi açmak için; biyometrik verine Ajandam
+ulaşmaz, doğrulamayı cihaz yapar), iPhone ve iPad'de fiş fotoğrafı için kamera, ekleri Fotoğraflar'a kaydetmek ve takvim.
+Konumuna ve rehberine erişmez; dosyalarını yalnızca senin seçtiğin pencereyle açar ya da kaydeder.
 
 **Haklarını kullanma.** Kayıtların sana aittir: Ayarlar › Veriler ve yedek'ten yedek indirir, CSV olarak dışa aktarır ya
 da tümünü silersin. Geliştiricide senden bir kayıt yoktur; geri bildirimle gönderdiğin bir mesajın silinmesini uygulamadaki
@@ -118,4 +139,5 @@ isteyebilirsin.
 Yenilikler penceresinde duyurulur.
 
 **İletişim.** Ajandam'ın GitHub sayfası: [github.com/tolgacodes-dev/ajandam/issues](https://github.com/tolgacodes-dev/ajandam/issues)
-(herkese açık) ya da uygulamada Ayarlar › Hakkında › Geri bildirim gönder (yalnızca geliştiriciye gider).
+(herkese açık), uygulamada Ayarlar › Hakkında › Geri bildirim gönder (yalnızca geliştiriciye gider) ya da e-posta:
+ajandamuygulamasi@gmail.com.
