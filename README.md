@@ -11,6 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg"><b>⬇ Mac için indir</b></a>
+  &nbsp;·&nbsp; <a href="https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420"><b>Mac App Store</b></a>
   &nbsp;·&nbsp; <a href="https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR"><b>⬇ Windows için: Microsoft Store</b></a>
   &nbsp;·&nbsp; <a href="#kurulum">Kurulum</a>
   &nbsp;·&nbsp; <a href="#yapay-zeka">Yapay zeka</a>
