@@ -1,6 +1,6 @@
 name: Öneri
 description: Ajandam'a eklenmesini istediğin bir özellik ya da iyileştirme
-labels: [öneri]
+labels: [enhancement]
 body:
   - type: textarea
     id: ne

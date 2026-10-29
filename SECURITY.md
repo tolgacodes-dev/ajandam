@@ -127,7 +127,7 @@ Ajandam güncellemeyi hazır olunca haber verir; kurmak için **Şimdi kur** ve 
   (`veri/turkiye.json.imza`); uygulama imzayı gömülü sertifikayla ya da anahtarla doğrular, yalnızca kendindekinden
   yeni sürümü kabul eder. Sayfa her değeri ayrıca denetler ve yalnızca kendi tablolarından yeni olanı kullanır;
   duyurular düz metin olarak gösterilir, dosyadan hiçbir şey kod olarak çalıştırılmaz. İmzası tutmayan dosya kullanılmaz,
-  uygulama kendi verisiyle devam eder.
+  uygulama kendi verisiyle devam eder. Bu depoda imza `bash scripts/dogrula.sh` ile de denetlenir.
 - **Yapay zeka:**
   - Apple Intelligence ve yerel modeller (Ollama, LM Studio) bilgisayarının dışına veri göndermez. **Otomatik** seçimde
     önce bunlar kullanılır.
