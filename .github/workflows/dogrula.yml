@@ -1,0 +1,16 @@
+name: Doğrula
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  dogrula:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Kurulum betiği ve Türkiye verisi
+        run: bash scripts/dogrula.sh

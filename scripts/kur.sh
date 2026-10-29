@@ -34,6 +34,35 @@ alan() { # latest.json'dan ($BILGI) bir alan; yoksa (ya da null) boş
 # imzalanan metin (scripts/latest_json.py › mesaj, Guncelleyici.swift › macMesaji ile aynı)
 mesaj() { printf '%s\nsurum=%s\nsha256=%s\ndosya=%s\nenAzMacOS=%s\nmacTakim=%s\n' "$MESAJ_BASLIGI" "$1" "$2" "$3" "$4" "$5"; }
 
+# $1 (bu Mac'in sürümü) $2'den (istenen en düşük) küçük değilse 0. Bileşenler sayı olarak
+# karşılaştırılır; eksik bileşen 0 sayılır (12 ile 12.0 aynı). Sayı olmayan bir parçada 2 döner.
+# macOS'un yerleşik sort'u -V seçeneğini sunmaz. Eski denetim `sort -V` hata verince pipefail
+# yüzünden kurulumu, sürüm yeterli olsa da reddediyordu.
+mac_yeterli() {
+  local sol="$1" sag="$2" i n xa ya
+  local IFS=.
+  local -a A B
+  read -r -a A <<<"$sol"
+  read -r -a B <<<"$sag"
+  n=${#A[@]}
+  if [ "${#B[@]}" -gt "$n" ]; then n=${#B[@]}; fi
+  i=0
+  while [ "$i" -lt "$n" ]; do
+    xa=0
+    ya=0
+    if [ "$i" -lt "${#A[@]}" ]; then xa="${A[$i]}"; fi
+    if [ "$i" -lt "${#B[@]}" ]; then ya="${B[$i]}"; fi
+    case "$xa" in ''|*[!0-9]*) return 2 ;; esac
+    case "$ya" in ''|*[!0-9]*) return 2 ;; esac
+    xa=$((10#$xa))
+    ya=$((10#$ya))
+    if [ "$xa" -gt "$ya" ]; then return 0; fi
+    if [ "$xa" -lt "$ya" ]; then return 1; fi
+    i=$((i + 1))
+  done
+  return 0
+}
+
 # $1: metin dosyası, $2: imza (base64). Ajandam sertifikalarından birinin anahtarıyla doğrulanırsa 0 (RSA PKCS#1 v1.5,
 # SHA-256; macOS'taki openssl LibreSSL'dir, ikisi de anlar)
 imza_dogru() {
@@ -100,7 +129,7 @@ ana() {
   [ -n "$SURUM" ] && [ -n "$ZIP" ] && [ -n "$OZET" ] || hata "Sürüm bilgisi okunamadı."
   case "$ZIP" in https://github.com/"$DEPO"/releases/download/*) ;; *) hata "Beklenmeyen indirme adresi: $ZIP" ;; esac
   MACOS="$(sw_vers -productVersion)"
-  if [ -n "$ENAZ" ] && [ "$(printf '%s\n%s\n' "$ENAZ" "$MACOS" | sort -V | head -n1)" != "$ENAZ" ]; then
+  if [ -n "$ENAZ" ] && ! mac_yeterli "$MACOS" "$ENAZ"; then
     hata "Ajandam $SURUM macOS $ENAZ ya da sonrasını istiyor (bu Mac: $MACOS)."
   fi
 

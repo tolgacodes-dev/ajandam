@@ -1,6 +1,6 @@
 name: Hata bildir
 description: Ajandam'da bir şey beklendiği gibi çalışmıyor
-labels: [hata]
+labels: [bug]
 body:
   - type: markdown
     attributes:
@@ -29,6 +29,8 @@ body:
         - Mac
         - Windows (kurulum dosyasıyla)
         - Windows (Microsoft Store'dan)
+        - iPhone
+        - iPad
         - claude.ai
     validations:
       required: true
@@ -37,7 +39,7 @@ body:
     attributes:
       label: Ajandam sürümü
       description: Ayarlar › Hakkında
-      placeholder: "3.8.2"
+      placeholder: "3.9.0"
     validations:
       required: true
   - type: input
@@ -52,3 +54,9 @@ body:
       label: Windows sürümü
       description: "Windows'ta kullanıyorsan: Windows tuşu + R, winver yaz, Enter"
       placeholder: "Windows 11 24H2 (26100.4061)"
+  - type: input
+    id: ios
+    attributes:
+      label: iOS sürümü
+      description: "iPhone ya da iPad kullanıyorsan: Ayarlar › Genel › Hakkında"
+      placeholder: "iOS 26.0"

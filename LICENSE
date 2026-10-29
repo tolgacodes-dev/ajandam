@@ -1,6 +1,6 @@
 Ajandam — Kullanım Koşulları
 Copyright © 2026 tolgacodes-dev. Tüm hakları saklıdır.
-Son güncelleme: 9 Ekim 2026
+Son güncelleme: 29 Ekim 2026
 
 Aynı metin Ajandam'da Ayarlar › Hakkında › Kullanım koşulları'nda da okunur.
 
@@ -12,8 +12,8 @@ Kısaca
 
 1. Kapsam
 
-   Bu koşullar Ajandam'ın Mac ve Windows uygulamalarını ve claude.ai'deki sürümünü kapsar. Ajandam'ı
-   indirerek, kurarak ya da kullanarak bu koşulları kabul etmiş olursun.
+   Bu koşullar Ajandam'ın Mac, Windows, iPhone ve iPad uygulamalarını ve claude.ai'deki sürümünü kapsar.
+   Ajandam'ı indirerek, kurarak ya da kullanarak bu koşulları kabul etmiş olursun.
 
    Metinde “Ajandam” uygulamayı, “geliştirici” Ajandam'ı geliştiren tolgacodes-dev'i, “kayıtlar”
    uygulamaya girdiğin işlemleri, hesapları, ödemeleri, notları ve diğer bilgileri anlatır.
@@ -37,7 +37,9 @@ Kısaca
    Kayıtların yalnızca senin cihazında, Ajandam'ın klasöründe saklanır: Mac'te ~/Library/Application
    Support/Ajandam (Mac App Store'dan kurulan Ajandam'da ~/Library/Containers/app.ajandam.mac
    içinde), Windows'ta %APPDATA%\Ajandam (Microsoft Store'dan kurulan Ajandam'da Ajandam paketinin
-   klasöründe). claude.ai sürümünde kayıtlar claude.ai hesabına bağlı olarak saklanır.
+   klasöründe). iPhone ve iPad'de kayıtlar Ajandam'ın uygulama alanında durur (Dosyalar'da görünmez;
+   cihazın iCloud ya da bilgisayar yedeğine, iOS'un yedeğiyle birlikte girer). claude.ai sürümünde
+   kayıtlar claude.ai hesabına bağlı olarak saklanır.
 
    Ajandam hesap açtırmaz; reklam, izleme kodu ya da kullanım istatistiği içermez. Geliştirici
    kayıtlarını göremez, kayıtlarından hiçbir şey geliştiriciye gönderilmez.
@@ -96,16 +98,18 @@ Kısaca
 
 8. Yedekler ve veri kaybı
 
-   Ajandam her gün kayıtlarının yedeğini alır ve son 30 günü tutar; istersen iCloud Drive'a (Mac App
-   Store'dan kurulan Ajandam'da yok) ya da OneDrive'a da kopyalar.
+   Ajandam her gün kayıtlarının yedeğini alır (son 14 gün, ayrıca son 8 haftanın ve 12 ayın birer
+   yedeği); istersen iCloud Drive'a (Mac App Store'dan kurulan Ajandam'da yok) ya da OneDrive'a da
+   kopyalar.
 
    Cihaz arızası, yanlışlıkla silme ya da başka yazılımlar yüzünden veri kaybı olabilir. Önemli
    kayıtların için düzenli olarak yedek indir ve başka bir yerde sakla.
 
 9. Güncellemeler
 
-   Yeni sürümler GitHub'da yayımlanır; Mac App Store'dan ya da Microsoft Store'dan kurulan Ajandam'ı
-   Store günceller. Ajandam kendini güncellerken yalnızca imzası doğrulanan güncellemeyi kurar;
+   Yeni sürümler GitHub'da yayımlanır; Mac App Store'dan, Microsoft Store'dan ya da iPhone ve iPad'de
+   App Store'dan kurulan Ajandam'ı ilgili mağaza günceller. Ajandam kendini güncellerken yalnızca
+   imzası doğrulanan güncellemeyi kurar;
    Kendiliğinden kur açıksa hazır güncelleme Ajandam arka plandayken sessizce kurulur. Bunu
    Ayarlar › Hakkında'dan kapatabilirsin.
 
@@ -150,7 +154,7 @@ Copyright © 2026 tolgacodes-dev. All rights reserved.
 This is a summary; the Turkish text above is the full terms, the same as in the app (Ayarlar › Hakkında ›
 Kullanım koşulları).
 
-Ajandam is free to download, install and use for personal purposes. You may not copy, redistribute, sell, rent or
+Ajandam is free to download, install and use for personal purposes on Mac, Windows, iPhone and iPad. You may not copy, redistribute, sell, rent or
 modify Ajandam or any part of it, publish a modified copy under the Ajandam name, or reverse engineer it or circumvent
 its signature or update checks, except where the law allows. Your records stay on your own device and belong to you;
 Ajandam has no accounts, ads, tracking or usage statistics, and nothing from your records is sent to the developer.

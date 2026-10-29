@@ -1,6 +1,6 @@
 name: Soru
 description: Ajandam'da bir şeyi nasıl yapacağını soruyorsun
-labels: [soru]
+labels: [question]
 body:
   - type: markdown
     attributes:
@@ -17,5 +17,5 @@ body:
     id: surum
     attributes:
       label: Ajandam ve işletim sistemi sürümü
-      description: İsteğe bağlı. Ajandam'da Ayarlar › Hakkında; Mac mi, Windows mu, claude.ai mi?
-      placeholder: "Ajandam 3.8.2 · macOS 26.0 (ya da Windows 11 24H2)"
+      description: İsteğe bağlı. Ajandam'da Ayarlar › Hakkında; Mac mi, Windows mu, iPhone mu, claude.ai mi?
+      placeholder: "Ajandam 3.9.0 · macOS 26.0 (ya da Windows 11 24H2, iOS 26.0)"

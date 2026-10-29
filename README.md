@@ -5,13 +5,13 @@
 <h1 align="center">Ajandam</h1>
 
 <p align="center">
-  <b>Kişisel finans, ajanda ve notlar; tek uygulamada, Mac'inde ve Windows'ta.</b><br>
+  <b>Kişisel finans, ajanda ve notlar; tek uygulamada, Mac'inde, Windows'ta, iPhone'unda ve iPad'inde.</b><br>
   Hesap yok, sunucu yok, abonelik yok. Yapay zekası API anahtarı istemez.
 </p>
 
 <p align="center">
   <a href="https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg"><b>⬇ Mac için indir</b></a>
-  &nbsp;·&nbsp; <a href="https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420"><b>Mac App Store</b></a>
+  &nbsp;·&nbsp; <a href="https://apps.apple.com/tr/app/ajandam-finans-ve-ajanda/id6820753420"><b>iPhone ve iPad</b></a>
   &nbsp;·&nbsp; <a href="https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR"><b>⬇ Windows için: Microsoft Store</b></a>
   &nbsp;·&nbsp; <a href="#kurulum">Kurulum</a>
   &nbsp;·&nbsp; <a href="#yapay-zeka">Yapay zeka</a>
@@ -24,6 +24,7 @@
   <img alt="macOS 12 ve üstü" src="https://img.shields.io/badge/macOS-12%2B-1f2937?logo=apple">
   <img alt="Apple çipi ve Intel" src="https://img.shields.io/badge/Apple%20%C3%A7ipi%20%2B%20Intel-evrensel-1f2937">
   <img alt="Windows 10 (1607 ve sonrası) ve 11, x64" src="https://img.shields.io/badge/Windows-10%20%2B%2011%2C%20x64-1f2937">
+  <img alt="iPhone ve iPad, iOS 17 ve üstü" src="https://img.shields.io/badge/iOS-17%2B-1f2937?logo=apple">
   <img alt="Ücretsiz" src="https://img.shields.io/badge/%C3%BCcretsiz-2ea44f">
 </p>
 
@@ -35,7 +36,7 @@
 
 ## Neden Ajandam?
 
-- **Kayıtların bilgisayarında kalır.** Hesap açmazsın; Ajandam kayıtlarını hiçbir sunucuya göndermez (yalnızca senin
+- **Kayıtların cihazında kalır.** Hesap açmazsın; Ajandam kayıtlarını hiçbir sunucuya göndermez (yalnızca senin
   bağladığın yapay zekaya, senin izin verdiğin kadarı gider). Her gün yedekler (son 14 gün, 8 hafta ve 12 ay); istersen
   iCloud Drive'a (Windows'ta OneDrive'a) ya da seçtiğin bir klasöre (USB bellek, ağ diski) de, istersen yedek parolasıyla
   şifreli; istersen PIN, Touch ID ya da Windows Hello ile kilitlenir.
@@ -233,6 +234,7 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 | [Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg) | Mac: disk görüntüsü; açıp Ajandam'ı **Uygulamalar** klasörüne sürüklersin |
 | `kur.sh` (aşağıdaki Terminal satırı) | Mac: son sürümü indirir, doğrular, **Uygulamalar** klasörüne kurar (önerilen) |
 | [Microsoft Store](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR) | Windows 10 (1809 ve sonrası) ve Windows 11, x64: Microsoft Store'dan kurulur (önerilen); Windows uyarısı çıkmaz, güncellemeleri Store yapar |
+| [App Store](https://apps.apple.com/tr/app/ajandam-finans-ve-ajanda/id6820753420) | iPhone ve iPad, iOS 17 ve üstü. Sayfa şimdilik yalnızca Türkiye'de açılır |
 | [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe) | Windows 10 (1607 ve sonrası) ve Windows 11, x64: kurulum dosyası |
 | `Ajandam-<sürüm>.zip`, `latest.json`, `latest-windows.json` | Ajandam'ın güncelleyicileri için; elle kurulumda gerekmez |
 | `Ajandam-Claude.mcpb` | Claude masaüstü uzantısı; Ajandam'ın içinden tek tıkla eklenir |
@@ -351,6 +353,17 @@ Ajandam'ın zamanlanmış bildirimleri ve pencere bileşeninin önbelleği her d
 Microsoft Store'dan kurulan Ajandam'da kaldırma penceresi yoktur: Windows uygulamayla birlikte kayıtlarını da siler,
 önce **Ayarlar › Veriler ve yedek › Yedek indir**.
 
+### iPhone ve iPad
+
+**Gereksinimler:** iOS 17 ya da üstü.
+[App Store'da aç](https://apps.apple.com/tr/app/ajandam-finans-ve-ajanda/id6820753420).
+Sayfa şimdilik yalnızca Türkiye'de açıktır. Ülke kodu olmayan adres
+(`apps.apple.com/app/…`) açılmaz.
+
+Kayıtlar bu iPhone'da ya da iPad'de, Ajandam'ın uygulama alanında durur. Uygulamayı silmek kayıtları da siler:
+önce **Ayarlar › Veriler ve yedek › Yedek indir**. Mac'teki ya da Windows'taki yedek geri yüklenebilir; ortak bir
+yedek klasöründen **Bunu birleştir…** de olur. Cihazlar kendiliğinden eşitlenmez.
+
 ### İki bilgisayarda nasıl kullanılır
 
 Kayıtlar her bilgisayarda ayrı durur ve kendiliğinden eşitlenmez (Ajandam'ın sunucusu yok). Evdeki Mac'le işteki Windows
@@ -429,7 +442,8 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 - **Sürüm notları:** uygulamada **Ayarlar › Hakkında › Sürüm notları**; ayrıca [CHANGELOG.md](CHANGELOG.md) ve
   [Sürümler](https://github.com/tolgacodes-dev/ajandam/releases)
 
-**Yakında:** Linux ve mobil (iPhone ve Android) sürümleri üzerinde çalışılıyor.
+**Yakında:** Linux ve Android sürümleri üzerinde çalışılıyor. iPhone ve iPad sürümü App Store'da
+(şimdilik Türkiye).
 
 ## Lisans
 
@@ -442,10 +456,10 @@ Ajandam'ın içindeki açık kaynak bileşenlerin listesi ve lisans metinleri:
 
 ## English
 
-**Ajandam** is a free personal finance, calendar and notes app for Mac and Windows, made for Turkey. Your records
-stay on your computer: no account, no server, no subscription.
+**Ajandam** is a free personal finance, calendar and notes app for Mac, Windows, iPhone and iPad, made for
+Turkey. Your records stay on your device: no account, no server, no subscription.
 
-**Film:** a three-minute tour (Turkish voice-over, English captions) on
+**Film:** a 2 minute 53 second tour (Turkish voice-over, English captions) on
 [tolgacodes-dev.github.io](https://tolgacodes-dev.github.io/#film).
 
 - **Money:** accounts, credit cards with statement and due dates, installments and minimum payments, budgets,
@@ -505,10 +519,16 @@ account. Such installs don't update silently: when an update is ready, **Şimdi 
 permission. For IT: `Ajandam-Kurulum.exe /S /ALLUSERS` from an elevated prompt (`/S /CURRENTUSER` for the current user
 only); uninstall silently with `"C:\Program Files\Ajandam\uninstall.exe" /S`.
 
+**Install on iPhone and iPad:** iOS 17 or later, from the
+[App Store](https://apps.apple.com/tr/app/ajandam-finans-ve-ajanda/id6820753420). The listing is available in
+Turkey; the address without `/tr/` does not open. Records stay on the device. Deleting the app deletes them, so
+export a backup first (Ayarlar › Veriler ve yedek › Yedek indir). A Mac or Windows backup can be restored, and
+devices do not sync by themselves.
+
 Updates are verified with the app's own signing key and installed automatically in the background (you can turn this
 off in Ayarlar › Hakkında, i.e. Settings › About). Each release lists SHA-256 checksums in **SHA256SUMS**. The app's interface is in Turkish.
 
-**Coming soon:** Linux and mobile (iPhone and Android) versions are in the works.
+**Coming soon:** Linux and Android versions are in the works. The iPhone and iPad app is on the App Store in Turkey.
 
 **Support:** use **Yardım › Geri Bildirim Gönder** (Help › Send Feedback) in the app; it goes straight to the support
 address. You can also email ajandamuygulamasi@gmail.com or

@@ -126,7 +126,10 @@ uygulamalara bağlanamaz. Öneriler Ajandam'da senin onayını bekler.
    command = "/Applications/Ajandam.app/Contents/MacOS/Ajandam"
    args = ["--mcp"]
    ```
-   Windows'ta komut `C:\Users\<kullanıcı>\AppData\Local\Ajandam\Ajandam.exe` olur.
+   Windows'ta komut `C:\Users\<kullanıcı>\AppData\Local\Programs\Ajandam\Ajandam.exe` olur
+   (3.7 ve öncesi `%LOCALAPPDATA%\Ajandam`'daydı; güncelleme kendiliğinden taşır). Bilgisayardaki herkes için
+   kurulumda komut `C:\Program Files\Ajandam\Ajandam.exe`'dir. Microsoft Store sürümünde bu yolu elle yazma;
+   **ChatGPT'ye Ajandam'ı bağla** düğmesi doğru yolu kendisi yazar.
 2. ChatGPT'den çık (Mac'te ⌘Q, Windows'ta bildirim alanındaki simgeden) ve yeniden aç.
 3. ChatGPT'ye "Ajandam'a göre bu ay nereye harcadım?" gibi sorular sorabilirsin.
 
@@ -149,7 +152,7 @@ ile aldığın yapılandırmayı ekle:
 }
 ```
 
-Windows'ta komut `C:\\Users\\<kullanıcı>\\AppData\\Local\\Ajandam\\Ajandam.exe` olur (JSON'da ters eğik çizgiler çift).
+Windows'ta komut `C:\\Users\\<kullanıcı>\\AppData\\Local\\Programs\\Ajandam\\Ajandam.exe` olur (JSON'da ters eğik çizgiler çift). Herkes için kurulumda `C:\\Program Files\\Ajandam\\Ajandam.exe`.
 
 `Ajandam --mcp`, standart giriş/çıkış üzerinden konuşan bir MCP sunucusudur. İstekleri çalışan Ajandam'a yalnızca
 senin kullanıcı hesabının erişebildiği yerel bir kanalla (Mac'te soket, Windows'ta adlandırılmış kanal) iletir;
