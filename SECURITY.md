@@ -28,7 +28,9 @@ Ajandam güncellemeyi hazır olunca haber verir; kurmak için **Şimdi kur** ve 
   kayıtları kendi hesabında kalır; kaldırırken **Kayıtlarımı da sil** yalnızca kaldıran kullanıcının kayıtlarını siler.
   Kurulum dosyası bir sertifika kuruluşunca imzalı değildir (izin penceresinde "Bilinmeyen yayımcı" görünür); özeti
   her sürümün `SHA256SUMS` dosyasındadır. Mac'te disk görüntüsünden ya da İndirilenler'den açılan Ajandam Uygulamalar
-  klasörüne taşınmayı önerir; taşıdığı kopyanın karantina işaretini kaldırır (kullanıcı onu zaten açmıştır).
+  klasörüne taşınmayı önerir; taşıdığı kopyanın karantina işaretini kaldırır (kullanıcı onu zaten açmıştır). 4.0'dan
+  Windows kurulumu, WebView2 yoksa Microsoft'tan indirdiği kurulum dosyasını Microsoft'un imzasını doğrulamadan
+  çalıştırmaz.
 - **Kapanış:** Ajandam kapanırken bekleyen kayıtların yazılmasını en çok 12 saniye bekler. Kaydedilemeyen bir değişiklik
   kalırsa (disk dolu ya da veri klasörüne yazılamadı) nedenini söyler ve açık kalmayı önerir; varsayılan düğme
   Ajandam'ı açık tutar (Windows'ta Esc ve pencerenin X'i de). Böyle bir değişiklik varken güncelleme kendiliğinden kurulmaz. Oturum ya da bilgisayar
@@ -37,7 +39,9 @@ Ajandam güncellemeyi hazır olunca haber verir; kurmak için **Şimdi kur** ve 
   iCloud Drive (Windows'ta OneDrive) yedeğini açarsan yedekler kendi bulut hesabına da kopyalanır; Ayarlar › Veriler ve
   yedek › Yedek klasörü'nde bir klasör seçersen (USB bellek, ağ diski, Dropbox) her gün JSON yedeği ve SHA-256 özeti,
   haftada bir ekleriyle arşiv oraya da yazılır. Yedeklerde kayıtların ve fiş/fatura eklerin vardır; PIN ve kilit ayarları
-  yedeğe girmez, bir yedeğe dönmek şimdiki PIN'i değiştirmez ya da kaldırmaz. **Yedek parolası belirlemediysen yedekler
+  yedeğe girmez, bir yedeğe dönmek şimdiki PIN'i değiştirmez ya da kaldırmaz; 4.0'dan yapay zeka uygulamalarının
+  izinleri ve otomatik onay gibi bu cihazda verdiğin onaylar da yedekten gelmez (elden geçirilmiş bir yedek bir uygulamaya
+  kayıtlarını açamaz). **Yedek parolası belirlemediysen yedekler
   şifrelenmez:** günlük yedekler, iCloud Drive ve OneDrive'daki ve yedek klasöründeki kopyaları düz JSON'dur, **Yedek
   indir**'in arşivi (.zip) de şifrelenmez (içindeki yedek.json düz JSON, ekler olduğu gibi; yalnızca PIN belgesi, yapay zeka
   önerileri ve fiyat önbelleği girmez; JSON yedek indir'in dosyası da düz JSON). Ekler (fiş, fatura, nottaki resim ve
@@ -95,7 +99,12 @@ Ajandam güncellemeyi hazır olunca haber verir; kurmak için **Şimdi kur** ve 
   onayından geçer (notarization; onay belgesi uygulamaya, disk görüntüsüne ve güncelleme paketine iliştirilir). Web Denetçisi
   yalnızca geliştirme derlemesinde açıktır. Ajandam'ın penceresi kendi
   sayfasından başka bir adrese gidemez; dış bağlantılar tarayıcıda açılır. Mac'te yalnızca tıklanan bağlantı açılır;
-  Windows'ta 3.8'den betik sayfayı tıklanmadan dış bir adrese yönlendirirse o adres tarayıcıda açılmaz.
+  Windows'ta 3.8'den betik sayfayı tıklanmadan dış bir adrese yönlendirirse o adres tarayıcıda açılmaz. Dosyalardan
+  (ekstre, döküm, başka uygulamanın defteri, yedek) ve sunuculardan gelen her metin sayfaya kaçışla yazılır; 4.0'da hesap
+  kartındaki son 4 hane, taşıma önizlemesindeki karşı hesap ve ekstre hatası da bu kurala bağlandı. Yedekten gelen
+  tanınmayan alanlar ve yerel deponun birleştirmesi nesne adı taşıyan anahtarları (`__proto__`, `constructor`,
+  `prototype`) almaz. claude.ai'da PDF ve Excel kütüphaneleri cdnjs'ten alt kaynak bütünlüğü (SRI, SHA-384) ile yüklenir:
+  dosya değişmişse çalışmaz.
 - **Güncellemeler:** Sürümler GitHub Actions'ta derlenip Ajandam'ın kendi imza anahtarıyla imzalanır.
   - Mac: uygulama indirdiği güncellemenin SHA-256 özetini `latest.json` ile, imzasını uygulamaya gömülü sertifika
     parmak iziyle doğrular. Terminal'deki kurulum betiği (`scripts/kur.sh`) de aynı iki denetimi yapar. 3.8'den

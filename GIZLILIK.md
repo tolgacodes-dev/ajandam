@@ -1,6 +1,6 @@
 # Ajandam gizlilik politikası
 
-Son güncelleme: 15 Ekim 2026
+Son güncelleme: 1 Kasım 2026
 
 Ajandam'ı tolgacodes-dev geliştirir. Bu politika Ajandam'ın Mac uygulamasını (Mac App Store'dan ya da indirme sayfasından
 kurulan), Windows uygulamasını (Microsoft Store'dan ya da kurulum dosyasıyla kurulan), iPhone ve iPad uygulamasını (App
@@ -53,21 +53,22 @@ uygulama verilerini temizlemek bu kayıtları da siler; önce yedek indir.
    iPhone ve iPad uygulamasını App Store, Android uygulamasını Google Play günceller; Ajandam bunlarda güncelleme
    denetlemez. İndirme sayfasından ya da kurulum dosyasıyla kurulan Ajandam yeni sürümü aynı depodan (`github.com`)
    denetler ve indirir; bu istekte kayıtlarından hiçbir şey gönderilmez.
-4. *ChatGPT ile giriş* (isteğe bağlı; Mac ve Windows): girişi tarayıcında OpenAI'nin sayfasında yaparsın
-   (`auth.openai.com`). Asistan bir soruyu yanıtlamak, ekstre okumak ya da kategori önermek için gereken bilgiyi
+4. *ChatGPT ile giriş* (isteğe bağlı; Mac, Windows, iPhone, iPad ve Android): girişi tarayıcında OpenAI'nin sayfasında
+   yaparsın (`auth.openai.com`; iPhone ve iPad'de uygulamanın içinde açılan Safari sayfasında, Android'de tarayıcında). Asistan bir soruyu yanıtlamak, ekstre okumak ya da kategori önermek için gereken bilgiyi
    (sorun, hesap ve kategori adları, ilgili kayıtların tarihi, tutarı ve açıklaması, toplamlar ve yazdıysan Ayarlar ›
    Yapay zeka › "Asistan'a notlarım"daki metin; notlar yalnızca Ayarlar'dan izin verirsen) senin iznin olduğunda
    OpenAI'ye (`api.openai.com`) gönderir. IBAN, TC kimlik, kart ve telefon numaraları ve e-posta adresleri
    gönderilmeden gizlenir (IBAN ve kart numarasının son dört hanesi kalır); kişi adları (ör. bir açıklamadaki ya da
    borç kaydındaki ad) gizlenmez. İzin Ajandam kapanana kadar geçerlidir; Ayarlar › Yapay zeka'dan her zaman
-   kapatabilir, oturumu kapatabilirsin. Oturum anahtarları bu bilgisayarda saklanır: Mac'te Anahtar Zinciri'nde,
-   Windows'ta Windows'un şifrelemesiyle (DPAPI). OpenAI'ye gidenler OpenAI'nin koşullarına ve gizlilik politikasına
-   tabidir.
+   kapatabilir, oturumu kapatabilirsin. Oturum anahtarları yalnızca bu cihazda saklanır: Mac'te, iPhone'da ve iPad'de
+   Anahtar Zinciri'nde, Windows'ta Windows'un şifrelemesiyle (DPAPI), Android'de Android Keystore'daki anahtarla şifreli
+   (Android'in yedeğine girmez). "Tüm verileri sil" oturumu da siler. OpenAI'ye gidenler OpenAI'nin koşullarına ve
+   gizlilik politikasına tabidir.
 5. *Cihazda çalışan yapay zeka:* Apple Intelligence (Mac'te macOS 26 ve Apple çipli Mac'lerde; iPhone ve iPad'de iOS 26
    ve Apple Intelligence'ı destekleyen cihazlarda) ve yerel modeller (Mac ve Windows'ta Ollama, LM Studio; `127.0.0.1`) bu
    cihazda çalışır; kayıtların cihazdan çıkmaz. Fiş fotoğrafındaki yazı da cihazında okunur (Mac'te macOS'un, iPhone ve
-   iPad'de iOS'un, Windows'ta Windows'un metin tanımasıyla). Android uygulamasında bu sürümde yapay zeka ve fiş okuma
-   yoktur.
+   iPad'de iOS'un, Windows'ta Windows'un metin tanımasıyla). Android uygulamasında cihazda çalışan yapay zeka ve fiş okuma
+   yoktur; Android'de yapay zeka yalnızca sen ChatGPT ile giriş yaptıysan (4. madde) kullanılır.
 6. *Ajandam'a bağladığın yapay zeka uygulamaları* (Mac ve Windows; Claude, ChatGPT, Cursor gibi; Ayarlar › Yapay
    zeka'da "bağlanabilir" açıksa): uygulama Ajandam'la bu bilgisayarda konuşur (MCP; isteğe bağlı yerel adres yalnızca
    `127.0.0.1`). O uygulamanın gördüğü kayıtları kendi hizmetine göndermesi o uygulamanın gizlilik politikasına

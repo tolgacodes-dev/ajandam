@@ -5,7 +5,7 @@
 <h1 align="center">Ajandam</h1>
 
 <p align="center">
-  <b>Kişisel finans, ajanda ve notlar; tek uygulamada, Mac'inde ve Windows'ta.</b><br>
+  <b>Kişisel finans, ajanda ve notlar; tek uygulamada, Mac'inde, Windows'ta, iPhone, iPad ve Android'de.</b><br>
   Hesap yok, sunucu yok, abonelik yok. Yapay zekası API anahtarı istemez.
 </p>
 
@@ -13,6 +13,8 @@
   <a href="https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg"><b>⬇ Mac için indir</b></a>
   &nbsp;·&nbsp; <a href="https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420"><b>Mac App Store</b></a>
   &nbsp;·&nbsp; <a href="https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR"><b>⬇ Windows için: Microsoft Store</b></a>
+  &nbsp;·&nbsp; <a href="https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420"><b>iPhone ve iPad: App Store</b></a>
+  &nbsp;·&nbsp; <a href="#android"><b>Android</b></a>
   &nbsp;·&nbsp; <a href="#kurulum">Kurulum</a>
   &nbsp;·&nbsp; <a href="#yapay-zeka">Yapay zeka</a>
   &nbsp;·&nbsp; <a href="#destek-ve-iletişim">Destek</a>
@@ -234,6 +236,8 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 | `kur.sh` (aşağıdaki Terminal satırı) | Mac: son sürümü indirir, doğrular, **Uygulamalar** klasörüne kurar (önerilen) |
 | [Microsoft Store](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR) | Windows 10 (1809 ve sonrası) ve Windows 11, x64: Microsoft Store'dan kurulur (önerilen); Windows uyarısı çıkmaz, güncellemeleri Store yapar |
 | [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe) | Windows 10 (1607 ve sonrası) ve Windows 11, x64: kurulum dosyası |
+| [App Store](https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420) | iPhone ve iPad (iOS 17 ve sonrası): Mac'teki uygulamayla aynı kayıt |
+| [Ajandam-Android.apk](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Android.apk) | Android 8.0 ve sonrası: APK (Google Play'deki paketle aynı kaynaktan ve aynı anahtarla imzalı; aşağıda "Android") |
 | `Ajandam-<sürüm>.zip`, `latest.json`, `latest-windows.json` | Ajandam'ın güncelleyicileri için; elle kurulumda gerekmez |
 | `Ajandam-Claude.mcpb` | Claude masaüstü uzantısı; Ajandam'ın içinden tek tıkla eklenir |
 | `SHA256SUMS` | Bütün dosyaların SHA-256 özetleri |
@@ -351,6 +355,29 @@ Ajandam'ın zamanlanmış bildirimleri ve pencere bileşeninin önbelleği her d
 Microsoft Store'dan kurulan Ajandam'da kaldırma penceresi yoktur: Windows uygulamayla birlikte kayıtlarını da siler,
 önce **Ayarlar › Veriler ve yedek › Yedek indir**.
 
+### iPhone ve iPad
+
+**Gereksinimler:** iOS 17 ve iPadOS 17 ya da üstü (Apple Intelligence için iOS 26 ve destekleyen bir cihaz).
+[App Store](https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420)'dan kurulur (Mac'teki uygulamayla aynı
+kayıt). Kayıtlar telefonda; yedekler Mac'le aynı biçimde, Dosyalar'da seçtiğin yedek klasörüne de yazılır ve Mac'le
+birleştirilebilir. Yapay zeka: Apple Intelligence'ı destekleyen iPhone ve iPad'de cihazın içinde; 4.0'dan ChatGPT
+hesabınla giriş de var (Asistan, ekstre okuma ve "Ajandam'a sor" ChatGPT'yle). Fiş okuma kamerayla.
+
+### Android
+
+**Gereksinimler:** Android 8.0 (API 26) ve üstü; telefon ve tablet. İki yol:
+
+- **Google Play:** kapalı test sürümü (üretime geçince bu sayfadaki bağlantı Play'in mağaza sayfası olacak); katılmak için
+  [play.google.com/apps/testing/app.ajandam](https://play.google.com/apps/testing/app.ajandam).
+- **APK:** [Ajandam-Android.apk](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Android.apk)
+  (Play'deki paketle aynı kaynaktan ve aynı anahtarla imzalı; SHA-256 özeti yanındaki `.sha256` dosyasında). Yeni sürüm
+  çıkınca uygulama haber verir, güncellemeyi sen indirirsin.
+
+Kayıtlar cihazda, uygulamanın kendi klasöründe; Google'ın yedeğine yalnızca kayıtlar ve yalnızca ekran kilidi varken
+uçtan uca şifreli gider. Yapay zeka: ChatGPT hesabınla giriş (4.0); cihaz içi model ve yerel model
+sunucusu yok. Bu sürümde olmayanlar: fiş okuma (kamera), yedek klasörü, iki cihazı birleştirme, şifreli not ve şifreli
+yedek, paylaş menüsü, yazdırma, yapay zeka uygulamalarının bağlantısı (MCP).
+
 ### İki bilgisayarda nasıl kullanılır
 
 Kayıtlar her bilgisayarda ayrı durur ve kendiliğinden eşitlenmez (Ajandam'ın sunucusu yok). Evdeki Mac'le işteki Windows
@@ -375,9 +402,9 @@ Ajandam'ın yapay zekası API anahtarı istemez; **Ayarlar › Yapay zeka** böl
 
 | | Nerede çalışır | Ne zaman |
 |---|---|---|
-| **Apple Intelligence** | Mac'inde; kayıtların hiçbir yere gitmez | macOS 26, Apple çipli Mac |
+| **Apple Intelligence** | Mac'inde, iPhone ve iPad'inde; kayıtların hiçbir yere gitmez | macOS 26 ve Apple çipli Mac; iOS 26 ve destekleyen iPhone ya da iPad |
 | **Yerel model** ([Ollama](https://ollama.com), [LM Studio](https://lmstudio.ai)) | Bilgisayarında | Uygulama açıkken kendiliğinden bulunur |
-| **ChatGPT** (hesabınla giriş) | OpenAI'de; soruyla ilgili kayıtların senin izninle gider (IBAN, kart ve TC kimlik numarası, telefon ve e-posta gizlenir; kişi adları gizlenmez) | ChatGPT Plus ya da Pro planın yeter, API anahtarı gerekmez |
+| **ChatGPT** (hesabınla giriş) | OpenAI'de; soruyla ilgili kayıtların senin izninle gider (IBAN, kart ve TC kimlik numarası, telefon ve e-posta gizlenir; kişi adları gizlenmez) | ChatGPT Plus ya da Pro planın yeter, API anahtarı gerekmez; Mac, Windows, iPhone, iPad ve Android'de (4.0) |
 | **Claude** (masaüstü uygulaması, MCP) | Claude'da | Ajandam uzantısını tek tıkla eklersin |
 | **ChatGPT** (masaüstü uygulaması, MCP) | ChatGPT'de | Ajandam'ı ChatGPT'nin ayarlarına tek tıkla eklersin |
 
@@ -429,7 +456,7 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 - **Sürüm notları:** uygulamada **Ayarlar › Hakkında › Sürüm notları**; ayrıca [CHANGELOG.md](CHANGELOG.md) ve
   [Sürümler](https://github.com/tolgacodes-dev/ajandam/releases)
 
-**Yakında:** Linux ve mobil (iPhone ve Android) sürümleri üzerinde çalışılıyor.
+**Yakında:** Linux sürümü üzerinde çalışılıyor; Android'de fiş okuma, yedek klasörü ve şifreli yedek sonraki sürümlerde.
 
 ## Lisans
 
@@ -442,8 +469,8 @@ Ajandam'ın içindeki açık kaynak bileşenlerin listesi ve lisans metinleri:
 
 ## English
 
-**Ajandam** is a free personal finance, calendar and notes app for Mac and Windows, made for Turkey. Your records
-stay on your computer: no account, no server, no subscription.
+**Ajandam** is a free personal finance, calendar and notes app for Mac, Windows, iPhone, iPad and Android, made for
+Turkey. Your records stay on your device: no account, no server, no subscription.
 
 **Film:** a three-minute tour (Turkish voice-over, English captions) on
 [tolgacodes-dev.github.io](https://tolgacodes-dev.github.io/#film).
@@ -508,7 +535,9 @@ only); uninstall silently with `"C:\Program Files\Ajandam\uninstall.exe" /S`.
 Updates are verified with the app's own signing key and installed automatically in the background (you can turn this
 off in Ayarlar › Hakkında, i.e. Settings › About). Each release lists SHA-256 checksums in **SHA256SUMS**. The app's interface is in Turkish.
 
-**Coming soon:** Linux and mobile (iPhone and Android) versions are in the works.
+**Phones and tablets:** iPhone and iPad on the [App Store](https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420);
+Android as an APK from the [latest release](https://github.com/tolgacodes-dev/ajandam/releases/latest) (Google Play in closed
+testing). Sign in with ChatGPT works on phones too (4.0). **Coming soon:** a Linux version.
 
 **Support:** use **Yardım › Geri Bildirim Gönder** (Help › Send Feedback) in the app; it goes straight to the support
 address. You can also email ajandamuygulamasi@gmail.com or
