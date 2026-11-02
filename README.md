@@ -39,8 +39,9 @@
 
 - **Kayıtların bilgisayarında kalır.** Hesap açmazsın; Ajandam kayıtlarını hiçbir sunucuya göndermez (yalnızca senin
   bağladığın yapay zekaya, senin izin verdiğin kadarı gider). Her gün yedekler (son 14 gün, 8 hafta ve 12 ay); istersen
-  iCloud Drive'a (Windows'ta OneDrive'a) ya da seçtiğin bir klasöre (USB bellek, ağ diski) de, istersen yedek parolasıyla
-  şifreli; istersen PIN, Touch ID ya da Windows Hello ile kilitlenir.
+  iCloud Drive'a (Windows'ta OneDrive'a, Android'de Google Drive'a) ya da seçtiğin bir klasöre (USB bellek, ağ diski) de,
+  istersen yedek parolasıyla şifreli; istersen PIN, Touch ID ya da Windows Hello ile kilitlenir. Yeni telefona ya da
+  bilgisayara geçerken kayıtların karekodla, aynı Wi-Fi'de doğrudan aktarılır.
 - **Türkiye için yapıldı.** Kredi kartı kesim ve son ödeme günleri, taksitler, asgari ödeme (%20 / %40), TCMB azami
   faiz oranları, TÜFE ile enflasyon raporu, kira artış sınırı, resmî tatiller, vergi takvimi, BES devlet katkısı.
 - **Yapay zeka, anahtarsız.** Apple Intelligence (Mac) ya da Ollama, LM Studio gibi yerel modellerle bilgisayarında
@@ -374,9 +375,22 @@ hesabınla giriş de var (Asistan, ekstre okuma ve "Ajandam'a sor" ChatGPT'yle).
   çıkınca uygulama haber verir, güncellemeyi sen indirirsin.
 
 Kayıtlar cihazda, uygulamanın kendi klasöründe; Google'ın yedeğine yalnızca kayıtlar ve yalnızca ekran kilidi varken
-uçtan uca şifreli gider. Yapay zeka: ChatGPT hesabınla giriş (4.0); cihaz içi model ve yerel model
-sunucusu yok. Bu sürümde olmayanlar: fiş okuma (kamera), yedek klasörü, iki cihazı birleştirme, şifreli not ve şifreli
-yedek, paylaş menüsü, yazdırma, yapay zeka uygulamalarının bağlantısı (MCP).
+uçtan uca şifreli gider. 4.1'den **Ayarlar › Veriler ve yedek › Google Drive'a otomatik yedek**: Drive'da (ya da
+OneDrive, Dropbox gibi seçtiğin bir yerde) bir dosya seçersin, Ajandam yedeğini her gün oraya yazar; Google hesabını
+Ajandam'a bağlaman gerekmez, dosyayı Drive uygulaması yükler. Bildirimden Ödendi ve Yarın hatırlat, yazdırma ve PDF,
+yedek parolasıyla şifreli yedek, başka uygulamalardan paylaşılan ekstre ve dökümleri içe aktarma, simgeye basılı tutunca
+hızlı eylemler ve uygulama simgesi seçimi var. Yapay zeka: ChatGPT hesabınla giriş; cihaz içi model ve yerel model sunucusu yok. Henüz olmayanlar: fiş
+okuma (kamera), yedek klasörü, yapay zeka uygulamalarının bağlantısı (MCP).
+
+### Cihazlar arası aktarım (karekod)
+
+Yeni bir telefona ya da bilgisayara geçerken: iki cihazda da **Ayarlar › Veriler ve yedek › Başka cihaza aktar**. Bir
+cihaz karekod gösterir (bilgisayar her zaman gösterir), telefon ya da tablet kamerasıyla okutur. İki cihaz aynı Wi-Fi'de
+(ya da telefonun erişim noktasında) olmalı. Kayıtların, notların ve eklerin doğrudan öbür cihaza, uçtan uca şifreli gider;
+internete ve hiçbir sunucuya çıkmaz. Gönderen taraf göndermeden önce onay ister, alan taraf uygulamadan önce neyin
+değişeceğini gösterir. Karekod 5 dakika geçerli ve tek kullanımlıktır. Windows güvenlik duvarı izin isterse **İzin ver**'e
+bas (Microsoft Store sürümünde gerekmez). İki bilgisayar arasında karekod okunamaz: aşağıdaki yedek klasörü ya da **Yedek
+indir** ve **Yedekten geri yükle**.
 
 ### İki bilgisayarda nasıl kullanılır
 
@@ -485,6 +499,9 @@ Turkey. Your records stay on your device: no account, no server, no subscription
 - **Turkey-specific:** CPI (TÜFE) based inflation report, rent increase cap, central bank card interest rates,
   public holidays, tax calendar, private pension (BES) state contribution; updated between releases through a signed
   data feed.
+- **Move between devices:** Settings › Data and backup › Transfer to another device: one device shows a QR code, the
+  phone scans it, and records, notes and attachments go directly over the same Wi-Fi, end-to-end encrypted, without any
+  server. On Android, an automatic daily backup to a Google Drive file you pick (no Google sign-in in the app).
 - **AI without API keys:** Apple Intelligence (Mac) or local models (Ollama, LM Studio) on your computer, sign in
   with your ChatGPT Plus or Pro account, or connect Claude, ChatGPT and other MCP apps in one click. Nothing is saved
   without your approval.
