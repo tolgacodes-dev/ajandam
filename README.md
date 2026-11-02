@@ -372,9 +372,13 @@ hesabınla giriş de var (Asistan, ekstre okuma ve "Ajandam'a sor" ChatGPT'yle).
   1. Google hesabınla [Ajandam Test](https://groups.google.com/g/ajandam-test) grubuna katıl (**Gruba katıl**). Gruba
      mesaj yazılmaz; e-posta adresini yalnızca grup yöneticisi görür.
   2. Aynı hesapla [play.google.com/apps/testing/app.ajandam](https://play.google.com/apps/testing/app.ajandam) adresinde
-     **Test kullanıcısı ol**'a dokun, sonra Ajandam'ı Google Play'den kur. Güncellemeleri Play yapar.
+     **Test kullanıcısı ol**'a dokun, sonra Ajandam'ı o sayfadaki Google Play bağlantısından ya da
+     [Ajandam'ın Play sayfasından](https://play.google.com/store/apps/details?id=app.ajandam) kur. Ajandam testteyken
+     Play'in aramasında çıkmaz. Güncellemeleri Play yapar.
 
-  Gruba yeni katıldıysan ikinci bağlantının açılması birkaç dakika sürebilir. Testte kalman Ajandam'ın Play'de herkese
+  Telefondaki Play Store'da gruba katıldığın Google hesabı açık olmalı (birden çok hesap varsa Play Store'da sağ üstteki
+  profil simgesinden ona geç). Gruba yeni katıldıysan Ajandam'ın Play'de sana görünmesi birkaç dakika, bazen birkaç saat
+  sürer; "bulunamadı" ya da "kullanılamıyor" görürsen biraz sonra yeniden dene. Testte kalman Ajandam'ın Play'de herkese
   açılmasını hızlandırır: Google yeni uygulamalardan en az 12 test kullanıcısının 14 gün kesintisiz katılmasını istiyor.
 - **APK:** [Ajandam-Android.apk](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Android.apk)
   (Play'deki paketle aynı kaynaktan ve aynı anahtarla imzalı; SHA-256 özeti yanındaki `.sha256` dosyasında). Yeni sürüm
@@ -561,7 +565,9 @@ off in Ayarlar › Hakkında, i.e. Settings › About). Each release lists SHA-2
 **Phones and tablets:** iPhone and iPad on the [App Store](https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420);
 Android as an APK from the [latest release](https://github.com/tolgacodes-dev/ajandam/releases/latest) (Google Play in closed
 testing: anyone can join through the [Ajandam Test](https://groups.google.com/g/ajandam-test) group, then
-[opt in](https://play.google.com/apps/testing/app.ajandam)). Sign in with ChatGPT works on phones too (4.0). **Coming soon:** a Linux version.
+[opt in](https://play.google.com/apps/testing/app.ajandam) with the same Google account and install from the
+[Play page](https://play.google.com/store/apps/details?id=app.ajandam); it doesn't show up in Play search while in testing).
+Sign in with ChatGPT works on phones too (4.0). **Coming soon:** a Linux version.
 
 **Support:** use **Yardım › Geri Bildirim Gönder** (Help › Send Feedback) in the app; it goes straight to the support
 address. You can also email ajandamuygulamasi@gmail.com or
