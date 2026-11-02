@@ -1,6 +1,6 @@
 {
   "bicim": 1,
-  "surum": 5,
+  "surum": 6,
   "tarih": "2026-11-02",
   "tufe": {
     "aylik": {
@@ -99,7 +99,7 @@
     "mac": "6820753420"
   },
   "android": {
-    "surum": "4.1.0",
-    "yapim": 1046
+    "surum": "4.2.0",
+    "yapim": 1075
   }
 }
