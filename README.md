@@ -61,8 +61,9 @@
 Üst çubuktaki **✦ Asistan** düğmesiyle ya da ⇧⌘A (Windows'ta Ctrl+Shift+A) ile açılır. "Bu ay en çok nereye harcadım?", "Kartımı yalnızca
 asgariyi ödersem ne zaman biter?" gibi soruları kayıtlarına bakarak cevaplar; hangi kayıtlara baktığını gösterir.
 İstersen kayıt eklemeyi ya da bütçe değiştirmeyi önerir; sen **Ekle** ya da **Uygula** demeden hiçbir şey değişmez.
-Kayıtlarındaki yazılar (ör. bir havale açıklaması) asistana talimat veremez. Yapay zeka kapalıyken basit soruları
-yine kayıtlarından cevaplar.
+Kayıtlarındaki yazılar (ör. bir havale açıklaması) asistana talimat veremez. Yapay zeka bağlı değilse Asistan bunu
+söyler ve o cihazda nasıl bağlanacağını gösterir (ChatGPT ile giriş, Apple Intelligence ya da bilgisayarındaki model);
+istersen kurallarla devam edersin, basit sorular yine kayıtlarından cevaplanır.
 
 ### Dövizli hesaplar ve harcamalar
 
@@ -130,7 +131,7 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
   </tr>
   <tr>
     <td width="50%" valign="top"><img src="docs/ekran/notlar.png" alt="Not, önizleme"><br><b>Notlar</b><br><sub>Markdown, yapılacak listeleri, tablolar, etiketler ve klasörler.</sub></td>
-    <td width="50%" valign="top"><img src="docs/ekran/ozet-acik.png" alt="Özet ekranı, açık tema"><br><b>Açık ve koyu tema</b><br><sub>Mac'in ya da Windows'un görünümünü izler; Mac'te istersen cam görünüm.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/ozet-acik.png" alt="Özet ekranı, açık tema"><br><b>Açık ve koyu tema</b><br><sub>Mac'in ya da Windows'un görünümünü ve saydamlık ayarını izler; Mac'te istersen cam görünüm.</sub></td>
   </tr>
   <tr>
     <td width="50%" valign="top"><img src="docs/ekran/yapay-zeka.png" alt="Ayarlar, yapay zeka bölümü: Ajandam'a bağlanan uygulamalar"><br><b>Yapay zeka ayarları</b><br><sub>Apple Intelligence, ChatGPT, yerel modeller ve Ajandam'a bağlanan uygulamalar tek yerde.</sub></td>
@@ -148,7 +149,7 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 
 - **Para:** gelir ve gider, hesaplar arası transfer, kredi kartları (kesim ve son ödeme günü, taksit, asgari ödeme),
   banka kredileri (kalan anapara borç olarak, taksit planı, ara ödeme ve erken kapama; taksidin yalnızca faizi gider),
-  düzenli kayıtlar, ödemeler ve faturalar, abonelikler (kendiliğinden yakalanır), bütçe, hedefler (istersen birikim
+  düzenli kayıtlar, ödemeler ve faturalar, abonelikler (kendiliğinden yakalanır; zamlanınca aylık ve yıllık farkıyla), bütçe, hedefler (istersen birikim
   ya da fon hesabına bağlanır: katkı o hesaba transfer olarak yazılır, her ay otomatik katkı kurulur), kişilerle borç ve
   alacak (istersen hesaptan düşülür, net varlığa katılır, taksit planıyla izlenir).
   Dövizli hesaplar ve harcamalar: 150'den fazla para birimi; TL karşılığı o günün kuruyla, istersen kendi kurunla.
@@ -157,7 +158,8 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
   kayıtlı görünümler, kategori kuralları, alt kategoriler (Market altında Kasap gibi; raporlarda ve bütçede üstünde
   toplanır). Bütçede her limit yazıldığı aydan başlayarak geçerli (geçmiş aylar kendi limitleriyle), istersen geçen
   ayın artanı ya da aşımı devreder; aylık toplam tavan ve tatil, giyim gibi harcamalar için yıllık bütçe. Hanede
-  kimin harcadığını ayırmak için kişi etiketleri (#eşim), Kişi süzgeci ve raporu.
+  kimin harcadığını ayırmak için kişi etiketleri (#eşim), Kişi süzgeci ve raporu. Hesabın ayrıntısında **Geçmiş
+  bakiye**: geçmiş bir günün bakiyesi ve o günden sonra onu değiştiren kayıtlar ("Bakiye neden değişti?").
 - **Yatırımlar:** alım, satım, temettü ve bölünme; ortalama maliyetle kâr/zarar (enflasyondan arındırılmışı da), fon ve
   hisse fiyatları elle, yapıştırarak ya da CSV'den; BES'te devlet katkısı, hak ediş ve yıllık tavan.
 - **Raporlar:** genel görünüm, nakit akışı tahmini, ay özeti, net varlık, enflasyon, etiketler, kişiler ve yılın özeti. Özet
@@ -176,6 +178,7 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
   bütçe uygulamasından taşıma (çok hesaplı CSV, Excel ya da QIF; hesaplar, kategoriler, etiketler ve transferlerle), fiş
   fotoğrafı, CSV dışa aktarma, takvim dosyası (.ics) içe ve dışa aktarma, tam yedek (fiş ve fatura ekleriyle tek bir
   .zip arşivi; her dosyanın SHA-256 özetiyle) ve geri yükleme; geri yüklemeden önce neyin değişeceği gösterilir,
+  **Seçerek geri yükle** ile yedekten yalnızca aradığın kayıtları (buradakiyle farkını görerek) geri getirirsin,
   **Yedeği doğrula** bir arşivin ya da yedeğin sağlam olduğunu hiçbir şey yazmadan denetler. **Yedek parolası**
   belirlersen bilgisayarından çıkan kopyalar (arşiv, iCloud Drive ya da OneDrive, yedek klasörü) AES-256 ile şifrelenir
   (.ajandamyedek); parolanı unutursan kurulurken verilen kurtarma anahtarıyla açarsın.
@@ -411,12 +414,14 @@ gibi iki bilgisayarı birlikte kullanmak için:
    diski ya da USB bellek). İki Mac'te iCloud Drive yedeği, iki Windows'ta OneDrive yedeği de olur. Her bilgisayar kendi
    klasörüne yazar.
 2. Öbür bilgisayarın en yeni yedeği aynı yerde görünür. **Bunu birleştir…** önce ne değişeceğini gösterir: burada olmayan
-   kayıtlar eklenir, orada daha yeni olanlar güncellenir, burada daha yeni olanlara dokunulmaz. Ayarlardan yalnızca burada
+   kayıtlar eklenir, orada daha yeni olanlar güncellenir, burada daha yeni olanlara dokunulmaz. İkisinde de son
+   birleştirmeden sonra farklı değişen kayıtta iki hali yan yana görünür; hangisi kalacak, sen seçersin. Ayarlardan yalnızca burada
    olmayanlar gelir (ör. bütçeler, Asistan'a notların); yapay zeka uygulamalarının izinleri gelmez, her bilgisayarda ayrı
    verilir. Geri alınabilir.
-3. Bir bilgisayardan öbürüne geçince önce son çalıştığın yerin yedeğini birleştir. Birinde sildiğin kayıt öbüründe
-   silinmez. Burada sildiğin kayıtlar öbür cihazın yedeğinde duruyorsa geri gelir; silmeler henüz taşınmıyor. Fiş ve
-   fatura ekleri gelmez (onlar için **Yedek indir**'in arşivini öbüründe **Yedekten geri yükle**).
+3. Bir bilgisayardan öbürüne geçince önce son çalıştığın yerin yedeğini birleştir. Birinde sildiğin kayıt öbüründe de
+   silinir (ikisinde de Ajandam 4.2 ya da sonrası varsa; öbüründe sonradan değiştirdiysen kalır), burada sildiğin kayıt öbür
+   cihazın yedeğinden geri gelmez. Fiş ve fatura ekleri gelmez (onlar için **Yedek indir**'in arşivini öbüründe
+   **Yedekten geri yükle**).
 
 Yedek parolası belirlediysen kopyalar şifrelidir; öbür bilgisayarda yedek parolasıyla ya da kurtarma anahtarıyla açılır.
 
@@ -459,7 +464,8 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
     jsDelivr'deki günlük kur listesi; ona ulaşılamazsa aynı listenin currency-api.pages.dev'deki kopyası); geçmiş
     tarihli dövizli kayıtlar için o günün TCMB kuru,
   - senin bağladığın yapay zeka: ChatGPT'ye yalnızca sorunu cevaplamak için gereken kayıtlar, senin iznine bağlı olarak
-    gider (IBAN, TC kimlik no, kart numarası, telefon ve e-posta gizlenir, kişi adları gizlenmez; notlar ayrı izinle),
+    gider (IBAN, TC kimlik no, kart numarası, telefon ve e-posta gizlenir, kişi adları gizlenmez; notlar ayrı izinle);
+    sormadan önce neyin gideceğini, cevaptan sonra neyin gittiğini görürsün,
   - geri bildirim: yalnızca sen gönderdiğinde, formda yazdıkların (ve eklediğin ekran görüntüsü) Google'ın Apps Script
     hizmeti üzerinden Ajandam'ın destek adresine e-postayla iletilir.
 

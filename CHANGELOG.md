@@ -3,6 +3,68 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [4.2.0] – 2026-11-02
+
+Ajandam 4.2 kayıtlarını cihazlar arasında güvenle taşıman için: başka bir cihazdan gelenleri birleştirirken orada sildiklerin burada da siliniyor, iki cihazda farklı değişen kayıtta hangisinin kalacağını sen seçiyorsun. Yedekten tek tek kayıt geri getirebiliyor, bir hesabın geçmiş bakiyesinin neden değiştiğini görebiliyorsun; Asistan da yapay zeka bağlı değilken ne yapacağını söylüyor. Öne çıkanlar:
+
+- **Güvenli birleştirme:** başka bir cihazın yedeğiyle birleştirince ya da karekodla aktarınca orada silinen kayıtlar burada da silinir (notlar Son silinenler'e gider), burada sildiklerin geri gelmez. İki cihazda farklı değişen kayıtta iki hali yan yana görünür; hangisi kalacak, sen seçersin.
+- **Yedekten seçerek geri yükle:** bir yedekten yalnızca istediğin kayıtları ara, buradakiyle farkını gör ve geri getir. Geri alınabilir.
+- **Geçmiş bakiye:** hesabın geçmiş bir gündeki bakiyesini seç; o günden sonra eklenen, düzenlenen ya da silinen kayıtlarla bakiyenin neden değiştiği listelenir.
+- **Asistan yol gösterir:** yapay zeka bağlı değilse Asistan ne olduğunu ve bu cihazda nasıl bağlanacağını söylüyor: ChatGPT ile giriş, Apple Intelligence'ı nereden açacağın ya da bilgisayarındaki model; istersen kurallarla devam edersin. ChatGPT'ye ne gönderileceği sormadan önce, gönderilenler cevaptan sonra görünür.
+- **Mac App Store'da cam görünüm:** macOS 26'da Mac App Store'dan kurulan Ajandam'da da kenar çubuğu ve başlık arkadaki masaüstünü buzlu cam gibi gösteriyor.
+- **Abonelik zammı:** zamlanan abonelikte aylık farkın yanında yıllık fark da.
+- **Takvim dosyası ve şifreli yedek her yerden:** .ics dosyası takvim içe aktarmaya, .ajandamyedek geri yükleme önizlemesine gider; bilgisayarda dosya yöneticisinden, telefonda ve tablette Dosyalar'dan ya da paylaşmayla.
+- **Saydamlığı azalt:** menüler, pencere arkaları ve bildirimler sistemin ayarına uyar; Ayarlar › Görünüm › Saydamlık'tan da seçilir.
+- **Telefonda yeni Ayarlar:** iPhone'da Ayarlar iOS'un Ayarlar uygulaması gibi: bölüm sağdan kayarak açılır, kenardan kaydırarak geri dönülür. Anahtarlar ve arama da takılmadan çalışıyor.
+- **Android:** Ayarlar Android'in ayarları gibi; bildirim türleri ayrı (Ödemeler ve vadeler, Ajanda, Sabah özeti, Diğer); Android 12 ve öncesinde PIN açıkken son uygulamalar ekranında içerik görünmez. Google Play'deki teste katılmak artık herkese açık.
+
+---
+
+**Yedek ve birleştirme**
+- Silme izi: bir cihazda silinen kayıt, yedeği öbür cihazda birleştirilince ya da karekodla aktarılınca orada da silinir (not Son silinenler'e gider); izler 13 ay tutulur. Öbür cihazda 4.2'den eski bir Ajandam varsa birleştirme eskisi gibi yalnızca ekler.
+- Orada silinmiş ama burada sonradan değişmiş kayıt burada kalır; önizleme kaç tane olduğunu söyler. Tek Geri al hepsini geri getirir.
+- Yedekten geri yükle silme izlerine bakmaz: kendi yedeğinden sildiğin bir kaydı geri getirmenin yolu o.
+- Çakışma: iki cihazda son birleştirmeden sonra farklı değişen kayıt için iki hali yan yana (en çok 20, yeni olan seçili); seçtiğin hal kalır. İlk birleştirmede çakışma aranmaz.
+- Önizleme, eki (fiş, fatura) gelmeyecek kayıtları örnekle ve ekleri getirmenin yoluyla gösterir.
+- Seçerek geri yükle: yedekteki kayıtlar açıklamaya, tutara, tarihe ya da notun metnine göre aranır; burada da duran kayıtta neyin değişeceği alan alan görünür. Yalnızca seçtiklerin (arşivse ekleriyle) gelir; öbür kayıtlara ve ayarlara dokunulmaz.
+
+**Hesaplar ve abonelikler**
+- Hesap ayrıntısında Geçmiş bakiye: bir gün seç; o günün sonundaki bakiye ve o günden sonra onu değiştiren kayıtlar etkileriyle ("Bakiye neden değişti?").
+- Abonelik zammında kayıt anındaki satır, abonelik rozeti ve ay özeti yıllık farkı da söylüyor: "₺229,99 → ₺259,99 (+₺30; yılda +₺360)". Kur farkı yine zam sayılmaz.
+
+**Asistan**
+- Yapay zeka bağlı değilken Asistan "Asistan şu an yapay zekasız" kartıyla açılıyor: bu cihazda olan yollar (ChatGPT ile giriş, Apple Intelligence'ın açıldığı yer, bilgisayarındaki model), Ayarlar › Yapay zeka ve Kurallarla devam et. Kurallarla cevaplanan örnek sorular kartın altında.
+- ChatGPT girişi beklenirken, hesabın oturumu kapanmışsa ya da oturum bilgisine erişilemiyorsa kart ne yapılacağını söylüyor; durum değişince Asistan kendiliğinden yenileniyor.
+- ChatGPT'ye sormadan önce "Ne gönderilecek?": soru ve gidecek kayıt özetleri; Vazgeç'te istek gitmez. Cevaptan sonra her turda gönderilenler. Bilgisayardaki ve cihaz içi modelde liste yok (dışarı istek gitmez).
+
+**Dosyalar**
+- Mac'te şifreli yedek (.ajandamyedek) Finder'da çift tıklayınca Ajandam'da açılıyor; takvim dosyası (.ics) Birlikte Aç › Ajandam ile.
+- iPhone ve iPad'de Dosyalar'dan ve paylaş menüsünden takvim dosyası ve şifreli yedek.
+- Windows'ta Dosya Gezgini'nin Birlikte aç listesinde takvim dosyası ve şifreli yedek.
+- Android'de Birlikte aç ve Paylaş ile takvim dosyası ve şifreli yedek.
+
+**Ayarlar**
+- iPhone'da Ayarlar iOS'un Ayarlar uygulaması gibi: gruplu kartlar, açıklamalar kartın altında küçük not, anahtarlar ve seçili değerler sağda, iOS'un seçim düğmeleri. Bölüm sağdan kayarak açılır; ‹ Ayarlar'la ya da ekranın sol kenarından sağa kaydırarak listeye dönülür.
+- iPad'de Ayarlar'ın kartları koyu zeminde, iPadOS'un ayarlarındaki gibi.
+- Bir anahtara dokununca bölüm baştan çizilmiyor: anahtar kayarak değişir, sayfa olduğu yerde kalır, ekran takılmaz.
+- Ayarlarda arama sonuçları yazmaya ara verince gelir; tek harfle yalnızca ayarların adlarında arar.
+- En büyük yazı boyutunda seçim düğmeleri alt alta.
+- Android'de Ayarlar Android'in ayarları gibi: bölümler açıklamalarıyla iki satırlı listede, satırlar aralıklı gruplarda, Android'in anahtarları ve seçim düğmeleri; bölüm yatay kayarak açılır, ← ya da geri tuşuyla dönülür.
+
+**Görünüm ve erişilebilirlik**
+- Ayarlar › Görünüm › Saydamlık: Sisteme göre, Saydam, Düz (bu cihazda). Düz'de menüler, pencere arkaları, bildirimler ve üst çubuk düz renk; yazılar daha net okunur.
+- Sisteme göre: Mac'te, iPhone'da ve iPad'de Saydamlığı azalt ayarına uyar.
+- Windows'ta Saydamlık efektleri ayarına uyar.
+- Mac App Store'dan kurulan Ajandam'da macOS 26 ve sonrasında cam görünüm; Ayarlar › Görünüm › Cam görünüm'den kapatılır.
+
+**Android**
+- Bildirim türleri: Ödemeler ve vadeler, Ajanda, Sabah özeti, Diğer hatırlatmalar; her birinin sesi, titreşimi ya da kapatılması Android ayarlarından ayrı ayrı (Ayarlar › Bildirimler › Bildirim türleri).
+- Android 12 ve öncesinde PIN açıkken son uygulamalar ekranında içerik görünmez; o sürede ekran görüntüsü de alınmaz (Android 13 ve sonrasında içerik zaten hiç görünmüyor).
+- Google Play'deki teste katılmak için davet gerekmiyor: önce Ajandam Test grubuna katıl, sonra test sayfasından katılıp Google Play'den kur (indirme sayfasında iki adım).
+
+**Düzeltmeler**
+- Android'de uygulamanın içindeki sürüm notlarında Android'e ait maddeler de görünüyor.
+
 ## [4.1.0] – 2026-11-02
 
 Ajandam 4.1 telefonları ve tabletleri baştan düzenliyor: pencereler telefonda tam ekran, Ayarlar telefondaki Ayarlar uygulaması gibi. Cihazlar arasında karekodla aktarım geldi; Android'e Google Drive yedeği, yazdırma ve şifreli yedek eklendi; bildirimler artık senin elinde. Öne çıkanlar:
