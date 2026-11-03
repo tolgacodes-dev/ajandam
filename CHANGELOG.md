@@ -3,6 +3,51 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [4.3.0] – 2026-11-03
+
+Ajandam 4.3 günü, haftayı ve ayı toparlamana yardım ediyor: Özet'in sade görünümü yalnızca bugünü gösteriyor, haftanın sonunda yarım kalanları tek pencerede kapatıyorsun, biten ayı kapatınca geçmiş toplamlar değişmiyor. Bir ödemenin hesabı yetmeyecekse Ajandam bunu önceden söylüyor. Öne çıkanlar:
+
+- **Sade Özet:** Özet'in başındaki Ayrıntılı | Sade ile yalnızca bugün: net varlık ve hesaplar, bugünün işleri, bekleyen ödemeler. Seçim bu cihazda kalır.
+- **Haftayı kapat:** gecikmiş ödemeler, bitmemiş yapılacaklar ve Gelen kutusu tek pencerede; her birini tamamla, gelecek haftaya taşı ya da bırak. Haftanın son üç günü Özet'te hatırlatılır.
+- **Ödemeden önce bakiye:** ödemenin hesabı son güne kadar yetmeyecekse Ödemeler'de ve Özet'te uyarı; ek hesap (KMH) limiti hesaba katılır, döküm o güne kadarki her kalemi gösterir.
+- **Ay kapanışı:** biten ayı kapatınca o ayın ve öncesinin işlemleri değiştirilemez; yanlışlıkla eklenen, düzenlenen ya da silinen bir kayıt geçmiş toplamları ve bakiyeleri bozmaz. Gerekirse ayı bilerek açarsın.
+- **Standart görünüme dön:** Ayarlar › Görünüm yalnızca o cihazda çalışan seçenekleri gösterir; tek dokunuşla hepsi varsayılana döner.
+- **iPhone ve iPad:** Siri ve Kestirmeler'de Gider ekle (tutar, hesap, kategori; önizlemede onay). Bir eki Hızlı Bakış'ta işaretleyince işaretli kopya ayrı ek olur, orijinal değişmez.
+- **Telefonda Ayarlar:** bilgisayardaki Ajandam'ın düzeninde: renkli simgeli gruplar, satırın sağında değeri; iPhone'da Ara sekmesi öbür sekmelerle aynı çubukta.
+- **Android:** Android 12 ve sonrasında vurgu rengi duvar kağıdından gelebilir (Material You).
+
+---
+
+**Özet**
+- Ayrıntılı | Sade seçimi Özet'in başında ve Ayarlar › Görünüm › Özet görünümü'nde; bu cihazda saklanır, yedeğe ve öbür cihazlara gitmez.
+- Sade: bugünkü net varlık ve bugün harcayabileceğin pay, bekleyen ödemelerin toplamı, hesap kartları, "Bugün" (geciken yapılacaklar, bugünün etkinlikleri ve yapılacakları, son günü bugün olan ödemeler; boşsa "Bugün boş") ve yaklaşan ödemeler.
+
+**Ajanda**
+- Haftayı kapat: Ajanda'nın başlığından, komut paletinden ve haftanın son üç günü Özet'teki şeritten açılır. Yapılacakta Gelecek haftaya kaydı (tekrarlayanda yalnızca o tekrarı) gelecek haftanın ilk gününe taşır; ödemede son gün değişmez, hatırlatma o güne kayar. Bırak kayda dokunmaz.
+
+**Ödemeler**
+- Hesap yetmeyecekse ödemenin satırında "Maaş hesabı ₺1.500 eksiye düşebilir"; ek hesap limiti varsa limit içindeki kısım "ek hesaptan kullanabilir", aşanı "limitini aşabilir" diye söylenir.
+- Tahmine o hesabın planlı ve düzenli kayıtları, transferleri, ödemeleri ve abonelikleri girer; Nakit akışı'nda günlük harcama açıksa o da. "döküm" her kalemi bakiyesiyle gösterir.
+
+**Ay kapanışı**
+- Raporlar › Ay özeti'nden, ayın ilk haftasında Özet'teki "özetin hazır" şeridinden ya da Ayarlar › Veriler ve yedek › Ay kapanışı'ndan. Kapatmadan önce etkisi görünür: kapanan aylar ve işlem sayısı, ayın geliri ve gideri, ay sonu bakiyeleri.
+- Kapalı aya işlem eklemek, düzenlemek ya da silmek uyarı verir ve yazılmaz; kapalı aydaki kaydın penceresi salt okunur. İçe aktarmada kapalı ayın satırları seçilemez; düzenli kayıtlar kapalı aylara eklenmez; yedekten birleştirme ve geri yükleme kapalı aylardaki işlemleri değiştirmez.
+- Ödemeler, ajanda ve notlar kapalı ayda da değişir. Kapanış yedeğe girer ve öbür cihazlara da geçer.
+
+**Görünüm**
+- Ayarlar › Görünüm'ün sonunda Standart görünüme dön: tema, animasyonlar, saydamlık, açılış animasyonu, yazı boyutu, Özet görünümü ve bu cihazdaki öbür görünüm seçimleri varsayılana döner; uygulama simgesi değişmez. Geri alınabilir.
+- Kenar çubuğu seçeneği yalnızca kenar çubuğu olan düzende görünür.
+
+**iPhone ve iPad**
+- Siri ve Kestirmeler'de "Ajandam gider ekle": tutar sorulur; hesap, kategori ve açıklama isteğe bağlı. Önizlemede onaylayınca Ajandam açılır ve gider bugün tarihiyle kaydedilir, bildirimden geri alınır. PIN açıksa kilit açılınca kaydedilir.
+- Eki Hızlı Bakış'ta işaretle (iPad'de kalemle de): orijinal değişmez, işaretli kopya orijinalin arkasına ayrı ek olur; notta orijinalin altına.
+- Ayarlar bilgisayardaki düzende: renkli simgeli satırlar, gruplar, satırın sağında değeri; büyük yazıda ad kısalmaz. Sürüm numarası Hakkında'da.
+- iPhone'da Ara sekmesi öbür sekmelerle aynı çubukta; seçilince arama alanı hemen açılır.
+
+**Android**
+- Android 12 ve sonrasında Ayarlar › Görünüm › Duvar kağıdından renk: vurgu rengi (düğmeler, seçili sekme ve satırlar, bağlantılar) duvar kağıdının renklerinden; duvar kağıdı değişince o da değişir.
+- Ayarlar bilgisayardaki düzende: renkli simgeli satırlar, gruplar, satırın sağında değeri.
+
 ## [4.2.0] – 2026-11-02
 
 Ajandam 4.2 kayıtlarını cihazlar arasında güvenle taşıman için: başka bir cihazdan gelenleri birleştirirken orada sildiklerin burada da siliniyor, iki cihazda farklı değişen kayıtta hangisinin kalacağını sen seçiyorsun. Yedekten tek tek kayıt geri getirebiliyor, bir hesabın geçmiş bakiyesinin neden değiştiğini görebiliyorsun; Asistan da yapay zeka bağlı değilken ne yapacağını söylüyor. Öne çıkanlar:

@@ -159,11 +159,14 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
   toplanır). Bütçede her limit yazıldığı aydan başlayarak geçerli (geçmiş aylar kendi limitleriyle), istersen geçen
   ayın artanı ya da aşımı devreder; aylık toplam tavan ve tatil, giyim gibi harcamalar için yıllık bütçe. Hanede
   kimin harcadığını ayırmak için kişi etiketleri (#eşim), Kişi süzgeci ve raporu. Hesabın ayrıntısında **Geçmiş
-  bakiye**: geçmiş bir günün bakiyesi ve o günden sonra onu değiştiren kayıtlar ("Bakiye neden değişti?").
+  bakiye**: geçmiş bir günün bakiyesi ve o günden sonra onu değiştiren kayıtlar ("Bakiye neden değişti?"). Bir ödemenin
+  hesabı son güne kadar yetmeyecekse Ödemeler'de ve Özet'te önceden söylenir (ek hesap limitiyle; döküm her kalemi
+  gösterir). **Ay kapanışı:** biten ayı kapatınca o ayın ve öncesinin işlemleri değiştirilemez; gerekirse bilerek açarsın.
 - **Yatırımlar:** alım, satım, temettü ve bölünme; ortalama maliyetle kâr/zarar (enflasyondan arındırılmışı da), fon ve
   hisse fiyatları elle, yapıştırarak ya da CSV'den; BES'te devlet katkısı, hak ediş ve yıllık tavan.
 - **Raporlar:** genel görünüm, nakit akışı tahmini, ay özeti, net varlık, enflasyon, etiketler, kişiler ve yılın özeti. Özet
-  tek ay ya da son 3 ay, 6 ay, 1 yıl, 2 yıl için; önceki dönemle karşılaştırmalı. Sabah özetinde bütçe uyarısı. Nakit
+  tek ay ya da son 3 ay, 6 ay, 1 yıl, 2 yıl için; önceki dönemle karşılaştırmalı. Özet'in **Sade** görünümü yalnızca bugünü
+  gösterir: net varlık ve hesaplar, bugünün işleri, bekleyen ödemeler. Sabah özetinde bütçe uyarısı. Nakit
   akışı 30 günden 12 aya kadar; "ya şöyle olursa" senaryolarıyla (tek seferlik gider, kira artışı, kart ek ödemesi,
   kredinin erken kapanması) iki tahmini yan yana görürsün. Yılın özetinde konut kira gelirinin beyan tahmini: istisna,
   götürü ve gerçek gider karşılaştırması, tahmini vergi ve iki taksit (istersen vergi takvimine öneri olarak); işyeri
@@ -183,7 +186,8 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
   belirlersen bilgisayarından çıkan kopyalar (arşiv, iCloud Drive ya da OneDrive, yedek klasörü) AES-256 ile şifrelenir
   (.ajandamyedek); parolanı unutursan kurulurken verilen kurtarma anahtarıyla açarsın.
 - **Ajanda:** ay, hafta ve liste görünümü (liste önümüzdeki 14 günü ya da bu ayı gösterir); yapılacaklar ve
-  hatırlatmalar. Yapılacaklarda öncelik (öncelikliler önce gelir; hızlı eklemede "!!" ya da "!") ve alt görevler
+  hatırlatmalar. **Haftayı kapat:** gecikmiş ödemeler, bitmemiş yapılacaklar ve Gelen kutusu tek pencerede; tamamla,
+  gelecek haftaya taşı ya da bırak. Yapılacaklarda öncelik (öncelikliler önce gelir; hızlı eklemede "!!" ya da "!") ve alt görevler
   (satırda 2/5). Tekrarlayan etkinlikler: her gün, N günde ya da haftada bir, seçtiğin günler, ayın son cuması;
   değiştirirken "yalnızca bu", "bu ve sonrakiler" ya da "tümü". Birden çok gün süren etkinlikler (tatil, kamp, fuar) ay
   ve hafta görünümünde şerit olarak. Google Takvim, Apple Takvim ya da Outlook'tan dışa aktardığın takvim dosyasını
@@ -221,7 +225,9 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
   (WPAD). Ara sunucu kullanıcı adı ve parola istiyorsa **Ayarlar › Windows › Ağ**'dan girersin (yalnızca o sunucuya
   gönderilir; NTLM ve Kerberos isteyen ara sunucular desteklenmez); **Sorun giderme › Ağ tanılama** hangi yolun
   seçildiğini gösterir.
-- **Senin Ajandan:** kilit ekranında adın, 24 kart rengi, dört uygulama simgesi, her bildirim türüne ayrı ses.
+- **Senin Ajandan:** kilit ekranında adın, 24 kart rengi, dört uygulama simgesi, her bildirim türüne ayrı ses; Android 12 ve
+  sonrasında istersen vurgu rengi duvar kağıdından. **Ayarlar › Görünüm › Standart görünüme dön** bu cihazdaki görünüm
+  seçimlerini birden varsayılana döndürür.
   **Tutarları gizle** (Mac'te ⇧⌘H, Windows'ta Ctrl+Shift+H) ekrandaki bütün tutarları ₺••• yapar.
 - **Erişilebilirlik:** **Ayarlar › Görünüm › Yazı boyutu** yazıları %90, %100, %115 ya da %130 yapar (yalnızca yazılar
   büyür; boşluklar ve simgeler aynı kalır, ekran düzeni bozulmaz). Sayfanın tamamını büyüten yakınlaştırma da var: Mac'te
@@ -365,7 +371,9 @@ Microsoft Store'dan kurulan Ajandam'da kaldırma penceresi yoktur: Windows uygul
 [App Store](https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420)'dan kurulur (Mac'teki uygulamayla aynı
 kayıt). Kayıtlar telefonda; yedekler Mac'le aynı biçimde, Dosyalar'da seçtiğin yedek klasörüne de yazılır ve Mac'le
 birleştirilebilir. Yapay zeka: Apple Intelligence'ı destekleyen iPhone ve iPad'de cihazın içinde; 4.0'dan ChatGPT
-hesabınla giriş de var (Asistan, ekstre okuma ve "Ajandam'a sor" ChatGPT'yle). Fiş okuma kamerayla.
+hesabınla giriş de var (Asistan, ekstre okuma ve "Ajandam'a sor" ChatGPT'yle). Fiş okuma kamerayla. Siri ve Kestirmeler:
+"Ajandam'a ekle", "Ajandam gider ekle" (tutar, hesap ve kategori; önizlemede onay) ve özet komutları. Fişi ya da faturayı
+Hızlı Bakış'ta işaretleyince işaretli kopya ayrı ek olur, orijinal değişmez.
 
 ### Android
 
