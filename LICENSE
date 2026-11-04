@@ -1,6 +1,6 @@
 Ajandam — Kullanım Koşulları
 Copyright © 2026 tolgacodes-dev. Tüm hakları saklıdır.
-Son güncelleme: 9 Ekim 2026
+Son güncelleme: 4 Kasım 2026
 
 Aynı metin Ajandam'da Ayarlar › Hakkında › Kullanım koşulları'nda da okunur.
 
@@ -96,8 +96,9 @@ Kısaca
 
 8. Yedekler ve veri kaybı
 
-   Ajandam her gün kayıtlarının yedeğini alır ve son 30 günü tutar; istersen iCloud Drive'a (Mac App
-   Store'dan kurulan Ajandam'da yok) ya da OneDrive'a da kopyalar.
+   Ajandam her gün kayıtlarının yedeğini alır; son 14 günün, 8 haftanın ve 12 ayın yedeğini tutar.
+   İstersen iCloud Drive'a (Mac App Store'dan kurulan Ajandam'da yok) ya da OneDrive'a da kopyalar;
+   oradaki kopyaların son 30 günü tutulur.
 
    Cihaz arızası, yanlışlıkla silme ya da başka yazılımlar yüzünden veri kaybı olabilir. Önemli
    kayıtların için düzenli olarak yedek indir ve başka bir yerde sakla.

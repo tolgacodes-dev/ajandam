@@ -77,8 +77,9 @@ Ajandam güncellemeyi hazır olunca haber verir; kurmak için **Şimdi kur** ve 
   gösterir; PIN açıkken dizin boş tutulur.
 - **Şifreli notlar:** İstediğin not, not parolanın PBKDF2-SHA256 türeviyle (600 000 tur) AES-256-GCM ile şifrelenir;
   parola hiçbir yerde saklanmaz ve unutulursa not açılamaz. Şifreli notun metni aramaya, yapay zeka uygulamalarına ve
-  yedeklere açık hâliyle girmez (yedeklerde şifreli hâli durur). İki istisna: notun şifrelenmeden önceki düz hâli günlük
-  yedeklerde (iCloud Drive ve OneDrive kopyalarında da) 30 gün kadar kalabilir; nottaki resimler ve notun ajandaya
+  yedeklere açık hâliyle girmez (yedeklerde şifreli hâli durur). İki istisna: notun şifrelenmeden önceki düz hâli
+  yedeklerde kalabilir (günlük yedeklerde 14 gün, haftalık yedeklerde 8 hafta, aylık yedeklerde 12 ay kadar; iCloud Drive
+  ve OneDrive kopyalarında 30 gün kadar); nottaki resimler ve notun ajandaya
   eklenen kayıtları şifrelenmez (Ajandam şifrelerken bunları söyler). Şifreli nottan kopyalanan metin pano geçmişine ve
   bulut panosuna (Mac'te Evrensel Pano'ya) girmez. 3.7'den istersen Touch ID ya da Windows Hello ile açılır: bunun için
   parola değil, parolanın türevi olan anahtar yalnızca o bilgisayarda saklanır (Mac'te eşitlenmeyen bir Anahtar Zinciri

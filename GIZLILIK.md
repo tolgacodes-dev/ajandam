@@ -27,7 +27,8 @@ yalnızca dosya yazarak ulaşır, ağ diskine ya da Dropbox'a kendisi bağlanmaz
 cihazdan çıkan kopyalar (Yedek indir'in arşivi, iCloud Drive ya da OneDrive kopyası, yedek klasöründeki kopyalar) yedek
 parolanla şifrelenir (.ajandamyedek); parolan ve kurulurken verilen kurtarma anahtarı hiçbir yerde saklanmaz, yalnızca
 türevleri bu cihazda durur (yedeklere girmez). Belirlemezsen bu kopyalar da şifrelenmez. Not parolasıyla şifrelediğin
-notlar yedeklerde de şifreli kalır, ama şifrelemeden önceki hâlleri yedeklerde 30 gün kadar durabilir. Android
+notlar yedeklerde de şifreli kalır, ama şifrelemeden önceki hâlleri yedeklerde durabilir: günlük yedeklerde 14 gün,
+haftalık yedeklerde 8 hafta, aylık yedeklerde 12 ay kadar (iCloud Drive ve OneDrive kopyalarında 30 gün kadar). Android
 uygulamasında bu sürümde yedek klasörü ve yedek parolası yoktur: Yedek indir'in arşivi şifrelenmez.
 
 İstersen (Mac, iPhone ve iPad; Ayarlar › Güvenlik › Spotlight'ta göster; varsayılan kapalı) not ve ajanda kayıtlarının

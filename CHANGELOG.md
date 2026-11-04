@@ -3,6 +3,55 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [4.4.0] – 2026-11-04
+
+Ajandam 4.4 her ekrana oturuyor: dar pencerede, küçük ekranda ve büyük yazıyla satırlar taşmıyor, tutarlar ve adlar kesilmiyor; ipuçları cihazına göre konuşuyor. Öne çıkanlar:
+
+- **Büyük yazıda ve dar ekranda düzen:** Ayarlar'ın satırları, borç listesi, üç kutulu özetler, kredi kartı kartı, abonelikler ve pencerelerin düğmeleri sığar; uzun değer kesilmez, alt satıra geçer.
+- **Telefonda İşlemler:** ilk kayda kadar dört satır: görünüm; ay, Filtreler ve Diğer menüsü (sıralama, birden çok kaydı seç, CSV); tür; arama. Hesap, kategori, etiket ve kişi Filtreler'de, etkinken çip olarak görünür.
+- **Telefonda hafta görünümü:** ızgara kendi içinde yana ve aşağı kayar; saatler ve günler yerinde kalır, bugünün sütunu öne gelir.
+- **Telefonda notlar:** dolu not okunur hâliyle açılır; düzenlemek için kalem.
+- **iPhone ve iPad:** ay satırı yenilendi: ay adı solda, Bu ay ve oklar sağda. Bir pencere açıkken arkadaki sayfa kaymaz.
+- **Android:** üst çubuğun düğmeleri parmak boyunda; dikey tablette kenar çubuğu içeriğin üstüne açılır.
+- **Yedekler:** Ajandam son 14 günün, 8 haftanın ve 12 ayın yedeğini tutar; uygulama ve kullanım koşulları artık bunu söylüyor.
+
+---
+
+**Düzen**
+- Büyük yazıda Ayarlar'da seçili değer başlığın altında, düğme yazısı alt satıra geçer, uzun e-posta adresi kırılır. Dar ekranda büyük yazıyla uygulama simgesi seçimi ve borç listesinin değerleri ikişer sütun.
+- Borç listesi dar ekranda kart kart, her değerin adı yanında. Üç kutulu özetler büyük yazıda ikişer, üçüncüsü alt satırın tamamında.
+- Kredi kartı kartının son satırı ve abonelik satırları her yazı boyutunda sığar; dar alanda da abonelik adları okunur. Asistan'ın örnek soruları ve yazı alanı ekrana sığar.
+- Seçim düğmeleri sığmazsa kendi içinde yana kayar; panel başlığındaki seçim sığmazsa alta iner. Pencerenin altında üç ya da daha çok düğme varsa dar ekranda alt alta, birincisi üstte.
+- Özet'te Gelir ve Gider düğmeleri birlikte alt satıra geçer; 6 ay, 1 yıl ya da geçmiş bir ay seçilince büyük kartın üstünde boş şerit kalmaz.
+- Dar ekranda Enflasyon tablosunda bugünün parasıyla değer tutarın altında; Ayarlar › Hakkında'nın özellikleri dar alanda alt alta.
+- Başında simge olan ipuçlarında yazı simgenin yanından başlar; açıklamalı onay kutularında kutu solda, ad ve açıklama sağda alt alta.
+- Geniş ekranda grafiklerin eksen yazıları okunur boyda.
+- Dokunmatik ekranda ve Büyük hedefler açıkken bağlantı düğmeleri, etiket ve kategori düğmeleri, notun araç çubuğu ve hesap penceresinin Açılış tutarı başlığı da büyük.
+
+**Yedekler ve sürüm notları**
+- Yedekler katmanlı tutulur: günlük yedekler 14 gün, haftalık yedekler 8 hafta, aylık yedekler 12 ay. Tanıtım, şifreleme penceresi ve kullanım koşulları artık bunu söylüyor (önceden "son 30 gün" yazıyordu).
+- Sürüm notları ve güncelleme penceresi yalnızca bu cihazdaki Ajandam'ın yeniliklerini gösterir.
+
+**Telefon ve tablet**
+- İşlemler'de dönem, hesap, kategori, etiket ve kişi Filtreler penceresinde; etkin olanlar çip olarak görünür. Sıralama, birden çok kaydı seçme ve listelenenleri CSV olarak alma Diğer menüsünde.
+- Hafta görünümünde sütunlar okunur genişlikte, saat sütunu ve gün başlıkları yerinde kalır; görünüme girince, Bugün'e dokununca ve hafta değişince bugünün sütunu öne gelir, yeniden çizimde kaldığın yer korunur.
+- İpuçları ve yardım metinleri dokunuşa göre ("dokun", "iki kez dokun"); tuş ve fare sözcükleri yok.
+
+**iPhone ve iPad**
+- Özet'in, Ajanda'nın, Bütçe'nin ve İşlemler'in ay satırı iOS'un tarih seçicisindeki gibi: ay adı solda, "Bu ay" ve oklar sağda; uzun ad satırı kırar. Raporlar'ın yıl satırı da aynı biçimde.
+- Bir pencere, arama ya da ay seçici açıkken arkadaki sayfa kaymaz.
+- Başlarken "Yazarak ekle"yi gösterir; tutarlar gizlenince ipucu Diğer menüsünü söyler.
+- Hesap görselinde "iPhone'undan" ya da "iPad'inden bir resim seç" yazar; cümle başında iPhone ve iPad küçük i ile.
+- iPhone'da Ayarlar'da Klavye kısayolları yok; Notlar'ın arama alanı satırın tamamı.
+
+**Android**
+- Üst çubuğun düğmeleri (kenar çubuğu, Asistan, tutarları gizle) ve arama kutusu parmak boyunda.
+- Tableti dikey tutunca kenar çubuğu telefondaki gibi içeriğin üstüne açılır, seçince kapanır; içerik daralmaz.
+
+**Windows**
+- Windows 11 başlık çubuğuyla dar pencerede arama kutusunun yazısı taşmaz.
+- Sekmenin sağ tık menüsünde Kapat'ın yanında Delete yazar.
+
 ## [4.3.0] – 2026-11-03
 
 Ajandam 4.3 günü, haftayı ve ayı toparlamana yardım ediyor: Özet'in sade görünümü yalnızca bugünü gösteriyor, haftanın sonunda yarım kalanları tek pencerede kapatıyorsun, biten ayı kapatınca geçmiş toplamlar değişmiyor. Bir ödemenin hesabı yetmeyecekse Ajandam bunu önceden söylüyor. Öne çıkanlar:
@@ -11,9 +60,9 @@ Ajandam 4.3 günü, haftayı ve ayı toparlamana yardım ediyor: Özet'in sade g
 - **Haftayı kapat:** gecikmiş ödemeler, bitmemiş yapılacaklar ve Gelen kutusu tek pencerede; her birini tamamla, gelecek haftaya taşı ya da bırak. Haftanın son üç günü Özet'te hatırlatılır.
 - **Ödemeden önce bakiye:** ödemenin hesabı son güne kadar yetmeyecekse Ödemeler'de ve Özet'te uyarı; ek hesap (KMH) limiti hesaba katılır, döküm o güne kadarki her kalemi gösterir.
 - **Ay kapanışı:** biten ayı kapatınca o ayın ve öncesinin işlemleri değiştirilemez; yanlışlıkla eklenen, düzenlenen ya da silinen bir kayıt geçmiş toplamları ve bakiyeleri bozmaz. Gerekirse ayı bilerek açarsın.
-- **Standart görünüme dön:** Ayarlar › Görünüm yalnızca o cihazda çalışan seçenekleri gösterir; tek dokunuşla hepsi varsayılana döner.
-- **iPhone ve iPad:** Siri ve Kestirmeler'de Gider ekle (tutar, hesap, kategori; önizlemede onay). Bir eki Hızlı Bakış'ta işaretleyince işaretli kopya ayrı ek olur, orijinal değişmez.
-- **Telefonda Ayarlar:** bilgisayardaki Ajandam'ın düzeninde: renkli simgeli gruplar, satırın sağında değeri; iPhone'da Ara sekmesi öbür sekmelerle aynı çubukta.
+- **Standart görünüme dön:** Ayarlar › Görünüm yalnızca o cihazda çalışan seçenekleri gösterir; tek düğmeyle hepsi varsayılana döner.
+- **iPhone ve iPad:** Siri ve Kestirmeler'de Gider ekle (tutar, hesap, kategori; önizlemede onay). Bir eki Hızlı Bakış'ta işaretleyince işaretli kopya ayrı ek olur, orijinal değişmez. iPhone'da Ara sekmesi öbür sekmelerle aynı çubukta.
+- **Telefonda Ayarlar:** bilgisayardaki Ajandam'ın düzeninde: renkli simgeli gruplar, satırın sağında değeri.
 - **Android:** Android 12 ve sonrasında vurgu rengi duvar kağıdından gelebilir (Material You).
 
 ---
@@ -55,12 +104,12 @@ Ajandam 4.2 kayıtlarını cihazlar arasında güvenle taşıman için: başka b
 - **Güvenli birleştirme:** başka bir cihazın yedeğiyle birleştirince ya da karekodla aktarınca orada silinen kayıtlar burada da silinir (notlar Son silinenler'e gider), burada sildiklerin geri gelmez. İki cihazda farklı değişen kayıtta iki hali yan yana görünür; hangisi kalacak, sen seçersin.
 - **Yedekten seçerek geri yükle:** bir yedekten yalnızca istediğin kayıtları ara, buradakiyle farkını gör ve geri getir. Geri alınabilir.
 - **Geçmiş bakiye:** hesabın geçmiş bir gündeki bakiyesini seç; o günden sonra eklenen, düzenlenen ya da silinen kayıtlarla bakiyenin neden değiştiği listelenir.
-- **Asistan yol gösterir:** yapay zeka bağlı değilse Asistan ne olduğunu ve bu cihazda nasıl bağlanacağını söylüyor: ChatGPT ile giriş, Apple Intelligence'ı nereden açacağın ya da bilgisayarındaki model; istersen kurallarla devam edersin. ChatGPT'ye ne gönderileceği sormadan önce, gönderilenler cevaptan sonra görünür.
+- **Asistan yol gösterir:** yapay zeka bağlı değilse Asistan ne olduğunu ve bu cihazda nasıl bağlanacağını söylüyor; istersen kurallarla devam edersin. ChatGPT'ye ne gönderileceği sormadan önce, gönderilenler cevaptan sonra görünür.
 - **Mac App Store'da cam görünüm:** macOS 26'da Mac App Store'dan kurulan Ajandam'da da kenar çubuğu ve başlık arkadaki masaüstünü buzlu cam gibi gösteriyor.
 - **Abonelik zammı:** zamlanan abonelikte aylık farkın yanında yıllık fark da.
-- **Takvim dosyası ve şifreli yedek her yerden:** .ics dosyası takvim içe aktarmaya, .ajandamyedek geri yükleme önizlemesine gider; bilgisayarda dosya yöneticisinden, telefonda ve tablette Dosyalar'dan ya da paylaşmayla.
+- **Takvim dosyası ve şifreli yedek her yerden:** .ics dosyası takvim içe aktarmaya, .ajandamyedek geri yükleme önizlemesine gider; dosyayı Ajandam'la açman yeter.
 - **Saydamlığı azalt:** menüler, pencere arkaları ve bildirimler sistemin ayarına uyar; Ayarlar › Görünüm › Saydamlık'tan da seçilir.
-- **Telefonda yeni Ayarlar:** iPhone'da Ayarlar iOS'un Ayarlar uygulaması gibi: bölüm sağdan kayarak açılır, kenardan kaydırarak geri dönülür. Anahtarlar ve arama da takılmadan çalışıyor.
+- **iPhone'da yeni Ayarlar:** iOS'un Ayarlar uygulaması gibi: bölüm sağdan kayarak açılır, kenardan kaydırarak geri dönülür. Anahtarlar ve arama da takılmadan çalışıyor.
 - **Android:** Ayarlar Android'in ayarları gibi; bildirim türleri ayrı (Ödemeler ve vadeler, Ajanda, Sabah özeti, Diğer); Android 12 ve öncesinde PIN açıkken son uygulamalar ekranında içerik görünmez. Google Play'deki teste katılmak artık herkese açık.
 
 ---
@@ -78,7 +127,7 @@ Ajandam 4.2 kayıtlarını cihazlar arasında güvenle taşıman için: başka b
 - Abonelik zammında kayıt anındaki satır, abonelik rozeti ve ay özeti yıllık farkı da söylüyor: "₺229,99 → ₺259,99 (+₺30; yılda +₺360)". Kur farkı yine zam sayılmaz.
 
 **Asistan**
-- Yapay zeka bağlı değilken Asistan "Asistan şu an yapay zekasız" kartıyla açılıyor: bu cihazda olan yollar (ChatGPT ile giriş, Apple Intelligence'ın açıldığı yer, bilgisayarındaki model), Ayarlar › Yapay zeka ve Kurallarla devam et. Kurallarla cevaplanan örnek sorular kartın altında.
+- Yapay zeka bağlı değilken Asistan "Asistan şu an yapay zekasız" kartıyla açılıyor: bu cihazda olan bağlanma yolları, Ayarlar › Yapay zeka ve Kurallarla devam et. Kurallarla cevaplanan örnek sorular kartın altında.
 - ChatGPT girişi beklenirken, hesabın oturumu kapanmışsa ya da oturum bilgisine erişilemiyorsa kart ne yapılacağını söylüyor; durum değişince Asistan kendiliğinden yenileniyor.
 - ChatGPT'ye sormadan önce "Ne gönderilecek?": soru ve gidecek kayıt özetleri; Vazgeç'te istek gitmez. Cevaptan sonra her turda gönderilenler. Bilgisayardaki ve cihaz içi modelde liste yok (dışarı istek gitmez).
 
@@ -98,7 +147,8 @@ Ajandam 4.2 kayıtlarını cihazlar arasında güvenle taşıman için: başka b
 
 **Görünüm ve erişilebilirlik**
 - Ayarlar › Görünüm › Saydamlık: Sisteme göre, Saydam, Düz (bu cihazda). Düz'de menüler, pencere arkaları, bildirimler ve üst çubuk düz renk; yazılar daha net okunur.
-- Sisteme göre: Mac'te, iPhone'da ve iPad'de Saydamlığı azalt ayarına uyar.
+- Sisteme göre: Mac'te Saydamlığı azalt ayarına uyar.
+- Sisteme göre: iPhone'da ve iPad'de Saydamlığı azalt ayarına uyar.
 - Windows'ta Saydamlık efektleri ayarına uyar.
 - Mac App Store'dan kurulan Ajandam'da macOS 26 ve sonrasında cam görünüm; Ayarlar › Görünüm › Cam görünüm'den kapatılır.
 
@@ -112,14 +162,15 @@ Ajandam 4.2 kayıtlarını cihazlar arasında güvenle taşıman için: başka b
 
 ## [4.1.0] – 2026-11-02
 
-Ajandam 4.1 telefonları ve tabletleri baştan düzenliyor: pencereler telefonda tam ekran, Ayarlar telefondaki Ayarlar uygulaması gibi. Cihazlar arasında karekodla aktarım geldi; Android'e Google Drive yedeği, yazdırma ve şifreli yedek eklendi; bildirimler artık senin elinde. Öne çıkanlar:
+Ajandam 4.1 telefonları ve tabletleri baştan düzenliyor: pencereler telefonda tam ekran, Ayarlar telefondaki Ayarlar uygulaması gibi. Cihazlar arasında karekodla aktarım geldi; bildirimler artık senin elinde. Öne çıkanlar:
 
-- **Telefonda pencereler tam ekran:** yeni kayıt, Ayarlar ve diğer pencereler ekranın tamamında açılıyor. Ayarlar telefonda önce bölümlerin listesi; dokununca bölüm açılıyor, "‹ Ayarlar" ya da geri tuşu listeye döndürüyor. iPhone ve iPad'de tarih alanı artık taşmıyor; tablette Ayarlar ekranın yüksekliğini kullanıyor.
+- **Telefonda pencereler tam ekran:** yeni kayıt, Ayarlar ve diğer pencereler ekranın tamamında açılıyor. Ayarlar telefonda önce bölümlerin listesi; dokununca bölüm açılıyor, "‹ Ayarlar" ya da geri tuşu listeye döndürüyor. Tablette Ayarlar ekranın yüksekliğini kullanıyor.
 - **Karekodla aktarım:** Ayarlar › Veriler ve yedek › Başka cihaza aktar. Bilgisayar ya da telefon karekod gösterir, öbür telefon okutur; kayıtların ve eklerin aynı Wi-Fi'de doğrudan, şifreli geçer, internete çıkmaz. Gelenler uygulanmadan önce neyin değişeceği gösterilir.
 - **Android'de Google Drive'a otomatik yedek:** Drive'da bir yer seç, Ajandam yedeğini her gün oraya yazar; telefon değişince Yedekten geri yükle ile dönersin. Google hesabını Ajandam'a bağlaman gerekmez.
 - **Android'e gelenler:** bildirimden Ödendi ve Yarın hatırlat, yazdırma ve PDF olarak kaydetme, yedek parolasıyla şifreli yedek, başka uygulamalardan paylaşılan ekstre ve dökümleri içe aktarma, simgeye basılı tutunca hızlı eylemler, telefonun yazı boyutunu izleme.
-- **Telefonda uygulama simgesi:** iPhone, iPad ve Android'de Ayarlar › Görünüm'den Lacivert, Gece, Turuncu ya da Beyaz.
-- **Bildirimler:** her bildirim × ile ya da yana kaydırarak kapanıyor; Ayarlar › Bildirimler'den kendiliğinden kapansın, daha uzun kalsın ya da sen kapatana kadar kalsın. Telefonda ve tablette de bildirimden Ödendi ve Yarın hatırlat.
+- **Telefonda uygulama simgesi:** Ayarlar › Görünüm'den Lacivert, Gece, Turuncu ya da Beyaz.
+- **Bildirimler:** her bildirim × ile ya da yana kaydırarak kapanıyor; Ayarlar › Bildirimler'den kendiliğinden kapansın, daha uzun kalsın ya da sen kapatana kadar kalsın.
+- **iPhone ve iPad:** bildirimden Ödendi ve Yarın hatırlat; simgeye basılı tutunca hızlı eylemler.
 - **Windows'ta simge anında:** seçtiğin simge görev çubuğunda hemen değişiyor; ödeme hatırlatmaları sen kapatana kadar ekranda kalıyor.
 
 ---
@@ -131,6 +182,7 @@ Ajandam 4.1 telefonları ve tabletleri baştan düzenliyor: pencereler telefonda
 - iPhone ve iPad'de tarih alanı sütununa sığıyor.
 - Tablette Ayarlar ekranın yüksekliğini kullanıyor.
 - Güncellemeden sonra tanıtım yeniden açılmıyor; bu sürümde gelenler gösteriliyor.
+- Bildirim düğmeleri: ödemede Ödendi ve Yarın hatırlat, kart ekstresinde Öde…, etkinlik ve yapılacaklarda 10 dk ertele ve Yapıldı; dokununca Ajandam açılıp işaretler.
 
 **Cihazlar arası aktarım**
 - Bir cihaz karekod gösterir (5 dakika geçerli, tek kullanımlık), öbürü okutur. Gönderen taraf göndermeden önce onay ister; alan taraf uygulamadan önce neyin değişeceğini gösterir.
@@ -141,7 +193,6 @@ Ajandam 4.1 telefonları ve tabletleri baştan düzenliyor: pencereler telefonda
 - Uygulamanın içindeki her bildirimde kapatma düğmesi; dokunmatik ekranda yana kaydırınca kapanıyor.
 - Ayarlar › Bildirimler › Uygulama içi bildirimler: birkaç saniye sonra kapansın, daha uzun kalsın ya da sen kapatana kadar kalsın (bu cihazda).
 - Windows'ta ödeme ve kart hatırlatmaları da sen bir düğmeye basana ya da kapatana kadar ekranda kalıyor.
-- iPhone, iPad ve Android'de de bildirim düğmeleri: ödemede Ödendi ve Yarın hatırlat, kart ekstresinde Öde…, etkinlik ve yapılacaklarda 10 dk ertele ve Yapıldı; dokununca Ajandam açılıp işaretler.
 
 **iPhone ve iPad**
 - Uygulama simgesi seçimi (Ayarlar › Görünüm).
@@ -170,11 +221,11 @@ Ajandam 4.1 telefonları ve tabletleri baştan düzenliyor: pencereler telefonda
 
 ## [4.0.0] – 2026-11-01
 
-Ajandam 4 telefonlara açılıyor: yapay zeka artık telefonda ve tablette de var, Android'de de Ajandam var, mağazadan kurulan Ajandam'da uygulama simgesi ne yapabildiğini açıkça söylüyor; güvenlik baştan sona gözden geçirildi. Öne çıkanlar:
+Ajandam 4 telefonlara açılıyor: yapay zeka artık telefonda ve tablette de var; güvenlik baştan sona gözden geçirildi. Öne çıkanlar:
 
-- **Telefonlarda yapay zeka:** iPhone ve iPad'de **ChatGPT ile giriş** (ChatGPT Plus ya da Pro): Asistan, ekstre okuma, ay yorumu ve "Ajandam'a sor" telefonda da çalışıyor; Apple Intelligence varsa önce o. Oturum cihazın güvenli anahtar deposunda, "Tüm verileri sil" onu da siliyor.
+- **Telefonlarda yapay zeka:** **ChatGPT ile giriş** (ChatGPT Plus ya da Pro): Asistan, ekstre okuma, ay yorumu ve "Ajandam'a sor" telefonda da çalışıyor. Oturum cihazın güvenli anahtar deposunda, "Tüm verileri sil" onu da siliyor.
 - **Android (yeni):** telefon ve tablette Ajandam; kayıtlar cihazda, Google Play'den ya da GitHub'daki APK ile kurulur. ChatGPT ile giriş, parmak izi ya da yüzle açma, bildirimler, ekstre ve döküm içe aktarma, Türkiye verileri var.
-- **Uygulama simgesi:** mağazadan kurulan Ajandam'da simge seçimi yalnızca uygulamanın içinde geçerli; Dock ya da Başlat menüsü simgesinin neden değişmediği Ayarlar'da yazıyor. İndirilen baskılarda simge eskisi gibi değişiyor. Apple Intelligence satırında Apple'ın kendi simgesi.
+- **Bilgisayarda uygulama simgesi:** mağazadan kurulan Ajandam'da simge seçimi yalnızca uygulamanın içinde geçerli; sistemdeki simgenin neden değişmediği Ayarlar'da yazıyor. İndirilen baskılarda simge eskisi gibi değişiyor.
 - **Güvenlik:** ekstre, döküm, defter ve yedek dosyalarından gelen her metin sayfaya güvenle yazılıyor; yedekten dönüş yapay zeka uygulamalarının izinlerini ve otomatik onayı getirmiyor; yedek parolasının anahtarı okunamazsa kopyalar şifresiz yazılmıyor.
 - **Açılış:** Ajandam artık her açılışta yeni açılış animasyonuyla açılıyor: simge bulanıktan netleşir, üstünden bir ışıltı geçer, adı yazılır, bir halka yayılır, altta sürüm numarası; kayıtlar hazır olunca simge yerine süzülür ve ekran yerleşir (yaklaşık bir buçuk saniye; tıklama ya da tuş hemen bitirir). İstersen Ayarlar › Görünüm'den yalnızca güncellemeden sonra oynasın ya da kapalı olsun; Hareketi azalt açıkken kısa bir solma.
 
@@ -196,6 +247,7 @@ Ajandam 4 telefonlara açılıyor: yapay zeka artık telefonda ve tablette de va
 - Google yedeğine yalnızca kayıtlar ve yalnızca ekran kilidi varken uçtan uca şifreli gidiyor; Ajandam'ın günlüğü ve ChatGPT oturumu gitmiyor.
 - ChatGPT ile giriş: oturum cihazın güvenli anahtar deposunda şifreli; giriş sayfası tarayıcıda açılıyor, dönünce Ajandam öne geliyor (Ajandam kilitliyse önce kilit açılıyor).
 - İlk açılıştaki tanıtımda Asistan kartı (ChatGPT ile giriş).
+- Gizlilik politikası Android'de yapay zekayı da anlatıyor.
 
 **Mac**
 - Mac App Store'dan kurulan Ajandam'da uygulama simgesi seçimi yalnızca pencerede geçerli; Dock simgesinin neden değişmediği Ayarlar'da yazıyor. İndirilen Ajandam'da simge eskisi gibi değişiyor.
@@ -205,7 +257,7 @@ Ajandam 4 telefonlara açılıyor: yapay zeka artık telefonda ve tablette de va
 
 **Windows**
 - Microsoft Store'dan kurulan Ajandam'da uygulama simgesi seçimi yalnızca pencerede geçerli; Başlat menüsü simgesinin neden değişmediği Ayarlar'da yazıyor. Kurulum dosyasıyla kurulan Ajandam'da simge eskisi gibi değişiyor.
-- Başka bir yapay zeka uygulamasının ayar dosyasına Ajandam eklenmeden ya da çıkarılmadan önce Ajandam kendi penceresinde soruyor (Mac'teki gibi).
+- Başka bir yapay zeka uygulamasının ayar dosyasına Ajandam eklenmeden ya da çıkarılmadan önce Ajandam kendi penceresinde soruyor.
 - Kurulum: gerekli Microsoft bileşeni indirilirken imzası doğrulanıyor; önceki sürüm kaldırılınca artakalan dosyalar temizleniyor.
 - Yedek parolasının anahtar dosyası okunamıyorsa kopyalar şifresiz yazılmıyor, Ayarlar "erişilemedi" diyor.
 - Yardım › Yenilikler'de 4.0 kartları.
@@ -222,4 +274,4 @@ Ajandam 4 telefonlara açılıyor: yapay zeka artık telefonda ve tablette de va
 - Yedek parolasının anahtarı okunamıyorsa ya da çözülemiyorsa kopyalar şifresiz yazılmıyor, durum "erişilemedi".
 
 **Belgeler**
-- Gizlilik politikası: ChatGPT ile giriş her platformda, oturumun nerede saklandığı; Android'de yapay zeka.
+- Gizlilik politikası: ChatGPT ile giriş her platformda ve oturumun nerede saklandığı.
