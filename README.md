@@ -162,11 +162,17 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
   bakiye**: geçmiş bir günün bakiyesi ve o günden sonra onu değiştiren kayıtlar ("Bakiye neden değişti?"). Bir ödemenin
   hesabı son güne kadar yetmeyecekse Ödemeler'de ve Özet'te önceden söylenir (ek hesap limitiyle; döküm her kalemi
   gösterir). **Ay kapanışı:** biten ayı kapatınca o ayın ve öncesinin işlemleri değiştirilemez; gerekirse bilerek açarsın.
+  Ay istersen maaş gününde başlar (**Ayarlar › Genel › Ay başlangıcı**): Özet, Bütçe, Raporlar ve İşlemler ayı o günden
+  sayar. **Hangi kartla öde:** bugünkü harcamanın her kredi kartında ne zaman ödeneceği, en uzun süre önce. **Borç kapatma
+  planı:** her ay ayıracağın tutarla kart, ek hesap, kredi ve kişisel borçların kaç ayda kapanır, ne kadar faiz ödersin (en
+  yüksek faizli ya da en küçük borç önce). Ücretsiz denemesi biten ve yıllık yenilenen abonelik önceden hatırlatılır.
 - **Yatırımlar:** alım, satım, temettü ve bölünme; ortalama maliyetle kâr/zarar (enflasyondan arındırılmışı da), fon ve
-  hisse fiyatları elle, yapıştırarak ya da CSV'den; BES'te devlet katkısı, hak ediş ve yıllık tavan.
+  hisse fiyatları elle, yapıştırarak ya da CSV'den; BES'te devlet katkısı, hak ediş ve yıllık tavan. Döviz, altın ve
+  kriptoda **fiyat uyarısı**; fon fiyatı 7 günden eskiyse hatırlatılır, fon kodunun yanında TEFAS bağlantısı.
 - **Raporlar:** genel görünüm, nakit akışı tahmini, ay özeti, net varlık, enflasyon, etiketler, kişiler ve yılın özeti. Özet
   tek ay ya da son 3 ay, 6 ay, 1 yıl, 2 yıl için; önceki dönemle karşılaştırmalı. Özet'in **Sade** görünümü yalnızca bugünü
-  gösterir: net varlık ve hesaplar, bugünün işleri, bekleyen ödemeler. Sabah özetinde bütçe uyarısı. Nakit
+  gösterir: net varlık ve hesaplar, bugünün işleri, bekleyen ödemeler. **Akış şeması:** seçtiğin dönemde gelirler solda,
+  giderler sağda; fark birikime ya da birikimden. Sabah özetinde bütçe uyarısı. Nakit
   akışı 30 günden 12 aya kadar; "ya şöyle olursa" senaryolarıyla (tek seferlik gider, kira artışı, kart ek ödemesi,
   kredinin erken kapanması) iki tahmini yan yana görürsün. Yılın özetinde konut kira gelirinin beyan tahmini: istisna,
   götürü ve gerçek gider karşılaştırması, tahmini vergi ve iki taksit (istersen vergi takvimine öneri olarak); işyeri
@@ -184,18 +190,21 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
   **Seçerek geri yükle** ile yedekten yalnızca aradığın kayıtları (buradakiyle farkını görerek) geri getirirsin,
   **Yedeği doğrula** bir arşivin ya da yedeğin sağlam olduğunu hiçbir şey yazmadan denetler. **Yedek parolası**
   belirlersen bilgisayarından çıkan kopyalar (arşiv, iCloud Drive ya da OneDrive, yedek klasörü) AES-256 ile şifrelenir
-  (.ajandamyedek); parolanı unutursan kurulurken verilen kurtarma anahtarıyla açarsın.
+  (.ajandamyedek); parolanı unutursan kurulurken verilen kurtarma anahtarıyla açarsın. e-Fatura ve e-Arşiv faturasının
+  karekodu eklenen PDF'ten ya da fotoğraftan okunur (telefonda kamerayla da): tutar, tarih ve satıcı yazılır, aynı fatura
+  ikinci kez kaydedilirken uyarılır. Geniş pencerede dökümü içe aktarırken seçili satırın PDF sayfası listenin yanında açılır.
 - **Ajanda:** ay, hafta ve liste görünümü (liste önümüzdeki 14 günü ya da bu ayı gösterir); yapılacaklar ve
   hatırlatmalar. **Haftayı kapat:** gecikmiş ödemeler, bitmemiş yapılacaklar ve Gelen kutusu tek pencerede; tamamla,
-  gelecek haftaya taşı ya da bırak. Yapılacaklarda öncelik (öncelikliler önce gelir; hızlı eklemede "!!" ya da "!") ve alt görevler
+  gelecek haftaya taşı ya da bırak. **Boş zaman bul:** etkinlik ya da yapılacak eklerken çalışma saatlerinin içindeki
+  boşluklar önerilir. Yapılacaklarda öncelik (öncelikliler önce gelir; hızlı eklemede "!!" ya da "!") ve alt görevler
   (satırda 2/5). Tekrarlayan etkinlikler: her gün, N günde ya da haftada bir, seçtiğin günler, ayın son cuması;
   değiştirirken "yalnızca bu", "bu ve sonrakiler" ya da "tümü". Birden çok gün süren etkinlikler (tatil, kamp, fuar) ay
   ve hafta görünümünde şerit olarak. Google Takvim, Apple Takvim ya da Outlook'tan dışa aktardığın takvim dosyasını
   (.ics) içe aktarırsın: tekrarlar, istisnalar ve hatırlatmalar gelir, önce ne ekleneceği gösterilir, aynı dosyayı yeniden
   aktarınca kayıtlar çoğalmaz. Fikstür, okul ya da tatil takvimi gibi paylaşılan takvimlere abone olursun (webcal):
   Ajandam yalnızca senin eklediğin adresi 6 saatte bir indirir, etkinlikler ayrı renkte, salt okunur görünür, istediğini
-  ajandana kopyalarsın. Mac'te istersen Takvim uygulamasındaki etkinliklerin de (iCloud, Google, Exchange hesapların)
-  ajandada görünür; Ajandam Takvim'e bir şey yazmaz. İki yönlü eşitleme yok. Mac'te istersen ödemelerin ve yapılacakların
+  ajandana kopyalarsın. Mac'te, iPhone'da, iPad'de ve Android'de istersen cihazın takvimindeki etkinliklerin de (iCloud,
+  Google, Exchange, Outlook hesapların) ajandada salt okunur görünür; Ajandam takvime bir şey yazmaz. İki yönlü eşitleme yok. Mac'te istersen ödemelerin ve yapılacakların
   (önceliğiyle; ayrıca açarsan etkinliklerin ve borçların da) Anımsatıcılar üzerinden iPhone'una da düşer; Windows'ta
   takvim dosyasıyla ödemeler ve borçlar da telefonunun takviminde hatırlatılır. Etkinliğin notundaki toplantı bağlantısı
   (Zoom, Meet, Teams) ajandada "Katıl" ile açılır.
@@ -373,7 +382,9 @@ kayıt). Kayıtlar telefonda; yedekler Mac'le aynı biçimde, Dosyalar'da seçti
 birleştirilebilir. Yapay zeka: Apple Intelligence'ı destekleyen iPhone ve iPad'de cihazın içinde; 4.0'dan ChatGPT
 hesabınla giriş de var (Asistan, ekstre okuma ve "Ajandam'a sor" ChatGPT'yle). Fiş okuma kamerayla. Siri ve Kestirmeler:
 "Ajandam'a ekle", "Ajandam gider ekle" (tutar, hesap ve kategori; önizlemede onay) ve özet komutları. Fişi ya da faturayı
-Hızlı Bakış'ta işaretleyince işaretli kopya ayrı ek olur, orijinal değişmez.
+Hızlı Bakış'ta işaretleyince işaretli kopya ayrı ek olur, orijinal değişmez. 4.5'ten **Belge tara**: çok sayfalı faturayı
+ya da sözleşmeyi kamerayla tara, tek PDF olarak eklenir ve ilk sayfası okunur; faturanın karekodu da kamerayla okunur.
+Kestirmeler'deki bir Mesaj otomasyonuyla bankanın SMS'i Ajandam açılmadan Özet'te onay bekler; Ekle'ye basmadan kaydedilmez.
 
 ### Android
 
@@ -400,7 +411,10 @@ uçtan uca şifreli gider. 4.1'den **Ayarlar › Veriler ve yedek › Google Dri
 OneDrive, Dropbox gibi seçtiğin bir yerde) bir dosya seçersin, Ajandam yedeğini her gün oraya yazar; Google hesabını
 Ajandam'a bağlaman gerekmez, dosyayı Drive uygulaması yükler. Bildirimden Ödendi ve Yarın hatırlat, yazdırma ve PDF,
 yedek parolasıyla şifreli yedek, başka uygulamalardan paylaşılan ekstre ve dökümleri içe aktarma, simgeye basılı tutunca
-hızlı eylemler ve uygulama simgesi seçimi var. Yapay zeka: ChatGPT hesabınla giriş; cihaz içi model ve yerel model sunucusu yok. Henüz olmayanlar: fiş
+hızlı eylemler ve uygulama simgesi seçimi var. 4.5'ten bankanın uygulamasından ya da SMS'inden gelen harcama bildirimi
+Özet'te onay bekler (bildirim erişimini sen açarsın; Ekle'ye basmadan kaydedilmez), telefonun takvimleri Ajanda'da görünür,
+ana ekrana **Ajandam · Bugün** araç takımını eklersin (bugünün ajandası ve ödemeleri; PIN açıkken kayıt göstermez) ve
+faturanın karekodu kamerayla okunur. Yapay zeka: ChatGPT hesabınla giriş; cihaz içi model ve yerel model sunucusu yok. Henüz olmayanlar: fiş
 okuma (kamera), yedek klasörü, yapay zeka uygulamalarının bağlantısı (MCP).
 
 ### Cihazlar arası aktarım (karekod)
@@ -415,8 +429,8 @@ indir** ve **Yedekten geri yükle**.
 
 ### İki bilgisayarda nasıl kullanılır
 
-Kayıtlar her bilgisayarda ayrı durur ve kendiliğinden eşitlenmez (Ajandam'ın sunucusu yok). Evdeki Mac'le işteki Windows
-gibi iki bilgisayarı birlikte kullanmak için:
+Kayıtlar her bilgisayarda ayrı durur (Ajandam'ın sunucusu yok); iki bilgisayar ortak bir yedek klasörü üzerinden eşitlenir.
+Evdeki Mac'le işteki Windows gibi iki bilgisayarı birlikte kullanmak için:
 
 1. İkisinde de **Ayarlar › Veriler ve yedek › Yedek klasörü**'nden aynı klasörü seç (Dropbox, OneDrive, iCloud Drive, ağ
    diski ya da USB bellek). İki Mac'te iCloud Drive yedeği, iki Windows'ta OneDrive yedeği de olur. Her bilgisayar kendi
@@ -426,7 +440,10 @@ gibi iki bilgisayarı birlikte kullanmak için:
    birleştirmeden sonra farklı değişen kayıtta iki hali yan yana görünür; hangisi kalacak, sen seçersin. Ayarlardan yalnızca burada
    olmayanlar gelir (ör. bütçeler, Asistan'a notların); yapay zeka uygulamalarının izinleri gelmez, her bilgisayarda ayrı
    verilir. Geri alınabilir.
-3. Bir bilgisayardan öbürüne geçince önce son çalıştığın yerin yedeğini birleştir. Birinde sildiğin kayıt öbüründe de
+3. **Kendiliğinden eşitle**'yi açarsan (4.5, ikisinde de ayrı ayrı) bunu Ajandam yapar: açılışta ve açıkken 15 dakikada bir
+   öbür bilgisayarın yeni yedeğini okur, burada olmayanları, orada değişenleri ve silinenleri sormadan alır, bildirimiyle
+   geri alınabilir. İki bilgisayarda da değişen kayıtta, çok sayıda silmede ya da öbüründe daha yeni Ajandam varken sorar.
+4. Elle birleştiriyorsan bir bilgisayardan öbürüne geçince önce son çalıştığın yerin yedeğini birleştir. Birinde sildiğin kayıt öbüründe de
    silinir (ikisinde de Ajandam 4.2 ya da sonrası varsa; öbüründe sonradan değiştirdiysen kalır), burada sildiğin kayıt öbür
    cihazın yedeğinden geri gelmez. Fiş ve fatura ekleri gelmez (onlar için **Yedek indir**'in arşivini öbüründe
    **Yedekten geri yükle**).
@@ -518,14 +535,18 @@ Turkey. Your records stay on your device: no account, no server, no subscription
   tags, refunds, split transactions, time deposits with withholding tax, a loan calculator, saved filters and
   category rules; bank and card statement import (PDF, Excel, CSV) with reconciliation and duplicate detection; move
   your whole ledger from another budgeting app (multi-account CSV, Excel or QIF, with categories, tags and transfers).
+  Since 4.5: the month can start on payday, which card to pay with today, a debt payoff plan (avalanche or snowball),
+  trial and annual renewal reminders, a money flow chart, and e-invoice QR codes read from PDFs and photos.
 - **Investments:** buys, sells, dividends and splits with average-cost gains (also adjusted for inflation); fund and stock
   prices entered by hand, pasted or read from a broker CSV; private pension (BES) state contribution and vesting.
+  Price alerts for currencies, gold and crypto; a reminder when a fund price is more than a week old.
 - **Turkey-specific:** CPI (TÜFE) based inflation report, rent increase cap, central bank card interest rates,
   public holidays, tax calendar, private pension (BES) state contribution; updated between releases through a signed
   data feed.
 - **Move between devices:** Settings › Data and backup › Transfer to another device: one device shows a QR code, the
   phone scans it, and records, notes and attachments go directly over the same Wi-Fi, end-to-end encrypted, without any
-  server. On Android, an automatic daily backup to a Google Drive file you pick (no Google sign-in in the app).
+  server. On Android, an automatic daily backup to a Google Drive file you pick (no Google sign-in in the app). Two
+  computers can sync automatically through a shared backup folder (4.5; asks first on conflicts or many deletions).
 - **AI without API keys:** Apple Intelligence (Mac) or local models (Ollama, LM Studio) on your computer, sign in
   with your ChatGPT Plus or Pro account, or connect Claude, ChatGPT and other MCP apps in one click. Nothing is saved
   without your approval.
@@ -535,7 +556,9 @@ Turkey. Your records stay on your device: no account, no server, no subscription
   links to records, nested folders and an archive, per-note encryption (optionally unlocked with Touch ID or Windows
   Hello), recently deleted notes, note history, import and export. On the Mac: a Dock menu, macOS Services for selected
   text (add it as a note or open it in quick add) and optional Spotlight search of note and event titles (off by
-  default; titles only).
+  default; titles only). "Find free time" suggests slots within your working hours. On phones (4.5): bank notifications
+  (Android) or bank texts via a Shortcuts automation (iPhone) wait in Overview until you add them, multi-page document
+  scanning on iPhone and iPad, and an "Ajandam · Bugün" home-screen widget on Android.
 - **Try it with sample data:** "Örneklerle dene" (on first launch or in Settings › About) opens two years of made-up
   records. Your own records are untouched; the samples live in memory only and are gone when you leave.
 - **Accessibility:** text size in Settings › Appearance (Ayarlar › Görünüm › Yazı boyutu: 90%, 100%, 115% or 130%; only

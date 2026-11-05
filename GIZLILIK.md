@@ -1,6 +1,6 @@
 # Ajandam gizlilik politikası
 
-Son güncelleme: 1 Kasım 2026
+Son güncelleme: 5 Kasım 2026
 
 Ajandam'ı tolgacodes-dev geliştirir. Bu politika Ajandam'ın Mac uygulamasını (Mac App Store'dan ya da indirme sayfasından
 kurulan), Windows uygulamasını (Microsoft Store'dan ya da kurulum dosyasıyla kurulan), iPhone ve iPad uygulamasını (App
@@ -110,11 +110,12 @@ uygulama verilerini temizlemek bu kayıtları da siler; önce yedek indir.
     penceresinde ayrıca onaylatır; o adres (ör. Google Takvim'in, okulunun ya da kulübünün sunucusu) Ajandam açıkken
     6 saatte bir indirilir. Bu istekte kayıtlarından hiçbir şey gönderilmez; adresin kendisi o sunucuya gider. İndirilen
     etkinlikler bu cihazda saklanır ve günlük yedeğe girer; aboneliği silince ajandadan kalkar.
-11. *Takvim uygulaması* (isteğe bağlı; Mac, iPhone ve iPad): açarsan Ajandam Takvim uygulamasındaki etkinlikleri
-    yalnızca okuyarak ajandada gösterir. Bu etkinlikler Ajandam'da saklanmaz, yedeklere girmez, yapay zeka
-    uygulamalarına ve hiçbir hizmete gönderilmez; Ajandam Takvim'e bir şey yazmaz. İzni Mac'te Sistem Ayarları ›
-    Gizlilik ve Güvenlik › Takvimler'den, iPhone ve iPad'de Ayarlar › Gizlilik ve Güvenlik › Takvimler'den geri
-    alabilirsin.
+11. *Takvim uygulaması* (isteğe bağlı; Mac, iPhone, iPad ve Android): açarsan Ajandam cihazının takvimindeki
+    etkinlikleri (Takvim uygulaması; Android'de Google Takvim ve eklediğin öbür hesaplar) yalnızca okuyarak ajandada
+    gösterir. Bu etkinlikler Ajandam'da saklanmaz, yedeklere girmez, yapay zeka uygulamalarına ve hiçbir hizmete
+    gönderilmez; Ajandam takvime bir şey yazmaz. İzni Mac'te Sistem Ayarları › Gizlilik ve Güvenlik › Takvimler'den,
+    iPhone ve iPad'de Ayarlar › Gizlilik ve Güvenlik › Takvimler'den, Android'de Ayarlar › Uygulamalar › Ajandam ›
+    İzinler › Takvim'den geri alabilirsin.
 12. Ajandam'ın ekranı Mac'te macOS'un, iPhone ve iPad'de iOS'un WebKit'i, Windows'ta Microsoft Edge WebView2, Android'de
     Android System WebView ile çalışır; WebView2'nin ve Android System WebView'in kendi güncellemeleri ve güvenlik
     denetimleri Microsoft'un ve Google'ın gizlilik bildirimlerine tabidir. Bağlantılar (ör. GitHub)
@@ -124,10 +125,29 @@ uygulama verilerini temizlemek bu kayıtları da siler; önce yedek indir.
     kendisi bulur (betiği Windows'un ayarındaki adresten indirir). Ara sunucu için Ayarlar › Windows › Ağ'da girdiğin
     kullanıcı adı ve parola bu bilgisayarda Windows'un şifrelemesiyle (DPAPI) saklanır, yedeklere girmez ve yalnızca adını
     girdiğin ara sunucuya gönderilir; Tüm verileri sil onu da siler.
+14. *Bankanın bildirimleri ve mesajları* (isteğe bağlı; Android, iPhone ve iPad): Android'de Ayarlar › Bildirimler ›
+    Bankadan gelenler'den açar ve Android'in Bildirim erişimi ayarında Ajandam'a izin verirsen Android gelen bildirimlerini
+    Ajandam'a da gösterir; iPhone ve iPad'de Kestirmeler'de bir Mesaj otomasyonu kurarsan bankanın SMS'i Ajandam'a verilir.
+    Ajandam bunlardan yalnızca bir tutarla harcama, ödeme ya da para hareketi geçen bankacılık metinlerini saklar; öbür
+    bildirimlere bakıp geçer, doğrulama kodu ya da şifre içeren mesajları ve sohbet uygulamalarının bildirimlerini saklamaz.
+    Saklananlar yalnızca bu cihazda, Ajandam'ın kendi alanında kalır; yedeğe, eşitlemeye ve hiçbir sunucuya gitmez. Sen Ekle'ye
+    basınca kayda dönüşür; eklediğin ya da yok saydığın metin silinir, 60 günden eskisi kendiliğinden silinir. Bildirim
+    erişimini Android'de Ayarlar › Bildirimler › Bildirim erişimi'nden kapatır, Kestirmeler'deki otomasyonu silersin; Tüm
+    verileri sil bekleyenleri de siler.
+15. *Kestirmeler ve ana ekranın araç takımı* (iPhone, iPad ve Android): Siri ve Kestirmeler'in Ajandam açılmadan cevap
+    verebilmesi için (iPhone ve iPad) ve Android'de ana ekrana eklediğin "Ajandam · Bugün" araç takımı için Ajandam
+    bugünün ve önümüzdeki altı günün kısa özetini (ajanda, son günü gelen ve geciken ödemeler; tutarları gizlediysen
+    tutarlar ₺•••; iPhone ve iPad'de ayrıca bu ayın bütçesi ile Gider ekle için hesap ve kategori adları) bu cihazda,
+    kendi alanında tutar. Özet yedeğe, eşitlemeye ve hiçbir sunucuya gitmez. PIN kilidi açıkken özette kayıt olmaz: araç
+    takımı ve Kestirmeler yalnızca "Ajandam kilitli" der. Araç takımını ana ekrandan kaldırabilirsin; Tüm verileri sil
+    özeti de siler.
 
 **İzinler (iPhone, iPad ve Android).** Ajandam yalnızca senin açtığın özellikler için izin ister: bildirimler (ödeme ve
 etkinlik hatırlatmaları), Face ID, Touch ID ya da parmak izi ve yüz tanıma (kilidi açmak için; biyometrik verine Ajandam
-ulaşmaz, doğrulamayı cihaz yapar), iPhone ve iPad'de fiş fotoğrafı için kamera, ekleri Fotoğraflar'a kaydetmek ve takvim.
+ulaşmaz, doğrulamayı cihaz yapar), kamera (iPhone ve iPad'de fiş fotoğrafı ve belge tarama; telefonda ve tablette
+karekod: cihazlar arası aktarım ve e-Fatura ya da e-Arşiv faturasının karekodu, cihazın içinde okunur), iPhone ve
+iPad'de ekleri Fotoğraflar'a kaydetmek ve takvim (yalnızca okuma; iPhone, iPad ve Android). Android'de bildirim erişimini
+yalnızca sen Android'in ayarında verirsin (bankadan gelenler için; yukarıda 14). SMS izni istemez, mesaj kutuna erişmez.
 Konumuna ve rehberine erişmez; dosyalarını yalnızca senin seçtiğin pencereyle açar ya da kaydeder.
 
 **Haklarını kullanma.** Kayıtların sana aittir: Ayarlar › Veriler ve yedek'ten yedek indirir, CSV olarak dışa aktarır ya

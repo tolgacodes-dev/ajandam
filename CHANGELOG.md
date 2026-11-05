@@ -3,6 +3,83 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [4.5.0] – 2026-11-05
+
+Ajandam 4.5 parayı senin düzenine göre sayıyor ve önünü görmene yardım ediyor: ay istersen maaş gününde başlıyor; hangi kartla harcarsan ödemenin ne zaman geleceğini, borçlarının ne zaman kapanacağını ve paranın nereden gelip nereye gittiğini görüyorsun. Faturanın karekodu okunuyor, denemesi biten abonelik önceden hatırlatılıyor, cihazlar arası birleştirme daha da sağlam. Öne çıkanlar:
+
+- **Ay maaş gününde başlar:** Ayarlar › Genel › Ay başlangıcı'nda ayın kaçında başlayacağını seç (1–28): Özet, Bütçe, Raporlar ve İşlemler ayı o günden sayar, ay "15 Eki – 14 Kas" gibi yazılır. Ajanda ve ödemeler takvim ayıyla kalır.
+- **Hangi kartla öde:** iki ya da daha çok kredi kartın varsa Hesaplar'daki "Bugün harcarsan" şeridi bugünkü harcamanın her kartta ne zaman ödeneceğini söyler, en uzun süre önce. Kartın dönemi başlayınca sabah özetinde de.
+- **Borç kapatma planı:** Borç ve alacak › Toplam borç › Kapatma planı: her ay ayıracağın tutarla kart, ek hesap, kredi ve kişisel borçların kaç ayda kapanır, ne kadar faiz ödersin; en yüksek faizli ya da en küçük borç önce.
+- **Akış şeması:** Raporlar › Akış şeması: 1, 3, 6 ya da 12 ayda gelirlerin solda, giderlerin sağda; aradaki fark birikime ya da birikimden.
+- **Faturanın karekodu:** e-Fatura ya da e-Arşiv faturasının PDF'ini ya da fotoğrafını ekleyince karekodu okunur; tutar, tarih, satıcı ve kategori yazılır. Aynı fatura ya da aynı dosya başka bir kayıtta varsa söylenir.
+- **Abonelikte deneme ve yıllık yenileme:** ücretsiz deneme bitmeden 3 ve 1 gün önce, yıllık abonelik yenilenmeden 7 gün önce hatırlatılır; İptal ettim ile çekim eklenmez.
+- **Fiyat uyarısı:** döviz, altın ya da kripto belirlediğin fiyatı geçince ya da altına inince bildirim. Fon fiyatı 7 günden eskiyse hatırlatılır.
+- **Boş zaman bul:** etkinlik ya da yapılacak eklerken çalışma saatlerinin içinde ajandandaki boşluklar önerilir.
+- **İçe aktarmada döküm yanında:** geniş pencerede seçili satırın PDF sayfası yanda açılır, satırın yeri işaretli.
+- **Daha sağlam birleştirme:** çakışma her cihaz için ayrı izlenir, bütün çakışmalar seçilebilir; yarıda kalan geri yükleme geri alınır.
+- **Bilgisayarda kendiliğinden eşitleme:** aynı yedek klasörünü kullanan bilgisayarlar birbirinin yeni kayıtlarını kendiliğinden alır; çakışma ya da çok silme varsa önce sorar.
+- **iPhone ve iPad:** Belge tara: çok sayfalı faturayı ya da sözleşmeyi kamerayla tara, tek PDF olarak eklenir ve ilk sayfası okunur. Faturanın karekodunu kamerayla da okutursun. Kestirmeler'deki bir otomasyonla bankanın SMS'i Özet'te onay bekler.
+- **Android:** bankanın uygulamasından ya da SMS'inden gelen harcama bildirimi Özet'te onay bekler, Ekle'ye basmadan kaydedilmez. Telefonun takvimleri Ajanda'da görünür; ana ekrana "Ajandam · Bugün" araç takımını ekleyebilirsin. Faturanın karekodunu kamerayla da okutursun.
+
+---
+
+**Ay başlangıcı**
+- Ayarlar › Genel › Ay › Ay başlangıcı 1–28; 1 takvim ayıdır, eskisi gibi. 15'te Ekim 15 Ekim'de başlar, 14 Kasım'da biter; 15 Kasım'da yatan maaş Kasım'ındır.
+- Ay toplamları, bütçe harcaması ve devri, Özet'in günlük çizgisi, ay sonu tahmini, günlük pay ve bekleyen ödemeleri, Raporlar (Genel, Ay özeti, Akış şeması, Enflasyon) ve CSV'si, İşlemler'in ay süzgeci ile Bu ay, Geçen ay, Son 3 ay, sabah özetinin bütçe satırı ve Ajandam'a sor dönemle sayar. Bu görünümlerde ay okları ve ay seçici dönemle gider; gün gelince dönem kendiliğinden ilerler.
+- Ajanda, ödemelerin listesi ve hatırlatmaları, abonelikler ve Yılın özeti takvim ayıyla kalır.
+- Ay kapanışı dönemin son gününe kadar kilitler; eski sürümler o güne kadar biten son takvim ayını kapalı görür.
+
+**Kartlar ve borçlar**
+- Hangi kartla öde: kesim ve son ödeme günü girilmiş kartlar. Kesim günü yapılan harcama o günün ekstresine girer, ertesi gün yapılan en geç ödenir; son ödeme hafta sonuna ya da resmî tatile denk gelirse ilk iş gününe kayar, limiti dolan kart sonda. Şeritteki karta dokununca Kart araçları açılır; orada da "Bugün harcarsan son ödeme" yazar.
+- Bir kartın hesap kesiminin ertesi sabahı sabah özetinde "Kart dönemi başladı" ve o gün yapılan harcamanın son ödeme günü; Ayarlar › Bildirimler › Kart dönemi başladı'dan kapatılır. PIN açıkken yalnızca kart sayısı.
+- Borç kapatma planı: her ay önce asgariler ödenir, artan sıradaki borca gider, kapanan borcun asgarisi de sıradakine kalır. Kartta akdi faiz ve vergiler, ek hesapta ve kredide kendi oranı hesaba katılır. Yalnızca asgarilerle ödeseydin ne olacağıyla karşılaştırılır; tahmindir, kayıt yazmaz.
+
+**Raporlar**
+- Akış şeması: kategoriler üst kategorisinde, sağda en çok 8, solda en çok 6 kalem; transfer ve ileri tarihli kayıt girmez, iade kendi kategorisinden düşer. Gelir, gider ve birikim oranı kutuları; tablo olarak da görülür, dar ekranda önce tablo.
+
+**Faturalar ve ekler**
+- Faturanın karekodu PDF'in ilk sayfasından ya da fotoğraftan okunur; okuma cihazda yapılır, hiçbir şey gönderilmez. Yeni kayıtta boş alanlara ödenecek tutar, fatura tarihi, satıcı (aynı vergi numaralı önceki kayıttan ya da faturadan) ve kategori yazılır; formdaki tutar farklıysa "Karekoddaki tutarı yaz". İade faturasında ve dövizli faturada tutar yazılmaz.
+- Aynı fatura başka bir kayıtta varsa, eki olmasa da söylenir. Aynı dosya aynı kayda ikinci kez eklenmez, başka bir kaydın ekindeyse uyarılır: eki kaldırır ya da kalsın dersin.
+- İçe aktarmada döküm yanında: geniş pencerede gözden geçirme listesinin yanında dökümün kendisi; seçili satırın sayfası açılır, yeri turuncu kutuyla işaretli. ↑ ↓ ile satır satır; pencere daralınca panel kalkar, seçim kalır. "Dökümü gizle" bu cihazda hatırlanır. Excel ve CSV dökümlerinde satırın yeri yok.
+
+**Abonelikler ve hatırlatmalar**
+- Abonelik formunda "Ücretsiz denemeyle başlıyor": ilk tarih denemenin bittiği gün olur. Deneme sürerken Abonelikler'de "Deneme · 3 gün kaldı" ve İptal ettim: abonelik duraklatılır, çekim eklenmez; geri alınır.
+- Deneme bitmeden 3 ve 1 gün önce, yıllık abonelik yenilenmeden 7 gün önce sabah özetinde; sabah özeti kapalıysa ayrı bildirim. PIN açıkken ad ve tutar yok. Ayar: Abonelik hatırlatması.
+- Fiyat uyarısı: döviz ve altın ya da kripto hesabının panelinden ya da Ayarlar › Bildirimler › Fiyat uyarıları'ndan, en çok 20. Uyarı bir kez çalar ve listede kalır: Yeniden kur ya da sil. Canlı fiyatlar açık olmalı.
+- Fon fiyatı: fon kodunun yanında TEFAS bağlantısı (Fiyatı güncelle penceresinde ve fon hesabının tablosunda). Son fiyat 7 günden eskiyse fon hesabının panelinde uyarı ve pazartesi sabah özetinde "Fon fiyatları güncel değil"; Ayarlar › Bildirimler › Fon fiyatı hatırlatması. Fiyat yine elle girilir.
+
+**Ajanda**
+- Boş zaman bul: etkinlik ve yapılacak penceresinde, Süre ile (15 dakika–4 saat). Önümüzdeki 14 günde günde en çok 2, toplam 6 öneri; Ajandam'ın saatli kayıtları ve açık takvimlerin olayları dolu sayılır, tüm gün kayıtlar ve ödemeler sayılmaz. Öneriye dokununca tarih ve saat forma yazılır.
+- Çalışma saatleri ve günleri: Ayarlar › Takvim › Boş zaman (varsayılan hafta içi 09:00–18:00).
+
+**Yedek ve birleştirme**
+- Çakışma her cihaz ve her kayıt için ayrı izlenir: başka bir cihazla birleştirmek çakışmayı gizlemez, öbür cihazın saati ileride ya da geride olsa da doğru hal kalır; buradakini seçtiğin kayıt sonraki birleştirmelerde korunur, aynı yedek ikinci kez bir şey yazmaz. Geri al yalnızca o birleştirmenin yazdığını geri alır.
+- Önizlemede bütün çakışmalar seçilebilir: 20'şer sayfa, seçimler sayfalar arasında korunur; Tümünde buradakini seç ya da Tümünde geleni seç.
+- Geri yükleme yarıda kalırsa uygulananlar kendiliğinden geri alınır, kayıtların değişmez; geri alınamazsa ya da Ajandam arada kapanırsa Özet'te söylenir.
+- Silme izi ancak silme yazılınca yazılır: yazılamayan silme öbür cihazlarda kaydı silmez, Ajandam arada kapansa da.
+- Kapalı ayların bakiyesini değiştirecek açılış tutarı ve para birimi değişikliği yazılmaz; güncel bakiyeyi girince fark bugün tarihli düzeltme olur. Açılış tutarı kapalı aylara giren hesap silinmez, arşivlenir; birleştirme de bunları değiştirmez.
+
+**Bilgisayarda**
+- Ayarlar › Veriler ve yedek › Kendiliğinden eşitle (yalnızca bu bilgisayarda): aynı yedek klasörünü seçmiş öbür cihazların en yeni yedeği açılıştan bir dakika sonra ve açıkken 15 dakikada bir okunur. Yeni kayıtlar, orada değişenler ve silinenler sormadan alınır; bildirim ve Geri al.
+- İki cihazda da değişen kayıt, çok silme, daha yeni sürümün yedeği ya da bu bilgisayarın anahtarıyla açılmayan şifreli yedek olunca önce sorulur: Özet'te şerit ve İncele…. Kapalı aylar ve ekler gelmez.
+
+**Telefon ve tablet**
+- Faturanın karekodunu kamerayla okut: eklerin yanında Karekodu okut.
+- Bankadan gelen kayıtlar Özet'te onay bekler: tutar, açıklama (iş yeri ya da kişi), kategori ve hesap (kartın son 4 hanesinden) mesajdan okunur. Ekle (Geri al ile), Düzenle ya da Yok say; aynı işlem iki kez gelirse söylenir. Mesajlar yalnızca cihazda kalır, kayıtlara ve yedeğe girmez.
+- Fiyat uyarılarına Ajandam açıkken ve açılınca bakılır.
+
+**iPhone ve iPad**
+- Belge tara: işlem ve ödeme penceresinde eklerin yanında. Sistemin tarayıcısı kenarları bulur, kırpar, düzeltir; en çok 30 sayfa tek PDF olur. İlk sayfa cihazda okunur: yeni giderde boş tutar, tarih, açıklama ve kategori, yeni ödemede tutar ve ad dolar. Taranan belgede okunan tutar ve tarih aynı fatura uyarısına da bakar.
+- Bankanın SMS'i: Kestirmeler'deki Mesaj otomasyonu "Onay bekleyenlere ekle"yi Ajandam açılmadan çalıştırır; Ayarlar › Bildirimler › Bankadan gelenler › Nasıl kurulur adım adım anlatır.
+
+**Android**
+- Bankanın bildirimleri: Ayarlar › Bildirimler › Bankadan gelenler › Aç: önce ne yapılacağı anlatılır, sonra Android'in Bildirim erişimi ekranı açılır. Yalnızca bankacılık işlemi gibi görünen bildirimler saklanır; doğrulama kodları, kampanyalar, sohbet uygulamaları ve kişilerden gelen SMS'ler alınmaz. Bir uygulamayı "Bu uygulamadan alma" ile kapatırsın.
+- Telefonun takvimleri: Ayarlar › Takvim › Takvim uygulamasındaki etkinlikleri göster; olaylar Ajanda'da salt okunur. İzin yalnızca açınca sorulur; olaylar kaydedilmez, gönderilmez.
+- "Ajandam · Bugün" araç takımı: bugünün ajandası, son günü gelen, geciken ve yaklaşan ödemeler; kayıtlar değişince ve yarım saatte bir yenilenir. PIN açıkken kayıt göstermez; dokununca Ajanda'nın bugünü açılır.
+
+**Düzeltmeler**
+- Düzenli kayıt (kira gibi), bekleyen ödeme, taksit ya da abonelik ödendiği gün "Bugün harcayabileceğin"i sıfırlamıyor: önceden ayrılan tutar o günün harcaması sayılmıyor, ayın kalan günlerine yayılıyor.
+
 ## [4.4.0] – 2026-11-04
 
 Ajandam 4.4 her ekrana oturuyor: dar pencerede, küçük ekranda ve büyük yazıyla satırlar taşmıyor, tutarlar ve adlar kesilmiyor; ipuçları cihazına göre konuşuyor. Öne çıkanlar:
