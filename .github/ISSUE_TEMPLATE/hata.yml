@@ -26,9 +26,12 @@ body:
     attributes:
       label: Nerede kullanıyorsun?
       options:
-        - Mac
-        - Windows (kurulum dosyasıyla)
+        - Mac (Mac App Store'dan)
+        - Mac (indirme sayfasından)
         - Windows (Microsoft Store'dan)
+        - Windows (kurulum dosyasıyla)
+        - iPhone ya da iPad
+        - Android
         - claude.ai
     validations:
       required: true
@@ -37,15 +40,21 @@ body:
     attributes:
       label: Ajandam sürümü
       description: Ayarlar › Hakkında
-      placeholder: "3.8.2"
+      placeholder: "4.6.0"
     validations:
       required: true
+  - type: input
+    id: cihaz
+    attributes:
+      label: Telefon ya da tablet
+      description: "iPhone, iPad ya da Android'de kullanıyorsan: cihazın modeli ve sistem sürümü (iPhone ve iPad'de Ayarlar › Genel › Hakkında, Android'de Ayarlar › Telefon hakkında)"
+      placeholder: "iPhone 17, iOS 27.1 ya da Galaxy S25, Android 16"
   - type: input
     id: macos
     attributes:
       label: macOS sürümü
       description: "Mac'te kullanıyorsan: Apple menüsü › Bu Mac Hakkında"
-      placeholder: "macOS 26.0"
+      placeholder: "macOS 27"
   - type: input
     id: windows
     attributes:

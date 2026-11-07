@@ -1,6 +1,6 @@
 # Ajandam gizlilik politikası
 
-Son güncelleme: 5 Kasım 2026
+Son güncelleme: 7 Kasım 2026
 
 Ajandam'ı tolgacodes-dev geliştirir. Bu politika Ajandam'ın Mac uygulamasını (Mac App Store'dan ya da indirme sayfasından
 kurulan), Windows uygulamasını (Microsoft Store'dan ya da kurulum dosyasıyla kurulan), iPhone ve iPad uygulamasını (App
@@ -29,7 +29,14 @@ parolanla şifrelenir (.ajandamyedek); parolan ve kurulurken verilen kurtarma an
 türevleri bu cihazda durur (yedeklere girmez). Belirlemezsen bu kopyalar da şifrelenmez. Not parolasıyla şifrelediğin
 notlar yedeklerde de şifreli kalır, ama şifrelemeden önceki hâlleri yedeklerde durabilir: günlük yedeklerde 14 gün,
 haftalık yedeklerde 8 hafta, aylık yedeklerde 12 ay kadar (iCloud Drive ve OneDrive kopyalarında 30 gün kadar). Android
-uygulamasında bu sürümde yedek klasörü ve yedek parolası yoktur: Yedek indir'in arşivi şifrelenmez.
+uygulamasında yedek klasörü yoktur; Ayarlar › Veriler ve yedek › Google Drive'a otomatik yedek'i açarsan Ajandam yedeğini
+her gün seçtiğin dosyaya (Google Drive, OneDrive, telefon…) yazar, dosyayı o hizmetin uygulaması eşitler. Yedek parolası
+belirlediysen bu yedek ve Yedek indir'in arşivi de şifrelenir (.ajandamyedek).
+
+Kendiliğinden eşitle'yi açarsan (bilgisayarda, iPhone'da ve iPad'de; Ayarlar › Veriler ve yedek) Ajandam yedek klasöründeki
+(ya da iCloud Drive veya OneDrive kopyasındaki) öbür cihazlarının yedeklerini okuyup kayıtları ve ekleri bu cihaza alır.
+Bunun için her cihaz eklerinin bir kopyasını da yedek klasörüne ve bulut kopyasına yazar (yedek parolası belirlediysen
+şifreli). Eşitleme yalnızca senin seçtiğin klasör üzerinden olur; arada Ajandam'ın ya da başka birinin sunucusu yoktur.
 
 İstersen (Mac, iPhone ve iPad; Ayarlar › Güvenlik › Spotlight'ta göster; varsayılan kapalı) not ve ajanda kayıtlarının
 yalnızca başlıkları bu cihazın arama dizinine de (Spotlight) yazılır: dizin bu cihazdadır, not metni, şifreli notlar ve

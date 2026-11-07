@@ -45,15 +45,16 @@ Ajandam güncellemeyi hazır olunca haber verir; kurmak için **Şimdi kur** ve 
   şifrelenmez:** günlük yedekler, iCloud Drive ve OneDrive'daki ve yedek klasöründeki kopyaları düz JSON'dur, **Yedek
   indir**'in arşivi (.zip) de şifrelenmez (içindeki yedek.json düz JSON, ekler olduğu gibi; yalnızca PIN belgesi, yapay zeka
   önerileri ve fiyat önbelleği girmez; JSON yedek indir'in dosyası da düz JSON). Ekler (fiş, fatura, nottaki resim ve
-  PDF'ler) her yerde olduğu gibi kopyalanır. Arşivdeki SHA-256 özetleri ve `.sha256` dosyaları bozulmayı ya da yarım kopyayı
-  yakalar, değiştirmeye karşı koruma değildir. Bu dosyalara, yedek klasörüne ya da bulut hesabına erişebilen biri
+  PDF'ler) her yerde olduğu gibi kopyalanır; 4.6'dan yedek klasörüne ve bulut kopyasına eklerin tek tek kopyası da yazılır
+  (Kendiliğinden eşitle öbür cihazlarda onları buradan alır). Arşivdeki SHA-256 özetleri ve `.sha256` dosyaları bozulmayı
+  ya da yarım kopyayı yakalar, değiştirmeye karşı koruma değildir. Bu dosyalara, yedek klasörüne ya da bulut hesabına erişebilen biri
   kayıtlarını okuyabilir: yedek parolası belirle (aşağıda), bulut hesabını güçlü bir parolayla ve iki adımlı doğrulamayla
   koru, indirdiğin arşivi ve yedek klasörünü (USB belleği) güvendiğin bir yerde sakla. **Tüm verileri sil** (önce sorar) bu
   bilgisayarın yedeklerini, bulut yedeklerini, yedek klasöründeki kopyalarını (klasöre ulaşılabiliyorsa; değilse söyler) ve
   eklerini de siler.
 - **Şifreli yedek (3.9):** Ayarlar › Veriler ve yedek › **Yedek parolası** belirlersen bu cihazdan çıkan kopyalar
   şifrelenir (`.ajandamyedek`): **Yedek indir**'in arşivi, iCloud Drive ya da OneDrive kopyası ve yedek klasörüne yazılanlar
-  (her gün kayıtlar, haftada bir ekleriyle arşiv); ilk şifreli kopyadan sonra bu cihazın oradaki şifresiz kopyaları silinir.
+  (her gün kayıtlar, haftada bir ekleriyle arşiv, 4.6'dan eklerin tek tek kopyaları); ilk şifreli kopyadan sonra bu cihazın oradaki şifresiz kopyaları silinir.
   İçerik AES-256-GCM ile şifrelenir. Anahtarı her dosyada yeni ve rastgeledir; yedek parolasının ve kurulurken bir kez
   gösterilen kurtarma anahtarının (24 harf, 120 bit) PBKDF2-SHA256 türevleriyle (600 000 tur) ayrı ayrı sarılır. Her 1 MB'lık
   parça doğrulanır: değiştirilen, kesilen ya da parçalarının yeri değiştirilen dosya açılmaz (dosyanın adı, tarihi ve onu
