@@ -13,7 +13,9 @@ kullanılır.
   önerir. Var olan bir ajanda kaydını ya da ödemeyi değiştirmeyi ya da silmeyi yalnızca açıkça istediğinde önerir (ör.
   "Toplantıyı cumaya al", "Kira tutarını güncelle", "Su faturasını sil"); bir şey eklemek istemen yetmez. **Durdur**
   isteği hemen keser. Kayıtlarındaki yazılar (ör. bir havale açıklaması, bir not) modele veri olarak gider: asistana
-  talimat veremez. Yapay zeka yoksa basit soruları ve hızlı eklemeleri yine kayıtlarından cevaplar.
+  talimat veremez. Yapay zeka yoksa basit soruları ve hızlı eklemeleri yine kayıtlarından cevaplar. "20.000 TL
+  harcayacağım, hangi kartla?" gibi sorularda hangi kartın limitinin yettiğini, alışverişten sonra kalan limiti ve son
+  ödeme gününü kayıtlarından hesaplar; bu sorular yapay zekaya gönderilmez.
   **Ayarlar › Yapay zeka › Asistan'a notlarım**'a (en çok 500 harf) nasıl cevap vermesini istediğini ya da bilmesi
   gerekenleri yazabilirsin (ör. "Kısa ve maddeli cevap ver", "Maaşım ayın 15'inde yatar"): Asistan her soruda bunlara
   tercih olarak uyar; kuralları değiştirmez, kayıt eklemeden önce yine onayını alır. Bulutta çalışan bir yapay zeka

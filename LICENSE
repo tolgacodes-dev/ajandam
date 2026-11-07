@@ -1,6 +1,6 @@
 Ajandam — Kullanım Koşulları
 Copyright © 2026 tolgacodes-dev. Tüm hakları saklıdır.
-Son güncelleme: 4 Kasım 2026
+Son güncelleme: 7 Kasım 2026
 
 Aynı metin Ajandam'da Ayarlar › Hakkında › Kullanım koşulları'nda da okunur.
 
@@ -124,8 +124,9 @@ Kısaca
 
    Ajandam'ın içindeki açık kaynak bileşenler kendi lisanslarıyla gelir: pdf.js ve SheetJS (Apache
    License 2.0), IBM Plex Sans ve JetBrains Mono (SIL Open Font License 1.1), LobeHub Icons ve
-   Devicon (MIT). Windows uygulaması ayrıca Tauri ve kullandığı Rust kütüphaneleriyle (çoğu MIT ya
-   da Apache License 2.0) derlenir.
+   Devicon, notlar için CodeMirror, Lezer, Turndown, MiniSearch, perfect-freehand ve SortableJS
+   (MIT). Windows uygulaması ayrıca Tauri ve kullandığı Rust kütüphaneleriyle (çoğu MIT ya da Apache
+   License 2.0) derlenir.
 
    Bileşenlerin tam listesi ve lisans metinleri indirme sayfasındaki ACIK-KAYNAK-LISANSLARI.txt
    dosyasındadır; Windows'ta aynı dosya Ajandam'ın kurulduğu klasörde de bulunur.

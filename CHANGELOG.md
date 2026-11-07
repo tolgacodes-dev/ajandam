@@ -3,6 +3,113 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [4.6.0] – 2026-11-07
+
+Ajandam 4.6'da Ayarlar yeni penceresinde açılıyor; notlar tarihe göre gruplanıyor ve yazarken biçimleniyor. Ajanda'ya projeler ve bir kayıt için birden fazla hatırlatma geldi; Özet'in bölümlerini istediğin gibi düzenliyorsun. Nakit akışının senaryoları adıyla kaydediliyor, borç kapatma planı ay ay ödeme planı veriyor ve harcayacağın tutara hangi kartın limitinin yettiğini Ajandam söylüyor. Tabletin ve katlanabilir telefonun geniş ekranında Ajanda, Notlar ve İşlemler iki bölmeli, katlayınca bölmeler katlama çizgisinden ayrılıyor. Yedekten geri yükleme ve birleştirme yarıda kalsa da kayıtların değişmiyor. Öne çıkanlar:
+
+- **Yeni Ayarlar penceresi:** bilgisayarda ve tablette Ayarlar ortada bir pencerede açılır: solda arama ve bölümler, sağda seçili bölüm. Ayarlar'dan açılan pencereler onun üstünde açılır; kapatınca Ayarlar kaldığın yerde.
+- **Notlar'da yeni liste:** notlar Bugün, Dün, Önceki 7 gün gibi gruplarda; her satırda özet, klasör, yapılacakların ilerlemesi, ekler ve etiketler. Aramada aranan sözcük işaretli.
+- **Yazarken biçimlenen notlar:** başlıklar büyük; kalın, vurgulu ve üstü çizili yazı yazdığın anda öyle görünür, yapılacak kutusu doğrudan işaretlenir. Biçim işaretleri (#, ** gibi) yalnızca imleç üstlerindeyken çıkar. İstersen notun ⋯ menüsünden klasik düzenleyiciye dönersin.
+- **Tutar tablosu ve komutlar:** son satırı "Toplam" olan tablo kendiliğinden toplanır ve birikim hedefine bağlanır. Satırın başında / yazınca tutar tablosu, tarih ve saat, kayda bağla, çizim ve şablonlar; ajandaya eklenen yapılacağın satırında "Yarın 14:30" gibi zamanı. Not iki cihazda aynı anda değişirse değişiklikler birleştirilir.
+- **Projeler:** Ajanda › Projeler'de bir işin yapılacakları, etkinlikleri, ödemeleri, harcamaları, notları ve belgeleri tek sayfada; son tarih, ilerleme, bütçe ve sıradaki iş.
+- **Özeti düzenle:** Özet'in bölümlerini aç, kapat ve sırala; hazır "Ajanda önce" düzeni ve yeni Bütçe bölümü.
+- **Birden fazla hatırlatma:** bir kayda beşe kadar hatırlatma; "1 gün ve 15 dakika önce", "30, 7 ve 1 gün önce" gibi hazır seçenekler.
+- **Hafta görünümünde planlama:** bilgisayarda ve tablette kaydı fareyle ya da kalemle sürükleyerek başka saate ya da güne taşırsın, alt kenarından çekip süresini değiştirirsin. Etkinliğe hazırlık ve yol için ara süre eklenir, tüm gün meşgul işaretlenir; Boş zaman bul ikisini de dolu sayar.
+- **Tutara göre kart önerisi:** "20.000 TL harcayacağım" yazınca limiti yeten kartlar, alışverişten sonra kalan limit ve son ödeme günü; önerilen kart başta.
+- **Kayıtlı senaryolar:** Raporlar › Nakit akışı'nda "Taşınırsam" gibi senaryoları adıyla kaydet, çoğalt; dört senaryoya kadar dönem sonu bakiye, en düşük bakiye ve eksiye düşülen gün yan yana.
+- **Ay ay borç ödeme planı:** borç kapatma planı her ay hangi borca ne kadar (asgari ve ek) ödeneceğini, faizi ve kalanı gösterir; ek ödemenin borçları kaç ay erken kapattığı ve kullanılan oranlar da orada.
+- **iPhone Duo:** dış ekranda da iç ekranda da ekranın tamamı kullanılır, katlayıp açınca Ajandam kendini yeniden boyutlar. Kitap gibi tutunca iki bölme katlama çizgisinden ayrılır; masaya dayayınca sayfa üst yarıda, alt yarıda "Yazarak ekle".
+- **Tablette iki bölme:** Ajanda'da gün paneli takvimin yanında, açık notun yanında notların listesi, İşlemler'de dokunduğun kaydın ayrıntısı listenin yanında.
+- **iPhone ve iPad:** iPad'de ve iPhone Duo'nun iç ekranında Ajandam iki pencerede açılır. iPhone yatay da kullanılır; basılı tutunca bağlam menüsü açılır; simgenin koyu, renkli ve şeffaf hâli var.
+- **Daha güvenli geri yükleme:** yedekten geri yükleme ya da birleştirme yarıda kalırsa yazılanlar geri alınır, kayıtların değişmez.
+- **iPhone ve iPad'de kendiliğinden eşitleme:** yedek klasörü seçilince (ör. iCloud Drive › Ajandam Yedekleri) bilgisayardaki Ajandam'la kayıtlar ve ekler kendiliğinden eşitlenir; telefonda taranan fatura bilgisayardaki kayıtta da görünür.
+- **Bilgisayarda eşitleme:** ekler de eşitlenir, buradaki değişiklikler birkaç dakika içinde gider; son eşitleme, henüz gitmeyen değişiklikler ve hatalar Ayarlar'da görünür.
+
+---
+
+**Ayarlar ve pencereler**
+- Bilgisayarda ve tablette Ayarlar ortada bir pencerede: üstte başlık ve kapatma düğmesi, solda arama ve bölümler, sağda seçili bölüm. Açılınca arama kutusu hazır; dokunmatik ekranda klavye kendiliğinden açılmaz, seçili bölüm odaktadır.
+- Ayarlar'dan açılan pencere (yeni klasör, kategori, onay, Yenilikler…) Ayarlar'ın üstünde açılır, alttaki kararır; kapatınca Ayarlar kaldığın yerde, aramasıyla ve açık bölümüyle.
+- Bütün pencereler aynı biçimde: Esc, kapatma düğmesi ya da pencerenin dışına tıklamak kapatır; Tab pencerenin içinde kalır; kapanınca pencereyi açtığın yere dönersin. Açılış ve kapanış kısa ve yumuşak; Görünüm › Animasyonlar Sade ise ya da Sisteme göre seçiliyken cihazda animasyonlar azaltıldıysa geçiş yok.
+- **Telefonda:** pencereler ve Ayarlar eskisi gibi tam ekran.
+
+**Notlar**
+- Notların listesi kartlar yerine satırlar: Sabitlenenler, Bugün, Dün, Önceki 7 gün, Önceki 30 gün, bu yılın ayları ve önceki yıllar diye gruplu. Gruplar seçtiğin sıralamanın tarihine göre (son düzenleme ya da oluşturma); başlığa göre sıralayınca yalnızca Sabitlenenler ayrı.
+- Satırda başlık ve zaman (bugün saat, son yedi günde gün adı, daha eskide tarih), tek satırlık özet, klasör, yapılacakların ilerlemesi ("1/3" gibi), ek sayısı ve en çok üç etiket. Şifreli notun satırında içerikten hiçbir şey görünmez.
+- Aramada aranan sözcük başlıkta ve özette işaretli; aranan yer notun derinlerindeyse özet oradan başlar.
+- Son silinenler, Arşiv ve tablette açık notun yanındaki liste de aynı satırlarla.
+- Not yazarken biçimlenir: başlıklar büyük; kalın, italik, vurgulu ve üstü çizili yazı ile kod biçimli; yapılacak kutusuna tıklayınca işaretlenir, yapılmış satır çizili; madde işaretleri nokta, ayraç çizgi; not ve kayıt bağlantıları ile ekler küçük etiketler hâlinde, tıklayınca açılır; #etiketler renkli. Satırın işaretleri (#, >) imleç o satırdayken, yazının işaretleri (**, ==, `) imleç o yazıya değince görünür.
+- Notun metni eskisi gibi düz metin (Markdown): eşitleme, not geçmişi, şifreleme, önizleme ve dışa aktarma değişmedi. Notun ⋯ menüsünde Klasik düzenleyiciye geç ve geri; kod görünümü eskisi gibi satır numaralı.
+- **Bilgisayarda bağlantılar:** bağlantıya ⌘ ya da Ctrl ile tıklayınca açılır, etikete ⌘ ya da Ctrl ile tıklayınca o etiketin notları listelenir.
+- Tablolar düzenleyicide de tablo olarak görünür; hücreye tıklayınca o hücre düzenlenir.
+- Tutar tablosu: son satırı "Toplam" olan tablonun Toplam'ı kalemlerin toplamıdır; tutar değiştikçe kendiliğinden güncellenir, kalın yazı ve ₺ ya da TL yazılışı korunur. Tabloda son kalemden sonra Tab yeni satırı Toplam'ın üstüne açar.
+- Birikim hedefine bağla: notun ilk tutar tablosunun altından yeni ya da var olan bir birikim hedefine bağlarsın; hedefin tutarı tablonun toplamı olur, biriken ve hedef tablonun altında görünür. Toplam sonradan değişirse "Hedefi … yap"; bağ istenince kaldırılır, hedef ve katkıları kalır.
+- Ajandaya eklenen yapılacağın satırında zamanı: Bugün, Yarın 14:30, haftanın günü ya da tarih; günü geçen kırmızı, yapılan işaretli.
+- Komutlar: satırın başında ya da boşluktan sonra / yaz (ya da araç çubuğundaki / düğmesi): tutar tablosu, tarih ve saat (yapılacak Ajanda'da da görünür), kayda bağla, dosya ekle, başlık, liste, alıntı, kod bloğu, ayraç, tablo ve şablonlar. Yazdıkça süzülür, ok tuşları ve Enter ile seçilir.
+- **iPhone ve iPad:** komutlarda Belge tara: kamerayla taranan belge nota PDF olarak eklenir.
+- Not geçmişinde "Şimdiki hâlle farkı": seçtiğin sürümden bu yana eklenen ve silinen satırlar renkli, değişmeyen uzun bölümler katlı; kaç satırın değiştiği yazılı.
+- Web sayfasından ya da belgeden yapıştırılan biçimli metin biçimiyle gelir: başlık, liste, yapılacak, kalın ve eğik yazı, bağlantı, tablo; resimler alt yazısıyla.
+- **Bilgisayarda düz yapıştırma:** ⇧⌘V ya da Ctrl+Shift+V biçimsiz yapıştırır.
+- Aramada yazım hatasına dayanıklı "Benzer notlar": tam eşleşen not olmasa da yazılışı benzeyenler listenin altında.
+- Çizim: / › Çizim ile parmakla, kalemle ya da fareyle çiz (kalemde bastırdıkça kalınlaşır); renk ve kalınlık seç, geri al. Çizim nota resim olarak eklenir.
+- Önizlemede yapılacakları maddenin solundaki tutamaçla sürükleyerek sırala; düzenleyicide satırı ⌥↑ / ⌥↓ (Alt+↑ / Alt+↓) taşır.
+- Bir not iki cihazda ya da iki pencerede aynı anda değişirse değişiklikler satır satır birleştirilir: farklı yerlerdeki değişikliklerin ikisi de kalır; aynı satırlar farklı değiştiyse bu cihazdaki kalır, öbürü Not geçmişi'nde.
+- **Telefonda Notlar:** klasörler ve etiketler başlıktaki "Tüm notlar" menüsünde, süzgeç şeridi yok; satırı sola kaydırınca Sabitle, Taşı, Sil. Not yazarken biçimli düzenleyicide açılır (tek kip), klavye dokununca açılır; göz düğmesi o not için önizlemeye geçer. Notlar'da yuvarlak düğme doğrudan yeni not açar.
+- **Bilgisayarda bilgi paneli:** geniş pencerede notun yanında içindekiler (imlecin bulunduğu başlık işaretli, tıklayınca oraya gider), notun ajandadaki kayıtları (hatırlatıcı, ajandaya eklenen yapılacaklar; önce yaklaşanlar) ve bu nota bağlanan notlar. Çubuktaki düğmeyle kapatılır; yan yana görünümde yok.
+
+**Özet**
+- Özeti düzenle (Özet'in başındaki düğme, sondaki bağlantı ya da Ayarlar › Görünüm › Özet görünümü): her bölümü aç ya da kapat, yukarı ve aşağı taşı; Kaydet'le uygulanır, geri alınır. Hazır düzenler: Varsayılan ve Ajanda önce (önümüzdeki 7 gün ya da bugünün işleri ve ödemeler en üstte).
+- Yeni Bütçe bölümü: limitli kategorilerin toplamı, aylık tavan ve en çok dolan dört kategori; limit yoksa Bütçe'ye götürür.
+- Sade ve Ayrıntılı görünümün düzeni ayrı; düzen bu cihazda kalır. Standart görünüme dön bölümleri de varsayılana döndürür.
+- **Bilgisayarda:** bölümün sağ tık menüsünde Bu bölümü gizle, Yukarı taşı, Aşağı taşı ve Özeti düzenle.
+
+**Ajanda**
+- Projeler: Ajanda › Projeler'de projeye ad, renk, açıklama, son tarih ve bütçe ver. İşlem, ödeme, etkinlik ve yapılacak formundaki Proje alanıyla, not "Projeye bağla…" ile projeye bağlanır.
+- Projenin sayfasında son tarih, yapılacakların ilerlemesi, harcanan ve bütçe, bekleyen ödemeler ve sıradaki iş; altında Yapılacaklar (geciken Bugüne alınır), Takvim, Harcamalar, Notlar ve Belgeler. Sayfadan eklenen kayıt o projeyle açılır. Tamamlanan projeler listenin altında; silinen projenin kayıtları yerinde kalır.
+- Birden fazla hatırlatma: bir kayda en çok beş hatırlatma; formda "Bir hatırlatma daha" ve hazır seçenekler (saatli kayıtta 1 gün ve 15 dakika ya da 1 saat ve 10 dakika önce; tüm gün kayıtta 30, 7 ve 1 gün ya da 1 gün önce ve aynı gün). Her hatırlatma ayrı bildirim; Ajanda'da ve Özet'te zilin yanında yazılı. Takvim dosyası hepsini taşır.
+- Ara süre: saatli etkinliğe hazırlık ve yol için önce ve sonra süre; hafta görünümünde bloğun üstünde ve altında taralı. Tüm gün etkinlik "Meşgulüm" ile işaretlenir. Boş zaman bul ikisini de dolu sayar; takvim dosyasıyla gidip gelir.
+- **Bilgisayarda ve tablette:** hafta görünümünde saatli kaydı fareyle ya da kalemle sürükleyerek başka saate ya da güne taşı (çeyrek saate oturur, Esc vazgeçer), alt kenarından çekerek bitişini değiştir. Klavyede kayıt seçiliyken Alt (⌥) ile ↑ ↓ 15 dakika, ← → bir gün; Shift de basılıysa süre. Tekrarlayan kayıtta yalnızca o tekrar taşınır; Geri al tek adımda.
+
+**Para**
+- Kayıtlı senaryolar: Raporlar › Nakit akışı'nda kurduğun senaryoyu (kira artışı, tek seferlik gider, kart borcunu kapatma, kredi…) adıyla ve açıklamasıyla kaydet; çoğalt, düzenle, sil. Açık senaryoya eklenen ve çıkarılan kalem kaydedilir.
+- Senaryoları karşılaştır: en çok dört kayıtlı senaryo şimdikinin yanında: dönem sonu bakiye, en düşük bakiye ve günü, eksiye düşülen ilk gün, giriş, çıkış, kart ve kredi faizi; çok çizgili grafikte birlikte.
+- Borç kapatma planında ay ay ödeme planı: her ay her borca ne ödeneceği (asgari ve ek), faiz ve vergi, anaparaya giden ve kalan; ilk 12 ay, istersen hepsi.
+- Ek ödemenin etkisi: yalnızca asgarileri ödemek, daha az ve daha çok ayırmakla borçların ne zaman kapandığı ve ne kadar faiz ödendiği; Dene o tutarı plana yazar. Oranlar ve varsayımlar: her borcun aylık ve yıllık oranı, asgari ödeme kuralı, TCMB oranları ve vergiler.
+- Hangi kartla ödemeli: komut paletinde, Yazarak ekle'de ya da Asistan'da "20.000 TL harcayacağım" yazınca limiti yeten kartlar, alışverişten sonra kalan limit ve son ödeme günü; "yarın", "6 taksit" gibi gün ve taksit de anlaşılır. Önce limitin %80'inin altında kalan ve en geç ödenen kart. Yazılan metin kayıt olarak eklenmez; harcama olarak eklemek ikinci seçenek.
+- "Hangi kartla ödemeli?" penceresi (Hesaplar'daki Bugün harcarsan şeridinde Tutara göre, Kart araçları, komut paleti): tutar, gün ve taksit; kart kart kalan limit ya da eksik, doluluk ve son ödeme; Bu kartla ekle gider formunu doldurur. Asistan bu soruyu yapay zekaya göndermeden kayıtlarından cevaplar.
+
+**iPhone ve iPad**
+- iPhone Duo: Ajandam iki ekranın tamamını kullanır; dış ekranda ve iç ekran yatayken gezinme ve sekme çubukları yanda. Katlayıp açınca, iPad'de pencere daralınca düzen ve gezinme çubuğunun düğmeleri yeniden kurulur.
+- Yarım katlı duruş: kitap gibi tutunca Ajanda'da takvim ve gün paneli, notta liste ve not, İşlemler'de liste ve ayrıntı katlama çizgisinin iki yanında. Masaya dayayınca sayfa çizginin üstünde, altta "Yazarak ekle" durur: klavye kendiliğinden açılmaz, Kapat'la duruş değişene kadar kalkar; duruş bitince yazdığın olağan "Yazarak ekle" penceresinde sürer.
+- İki pencere: iPad'de ve iPhone Duo'nun iç ekranında Diğer › Yeni pencerede aç; notta ve kenar çubuğundaki bölümde basılı tut › Yeni pencerede aç. Bir pencerede yazılan öbüründe de görünür.
+- iPhone'da yatay: alçak pencerede pencerelerin düğmeleri yan yana, kilit ekranı iki sütun.
+- Bağlam menüsü: kayda, hesaba, nota ya da bölüme basılı tutunca işlemleri (Düzenle, Çoğalt, Sil, Yeni pencerede aç…) sistemin menüsünde açılır.
+- Simge: ana ekranda koyu, renkli ve şeffaf simge; seçilebilen simgeler (Gece, Turuncu, Beyaz) eskisi gibi.
+- Kendiliğinden eşitleme: Ayarlar › Veriler ve yedek'te yedek klasörü seçilip (ör. iCloud Drive › Ajandam Yedekleri, bilgisayarın da kullandığı klasör) Kendiliğinden eşitle açılınca kayıtlar ve ekler bilgisayardaki Ajandam'la eşitlenir: açılışta, öne gelince ve 15 dakikada bir bakılır; bu cihazdaki değişiklikler birkaç dakika içinde ve Ajandam arka plana geçerken gider. İki cihazda da değişen kayıt, çok silme ya da daha yeni sürümün yedeği olunca sorar. Ayarlar son eşitlemeyi, henüz gitmeyen değişiklikleri ve hataları söyler.
+- Aramada ve Yazarak ekle'de "20.000 TL harcayacağım" yazınca önce kart önerisi; Göster Ajandam'da açar, harcama olarak eklemek ikinci seçenek.
+
+**Telefon ve tablet**
+- İki bölme geniş ekranda (tablette ve katlanabilir telefonun iç ekranında): Ajanda'da gün paneli takvimin yanında, takvim daralınca günlerde kayıtlar nokta olur. Açık notun yanında notların listesi, Notlar'daki süzgeç ve sıralamayla; listeden seçilen not açık olanın yerine geçer.
+- İşlemler'de kayda dokununca ayrıntısı listenin yanında açılır: tutar, tarih, tür, kategori, hesap, döviz, taksit, ekler ve aynı açıklamalı kayıtlar. Düzenle, Çoğalt ve Sil oradan; ekranın dar hâlinde kayda dokununca eskisi gibi düzenleme penceresi açılır.
+- Bankadan gelen kaydı onaylayınca "eklendi" ancak kayıt yazılınca çıkar; yazılamazsa kayıt onay bekleyenlerde kalır.
+
+**Bilgisayarda**
+- Kendiliğinden eşitleme: son eşitleme ("Son eşitleme: cihaz, zaman, kaç yeni kayıt") ve hata (yedek okunamadı, bozuk, başka bir Ajandam'ın, parolası farklı, yazılamadı) Ajandam kapanıp açılsa da Ayarlar › Veriler ve yedek'te görünür. Şimdi eşitle hatadan sonra yeniden dener.
+- Kendiliğinden eşitlemede ekler de gelir: her cihaz eklerinin kopyasını yedek klasörüne ve bulut kopyasına yazar (yedek parolası varsa şifreli), öbürü kayıtlarda adı geçen eksik ekleri oradan alır. Buradaki değişiklikler birkaç dakika içinde ve pencere arka plana geçince gider; Ayarlar henüz gitmeyen değişiklikleri ve yedek klasörüne yazılamadıysa nedenini söyler. Şimdi eşitle önce buradakileri gönderir.
+- Hızlı ekleme penceresinde "20.000 TL harcayacağım" yazınca önce kart önerisi (Enter Ajandam'da açar); Tab ile harcama olarak eklenir.
+
+**Yedek ve birleştirme**
+- Yedekten geri yükleme ya da birleştirme yarıda kalırsa (ör. disk dolu) o ana kadar yazılanlar geri alınır, kayıtların değişmez; neyin tamamlanamadığı söylenir. Geri alma da yarıda kalırsa Ajandam yer açılınca yeniden yazar.
+- Yedek metninde yeni kayıt yoksa ama çakışma varsa çakışmalar gösterilir.
+
+**Düzeltmeler**
+- Fiyat uyarısının bildirimi bir kez ve zamanında gelir.
+- Akış şeması: bir kategoride iade harcamadan büyükse fark "İade fazlası" olarak ayrı görünür; şemanın neti özetinkiyle aynı.
+- Borç kapatma planı kart faizini her ay borcun o ayki kademesine göre hesaplar; borç azaldıkça oran düşer.
+- Borç kapatma planı kişiye olan borcun vadesini sayar: borcun tamamı vadesinin ayında ödenir; ayırdığın tutar yetmiyorsa o ay ne kadar eksik kaldığı ve vadesinde kapatmak için her ay en az ne ayırman gerektiği söylenir.
+- Kendiliğinden eşitlemede başka cihazda silinen bir kaydın silme izi diske yazılamazsa (ör. disk dolu) yedek yine de eşitlenmiş sayılıyor, kayıt üçüncü cihazın eski yedeğinden geri gelebiliyordu; artık iz yazılmadan eşitlenmiş sayılmaz, sonraki bakışta yeniden denenir.
+- Şifrelenen notun şifresiz hâli not geçmişine düşebiliyordu; artık düşmüyor, önceden kalmışsa siliniyor.
+
 ## [4.5.0] – 2026-11-05
 
 Ajandam 4.5 parayı senin düzenine göre sayıyor ve önünü görmene yardım ediyor: ay istersen maaş gününde başlıyor; hangi kartla harcarsan ödemenin ne zaman geleceğini, borçlarının ne zaman kapanacağını ve paranın nereden gelip nereye gittiğini görüyorsun. Faturanın karekodu okunuyor, denemesi biten abonelik önceden hatırlatılıyor, cihazlar arası birleştirme daha da sağlam. Öne çıkanlar:

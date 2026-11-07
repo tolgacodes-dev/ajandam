@@ -22,6 +22,12 @@ JetBrains Mono                              OFL-1.1       https://github.com/Jet
 LobeHub Icons 1.95.1                        MIT           https://github.com/lobehub/lobe-icons
 Devicon 2.17.0                              MIT           https://github.com/devicons/devicon
 zxcvbn (parola listesi) 4.4.2               MIT           https://github.com/dropbox/zxcvbn
+CodeMirror 6.43.15                          MIT           https://codemirror.net
+Lezer (Markdown ayrıştırıcısı) 1.8.1        MIT           https://lezer.codemirror.net
+Turndown 7.2.4                              MIT           https://github.com/mixmark-io/turndown
+MiniSearch 7.2.0                            MIT           https://github.com/lucaong/minisearch
+perfect-freehand 1.2.3                      MIT           https://github.com/steveruizok/perfect-freehand
+SortableJS 1.15.7                           MIT           https://github.com/SortableJS/Sortable
 
 ----------------------------------------------------------------------------------------------------
 2. Windows uygulaması: Tauri ve Rust paketleri (341 paket)
@@ -914,7 +920,300 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[6] Kullananlar: adler2 2.0.1
+[6] Kullananlar: CodeMirror 6.43.15, Lezer (Markdown ayrıştırıcısı) 1.8.1, Turndown 7.2.4,
+    MiniSearch 7.2.0, perfect-freehand 1.2.3, SortableJS 1.15.7
+----------------------------------------------------------------------------------------------------
+
+Ajandam notlar-kit (app/Web/vendor/notlar-kit.min.js) içindeki açık kaynak paketler ve lisans metinleri.
+
+----------------------------------------------------------------------------------------------------
+@codemirror/commands 6.11.1 (MIT)
+@codemirror/language 6.13.1 (MIT)
+@codemirror/state 6.7.6 (MIT)
+@codemirror/streamparser 6.0.0 (MIT)
+@codemirror/view 6.43.15 (MIT)
+
+MIT License
+
+Copyright (C) 2018-2021 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+----------------------------------------------------------------------------------------------------
+@codemirror/merge 6.12.3 (MIT)
+
+MIT License
+
+Copyright (C) 2018-2022 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+----------------------------------------------------------------------------------------------------
+@lezer/common 1.5.4 (MIT)
+@lezer/highlight 1.2.5 (MIT)
+
+MIT License
+
+Copyright (C) 2018 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+----------------------------------------------------------------------------------------------------
+@lezer/markdown 1.8.1 (MIT)
+
+MIT License
+
+Copyright (C) 2020 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+----------------------------------------------------------------------------------------------------
+@marijn/find-cluster-break 1.0.4 (MIT)
+
+MIT License
+
+Copyright (C) 2024 by Marijn Haverbeke <marijn@haverbeke.berlin>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+----------------------------------------------------------------------------------------------------
+crelt 1.0.7 (MIT)
+
+Copyright (C) 2020 by Marijn Haverbeke <marijn@haverbeke.berlin>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+----------------------------------------------------------------------------------------------------
+minisearch 7.2.0 (MIT)
+
+Copyright 2022 Luca Ongaro
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+----------------------------------------------------------------------------------------------------
+perfect-freehand 1.2.3 (MIT)
+
+MIT License
+
+Copyright (c) 2021 Stephen Ruiz Ltd
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+----------------------------------------------------------------------------------------------------
+sortablejs 1.15.7 (MIT)
+
+MIT License
+
+Copyright (c) 2019 All contributors to Sortable
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+----------------------------------------------------------------------------------------------------
+style-mod 4.1.4 (MIT)
+
+Copyright (C) 2018 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+----------------------------------------------------------------------------------------------------
+turndown 7.2.4 (MIT)
+turndown-plugin-gfm 1.0.2 (MIT)
+
+MIT License
+
+Copyright (c) 2017 Dom Christie
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+----------------------------------------------------------------------------------------------------
+w3c-keyname 2.2.8 (MIT)
+
+Copyright (C) 2016 by Marijn Haverbeke <marijn@haverbeke.berlin> and others
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+----------------------------------------------------------------------------------------------------
+[7] Kullananlar: adler2 2.0.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (C) Jonas Schievink <jonasschievink@gmail.com>
@@ -931,7 +1230,7 @@ AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT
 OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[7] Kullananlar: adler2 2.0.1, cargo-platform 0.1.9
+[8] Kullananlar: adler2 2.0.1, cargo-platform 0.1.9
 ----------------------------------------------------------------------------------------------------
 
                               Apache License
@@ -1137,7 +1436,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[8] Kullananlar: adler2 2.0.1, anyhow 1.0.104, atomic-waker 1.1.2, camino 1.2.6, cargo-platform
+[9] Kullananlar: adler2 2.0.1, anyhow 1.0.104, atomic-waker 1.1.2, camino 1.2.6, cargo-platform
     0.1.9, cargo_metadata 0.19.2, ctor 1.0.13, displaydoc 0.2.7, dtoa 1.0.11, dyn-clone 1.0.20,
     erased-serde 0.4.11, fastrand 2.5.0, itoa 1.0.18, lazy_static 1.5.1, once_cell 1.21.4,
     pin-project-lite 0.2.17, proc-macro2 1.0.107, quote 1.0.47, ref-cast 1.0.27, ref-cast-impl
@@ -1173,7 +1472,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[9] Kullananlar: aead 0.5.2
+[10] Kullananlar: aead 0.5.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2019 The RustCrypto Project Developers
@@ -1204,7 +1503,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[10] Kullananlar: aes 0.8.4
+[11] Kullananlar: aes 0.8.4
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018 Artyom Pavlov
@@ -1234,7 +1533,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[11] Kullananlar: aes-gcm 0.10.3
+[12] Kullananlar: aes-gcm 0.10.3
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2019 The RustCrypto Project Developers
@@ -1264,7 +1563,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[12] Kullananlar: aho-corasick 1.1.5, byteorder 1.5.0, jiff 0.2.38, jiff-core 0.1.1, jiff-tzdb
+[13] Kullananlar: aho-corasick 1.1.5, byteorder 1.5.0, jiff 0.2.38, jiff-core 0.1.1, jiff-tzdb
     0.1.9, jiff-tzdb-platform 0.1.3, memchr 2.8.3, same-file 1.0.6, walkdir 2.5.0, winapi-util
     0.1.11
 ----------------------------------------------------------------------------------------------------
@@ -1274,7 +1573,7 @@ This project is dual-licensed under the Unlicense and MIT licenses.
 You may use this code under the terms of either license.
 
 ----------------------------------------------------------------------------------------------------
-[13] Kullananlar: aho-corasick 1.1.5, byteorder 1.5.0, byteorder-lite 0.1.0, jiff 0.2.38, jiff-core
+[14] Kullananlar: aho-corasick 1.1.5, byteorder 1.5.0, byteorder-lite 0.1.0, jiff 0.2.38, jiff-core
     0.1.1, jiff-tzdb 0.1.9, jiff-tzdb-platform 0.1.3, memchr 2.8.3, walkdir 2.5.0
 ----------------------------------------------------------------------------------------------------
 
@@ -1301,7 +1600,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[14] Kullananlar: aho-corasick 1.1.5, byteorder 1.5.0, byteorder-lite 0.1.0, jiff 0.2.38, jiff-core
+[15] Kullananlar: aho-corasick 1.1.5, byteorder 1.5.0, byteorder-lite 0.1.0, jiff 0.2.38, jiff-core
     0.1.1, jiff-tzdb 0.1.9, jiff-tzdb-platform 0.1.3, memchr 2.8.3, same-file 1.0.6, walkdir 2.5.0,
     winapi-util 0.1.11
 ----------------------------------------------------------------------------------------------------
@@ -1332,7 +1631,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 For more information, please refer to <http://unlicense.org/>
 
 ----------------------------------------------------------------------------------------------------
-[15] Kullananlar: alloc-no-stdlib 3.0.0, alloc-stdlib 0.3.0, brotli 9.1.1, brotli-decompressor 6.2.0
+[16] Kullananlar: alloc-no-stdlib 3.0.0, alloc-stdlib 0.3.0, brotli 9.1.1, brotli-decompressor 6.2.0
     Not: alloc-stdlib 0.3.0: pakette lisans dosyası yok; aynı projenin (rust-alloc-no-stdlib) lisans
     dosyası
 ----------------------------------------------------------------------------------------------------
@@ -1351,7 +1650,7 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ----------------------------------------------------------------------------------------------------
-[16] Kullananlar: anyhow 1.0.104, arboard 3.7.0, dtoa 1.0.11, dyn-clone 1.0.20, erased-serde 0.4.11,
+[17] Kullananlar: anyhow 1.0.104, arboard 3.7.0, dtoa 1.0.11, dyn-clone 1.0.20, erased-serde 0.4.11,
     fdeflate 0.3.7, half 2.7.1, image 0.25.10, itoa 1.0.18, libc 0.2.191, miniz_oxide 0.8.9,
     miniz_oxide 0.9.1, num-conv 0.2.2, pin-project-lite 0.2.17, proc-macro2 1.0.107, quote 1.0.47,
     raw-window-handle 0.6.2, ref-cast 1.0.27, ref-cast-impl 1.0.27, rustc-hash 2.1.3, ryu 1.0.23,
@@ -1543,7 +1842,7 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 END OF TERMS AND CONDITIONS
 
 ----------------------------------------------------------------------------------------------------
-[17] Kullananlar: arboard 3.7.0
+[18] Kullananlar: arboard 3.7.0
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -1569,7 +1868,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[18] Kullananlar: atomic-waker 1.1.2
+[19] Kullananlar: atomic-waker 1.1.2
 ----------------------------------------------------------------------------------------------------
 
 ===============================================================================
@@ -1619,7 +1918,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[19] Kullananlar: base64 0.22.1
+[20] Kullananlar: base64 0.22.1
 ----------------------------------------------------------------------------------------------------
 
 The MIT License (MIT)
@@ -1645,7 +1944,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[20] Kullananlar: base64 0.23.1
+[21] Kullananlar: base64 0.23.1
 ----------------------------------------------------------------------------------------------------
 
 The MIT License (MIT)
@@ -1671,7 +1970,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[21] Kullananlar: base64ct 1.8.3
+[22] Kullananlar: base64ct 1.8.3
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2014 Steve "Sc00bz" Thomas (steve at tobtu dot com)
@@ -1702,7 +2001,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[22] Kullananlar: bit-set 0.8.0, bit-vec 0.8.0
+[23] Kullananlar: bit-set 0.8.0, bit-vec 0.8.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2023 The Rust Project Developers
@@ -1732,7 +2031,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[23] Kullananlar: bitflags 1.3.2, bitflags 2.13.2, glob 0.3.4, log 0.4.35, num-bigint-dig 0.8.6,
+[24] Kullananlar: bitflags 1.3.2, bitflags 2.13.2, glob 0.3.4, log 0.4.35, num-bigint-dig 0.8.6,
     num-integer 0.1.47, num-iter 0.1.46, num-traits 0.2.19, regex 1.13.1, regex-automata 0.4.18,
     regex-syntax 0.8.11
 ----------------------------------------------------------------------------------------------------
@@ -1764,7 +2063,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[24] Kullananlar: block-buffer 0.10.4
+[25] Kullananlar: block-buffer 0.10.4
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018-2019 The RustCrypto Project Developers
@@ -1794,7 +2093,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[25] Kullananlar: brotli 9.1.1
+[26] Kullananlar: brotli 9.1.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2009, 2010, 2013-2016 by the Brotli Authors.
@@ -1818,7 +2117,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[26] Kullananlar: bs58 0.5.1
+[27] Kullananlar: bs58 0.5.1
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -1843,7 +2142,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[27] Kullananlar: bytemuck 1.25.2
+[28] Kullananlar: bytemuck 1.25.2
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -1857,7 +2156,7 @@ The above copyright notice and this permission notice (including the next paragr
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[28] Kullananlar: bytemuck 1.25.2, tinyvec 1.13.3
+[29] Kullananlar: bytemuck 1.25.2, tinyvec 1.13.3
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2019 Daniel "Lokathor" Gee.
@@ -1873,7 +2172,7 @@ Permission is granted to anyone to use this software for any purpose, including 
 3. This notice may not be removed or altered from any source distribution.
 
 ----------------------------------------------------------------------------------------------------
-[29] Kullananlar: bytes 1.12.1
+[30] Kullananlar: bytes 1.12.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018 Carl Lerche
@@ -1903,7 +2202,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[30] Kullananlar: cfb 0.14.0
+[31] Kullananlar: cfb 0.14.0
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -1929,7 +2228,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[31] Kullananlar: cfg-if 1.0.5, socket2 0.6.5
+[32] Kullananlar: cfg-if 1.0.5, socket2 0.6.5
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2014 Alex Crichton
@@ -1959,7 +2258,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[32] Kullananlar: chacha20 0.10.2
+[33] Kullananlar: chacha20 0.10.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2019-2026 The RustCrypto Project Developers
@@ -1989,7 +2288,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[33] Kullananlar: chrono 0.4.45
+[34] Kullananlar: chrono 0.4.45
 ----------------------------------------------------------------------------------------------------
 
 Rust-chrono is dual-licensed under The MIT License [1] and
@@ -2233,7 +2532,7 @@ limitations under the License.
 ~~~~
 
 ----------------------------------------------------------------------------------------------------
-[34] Kullananlar: cipher 0.4.4
+[35] Kullananlar: cipher 0.4.4
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2016-2020 RustCrypto Developers
@@ -2263,7 +2562,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[35] Kullananlar: clipboard-win 5.4.3, error-code 3.4.0, ryu 1.0.23
+[36] Kullananlar: clipboard-win 5.4.3, error-code 3.4.0, ryu 1.0.23
     Not: clipboard-win 5.4.3: pakette lisans dosyası yok; Boost Software License 1.0 metni (aynı
     yazarın error-code paketinden)
 ----------------------------------------------------------------------------------------------------
@@ -2293,7 +2592,7 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[36] Kullananlar: const-oid 0.9.6
+[37] Kullananlar: const-oid 0.9.6
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2020-2022 The RustCrypto Project Developers
@@ -2323,7 +2622,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[37] Kullananlar: cookie 0.18.2
+[38] Kullananlar: cookie 0.18.2
 ----------------------------------------------------------------------------------------------------
 
                               Apache License
@@ -2530,7 +2829,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[38] Kullananlar: cookie 0.18.2
+[39] Kullananlar: cookie 0.18.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2017 Sergio Benitez
@@ -2561,7 +2860,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[39] Kullananlar: cpufeatures 0.2.17
+[40] Kullananlar: cpufeatures 0.2.17
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2020-2025 The RustCrypto Project Developers
@@ -2591,7 +2890,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[40] Kullananlar: cpufeatures 0.3.1
+[41] Kullananlar: cpufeatures 0.3.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2020-2026 The RustCrypto Project Developers
@@ -2621,7 +2920,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[41] Kullananlar: crc32fast 1.5.3, ctor 1.0.13, dpi 0.1.2, hex 0.4.3, json-patch 4.2.0, quick-error
+[42] Kullananlar: crc32fast 1.5.3, ctor 1.0.13, dpi 0.1.2, hex 0.4.3, json-patch 4.2.0, quick-error
     2.0.1, tao 0.37.2
 ----------------------------------------------------------------------------------------------------
 
@@ -2828,7 +3127,7 @@ DEALINGS IN THE SOFTWARE.
    limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[42] Kullananlar: crc32fast 1.5.3
+[43] Kullananlar: crc32fast 1.5.3
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -2854,7 +3153,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[43] Kullananlar: crossbeam-channel 0.5.17, crossbeam-utils 0.8.23
+[44] Kullananlar: crossbeam-channel 0.5.17, crossbeam-utils 0.8.23
 ----------------------------------------------------------------------------------------------------
 
 The MIT License (MIT)
@@ -2886,7 +3185,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[44] Kullananlar: crossbeam-channel 0.5.17
+[45] Kullananlar: crossbeam-channel 0.5.17
 ----------------------------------------------------------------------------------------------------
 
 ===============================================================================
@@ -3484,7 +3783,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[45] Kullananlar: crypto-common 0.1.7
+[46] Kullananlar: crypto-common 0.1.7
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2021 RustCrypto Developers
@@ -3514,7 +3813,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[46] Kullananlar: cssparser 0.37.0, cssparser-macros 0.7.1, dtoa-short 0.3.5, selectors 0.38.0
+[47] Kullananlar: cssparser 0.37.0, cssparser-macros 0.7.1, dtoa-short 0.3.5, selectors 0.38.0
     Not: selectors 0.38.0: pakette lisans dosyası yok; Mozilla Public License 2.0 metni (Servo
     projesinin cssparser paketinden)
 ----------------------------------------------------------------------------------------------------
@@ -3894,7 +4193,7 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
   defined by the Mozilla Public License, v. 2.0.
 
 ----------------------------------------------------------------------------------------------------
-[47] Kullananlar: ctr 0.9.2
+[48] Kullananlar: ctr 0.9.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018-2022 RustCrypto Developers
@@ -3925,7 +4224,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[48] Kullananlar: darling 0.24.1, darling_core 0.24.1, darling_macro 0.24.1
+[49] Kullananlar: darling 0.24.1, darling_core 0.24.1, darling_macro 0.24.1
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -3951,7 +4250,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[49] Kullananlar: defmt 1.2.0, defmt-macros 1.2.0, defmt-parser 1.1.0
+[50] Kullananlar: defmt 1.2.0, defmt-macros 1.2.0, defmt-parser 1.1.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) Ferrous Systems
@@ -3981,7 +4280,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[50] Kullananlar: der 0.7.10, pkcs8 0.10.2
+[51] Kullananlar: der 0.7.10, pkcs8 0.10.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2020-2023 The RustCrypto Project Developers
@@ -4011,7 +4310,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[51] Kullananlar: deranged 0.5.9
+[52] Kullananlar: deranged 0.5.9
 ----------------------------------------------------------------------------------------------------
 
                                  Apache License
@@ -4217,7 +4516,7 @@ DEALINGS IN THE SOFTWARE.
    limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[52] Kullananlar: deranged 0.5.9
+[53] Kullananlar: deranged 0.5.9
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2024 Jacob Pratt et al.
@@ -4241,7 +4540,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[53] Kullananlar: derive_more 2.1.1, derive_more-impl 2.1.1
+[54] Kullananlar: derive_more 2.1.1, derive_more-impl 2.1.1
 ----------------------------------------------------------------------------------------------------
 
 The MIT License (MIT)
@@ -4267,7 +4566,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[54] Kullananlar: digest 0.10.7, hmac 0.12.1
+[55] Kullananlar: digest 0.10.7, hmac 0.12.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2017 Artyom Pavlov
@@ -4297,7 +4596,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[55] Kullananlar: dirs 7.0.0, dirs-sys 0.5.0
+[56] Kullananlar: dirs 7.0.0, dirs-sys 0.5.0
 ----------------------------------------------------------------------------------------------------
 
                               Apache License
@@ -4476,7 +4775,7 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
    of your accepting any such warranty or additional liability.
 
 ----------------------------------------------------------------------------------------------------
-[56] Kullananlar: dirs 7.0.0, dirs-sys 0.5.0
+[57] Kullananlar: dirs 7.0.0, dirs-sys 0.5.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018-2019 dirs-rs contributors
@@ -4500,7 +4799,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[57] Kullananlar: dom_query 0.28.0
+[58] Kullananlar: dom_query 0.28.0
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -4532,7 +4831,7 @@ derived from the "nipper" project (https://github.com/importcjj/nipper),
 developed by Chen Jiaju, licensed under the MIT License and the Apache License 2.0 (dual licensed).
 
 ----------------------------------------------------------------------------------------------------
-[58] Kullananlar: dpi 0.1.2
+[59] Kullananlar: dpi 0.1.2
 ----------------------------------------------------------------------------------------------------
 
 rust-lang/libm as a whole is available for use under the MIT license:
@@ -4588,7 +4887,7 @@ have been licensed under extremely permissive terms.
 ------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------------
-[59] Kullananlar: dunce 1.0.5
+[60] Kullananlar: dunce 1.0.5
 ----------------------------------------------------------------------------------------------------
 
 Creative Commons Legal Code
@@ -4714,7 +5013,7 @@ express Statement of Purpose.
     this CC0 or use of the Work.
 
 ----------------------------------------------------------------------------------------------------
-[60] Kullananlar: equivalent 1.0.3
+[61] Kullananlar: equivalent 1.0.3
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2016--2023
@@ -4744,7 +5043,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[61] Kullananlar: fax 0.2.7
+[62] Kullananlar: fax 0.2.7
 ----------------------------------------------------------------------------------------------------
 
 Copyright © 2021 The pdf-rs contributers.
@@ -4756,7 +5055,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[62] Kullananlar: fdeflate 0.3.7, half 2.7.1, ident_case 1.0.1, image 0.25.10
+[63] Kullananlar: fdeflate 0.3.7, half 2.7.1, ident_case 1.0.1, image 0.25.10
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -4786,7 +5085,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[63] Kullananlar: flate2 1.1.10
+[64] Kullananlar: flate2 1.1.10
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2014-2026 Alex Crichton
@@ -4816,7 +5115,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[64] Kullananlar: fnv 1.0.7
+[65] Kullananlar: fnv 1.0.7
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2017 Contributors
@@ -4846,7 +5145,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[65] Kullananlar: foldhash 0.2.0
+[66] Kullananlar: foldhash 0.2.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2024 Orson Peters
@@ -4870,7 +5169,7 @@ the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 
 ----------------------------------------------------------------------------------------------------
-[66] Kullananlar: form_urlencoded 1.2.2
+[67] Kullananlar: form_urlencoded 1.2.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2013-2016 The rust-url developers
@@ -4900,7 +5199,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[67] Kullananlar: futures-channel 0.3.34, futures-core 0.3.34, futures-io 0.3.34, futures-macro
+[68] Kullananlar: futures-channel 0.3.34, futures-core 0.3.34, futures-io 0.3.34, futures-macro
     0.3.34, futures-sink 0.3.34, futures-task 0.3.34, futures-util 0.3.34
 ----------------------------------------------------------------------------------------------------
 
@@ -5108,7 +5407,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[68] Kullananlar: futures-channel 0.3.34, futures-core 0.3.34, futures-io 0.3.34, futures-macro
+[69] Kullananlar: futures-channel 0.3.34, futures-core 0.3.34, futures-io 0.3.34, futures-macro
     0.3.34, futures-sink 0.3.34, futures-task 0.3.34, futures-util 0.3.34
 ----------------------------------------------------------------------------------------------------
 
@@ -5140,7 +5439,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[69] Kullananlar: generic-array 0.14.7
+[70] Kullananlar: generic-array 0.14.7
 ----------------------------------------------------------------------------------------------------
 
 The MIT License (MIT)
@@ -5166,7 +5465,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[70] Kullananlar: getrandom 0.2.17, getrandom 0.3.4, getrandom 0.4.3, rand_chacha 0.3.1
+[71] Kullananlar: getrandom 0.2.17, getrandom 0.3.4, getrandom 0.4.3, rand_chacha 0.3.1
 ----------------------------------------------------------------------------------------------------
 
                               Apache License
@@ -5372,7 +5671,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[71] Kullananlar: getrandom 0.2.17
+[72] Kullananlar: getrandom 0.2.17
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018-2024 The rust-random Project Developers
@@ -5403,7 +5702,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[72] Kullananlar: getrandom 0.3.4
+[73] Kullananlar: getrandom 0.3.4
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018-2025 The rust-random Project Developers
@@ -5434,7 +5733,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[73] Kullananlar: getrandom 0.4.3
+[74] Kullananlar: getrandom 0.4.3
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018-2026 The rust-random Project Developers
@@ -5465,7 +5764,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[74] Kullananlar: ghash 0.5.1
+[75] Kullananlar: ghash 0.5.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2019 RustCrypto Developers
@@ -5495,7 +5794,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[75] Kullananlar: global-hotkey 0.8.0, muda 0.20.0, tray-icon 0.25.1
+[76] Kullananlar: global-hotkey 0.8.0, muda 0.20.0, tray-icon 0.25.1
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -5521,7 +5820,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[76] Kullananlar: global-hotkey 0.8.0
+[77] Kullananlar: global-hotkey 0.8.0
 ----------------------------------------------------------------------------------------------------
 
 SPDXVersion: SPDX-2.1
@@ -5545,7 +5844,7 @@ PackageDownloadLocation: git+ssh://github.com/tauri-apps/global-hotkey.git
 Creator: Person: Daniel Thompson-Yvetot
 
 ----------------------------------------------------------------------------------------------------
-[77] Kullananlar: hashbrown 0.12.3, hashbrown 0.17.1
+[78] Kullananlar: hashbrown 0.12.3, hashbrown 0.17.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2016 Amanieu d'Antras
@@ -5575,7 +5874,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[78] Kullananlar: heck 0.5.0, unicode-segmentation 1.13.3
+[79] Kullananlar: heck 0.5.0, unicode-segmentation 1.13.3
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2015 The Rust Project Developers
@@ -5605,7 +5904,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[79] Kullananlar: hex 0.4.3
+[80] Kullananlar: hex 0.4.3
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2013-2014 The Rust Project Developers.
@@ -5630,7 +5929,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[80] Kullananlar: hkdf 0.12.4
+[81] Kullananlar: hkdf 0.12.4
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2015-2018 Vlad Filippov
@@ -5661,7 +5960,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[81] Kullananlar: html5ever 0.39.0, markup5ever 0.39.0, web_atoms 0.2.6
+[82] Kullananlar: html5ever 0.39.0, markup5ever 0.39.0, web_atoms 0.2.6
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2014 The html5ever Project Developers
@@ -5691,7 +5990,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[82] Kullananlar: http 1.5.0
+[83] Kullananlar: http 1.5.0
 ----------------------------------------------------------------------------------------------------
 
                               Apache License
@@ -5897,7 +6196,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[83] Kullananlar: http 1.5.0
+[84] Kullananlar: http 1.5.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2017 http-rs authors
@@ -5927,7 +6226,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[84] Kullananlar: http-body 1.1.0, http-body-util 0.1.5
+[85] Kullananlar: http-body 1.1.0, http-body-util 0.1.5
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2019-2026 Sean McArthur & Hyper Contributors
@@ -5957,7 +6256,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[85] Kullananlar: httparse 1.10.1
+[86] Kullananlar: httparse 1.10.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2015-2025 Sean McArthur
@@ -5981,7 +6280,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[86] Kullananlar: httpdate 1.0.3
+[87] Kullananlar: httpdate 1.0.3
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2016 Pyfisch
@@ -6005,7 +6304,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[87] Kullananlar: hyper 1.12.0
+[88] Kullananlar: hyper 1.12.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2014-2026 Sean McArthur
@@ -6029,7 +6328,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[88] Kullananlar: hyper-rustls 0.27.10, rustls 0.23.46, rustls-native-certs 0.8.5
+[89] Kullananlar: hyper-rustls 0.27.10, rustls 0.23.46, rustls-native-certs 0.8.5
 ----------------------------------------------------------------------------------------------------
 
 ISC License (ISC)
@@ -6049,7 +6348,7 @@ ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
 THIS SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[89] Kullananlar: hyper-rustls 0.27.10, rustls 0.23.46, rustls-native-certs 0.8.5
+[90] Kullananlar: hyper-rustls 0.27.10, rustls 0.23.46, rustls-native-certs 0.8.5
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2016 Joseph Birr-Pixton <jpixton@gmail.com>
@@ -6079,7 +6378,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[90] Kullananlar: hyper-util 0.1.21
+[91] Kullananlar: hyper-util 0.1.21
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2023-2025 Sean McArthur
@@ -6103,7 +6402,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[91] Kullananlar: ico 0.6.0
+[92] Kullananlar: ico 0.6.0
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -6129,7 +6428,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[92] Kullananlar: icu_collections 2.4.0, icu_locale_core 2.4.0, icu_normalizer 2.4.0,
+[93] Kullananlar: icu_collections 2.4.0, icu_locale_core 2.4.0, icu_normalizer 2.4.0,
     icu_normalizer_data 2.4.0, icu_properties 2.4.0, icu_properties_data 2.4.0, icu_provider 2.4.0,
     litemap 0.8.3, potential_utf 0.1.6, tinystr 0.8.5, writeable 0.6.4, yoke 0.8.4, yoke-derive
     0.8.4, zerofrom 0.1.8, zerofrom-derive 0.1.8, zerotrie 0.2.5, zerovec 0.11.9, zerovec-derive
@@ -6184,7 +6483,7 @@ Portions of ICU4X may have been adapted from ICU4C and/or ICU4J.
 ICU 1.8.1 to ICU 57.1 © 1995-2016 International Business Machines Corporation and others.
 
 ----------------------------------------------------------------------------------------------------
-[93] Kullananlar: idna 1.1.0, percent-encoding 2.3.2, url 2.5.8
+[94] Kullananlar: idna 1.1.0, percent-encoding 2.3.2, url 2.5.8
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2013-2025 The rust-url developers
@@ -6214,7 +6513,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[94] Kullananlar: idna_adapter 1.2.2
+[95] Kullananlar: idna_adapter 1.2.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) The rust-url developers
@@ -6244,7 +6543,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[95] Kullananlar: indexmap 1.9.3, indexmap 2.14.2
+[96] Kullananlar: indexmap 1.9.3, indexmap 2.14.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2016--2017
@@ -6274,7 +6573,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[96] Kullananlar: infer 0.22.0
+[97] Kullananlar: infer 0.22.0
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -6300,7 +6599,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[97] Kullananlar: inout 0.1.4
+[98] Kullananlar: inout 0.1.4
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2022 The RustCrypto Project Developers
@@ -6331,7 +6630,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[98] Kullananlar: ipnet 2.12.2
+[99] Kullananlar: ipnet 2.12.2
 ----------------------------------------------------------------------------------------------------
 
                                  Apache License
@@ -6537,7 +6836,7 @@ DEALINGS IN THE SOFTWARE.
    limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[99] Kullananlar: ipnet 2.12.2
+[100] Kullananlar: ipnet 2.12.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright 2017 Juniper Networks, Inc.
@@ -6549,7 +6848,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[100] Kullananlar: json-patch 4.2.0
+[101] Kullananlar: json-patch 4.2.0
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -6575,7 +6874,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[101] Kullananlar: jsonptr 0.7.1
+[102] Kullananlar: jsonptr 0.7.1
 ----------------------------------------------------------------------------------------------------
 
                                  Apache License
@@ -6781,7 +7080,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[102] Kullananlar: jsonptr 0.7.1
+[103] Kullananlar: jsonptr 0.7.1
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -6807,7 +7106,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[103] Kullananlar: keyboard-types 0.7.0, keyboard-types 0.8.3
+[104] Kullananlar: keyboard-types 0.7.0, keyboard-types 0.8.3
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2017 Pyfisch
@@ -6831,7 +7130,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[104] Kullananlar: libc 0.2.191
+[105] Kullananlar: libc 0.2.191
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) The Rust Project Developers
@@ -6861,7 +7160,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[105] Kullananlar: libm 0.2.16
+[106] Kullananlar: libm 0.2.16
 ----------------------------------------------------------------------------------------------------
 
 rust-lang/libm as a whole is available for use under the MIT license:
@@ -7124,7 +7423,7 @@ have been licensed under extremely permissive terms.
 Copyright notices are retained in src/* files where relevant.
 
 ----------------------------------------------------------------------------------------------------
-[106] Kullananlar: lock_api 0.4.14, parking_lot 0.12.5, parking_lot_core 0.9.12
+[107] Kullananlar: lock_api 0.4.14, parking_lot 0.12.5, parking_lot_core 0.9.12
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2016 The Rust Project Developers
@@ -7154,7 +7453,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[107] Kullananlar: lru-slab 0.1.3
+[108] Kullananlar: lru-slab 0.1.3
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2024 The lru-slab Developers
@@ -7166,7 +7465,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[108] Kullananlar: lru-slab 0.1.3
+[109] Kullananlar: lru-slab 0.1.3
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2024 The lru-slab Developers
@@ -7190,7 +7489,7 @@ the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 
 ----------------------------------------------------------------------------------------------------
-[109] Kullananlar: mime 0.3.17
+[110] Kullananlar: mime 0.3.17
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2014 Sean McArthur
@@ -7214,7 +7513,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[110] Kullananlar: miniz_oxide 0.8.9, miniz_oxide 0.9.1
+[111] Kullananlar: miniz_oxide 0.8.9, miniz_oxide 0.9.1
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -7244,7 +7543,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[111] Kullananlar: miniz_oxide 0.8.9, miniz_oxide 0.9.1
+[112] Kullananlar: miniz_oxide 0.8.9, miniz_oxide 0.9.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright 2013-2014 RAD Game Tools and Valve Software
@@ -7263,7 +7562,7 @@ Permission is granted to anyone to use this software for any purpose, including 
 3. This notice may not be removed or altered from any source distribution.
 
 ----------------------------------------------------------------------------------------------------
-[112] Kullananlar: mio 1.2.4
+[113] Kullananlar: mio 1.2.4
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2014 Carl Lerche and other MIO contributors
@@ -7287,7 +7586,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[113] Kullananlar: moxcms 0.8.1, pxfm 0.1.30
+[114] Kullananlar: moxcms 0.8.1, pxfm 0.1.30
 ----------------------------------------------------------------------------------------------------
 
                                  Apache License
@@ -7493,7 +7792,7 @@ THE SOFTWARE.
    limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[114] Kullananlar: moxcms 0.8.1, pxfm 0.1.30
+[115] Kullananlar: moxcms 0.8.1, pxfm 0.1.30
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) Radzivon Bartoshyk. All rights reserved.
@@ -7524,7 +7823,7 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ----------------------------------------------------------------------------------------------------
-[115] Kullananlar: muda 0.20.0
+[116] Kullananlar: muda 0.20.0
 ----------------------------------------------------------------------------------------------------
 
 SPDXVersion: SPDX-2.1
@@ -7548,7 +7847,7 @@ PackageDownloadLocation: git+ssh://github.com/tauri-apps/muda.git
 Creator: Person: Daniel Thompson-Yvetot
 
 ----------------------------------------------------------------------------------------------------
-[116] Kullananlar: new_debug_unreachable 1.0.6
+[117] Kullananlar: new_debug_unreachable 1.0.6
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2015 Jonathan Reem
@@ -7578,7 +7877,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[117] Kullananlar: num-conv 0.2.2
+[118] Kullananlar: num-conv 0.2.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) Jacob Pratt
@@ -7602,7 +7901,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[118] Kullananlar: opaque-debug 0.3.1
+[119] Kullananlar: opaque-debug 0.3.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018-2024 The RustCrypto Project Developers
@@ -7632,7 +7931,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[119] Kullananlar: open 5.4.5
+[120] Kullananlar: open 5.4.5
 ----------------------------------------------------------------------------------------------------
 
 The MIT License (MIT)
@@ -7662,7 +7961,7 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[120] Kullananlar: option-ext 0.2.0
+[121] Kullananlar: option-ext 0.2.0
 ----------------------------------------------------------------------------------------------------
 
 Mozilla Public License Version 2.0
@@ -8040,7 +8339,7 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
   defined by the Mozilla Public License, v. 2.0.
 
 ----------------------------------------------------------------------------------------------------
-[121] Kullananlar: pbkdf2 0.12.2
+[122] Kullananlar: pbkdf2 0.12.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2017 Artyom Pavlov
@@ -8071,7 +8370,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[122] Kullananlar: pem-rfc7468 0.7.0
+[123] Kullananlar: pem-rfc7468 0.7.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2021 The RustCrypto Project Developers
@@ -8101,7 +8400,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[123] Kullananlar: phf 0.13.1, phf_generator 0.13.1, phf_macros 0.13.1, phf_shared 0.13.1
+[124] Kullananlar: phf 0.13.1, phf_generator 0.13.1, phf_macros 0.13.1, phf_shared 0.13.1
 ----------------------------------------------------------------------------------------------------
 
 The MIT License (MIT)
@@ -8126,7 +8425,7 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[124] Kullananlar: pkcs1 0.7.5, spki 0.7.3
+[125] Kullananlar: pkcs1 0.7.5, spki 0.7.3
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2021-2023 The RustCrypto Project Developers
@@ -8156,7 +8455,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[125] Kullananlar: plist 1.10.3
+[126] Kullananlar: plist 1.10.3
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2015 Edward Barnard
@@ -8180,7 +8479,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[126] Kullananlar: png 0.18.1
+[127] Kullananlar: png 0.18.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2015 nwin
@@ -8210,7 +8509,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[127] Kullananlar: polyval 0.6.2
+[128] Kullananlar: polyval 0.6.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2019-2023 RustCrypto Developers
@@ -8240,7 +8539,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[128] Kullananlar: powerfmt 0.2.1
+[129] Kullananlar: powerfmt 0.2.1
 ----------------------------------------------------------------------------------------------------
 
                                  Apache License
@@ -8446,7 +8745,7 @@ DEALINGS IN THE SOFTWARE.
    limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[129] Kullananlar: powerfmt 0.2.1
+[130] Kullananlar: powerfmt 0.2.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2023 Jacob Pratt et al.
@@ -8470,7 +8769,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[130] Kullananlar: ppv-lite86 0.2.21
+[131] Kullananlar: ppv-lite86 0.2.21
 ----------------------------------------------------------------------------------------------------
 
                               Apache License
@@ -8676,7 +8975,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[131] Kullananlar: ppv-lite86 0.2.21
+[132] Kullananlar: ppv-lite86 0.2.21
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2019 The CryptoCorrosion Contributors
@@ -8706,7 +9005,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[132] Kullananlar: precomputed-hash 0.1.1
+[133] Kullananlar: precomputed-hash 0.1.1
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -8732,7 +9031,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[133] Kullananlar: quick-error 2.0.1
+[134] Kullananlar: quick-error 2.0.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2015 The quick-error Developers
@@ -8756,7 +9055,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[134] Kullananlar: quick-xml 0.42.0
+[135] Kullananlar: quick-xml 0.42.0
 ----------------------------------------------------------------------------------------------------
 
 The MIT License (MIT)
@@ -8784,7 +9083,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[135] Kullananlar: quinn 0.11.12, quinn-proto 0.11.19, quinn-udp 0.5.16
+[136] Kullananlar: quinn 0.11.12, quinn-proto 0.11.19, quinn-udp 0.5.16
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018 The quinn Developers
@@ -8796,7 +9095,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[136] Kullananlar: rand 0.10.3, rand 0.8.8, rand_chacha 0.3.1, rand_core 0.6.4, rand_pcg 0.10.2
+[137] Kullananlar: rand 0.10.3, rand 0.8.8, rand_chacha 0.3.1, rand_core 0.6.4, rand_pcg 0.10.2
 ----------------------------------------------------------------------------------------------------
 
 Copyrights in the Rand project are retained by their contributors. No
@@ -8813,7 +9112,7 @@ The Rand project includes code from the Rust project
 published under these same licenses.
 
 ----------------------------------------------------------------------------------------------------
-[137] Kullananlar: rand 0.10.3, rand 0.8.8
+[138] Kullananlar: rand 0.10.3, rand 0.8.8
 ----------------------------------------------------------------------------------------------------
 
                               Apache License
@@ -8994,7 +9293,7 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 END OF TERMS AND CONDITIONS
 
 ----------------------------------------------------------------------------------------------------
-[138] Kullananlar: rand 0.10.3, rand 0.8.8, rand_chacha 0.3.1, rand_core 0.6.4
+[139] Kullananlar: rand 0.10.3, rand 0.8.8, rand_chacha 0.3.1, rand_core 0.6.4
 ----------------------------------------------------------------------------------------------------
 
 Copyright 2018 Developers of the Rand project
@@ -9025,7 +9324,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[139] Kullananlar: rand_core 0.10.1
+[140] Kullananlar: rand_core 0.10.1
 ----------------------------------------------------------------------------------------------------
 
 Copyrights in the Rand project are retained by their contributors. No
@@ -9039,7 +9338,7 @@ licensed under the Apache License, Version 2.0 <LICENSE-APACHE> or
 <LICENSE-MIT> or <http://opensource.org/licenses/MIT>, at your option.
 
 ----------------------------------------------------------------------------------------------------
-[140] Kullananlar: rand_core 0.10.1, rand_core 0.6.4, rand_pcg 0.10.2
+[141] Kullananlar: rand_core 0.10.1, rand_core 0.6.4, rand_pcg 0.10.2
 ----------------------------------------------------------------------------------------------------
 
                               Apache License
@@ -9231,7 +9530,7 @@ APPENDIX: How to apply the Apache License to your work.
    identification within third-party archives.
 
 ----------------------------------------------------------------------------------------------------
-[141] Kullananlar: rand_core 0.10.1
+[142] Kullananlar: rand_core 0.10.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018-2026 The Rand Project Developers
@@ -9261,7 +9560,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[142] Kullananlar: rand_pcg 0.10.2
+[143] Kullananlar: rand_pcg 0.10.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2014-2017 Melissa O'Neill and PCG Project contributors
@@ -9292,7 +9591,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[143] Kullananlar: raw-window-handle 0.6.2
+[144] Kullananlar: raw-window-handle 0.6.2
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -9318,7 +9617,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[144] Kullananlar: raw-window-handle 0.6.2
+[145] Kullananlar: raw-window-handle 0.6.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2020 Osspial
@@ -9334,7 +9633,7 @@ Permission is granted to anyone to use this software for any purpose, including 
 3. This notice may not be removed or altered from any source distribution.
 
 ----------------------------------------------------------------------------------------------------
-[145] Kullananlar: reqwest 0.12.28
+[146] Kullananlar: reqwest 0.12.28
 ----------------------------------------------------------------------------------------------------
 
                               Apache License
@@ -9540,7 +9839,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[146] Kullananlar: reqwest 0.12.28
+[147] Kullananlar: reqwest 0.12.28
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2016-2025 Sean McArthur
@@ -9564,7 +9863,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[147] Kullananlar: rfd 0.17.2
+[148] Kullananlar: rfd 0.17.2
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -9590,7 +9889,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[148] Kullananlar: ring 0.17.14
+[149] Kullananlar: ring 0.17.14
 ----------------------------------------------------------------------------------------------------
 
 *ring* uses an "ISC" license, like BoringSSL used to use, for new code
@@ -9604,7 +9903,7 @@ See src/polyfill/once_cell/LICENSE-APACHE and src/polyfill/once_cell/LICENSE-MIT
 for the license to code that was sourced from the once_cell project.
 
 ----------------------------------------------------------------------------------------------------
-[149] Kullananlar: ring 0.17.14
+[150] Kullananlar: ring 0.17.14
 ----------------------------------------------------------------------------------------------------
 
                                  Apache License
@@ -9880,7 +10179,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ----------------------------------------------------------------------------------------------------
-[150] Kullananlar: ring 0.17.14
+[151] Kullananlar: ring 0.17.14
 ----------------------------------------------------------------------------------------------------
 
 Copyright 2015-2025 Brian Smith.
@@ -9898,7 +10197,7 @@ OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
 CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[151] Kullananlar: rustls-native-certs 0.8.5
+[152] Kullananlar: rustls-native-certs 0.8.5
 ----------------------------------------------------------------------------------------------------
 
 Rustls is distributed under the following three licenses:
@@ -9912,7 +10211,7 @@ respectively.  You may use this software under the terms of any
 of these licenses, at your option.
 
 ----------------------------------------------------------------------------------------------------
-[152] Kullananlar: rustls-pki-types 1.15.1
+[153] Kullananlar: rustls-pki-types 1.15.1
 ----------------------------------------------------------------------------------------------------
 
                               Apache License
@@ -10118,7 +10417,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[153] Kullananlar: rustls-pki-types 1.15.1
+[154] Kullananlar: rustls-pki-types 1.15.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2023 Dirkjan Ochtman <dirkjan@ochtman.nl>
@@ -10148,7 +10447,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[154] Kullananlar: rustls-webpki 0.103.16
+[155] Kullananlar: rustls-webpki 0.103.16
 ----------------------------------------------------------------------------------------------------
 
 Except as otherwise noted, this project is licensed under the following
@@ -10172,7 +10471,7 @@ The files under third-party/chromium are licensed as described in
 third-party/chromium/LICENSE.
 
 ----------------------------------------------------------------------------------------------------
-[155] Kullananlar: same-file 1.0.6, winapi-util 0.1.11
+[156] Kullananlar: same-file 1.0.6, winapi-util 0.1.11
 ----------------------------------------------------------------------------------------------------
 
 The MIT License (MIT)
@@ -10198,7 +10497,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[156] Kullananlar: schannel 0.1.30
+[157] Kullananlar: schannel 0.1.30
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2015 steffengy
@@ -10210,7 +10509,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[157] Kullananlar: schemars 0.8.22, schemars 0.9.0, schemars 1.2.3, schemars_derive 0.8.22
+[158] Kullananlar: schemars 0.8.22, schemars 0.9.0, schemars 1.2.3, schemars_derive 0.8.22
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -10236,7 +10535,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[158] Kullananlar: scopeguard 1.2.0
+[159] Kullananlar: scopeguard 1.2.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2016-2019 Ulrik Sverdrup "bluss" and scopeguard developers
@@ -10266,7 +10565,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[159] Kullananlar: serde_spanned 1.1.2, toml 1.1.8+spec-1.1.0, toml_datetime 1.1.2+spec-1.1.0,
+[160] Kullananlar: serde_spanned 1.1.2, toml 1.1.8+spec-1.1.0, toml_datetime 1.1.2+spec-1.1.0,
     toml_parser 1.1.5+spec-1.1.0, toml_writer 1.1.3+spec-1.1.0
 ----------------------------------------------------------------------------------------------------
 
@@ -10473,7 +10772,7 @@ DEALINGS IN THE SOFTWARE.
    limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[160] Kullananlar: serde_spanned 1.1.2, toml 1.1.8+spec-1.1.0, toml_datetime 1.1.2+spec-1.1.0,
+[161] Kullananlar: serde_spanned 1.1.2, toml 1.1.8+spec-1.1.0, toml_datetime 1.1.2+spec-1.1.0,
     toml_parser 1.1.5+spec-1.1.0, toml_writer 1.1.3+spec-1.1.0
 ----------------------------------------------------------------------------------------------------
 
@@ -10498,7 +10797,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[161] Kullananlar: serde_urlencoded 0.7.1
+[162] Kullananlar: serde_urlencoded 0.7.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2016 Anthony Ramine
@@ -10528,7 +10827,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[162] Kullananlar: serde_with 3.24.0, serde_with_macros 3.24.0
+[163] Kullananlar: serde_with 3.24.0, serde_with_macros 3.24.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2015
@@ -10558,7 +10857,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[163] Kullananlar: serialize-to-javascript 0.1.2, serialize-to-javascript-impl 0.1.2
+[164] Kullananlar: serialize-to-javascript 0.1.2, serialize-to-javascript-impl 0.1.2
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -10584,7 +10883,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[164] Kullananlar: sha2 0.10.9
+[165] Kullananlar: sha2 0.10.9
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2006-2009 Graydon Hoare
@@ -10616,7 +10915,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[165] Kullananlar: signature 2.2.0
+[166] Kullananlar: signature 2.2.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018-2023 RustCrypto Developers
@@ -10646,7 +10945,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[166] Kullananlar: simd-adler32 0.3.10
+[167] Kullananlar: simd-adler32 0.3.10
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -10672,7 +10971,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[167] Kullananlar: siphasher 1.0.4
+[168] Kullananlar: siphasher 1.0.4
 ----------------------------------------------------------------------------------------------------
 
 Copyright 2012-2016 The Rust Project Developers.
@@ -10684,7 +10983,7 @@ http://www.apache.org/licenses/LICENSE-2.0> or the MIT license
 option.
 
 ----------------------------------------------------------------------------------------------------
-[168] Kullananlar: slab 0.4.12
+[169] Kullananlar: slab 0.4.12
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2019 Carl Lerche
@@ -10714,7 +11013,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[169] Kullananlar: smallvec 1.16.4
+[170] Kullananlar: smallvec 1.16.4
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018 The Servo Project Developers
@@ -10744,7 +11043,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[170] Kullananlar: softbuffer 0.4.8
+[171] Kullananlar: softbuffer 0.4.8
 ----------------------------------------------------------------------------------------------------
 
 Apache License
@@ -10950,7 +11249,7 @@ Apache License
    limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[171] Kullananlar: softbuffer 0.4.8
+[172] Kullananlar: softbuffer 0.4.8
 ----------------------------------------------------------------------------------------------------
 
 Copyright 2022 Kirill Chibisov
@@ -10974,7 +11273,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[172] Kullananlar: spin 0.9.9
+[173] Kullananlar: spin 0.9.9
 ----------------------------------------------------------------------------------------------------
 
 The MIT License (MIT)
@@ -11000,7 +11299,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[173] Kullananlar: stable_deref_trait 1.2.1
+[174] Kullananlar: stable_deref_trait 1.2.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2017 Robert Grosse
@@ -11030,7 +11329,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[174] Kullananlar: string_cache 0.9.0
+[175] Kullananlar: string_cache 0.9.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2012-2013 Mozilla Foundation
@@ -11060,7 +11359,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[175] Kullananlar: strsim 0.11.1
+[176] Kullananlar: strsim 0.11.1
 ----------------------------------------------------------------------------------------------------
 
 The MIT License (MIT)
@@ -11088,7 +11387,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[176] Kullananlar: subtle 2.6.1
+[177] Kullananlar: subtle 2.6.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2016-2017 Isis Agora Lovecruft, Henry de Valence. All rights reserved.
@@ -11122,7 +11421,7 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ----------------------------------------------------------------------------------------------------
-[177] Kullananlar: synstructure 0.14.0
+[178] Kullananlar: synstructure 0.14.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright 2016 Nika Layzell
@@ -11134,7 +11433,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[178] Kullananlar: tao 0.37.2
+[179] Kullananlar: tao 0.37.2
 ----------------------------------------------------------------------------------------------------
 
 SPDXVersion: SPDX-2.1
@@ -11157,7 +11456,7 @@ PackageDownloadLocation: git+ssh://github.com/tauri-apps/tao.git
 Creator: Person: Daniel Thompson-Yvetot
 
 ----------------------------------------------------------------------------------------------------
-[179] Kullananlar: tauri 2.12.5, tauri-codegen 2.7.4, tauri-macros 2.7.4,
+[180] Kullananlar: tauri 2.12.5, tauri-codegen 2.7.4, tauri-macros 2.7.4,
     tauri-plugin-clipboard-manager 2.5.0, tauri-plugin-dialog 2.8.4, tauri-plugin-fs 2.7.1,
     tauri-plugin-global-shortcut 2.4.1, tauri-plugin-opener 2.7.2, tauri-runtime 2.12.2,
     tauri-runtime-wry 2.12.3, tauri-utils 2.10.2
@@ -11186,7 +11485,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[180] Kullananlar: tauri-plugin-clipboard-manager 2.5.0, tauri-plugin-dialog 2.8.4, tauri-plugin-fs
+[181] Kullananlar: tauri-plugin-clipboard-manager 2.5.0, tauri-plugin-dialog 2.8.4, tauri-plugin-fs
     2.7.1, tauri-plugin-global-shortcut 2.4.1, tauri-plugin-opener 2.7.2,
     tauri-plugin-single-instance 2.5.5
 ----------------------------------------------------------------------------------------------------
@@ -11213,7 +11512,7 @@ PackageDownloadLocation: git+ssh://github.com/tauri-apps/tauri.git
 Creator: Person: Daniel Thompson-Yvetot
 
 ----------------------------------------------------------------------------------------------------
-[181] Kullananlar: tauri-plugin-single-instance 2.5.5
+[182] Kullananlar: tauri-plugin-single-instance 2.5.5
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -11239,7 +11538,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[182] Kullananlar: tendril 0.5.1
+[183] Kullananlar: tendril 0.5.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2015 Keegan McAllister
@@ -11269,7 +11568,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[183] Kullananlar: tiff 0.11.3
+[184] Kullananlar: tiff 0.11.3
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -11295,7 +11594,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[184] Kullananlar: time 0.3.55, time-core 0.1.9, time-macros 0.2.32
+[185] Kullananlar: time 0.3.55, time-core 0.1.9, time-macros 0.2.32
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) Jacob Pratt et al.
@@ -11319,7 +11618,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[185] Kullananlar: tokio 1.54.1
+[186] Kullananlar: tokio 1.54.1
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -11345,7 +11644,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[186] Kullananlar: tokio-macros 2.7.2
+[187] Kullananlar: tokio-macros 2.7.2
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -11372,7 +11671,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[187] Kullananlar: tokio-rustls 0.26.6
+[188] Kullananlar: tokio-rustls 0.26.6
 ----------------------------------------------------------------------------------------------------
 
                               Apache License
@@ -11578,7 +11877,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[188] Kullananlar: tokio-rustls 0.26.6
+[189] Kullananlar: tokio-rustls 0.26.6
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2017 quininer kel
@@ -11608,7 +11907,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[189] Kullananlar: tower 0.5.3, tower-layer 0.3.3, tower-service 0.3.3
+[190] Kullananlar: tower 0.5.3, tower-layer 0.3.3, tower-service 0.3.3
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2019 Tower Contributors
@@ -11638,7 +11937,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[190] Kullananlar: tower-http 0.6.11
+[191] Kullananlar: tower-http 0.6.11
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2019-2021 Tower Contributors
@@ -11668,7 +11967,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[191] Kullananlar: tracing 0.1.44, tracing-attributes 0.1.31, tracing-core 0.1.36
+[192] Kullananlar: tracing 0.1.44, tracing-attributes 0.1.31, tracing-core 0.1.36
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2019 Tokio Contributors
@@ -11698,7 +11997,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[192] Kullananlar: tray-icon 0.25.1
+[193] Kullananlar: tray-icon 0.25.1
 ----------------------------------------------------------------------------------------------------
 
 SPDXVersion: SPDX-2.1
@@ -11722,7 +12021,7 @@ PackageDownloadLocation: git+ssh://github.com/tauri-apps/tray-icon.git
 Creator: Person: Daniel Thompson-Yvetot
 
 ----------------------------------------------------------------------------------------------------
-[193] Kullananlar: try-lock 0.2.5
+[194] Kullananlar: try-lock 0.2.5
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018-2023 Sean McArthur
@@ -11747,13 +12046,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[194] Kullananlar: typenum 1.20.1
+[195] Kullananlar: typenum 1.20.1
 ----------------------------------------------------------------------------------------------------
 
 MIT OR Apache-2.0
 
 ----------------------------------------------------------------------------------------------------
-[195] Kullananlar: typenum 1.20.1
+[196] Kullananlar: typenum 1.20.1
 ----------------------------------------------------------------------------------------------------
 
                               Apache License
@@ -11959,7 +12258,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[196] Kullananlar: typenum 1.20.1
+[197] Kullananlar: typenum 1.20.1
 ----------------------------------------------------------------------------------------------------
 
 The MIT License (MIT)
@@ -11985,7 +12284,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[197] Kullananlar: unicode-ident 1.0.27
+[198] Kullananlar: unicode-ident 1.0.27
 ----------------------------------------------------------------------------------------------------
 
 UNICODE LICENSE V3
@@ -12029,7 +12328,7 @@ dealings in these Data Files or Software without prior written
 authorization of the copyright holder.
 
 ----------------------------------------------------------------------------------------------------
-[198] Kullananlar: unicode-segmentation 1.13.3
+[199] Kullananlar: unicode-segmentation 1.13.3
 ----------------------------------------------------------------------------------------------------
 
 Licensed under the Apache License, Version 2.0
@@ -12041,7 +12340,7 @@ notice may not be copied, modified, or distributed except
 according to those terms.
 
 ----------------------------------------------------------------------------------------------------
-[199] Kullananlar: universal-hash 0.5.1
+[200] Kullananlar: universal-hash 0.5.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2019-2020 RustCrypto Developers
@@ -12071,7 +12370,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[200] Kullananlar: untrusted 0.9.0
+[201] Kullananlar: untrusted 0.9.0
 ----------------------------------------------------------------------------------------------------
 
 // Copyright 2015-2016 Brian Smith.
@@ -12089,7 +12388,7 @@ DEALINGS IN THE SOFTWARE.
 // OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[201] Kullananlar: urlpattern 0.6.0
+[202] Kullananlar: urlpattern 0.6.0
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -12115,7 +12414,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[202] Kullananlar: utf8_iter 1.1.0
+[203] Kullananlar: utf8_iter 1.1.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright Mozilla Foundation
@@ -12162,7 +12461,7 @@ licensed under the Apache License, Version 2.0 <LICENSE-APACHE> or
 <LICENSE-MIT> or <http://opensource.org/licenses/MIT>, at your option.
 
 ----------------------------------------------------------------------------------------------------
-[203] Kullananlar: utf8_iter 1.1.0, utf_types 1.0.0
+[204] Kullananlar: utf8_iter 1.1.0, utf_types 1.0.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright Mozilla Foundation
@@ -12192,7 +12491,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[204] Kullananlar: utf_types 1.0.0
+[205] Kullananlar: utf_types 1.0.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright Mozilla Foundation
@@ -12217,7 +12516,7 @@ Test code is dedicated to the Public Domain when so designated (see
 the individual files for PD/CC0-dedicated sections).
 
 ----------------------------------------------------------------------------------------------------
-[205] Kullananlar: uuid 1.29.0
+[206] Kullananlar: uuid 1.29.0
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2014 The Rust Project Developers
@@ -12248,7 +12547,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[206] Kullananlar: want 0.3.2
+[207] Kullananlar: want 0.3.2
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018-2019 Sean McArthur
@@ -12272,7 +12571,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[207] Kullananlar: web-time 1.1.0
+[208] Kullananlar: web-time 1.1.0
 ----------------------------------------------------------------------------------------------------
 
                                  Apache License
@@ -12478,7 +12777,7 @@ THE SOFTWARE.
    limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[208] Kullananlar: web-time 1.1.0
+[209] Kullananlar: web-time 1.1.0
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -12504,7 +12803,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[209] Kullananlar: webpki-roots 1.0.11
+[210] Kullananlar: webpki-roots 1.0.11
 ----------------------------------------------------------------------------------------------------
 
 # Community Data License Agreement - Permissive - Version 2.0
@@ -12570,7 +12869,7 @@ of Data, including for example machine learning models and models'
 insights.
 
 ----------------------------------------------------------------------------------------------------
-[210] Kullananlar: webview2-com 0.39.1, webview2-com-macros 0.8.1, webview2-com-sys 0.39.1
+[211] Kullananlar: webview2-com 0.39.1, webview2-com-macros 0.8.1, webview2-com-sys 0.39.1
     Not: webview2-com 0.39.1: pakette lisans dosyası yok; projenin deposundaki lisans dosyası
     (github.com/wravery/webview2-rs)
     Not: webview2-com-macros 0.8.1: pakette lisans dosyası yok; projenin deposundaki lisans dosyası
@@ -12602,7 +12901,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[211] Kullananlar: weezl 0.1.12
+[212] Kullananlar: weezl 0.1.12
 ----------------------------------------------------------------------------------------------------
 
 The MIT License (MIT)
@@ -12628,7 +12927,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[212] Kullananlar: window-vibrancy 0.8.1
+[213] Kullananlar: window-vibrancy 0.8.1
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -12654,7 +12953,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[213] Kullananlar: window-vibrancy 0.8.1
+[214] Kullananlar: window-vibrancy 0.8.1
 ----------------------------------------------------------------------------------------------------
 
 SPDXVersion: SPDX-2.1
@@ -12678,7 +12977,7 @@ PackageDownloadLocation: git+ssh://github.com/tauri-apps/window-vibrancy.git
 Creator: Person: Daniel Thompson-Yvetot
 
 ----------------------------------------------------------------------------------------------------
-[214] Kullananlar: windows 0.62.2, windows-collections 0.3.2, windows-core 0.62.2, windows-future
+[215] Kullananlar: windows 0.62.2, windows-collections 0.3.2, windows-core 0.62.2, windows-future
     0.3.2, windows-implement 0.60.2, windows-interface 0.59.3, windows-link 0.2.1, windows-numerics
     0.3.1, windows-registry 0.6.1, windows-result 0.4.1, windows-strings 0.5.1, windows-sys 0.59.0,
     windows-sys 0.61.2, windows-targets 0.52.6, windows-threading 0.2.1, windows-version 0.1.7,
@@ -12888,7 +13187,7 @@ Creator: Person: Daniel Thompson-Yvetot
    limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[215] Kullananlar: windows 0.62.2, windows-collections 0.3.2, windows-core 0.62.2, windows-future
+[216] Kullananlar: windows 0.62.2, windows-collections 0.3.2, windows-core 0.62.2, windows-future
     0.3.2, windows-implement 0.60.2, windows-interface 0.59.3, windows-link 0.2.1, windows-numerics
     0.3.1, windows-registry 0.6.1, windows-result 0.4.1, windows-strings 0.5.1, windows-sys 0.59.0,
     windows-sys 0.61.2, windows-targets 0.52.6, windows-threading 0.2.1, windows-version 0.1.7,
@@ -12918,7 +13217,7 @@ Creator: Person: Daniel Thompson-Yvetot
     SOFTWARE
 
 ----------------------------------------------------------------------------------------------------
-[216] Kullananlar: wry 0.57.1
+[217] Kullananlar: wry 0.57.1
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -12944,7 +13243,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[217] Kullananlar: wry 0.57.1
+[218] Kullananlar: wry 0.57.1
 ----------------------------------------------------------------------------------------------------
 
 SPDXVersion: SPDX-2.1
@@ -12969,7 +13268,7 @@ PackageDownloadLocation: git+ssh://github.com/tauri-apps/wry.git
 Creator: Person: Daniel Thompson-Yvetot
 
 ----------------------------------------------------------------------------------------------------
-[218] Kullananlar: zerocopy 0.8.63, zerocopy-derive 0.8.63
+[219] Kullananlar: zerocopy 0.8.63, zerocopy-derive 0.8.63
 ----------------------------------------------------------------------------------------------------
 
                                  Apache License
@@ -13175,7 +13474,7 @@ Creator: Person: Daniel Thompson-Yvetot
    limitations under the License.
 
 ----------------------------------------------------------------------------------------------------
-[219] Kullananlar: zerocopy 0.8.63, zerocopy-derive 0.8.63
+[220] Kullananlar: zerocopy 0.8.63, zerocopy-derive 0.8.63
 ----------------------------------------------------------------------------------------------------
 
 Copyright 2019 The Fuchsia Authors.
@@ -13204,7 +13503,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ----------------------------------------------------------------------------------------------------
-[220] Kullananlar: zerocopy 0.8.63, zerocopy-derive 0.8.63
+[221] Kullananlar: zerocopy 0.8.63, zerocopy-derive 0.8.63
 ----------------------------------------------------------------------------------------------------
 
 Copyright 2023 The Fuchsia Authors
@@ -13234,7 +13533,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[221] Kullananlar: zeroize 1.9.1
+[222] Kullananlar: zeroize 1.9.1
 ----------------------------------------------------------------------------------------------------
 
 Copyright (c) 2018-2026 The RustCrypto Project Developers
@@ -13264,7 +13563,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[222] Kullananlar: zlib-rs 0.6.8
+[223] Kullananlar: zlib-rs 0.6.8
 ----------------------------------------------------------------------------------------------------
 
 (C) 2024 Trifecta Tech Foundation
@@ -13288,7 +13587,7 @@ freely, subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 
 ----------------------------------------------------------------------------------------------------
-[223] Kullananlar: zune-core 0.5.3, zune-jpeg 0.5.15
+[224] Kullananlar: zune-core 0.5.3, zune-jpeg 0.5.15
 ----------------------------------------------------------------------------------------------------
 
 MIT License
@@ -13314,7 +13613,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ----------------------------------------------------------------------------------------------------
-[224] Kullananlar: zune-core 0.5.3, zune-jpeg 0.5.15
+[225] Kullananlar: zune-core 0.5.3, zune-jpeg 0.5.15
 ----------------------------------------------------------------------------------------------------
 
 zlib License
