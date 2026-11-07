@@ -539,7 +539,7 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 - **Sürüm notları:** uygulamada **Ayarlar › Hakkında › Sürüm notları**; ayrıca [CHANGELOG.md](CHANGELOG.md) ve
   [Sürümler](https://github.com/tolgacodes-dev/ajandam/releases)
 
-**Yakında:** Linux sürümü üzerinde çalışılıyor; Android'de fiş okuma ve yedek klasörü sonraki sürümlerde.
+**Yakında:** Linux sürümü.
 
 ## Lisans
 
