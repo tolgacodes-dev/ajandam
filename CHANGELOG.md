@@ -3,6 +3,86 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [4.7.0] – 2026-11-08
+
+Ajandam 4.7'de telefon ve bilgisayar aynı Wi-Fi'deyken bulut klasörü olmadan birbirine doğrudan bağlanıp eşitleniyor. Hesap kartların gerçek kart gibi görünüyor: çip, güvenlik deseni, yüzey ve arkası; Cüzdan görünümünde üst üste. Afişin, biletin ya da faturanın fotoğrafından etkinlik ve ödeme ekleniyor. Ajanda'ya yıl görünümü, okul takvimi ve geri sayım geldi; harcama yapmadığın günler sayılıyor; kart limitinin ne kadarını kullandığın ve yıllık kart ücretinin ne zaman geleceği söyleniyor. Öne çıkanlar:
+
+- **Wi-Fi'de eşitleme:** eşleştirdiğin cihazlar aynı ağdayken birbirine doğrudan ve uçtan uca şifreli bağlanıp kayıtlarını ve eklerini birleştirir; bulut klasörü gerekmez. Bilgisayarda Ayarlar › Veriler ve yedek › Wi-Fi'de eşitleme › Cihaz eşleştir… karekod gösterir, telefon bir kez okutur; sonra telefon Ajandam'ı açınca ve öne gelince eşitlenir.
+- **Gerçek kart gibi hesap kartları:** banka ve tür, çip, güvenlik deseni, son 4 hane ve kart ağı yazısı; yüzey parlak, mat, metal ya da cam. Kredi kartında kullanım şeridi; seçili kartın Arkası'nda kesim, son ödeme, limit, IBAN. Görünümler: Yatay kart, Cüzdan (üst üste) ve Dikey kart; Otomatik ekrana ve tutuşa göre seçer.
+- **Fotoğraftan etkinlik ve ödeme:** afişin, biletin, randevu mesajının ya da faturanın fotoğrafından (fiş okuyabilen cihazlarda) ya da PDF'inden etkinlik ya da ödeme penceresi dolu açılır: gün, saat, başlık, yer; son ödeme günü, tutar ve kurum. Kaydetmeden hiçbir şey eklenmez, fotoğraf hiçbir yere gönderilmez.
+- **Ajanda › Yıl:** yılın 12 ayı tek sayfada; etkinlik, yapılacak ve ödeme günleri noktalı, tatiller renkli, harcamasız günler işaretli; üstte yılın özeti, altta resmî tatillerin listesi.
+- **Okul takvimi:** Millî Eğitim Bakanlığının 2026–2027 çalışma takvimi (okulların açılışı, ara tatiller, yarıyıl, karne günleri) Ajanda'da isteğe bağlı katman; Ajandama kopyala ile hatırlatma eklenir.
+- **Geri sayım:** etkinliğe ya da yapılacağa "Özet'te geri sayım göster" de: Özet'te kalan gün sayısıyla kart.
+- **Harcamasız günler:** bu dönemde harcama yapmadığın günler, süren seri ve en uzun seri Özet'te; pencerede dönemin takvimi ve aylık hedef; Ajanda'nın ay görünümünde işaret.
+- **Limit kullanımı ve kesimden önce ödeme:** kart durumunda limitin yüzde kaçının kullanıldığı; hesap kesimine 7 gün kala kullanımı %30'a indirecek tutar ve "₺X öde" düğmesi.
+- **Yıllık kart ücreti:** kart ücreti kayıtlarından anlaşılır ya da kart formuna yazılır; 30 ve 7 gün önce sabah özetinde hatırlatılır, kart durumunda sonraki ücretin günü ve ücretsiz karta geçme hakkın.
+- **Hızlı ekleme daha dikkatli:** "500 TL harcama yapmadım" gibi olumsuz cümle kayıt eklemez; "Ali bana 50 borçlu", "Ayşe'ye 300 borcum var" gider değil, Borç ve alacak penceresi dolu açılır.
+- **Asistan aynı kaydı iki kez önermez:** aynı mesajdan çıkan aynı kayıt bir kez önerilir, aynı arama bir kez yapılır; bağlı yapay zeka uygulamaları da onay bekleyen kaydı yeniden ekleyemez.
+- **Dokunmatikte vurgu kalmaz:** dokunulan düğme, kart ya da satır parmağını çekince vurgulu kalmaz.
+- **Daha sağlam birleştirme:** silme izi yazılamayan yedek birleşmiş sayılmaz; yeni sürümün yedeğindeki alanlar eski sürüme geçişte kaybolmaz.
+- **iPhone ve iPad:** gider, gelir, etkinlik gibi formlar iPhone'da alttan, orta yükseklikte açılır; yukarı çekince büyür, aşağı çekince kapanır; klavye açılınca pencere klavyenin üstüne oturur. Belge tara açılırken çökmüyor; faturanın karekodu daha iyi okunuyor.
+- **Android:** Kamera uygulamasıyla okunan eşleştirme karekodu Ajandam'ı açar; faturanın yoğun karekodu da okunur.
+
+---
+
+**Wi-Fi'de eşitleme**
+- Eşleştirme: bilgisayarda Ayarlar › Veriler ve yedek › Wi-Fi'de eşitleme › Cihaz eşleştir… karekod gösterir; telefonda Bilgisayarla eşleştir… karekodu okutur. Bir telefon birden çok bilgisayarla eşleşebilir; eşleşen cihazlar listede, istenince kaldırılır. Karekod tek kullanımlıktır; yalnızca yerel ağ adresleri kabul edilir.
+- Ne zaman: bilgisayar Ajandam açıkken dinler; telefon Ajandam'ı açınca, öne gelince ve Şimdi eşitle'de eşleşen bilgisayarlara sırayla bağlanır. Kayıtlar yalnızca iki cihaz arasında, uçtan uca şifreli gider; hiçbir sunucudan geçmez. Kilitli cihaz eşitlenmez.
+- Birleştirme kendiliğinden eşitlemedeki gibi: iki cihazda da değişen kayıt, çok silme ya da daha yeni sürümün yedeği Özet'te şeritte sorulur; İncele… ile bakar, Sonra ile ertelersin. Eksik ekler de alınır.
+- Dışarıdan gelen eşleştirme bağlantısı (başka uygulamadan, tarayıcıdan) önce sorulur: Eşleştir'e basmadan bağlanılmaz. Tüm verileri sil eşleşmeleri de kaldırır.
+- **Mac:** menü çubuğunda açıkken pencere kapalı da dinler.
+- **iPhone ve iPad:** ilk bağlanışta yerel ağ izni sorulur; izin verilince bağlantı beklemeden kurulur.
+- **Android:** Kamera uygulamasıyla okunan eşleştirme karekodu Ajandam'ı açar.
+
+**Hesaplar**
+- Kartın yüzü: üstte banka ve tür, kredi kartında ve banka hesabında çip, öbür hesaplarda türün filigranı; ortada etiket ve tutar; altta hesabın adı ve son 4 hane. Kart ağı (Visa, Mastercard, Troy, American Express) düz yazıyla; dövizli hesapta para birimi. Arkada güvenlik deseni, her kartta başka bir parçası.
+- Yüzey: parlak (varsayılan), mat, metal ya da cam; hesap formunda Yüzey ve Kart ağı, önizleme kartın kendisi. Kartın tam numarası, son kullanma tarihi ve güvenlik kodu hiçbir zaman istenmez.
+- Kredi kartında ve ek hesapta altta kullanım şeridi: %30'dan sarı, %70'ten kırmızı. Kartın altındaki notta kredi kartında kullanılabilir tutar ve son ödeme, ek hesapta kalan, dövizde ve altında canlı fiyat, kredide taksit.
+- Arkası: seçili kredi kartında ve banka hesabında kart döner; manyetik şerit, imza bandında hesabın adı; kredi kartında hesap kesimi, son ödeme, limit, kullanılabilir, kullanım ve asgari ödeme; bankada IBAN (tutarlar gizliyken maskeli) ve ek hesap.
+- Görünümler: Yatay kart (ızgara), Cüzdan (üst üste; seçili kart açık, genişte yanında hesabın ayrıntısı, darda dokununca hesabın sayfası) ve Dikey kart. Otomatik: geniş ekranda Cüzdan, dar ekranda yan tutuşta Yatay, dik tutuşta Dikey. Hesaplar'ın başlığından, Ayarlar › Görünüm › Hesap kartları'ndan ya da komut paletinden sabitlenir.
+- Dar ekranda Yatay ve Dikey kaydırılan şerit: ortadaki kart seçili, altında noktalar; Özet'te yatay şerit.
+- Kart durumu: "Limit ₺X · kullanım %N" ve çubuk; kesime 7 gün kala kullanım %30 ya da üstündeyse "Kesimden önce ₺X ödersen limit kullanımı %30 olur; sonraki ekstre de o kadar az gelir" ve "₺X öde" (ödeme penceresi o tutarla açılır). Limit uyarısı %80'de.
+- Yıllık kart ücreti: kartın "yıllık kart ücreti", "kart aidatı" gibi gider kaydından anlaşılır ya da kart formunda Yıllık kart ücreti ve Son alındığı tarih yazılır; sonraki ücret bir yıl sonra. 30 ve 7 gün önce sabah özetinde ("İstemiyorsan bankandan ücretsiz karta geçmeyi iste"), sabah özeti kapalıysa ayrı bildirim; Ayarlar › Bildirimler › Kart ücreti hatırlatması. Kart durumunda sonraki ve son ücret; 30 gün kala hakların: bankalar yıllık ücret almadığı bir kart sunmak zorunda, ücret artışı en az 30 gün önce bildirilir ve 15 gün içinde vazgeçilebilir.
+
+**Ajanda**
+- Yıl görünümü: Ajanda'nın dördüncü görünümü. Her ay küçük takvim; günlerde etkinlik, yapılacak ve ödeme noktaları (gecikmiş ödeme kırmızı), takvim katmanlarının olayları kendi renginde; resmî tatiller ve arifeler renkli, bugün ve seçili gün işaretli, harcamasız günler halkalı. Ayın adı o ayı, gün o günü açar. Üstte yılın özeti (etkinlik, yapılacak, ödeme ve tatil günü sayısı), altta lejant ve tatillerin listesi; oklar bir yıl, "Bu yıl" bugüne.
+- Okul takvimi: uyum eğitimi, okulların açıldığı gün, ara tatiller, dönem sonu ve karne, yarıyıl tatili, ikinci dönem ve ders yılı sonu (2026–2027). Ay ve hafta görünümünde şerit ve çip, Liste'de ve gün panelinde satır; olayın penceresinde tatilin süresi ve Ajandama kopyala (kopyalanana hatırlatma ve geri sayım eklenir). Açmak için Ajanda'nın çip satırında "+ Okul takvimi", Ayarlar › Takvim ya da komut paleti. Sonraki ders yılları güncelleme beklemeden gelir.
+- Geri sayım: etkinlik ve yapılacak formunda "Özet'te geri sayım göster"; Özet'te Geri sayım bölümü, en çok dört kart, en yakını önde ("Bugün", "Yarın", "12 gün", çok günlüde "Sürüyor"); tekrarlayanda sıradaki tekrar. Kart o günün kaydını açar; işaretli kayıt yokken bölüm görünmez.
+- Fotoğraftan etkinlik: yeni Etkinlik penceresinin başında Fotoğraftan doldur (fiş okuyabilen cihazlarda; PDF her yerde); "+" menüsünde Fotoğraftan etkinlik ya da ödeme ve komut paletinde. Gün ve aralık ("28 Kasım – 2 Aralık"), saat (kapı açılışı değil), başlık (afişte en büyük yazı, randevuda doktor), yer. Açık pencerede yalnızca boş alanlar yazılır.
+- Paylaşılan uzun randevu ya da fatura mesajı hızlı eklemede "Etkinlik ekle: …" / "Ödeme ekle: …" satırıyla pencereyi dolu açar.
+
+**Para**
+- Harcamasız günler: bugünkü harcama payının altında satır; pencerede dönemin kutuları ve takvimi, aylık hedef (1–31 gün), "Ajanda'nın ay görünümünde işaretle" ve "Özet'te gösterme". Düzenli giderler, bekleyen ödemeler, abonelik çekimleri, taksitlerin ilkinden sonrakiler, kredi faizi, transfer ve iade harcama sayılmaz. Ayarlar › Görünüm › Harcamasız günler.
+- Faturadan ödeme: Yeni ödeme penceresinin başında Faturadan doldur; eklenen faturaya da öneri. Son ödeme günü, ödenecek tutar (KDV, asgari ve gecikme değil) ve kurum (elektrik, doğal gaz, su, internet, telefon, aidat, sigorta kategorisiyle); faturanın görüntüsü ödemenin eki olur.
+- Fiş ya da fatura eklerken faturanın karekodu da okunur; karekod varsa tahmin yerine karekoddaki tutar ve tarih yazılır. Biçimi kılavuzdan sapan e-Arşiv karekodları da okunur.
+
+**Hızlı ekleme ve Asistan**
+- "500 TL harcama yapmadım", "fatura ödenmedi" gibi olumsuz cümle kayıt eklemez, nedeni söylenir. "Alacağım var", "Ali bana 50 borçlu", "Ayşe'ye 300 borcum var", "borç aldım": gider değil, Borç ve alacak penceresi yön, tutar, kişi ve tarihle açılır. Her yerden hızlı ekleme, Özet'in kutusu, komut paleti ve Yazarak ekle'de.
+- Asistan aynı mesajdan çıkan aynı kaydı iki kez önermez (bilgisi çok olan kalır), aynı aramayı bir kez yapar; modelin "Diğer" dediği kategori açıklamadan anlaşılıyorsa o yazılır; "bugün", "dün", "yarın" bugüne göre.
+- Bağlı yapay zeka uygulamaları: aynı kaydı ekleyen ikinci istek onay beklerken yeni öneri açmaz, bekleyen öneri söylenir.
+
+**iPhone ve iPad**
+- iPhone'da formlar alttan: gider, gelir, transfer, ödeme, etkinlik, yapılacak, hesap gibi pencereler orta yükseklikte açılır; tutamaçtan ya da gövdeden yukarı çekince ve yazı alanına dokununca büyür, aşağı çekince ortaya iner ya da kapanır, az çekilince yerine döner. Klavye açılınca pencere klavyenin üstüne oturur, odaktaki alan görünür kalır. Üç ya da daha çok düğmede Kaydet üstte tam genişlikte. Onaylar ortada kart; Ayarlar ve formsuz pencereler tam ekran.
+- Belge tara açılırken çökmüyor.
+- Karekodu okut: satıcının numarası olmayan karekod atlanır ve "faturanın karekodu değil" denir; yoğun karekod da okunur, dokunulan her durumda okunur. Fiş fotoğrafı ve taranan belge karekodu da okur.
+
+**Android**
+- Faturanın yoğun karekodu da okunur; okunan fatura değilse ne okunduğu ve Yeniden okut.
+
+**Telefon ve tablet**
+- Dokunulan düğme, kart ya da satır parmağını çekince vurgulu kalmaz; fare ve iz yüzeyinde vurgu eskisi gibi.
+- Dokunmatik klavyede Enter'ın adı yerine göre: komut paletinde "git", Yazarak ekle'de "bitti", Ayarlarda ara'da "ara", Asistan'da "gönder".
+- Bankadan gelen bildirimin kimliği kaydedilen işlemde: kuyruktan silinemeyen bildirim yeniden açılışta gösterilmez; eski listeden Ekle, Düzenle ya da formdan kaydetme aynı harcamayı ikinci kez yazmaz.
+
+**Yedek ve birleştirme**
+- Bunu birleştir… ve karekodla aktarım: yalnızca silme izi getiren yedeğin izleri yazılamazsa yedek birleştirilmiş sayılmaz, neden ve Yeniden dene gösterilir; önceden üçüncü cihazın yedeğinden silinmiş kayıt geri gelebiliyordu.
+- Sürümler arası: gelen kayıtta hiç olmayan alan buradaki hâlinden kalır; yeni sürümün yedeğini alan eski sürüm alanları saklar. Seçerek geri yükle seçilen hâli olduğu gibi getirir.
+
+**Düzeltmeler**
+- Hızlı eklemede olumsuz cümleler ve borç–alacak cümleleri gider olarak yazılıyordu.
+- Fiş ya da fatura eklerken "tutar bulunamadı" yalnızca karekod da okunamayınca söylenir.
+- **Android:** eşit aralıklı yazıdaki tutarlarda ₺ işareti kutucuk olarak görünüyordu.
+
 ## [4.6.0] – 2026-11-07
 
 Ajandam 4.6'da Ayarlar yeni penceresinde açılıyor; notlar tarihe göre gruplanıyor ve yazarken biçimleniyor. Ajanda'ya projeler ve bir kayıt için birden fazla hatırlatma geldi; Özet'in bölümlerini istediğin gibi düzenliyorsun. Nakit akışının senaryoları adıyla kaydediliyor, borç kapatma planı ay ay ödeme planı veriyor ve harcayacağın tutara hangi kartın limitinin yettiğini Ajandam söylüyor. Tabletin ve katlanabilir telefonun geniş ekranında Ajanda, Notlar ve İşlemler iki bölmeli, katlayınca bölmeler katlama çizgisinden ayrılıyor. Yedekten geri yükleme ve birleştirme yarıda kalsa da kayıtların değişmiyor. Öne çıkanlar:
