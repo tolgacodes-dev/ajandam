@@ -3,6 +3,89 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [4.8.0] – 2026-11-10
+
+Ajandam 4.8 bir kararlılık sürümü: yeni özellik yok. 4.7'de görülen kusurlar giderildi ve birkaç görünüm iyileştirildi. Hesap kartları daha okunur ve hesapları daha doğru, eşitleme ve yedek daha sağlam, hızlı ekleme saatleri ve tarihleri daha doğru anlıyor. Öne çıkanlar:
+
+- **Hesap kartları daha okunur:** Otomatik görünüm artık her yerde Cüzdan (yalnızca yan tutulan telefonda Yatay kart). Destede borç, fazla ödeme ve arşiv yazıyla belli; kartın arkasında "Asgari ödeme (%40)" ve son ödeme geçmişse "gecikti" yazar. Banka adıyla hesabın adı aynıysa kartta bir kez yazılır. Ödeme penceresinin başlığı "Kart borcunu öde".
+- **Kart hesapları daha doğru:** limit kullanımı yüzdesi her yerde aşağı yuvarlanır (%80 uyarısı artık zamanında çıkar); iade edilen taksitli alışveriş kartı dolu göstermez; dövizli kartta limit, son ödeme ve asgari ödeme kartın kendi para biriminden okunur; tutarlar gizliyken IBAN da gizlenir.
+- **Eşitlemede ve yedekte kayıp yok:** saati geri olan cihazdaki not değişikliği ezilmez; iki cihazda eklenen hedef katkısı ve borç ödemesi ikisi de kalır; geri alınan değişiklik yeniden yazılır; yavaş Wi-Fi'de büyük yedek her seferinde baştan başlamaz; yedekten dönünce kapatılan aylar gelir; eşleşme dosyası elektrik kesintisinde bozulmaz.
+- **Hızlı ekleme ve takvim daha doğru:** "her ayın 31'i" kısa aylarda ayı atlamaz; geçmişe düşen saat gelecek haftaya yazılır; "gece 12" ve "23:00-01:00" gibi gece yarısını geçen aralık doğru okunur; yaz saatli takvim dosyalarındaki tekrarlar kaymaz.
+- **Görünüm düzeltmeleri:** Asistan'da uzun bağlantı ekranı taşırmaz; grafiklerin eksen yazıları üst üste binmez; çok büyük tutarlar Özet'te ve Borçlar'da taşmaz; notta liste maddesi kırılınca ikinci satır yazının hizasından başlar.
+- **Telefonda ve tablette:** küçük dokunma yerleri büyüdü (sekme kapatma, "tüm gün" çipleri, bütçe önerileri); yan tutulan telefonda İşlemler'in süzgeçleri katlanır; Ajanda'nın görünüm seçimi büyük yazıda ekrana sığar.
+- **iPhone:** Asistan formlar gibi alttan, orta yükseklikte açılır; yazı alanına dokununca ya da soru gönderince büyür. Pencere açılırken arkadaki sayfa kıpırdamaz; pencerenin zemini ekranın altına kadar iner.
+- **Mac:** ekstre ve döküm içe aktarma penceresi tam boyda açılır (önceden gövdesi küçülüyordu).
+- **iPad:** ekstre ve döküm içe aktarma penceresi tam boyda açılır; dikeyde hesap kartı ekranı kaplamaz.
+- **Android:** aynı günün sabah özeti birkaç kez gelmez; Tüm verileri sil, ekrandaki bildirimleri de kaldırır; birden çok dosya paylaşımı daha sağlam.
+
+---
+
+**Hesaplar**
+- Otomatik görünüm: yalnızca yan tutulan telefonda Yatay kart; başka her durumda Cüzdan (tablette ve dar bilgisayar penceresinde de). Dik tutulan küçük telefonda Otomatik artık ekranın yarısını kaplayan dikey kartı açmaz; Dikey kart seçenek olarak duruyor.
+- Kartın yüzünde aynı yazı iki kez görünmez: banka adı yoksa üstte hesabın adı, alttaki ad yalnızca farklıysa yazılır. Uzun hesap adı Cüzdan'da bakiyeyi kartın dışına itmez.
+- Cüzdan'da borç türündeki hesabın tutarı "borç", fazla ödeme "fazla ödeme +" etiketiyle yazılır; arşivlenmiş hesapta yazılı "arşiv" etiketi var; hesap ve kart sayıları yalnızca etkin hesapları sayar. 12'den çok hesapta sayfa noktaları yerine "3 / 38" sayacı.
+- Kartın arkasında "Asgari ödeme (%40)"; son ödeme geçmişse kartın notunda ve arkasında "gecikti". Kartın altındaki not her genişlikte "kullanılabilir" der ("kalan" ekstre borcuyla karışıyordu); sığmazsa iki satıra iner, tutar kırpılmaz. Dikey kartın arkasında satırlar kartın yüksekliğine yayılır.
+- Kart durumunda "Fazla ödeme" satırı; üst satır öbekler arasından kırılır, "1 gecikmiş" ortadan bölünmez. Hesabın kendi işlem listesinde hesabın adı yinelenmez.
+- Kartın parlaması azaldı: açık renkli kartlarda yazı daha okunur.
+- Hesap kartı olması gerekenden uzun çiziliyordu: Cüzdan destesinde kartların aralığı ve bütün görünümlerde kartın oranı düzeldi; geniş ekranda tek sütunlu Cüzdan'daki ve hesap sayfasındaki kart ortalı ve gerçek kart oranında.
+
+**Para**
+- Kullanım yüzdesi her yerde aşağı yuvarlanır: %79,6'da kart "%80" diyor ama %80 uyarısı çıkmıyordu.
+- İade edilen taksitli alışveriş fazla ödeme sayılmıyor, kart dolu görünüyor ve limit uyarısı veriyordu; fazla ödeme artık kullanımdan düşer ve kullanılabilir limite eklenir.
+- Kuru bilinmeyen dövizli kartta limit girilmişken "limitini gir" yazmaz; son ödeme tarihi ve ekstre kalanı kartın kendi para biriminden okunur. Dövizli kartta asgari ödeme ₺ işaretiyle yazılmaz.
+- Asgari ödeme: ilk ayın faiz kademesi dönem borcundan alınır (pencere ve Asistan aynı hesabı kullanır); ödenmiş ekstrede asgari ödeme istenmez; faiz kademesi yazısı oranla çelişmez.
+- Tutarlar gizliyken hesap ayrıntısında ve kopyalama bildiriminde IBAN maskelenir.
+
+**Eşitleme ve yedek**
+- Açık notta, saati geri olan cihazdan gelen değişiklik sessizce eziliyordu: birleştirme artık zamana değil, o sürümün görülüp görülmediğine bakar. Saati geri olan cihazda silinen kayıt öbür cihazdan geri gelmez.
+- İki cihazda aynı hedefe katkı ya da aynı borca ödeme eklenince biri kayboluyor, bağlı transferi ise geliyordu: bu alt kayıtlar artık kimliğe göre birleşir.
+- Eski haline döndürülen değişiklik eşitlemede ezilmez. Bir cihazda değişip öbürüne giden kayıt orada yeniden değişince her eşitlemede yersiz çakışma sorulmaz. Silinen düzenli tekrar, öbür cihaz yeniden üretince geri gelmez.
+- Wi-Fi oturumunun süresi son iletiden sayılır: yavaş bağlantıda büyük yedek her oturumda baştan başlıyor, hiç bitmiyordu.
+- Eşitleme sürerken deneme kipine geçilirse öbür cihazın kayıtları örneklerin arasına girmez.
+- Yedekten geri yüklemede ve karekodla aktarımda ay başlangıcı ile kapatılan aylar gelir; Geri al önce kapanışı geri alır.
+- Eşleşme dosyası güvenli yazılır; okunamayan dosya silinmez, kenara alınır. Elektrik kesintisinden sonra bütün eşleşmeler gidebiliyordu.
+
+**Hızlı ekleme ve takvim**
+- "Her ayın 31'i" ve "ayın son günü" kısa ayda bu ayı atlıyordu: seri bu ayın son gününden başlar, 31 günlü ayda 31'inde çıkar. Düzenli kayıt formu günü her kaydedişte 30'a kaydırmaz.
+- Pazartesi 10:00'da "pazartesi 9:00 toplantı" geçmişe yazılmaz, gelecek haftaya yazılır. Tarihsiz "gece 12" yarının 00:00'ı olur.
+- "23:00-01:00", "nöbet 20-8": saat okunuyor, bitiş ertesi güne düşer (önceden kayıt tüm gün oluyordu).
+- "Öğleden sonra 3 toplantı" 3 TL gider olmaz. Olumsuz cümle kuralı ad içindeki sözcükleri reddetmez ("Çıkmaz Sokak kafe 250").
+- Belgeden okuma: "8:30 PM" sabaha düşmez; kuruşsuz tutarlar okunur.
+- Yaz saati olan bölgeden ya da başka saat diliminden gelen tekrarlı takvim etkinliği doğru güne ve saate düşer; yılın yarısında bir saat kaymaz.
+
+**Görünüm**
+- Asistan: cevaptaki uzun bağlantı ekranın dışına itmez, uzun sözcük ve sayı sarar.
+- Ekstre içe aktarmada ve notta küçük seçim kutusu yazıyla büyür.
+- Raporlar'da eksen yazıları üst üste binmez; seçili ay küçük çıkmaz.
+- Çok büyük tutarlar Özet'te ve Borçlar'da taşmaz. Notta liste maddesi kırılınca ikinci satır yazının hizasından başlar.
+
+**Telefon ve tablet**
+- Dokunmatikte sekme kapatma, "tüm gün" çipleri, bütçe önerileri ve Özet satır başlıkları en az 44 piksellik dokunma alanı. Kartın "Arkası" ve geri düğmeleri büyüdü.
+- Yan tutulan telefonda İşlemler'in süzgeçleri katlanır (ilk ekranda kayıt görünmüyordu); sekme şeridi ve durum çubuğu içeriğe yer bırakır.
+- Ajanda'nın görünüm seçimi büyük yazıda ekranın dışına taşmaz; seçim kendi içinde yana kayar.
+- Notun biçim araç çubuğu kesilmez; dar telefonlarda "⋯" düğmesi ikinci satıra düşmez.
+- Bağlantı düğmeleri vurgu renginde; ekstre geçmişi tablosu dar ekrana sığar.
+
+**iPhone ve iPad**
+- Asistan iPhone'da alttan, orta yükseklikte açılır; klavye kendiliğinden açılmaz, yazı alanına dokununca, konuşma kaydırılınca ya da soru gönderilince büyür. Yapay zekanın adı tek satırda; "Yeni sohbet" dar ekranda yalnızca simge. Apple Intelligence hazır olduktan sonra Asistan "yapay zeka yok" demez.
+- Pencere açılırken arkadaki sayfa kıpırdamaz: art arda açılan pencerelerde ve sayfa görünmezken açılanlarda da (Ara, "Yazarak ekle", kestirme).
+- Pencerenin zemini ekranın altına kadar iner; düğmeler ev göstergesinin alanına inmez, pencere erken bitmez. iPad'de klavye açıkken ortadaki pencere klavyenin üstünde.
+- Kilitlenince ChatGPT ile giriş sayfası açık kalır, giriş yarıda kesilmez; süren "Dosyalar'a kaydet" ve klasör seçimi vazgeçildi sayılır.
+- Pencere açıkken kilitlenince kilit açıldığında sayfa boş kalmaz. Kilitliyken basılan bildirim düğmelerinden hepsi yapılır (yalnızca sonuncusu yapılıyordu).
+- Ekstre ve döküm içe aktarma penceresi iPad'de tam boyda açılır. iPad dikeyde hesap kartı ekranı kaplamaz. Asistan'ın konuşması sonuna yapışık: son mesaj yazı alanının altında yarım kalmaz.
+- Kamera ve yerel ağ izin açıklamaları Wi-Fi'de eşitlemeyi de söyler.
+
+**Mac**
+- Ekstre ve döküm içe aktarma penceresinin içi küçülüp boş görünüyordu: pencere artık içeriğine göre açılır.
+- Pencere açıkken kilitlenince kilit açıldığında sayfa boş kalmaz. Kilitliyken basılan bildirim düğmelerinden hepsi yapılır.
+- Asistan'ın konuşması sonuna yapışık: son mesaj yazı alanının altında yarım kalmaz; yukarı kaydırınca bırakılır.
+- Kamera ve yerel ağ izin açıklamaları Wi-Fi'de eşitlemeyi de söyler.
+
+**Android**
+- Aynı günün sabah özetinin birkaç sürümü aynı anda gelebiliyordu: içeriği değişen bildirim artık eskisinin yerine geçer, vakti çoktan geçmiş eski bildirimler gelmez.
+- Tüm verileri sil, kayıtlarla birlikte kurulu hatırlatmaları ve bildirim alanındaki bildirimleri de kaldırır. 4.7'den kalan eski bildirimler 4.8 ilk açıldığında temizlenir.
+- Ajandam'a birlikte paylaşılan çok sayıda dosya daha güvenilir alınır.
+
 ## [4.7.0] – 2026-11-08
 
 Ajandam 4.7'de telefon ve bilgisayar aynı Wi-Fi'deyken bulut klasörü olmadan birbirine doğrudan bağlanıp eşitleniyor. Hesap kartların gerçek kart gibi görünüyor: çip, güvenlik deseni, yüzey ve arkası; Cüzdan görünümünde üst üste. Afişin, biletin ya da faturanın fotoğrafından etkinlik ve ödeme ekleniyor. Ajanda'ya yıl görünümü, okul takvimi ve geri sayım geldi; harcama yapmadığın günler sayılıyor; kart limitinin ne kadarını kullandığın ve yıllık kart ücretinin ne zaman geleceği söyleniyor. Öne çıkanlar:
