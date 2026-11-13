@@ -3,6 +3,100 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [4.9.0] – 2026-11-13
+
+Ajandam 4.9'da silinen kayıtlar 30 gün boyunca geri getirilebiliyor, hızlı ekleme "ödeyeceğim" diyen cümleyi gider yazmak yerine ödeme hatırlatması olarak öneriyor, bütçe bekleyen ödemeleri ayrı gösteriyor ve geri yüklemeden önce yedeğin içinde ne olduğu görünüyor. Özet net varlığınla açılıyor, cam görünümde yazılar daha okunur, telefonda Ayarlar yeniden düzenlendi. Para hesaplarında, ödemelerde, Ajanda'da ve yedekte bulunan kusurlar giderildi. Öne çıkanlar:
+
+- **Son silinenler:** silinen işlem, ödeme, ajanda kaydı, borç ve hedef 30 gün bu cihazda durur; Ayarlar › Veriler ve yedek › Son silinenler'den bağlı kayıtlarıyla birlikte geri gelir. Öbür cihazda silindiği için eşitlemede silinen kayıt da orada durur.
+- **Yazarak ödeme hatırlatması:** "Kirayı ayın 5'inde ödeyeceğim 12.000" ya da "elektrik faturasını ödemem lazım 800" gider yazmaz, bekleyen ödeme olarak önerilir; istersen tek tuşla gider olarak eklenir. Soru cümlesi ("Hangi karta 500 TL ödeyeyim?") kayıt oluşturmaz.
+- **Bütçede bekleyen ödemeler:** kategori satırında harcanan, bekleyen ödeme ve bekleyenlerden sonra kalan ayrı görünür.
+- **Bu yedekte ne var:** geri yüklemeden önce yedeğin tarihi, sürümü ve içindeki hesap, işlem, ödeme, ajanda kaydı, not ve ek sayıları bugünkü sayılarla yan yana.
+- **İki kez ödenen ödeme uyarısı:** aynı ödeme iki cihazda "Ödendi" yapıldıysa Ajandam uyarır; hangi giderin kalacağını sen seçersin, hiçbir şey kendiliğinden silinmez.
+- **Özet net varlıkla açılır:** birincil sayı net varlık, "bu ay kalan" ikinci; kart her genişlikte en üstte, telefonda ilk ekranda.
+- **Daha okunur, daha kolay dokunulur:** cam görünümde ve hesap kartlarında yazı kontrastı arttı, dokunma yerleri büyüdü, bir ekranda tek vurgulu düğme var; pencere boyutu değişince açık kayıt ve yazdığın alan yerinde kalır.
+- **Kaydedilmedi · Geri getir:** değişiklik varken kapanan form onay sormaz; bildirimdeki "Geri getir" formu yazdıklarınla birlikte geri açar.
+- **Bildirimler:** bildirime dokununca ilgili kayıt açılır. "Bildirimlerde ayrıntılar" PIN olmadan da kapatılabilir; kapalıyken bildirim tutar ve ad yazmaz.
+- **Ajanda:** gece yarısında biten etkinlik her yerde aynı görünür; hızlı eklemede süre yazılabilir ("23:00 1 saat", "90 dk").
+- **Para hesapları daha doğru:** dövizli kayıtta yarım kuruş kayması, borca bağlı transferin silinmesi, art arda "Ödendi", kısmi ödemenin kalanı ve kapalı aydaki tutarsızlıklar giderildi.
+- **Telefonda Ayarlar:** bölüm sayfası yeniden düzenlendi, "Son yedek" kendi düğmesi, arama yazım hatasını hoş görür.
+- **Windows:** yedek ve ek dosyaları yazılırken elektrik kesilirse yarım dosya kalmaz.
+- **Android:** yedek ve ek dosyaları yazılırken elektrik kesilirse yarım dosya kalmaz.
+
+---
+
+**Son silinenler**
+- Silinen işlem (taksitleri ve bölünmüş parçalarıyla), ödeme, ajanda kaydı, borç ya da alacak (ödeme satırları ve bağlı transferleriyle), hedef (katkılarıyla) ve düzenli kayıt 30 gün durur. Ayarlar › Veriler ve yedek › Son silinenler: tarihe göre liste, arama, Geri getir, Kalıcı sil, Hepsini kalıcı sil. İşlemler'in "…" menüsünden de açılır. Önceden "Geri al" yalnızca birkaç saniye görünüyordu; sonrası için yedek gerekiyordu.
+- Geri getirilen kayıt bağlı kayıtlarıyla gelir: ödeme ve gideri, borç ve transferi, hedef ve katkısı. Bakiye, borç kalanı, hedefte biriken ve bütçe silmeden önceki haline döner. Tek Geri al geri getirmeyi geri alır.
+- Eşitlemede bir cihazdaki silme, öbür cihazda henüz eşitlenmemiş bir değişikliği de götürebiliyordu. Silinen içerik artık o cihazın Son silinenler'ine düşer ve bildirim söyler: "3 kayıt öbür cihazda silindiği için silindi · Son silinenler". Geri getirilen kayıt öbür cihazlara da döner.
+- Kapatılmış aydaki kayıt geri gelmez (ay önce açılır); hesabı silinmiş kayıtta hesap sorulur; ödeme bu arada başka bir giderle ödendiyse eski gider ayrı gider olarak gelir.
+- Geri gelen düzenli kayıt, silindiği sürede geçen dönemleri toplu üretmez; geri getirildiği güne düşen dönem üretilir.
+- Son silinenler yalnızca bu cihazda durur: eşitlemeye, Yedek indir'e ve arşive girmez. Tüm verileri sil onu da siler; PIN kilidi açılmadan görünmez; tutarlar gizliyse gizlidir. Silinen kaydın eki, kayıt Son silinenler'den çıkana kadar silinmez.
+
+**Hızlı ekleme ve Asistan**
+- Gelecek zaman ve gereklilik cümlesi ("ödeyeceğim", "ödemem lazım", "yatırmam gerek") gider yazmaz: ön izleme "Ödeme hatırlatması" der, Tab ya da dokunuşla "Gider olarak ekle" seçilir. Geçmiş zaman cümlesi ("ödedim") gider kalır. Özet satırı, komut paleti, her yerden hızlı ekleme ve Asistan aynı sonucu verir.
+- Aynı adda bekleyen ödeme varsa yenisi açılmaz: "Kira zaten Ödemeler'de" der ve ödemeyi açar. Başkasının ödemesi ("Ali kirayı ödeyecek 12000") kayıt oluşturmaz; bildirimden hatırlatma eklenebilir.
+- Soru işareti, soru eki ("ödesem mi") ya da soru sözcüğü olan cümle kayıt olmaz: "Soru gibi: bir şey eklenmedi". İşyeri ve ürün adı soru sayılmaz ("Kim market 250").
+- Yüklemi "iptal" olan cümle ("Market 250 iptal") gider yazmaz; "iptal ücreti 50" gider. "Kart ücreti 50", "otopark ücreti 40" maaş geliri sayılmaz.
+- Süre yazılabilir: "23:00 1 saat", "90 dk", "yarım saat", "1 saat 30 dk".
+- Asistan, soru ya da olumsuz cümlede para ekleyen bir işlem önermez.
+
+**Bütçe ve ödemeler**
+- Bütçede kategori satırı "₺900 harcandı · ₺500 bekleyen ödeme" der ve bekleyenlerden sonra kalanı gösterir. Bekleyen toplamı Ödemeler'deki "Bu ay ödenecek" ile aynıdır; bekleyen ödeme günü gelmeden harcanana yazılmaz. Dönem maaş gününden başlıyorsa satır dönemi söyler.
+- Kısmi ödeme: 1.000 liranın 600'ü ödenip gider silinince hem 1.000'lik ödeme hem 400'lük kalan bekliyordu. Gideri silen bütün yollar aynı kuralı izler; bekleyen ile ödenenin toplamı her zaman ilk tutardır ve bildirim ne olduğunu söyler.
+- İki kez ödenmiş ödeme: "Kira iki kez ödenmiş görünüyor" uyarısı bildirim şeridinde, Ödemeler satırında ve eşitleme bildiriminde çıkar. "Düzelt…" kalacak gideri sordurur (tek Geri al); "İkisi de doğru" uyarıyı kalıcı kapatır.
+- Tam ödemenin gideri düzenlenince ödemenin ödenen tutarı ve günü de güncellenir: takvim, Ödemeler ve Raporlar aynı sayıyı verir.
+- Tutarı tahmini olan ödeme bildirimden ya da Haftayı kapat'tan sormadan yazılmaz: "Ödendi" penceresi tutar seçili açılır.
+- Aramada proje: komut paleti ve İşlemler araması proje adını tarar; kaydın projesi satırda görünür.
+
+**Para**
+- Dövizli kaydın TL karşılığı yarım kuruşu aşağı yuvarlayabiliyordu ve iade başka hesaplanıyordu. Kayıt, hesabın TL değeri, kart borcu, net varlık, iade, düzenli kayıt ve hızlı ekleme artık aynı kuruşu verir.
+- Borca bağlı transfer İşlemler'den silinince ya da düzenlenince borç kaydındaki ödeme satırı da güncellenir; kapanmış borç yeniden açılır ve bildirim bunu söyler; tek Geri al ikisini birlikte getirir. Kalanı aşan tutar formda reddedilir.
+- "Ödendi" art arda gelince (liste, pencere, bildirim düğmesi) tek gider yazılır.
+- Tek taksit düzenlenince plan toplamı taksitlerin toplamından hesaplanır. Arşivlenmiş kartta borç kaldıkça "yalnız asgari ödendi" uyarısı da gelir (arşivli kart hiç sayılmıyordu).
+- Kapatılmış ay: bağlı transferi kapalı aya düşen borç ödemesi, hedef katkısı, kişi silme ve harcama bölüşme yarım kayıt bırakmadan reddedilir; kapalı ayda açılmış borcun vadesi ve açıklaması düzenlenebilir.
+
+**Ajanda**
+- Ertesi günün 00:00'ında biten etkinlik her yerde aynı: ekranda bitiş "00:00", süre tam, takvim dosyasına aktarılıp geri alınınca kayıt aynı. Formda bitiş başlangıçtan önceyse ertesi gün sayılır ve "ertesi gün" notu görünür.
+- Hafta görünümünde gece yarısını geçen kısa etkinlik iki günde de görünür. Sabah özeti ikinci sabah "dün 23:30–04:15" der.
+- Bildirime dokununca ilgili ajanda kaydı ya da ödeme açılır. Ertelenen hatırlatma, kayıt başka güne taşındıysa gelmez.
+- "Tüm seri" kaydırılınca "yapıldı" işaretleri doğru tekrarlarda kalır (yapılmamış tekrar yapılmış görünmez); tek Geri al eski hale döner.
+
+**Yedek ve veriler**
+- Yedekten geri yüklerken dosya seçilince yedeğin tarihi, sürümü ve içerik sayıları bugünkü sayılarla birlikte görünür. Boş yedek "Bu yedek boş" der; yedekteki her şey zaten varsa "yüklenecek bir şey yok". Şifreli yedekte özet şifre girildikten sonra görünür.
+- 3.8, 4.2, 4.5 ve 4.7 yedeklerinden geri yükleme kayıt sayılarını, tutar toplamlarını, bakiyeleri, hedef katkılarını, borç ödemelerini, notları ve ekleri korur; yarıda kesilen geri yükleme toparlanır.
+- Deneme kipine girerken yatırım geçmişi sıfırlanır (gerçek veriden iz kalıyordu).
+- Kayıtlar okunamadığında Hesaplar'a dokunmak hiçbir şey yapmıyordu; artık açılır.
+
+**Ayarlar**
+- Telefon bilgisayarla eşleşmişken kart "yalnızca bu telefonda" demez: "Kayıtların bu telefonda; ‹bilgisayar› ile eşitlenir". Karttaki "Son yedek" ayrı düğme: Veriler ve yedek'i yedek satırları başta açar.
+- Arama: "yedek" yazınca yedek işlemleri önde gelir; "yedekle", "yedekten" aynı kökten bulunur; dört ve üstü harfli aramada bir harflik yazım hatası hoş görülür ("yedk", "bildrim"). "Tüm verileri sil" yalnızca kendi sözcükleriyle çıkar. Arama sonucuna girip geri dönünce arama ve kaydırma yeri korunur.
+- "Yedeğe dön", Fiyat uyarıları ve Takvime aktar pencereleri Ayarlar'ı kapatmaz.
+- "Bildirimlerde ayrıntılar" PIN olmadan da görünür. Kapalıyken sabah özeti, ödeme ve ajanda bildirimleri tutar ve ad yazmaz ("2 ödeme yaklaşıyor").
+- Bildirim izni kapalıyken uyarı açıklamanın başında görünür.
+
+**Görünüm ve erişilebilirlik**
+- Özet: birincil sayı net varlık, "bu ay kalan" ikinci. Kart varsayılan düzende bildirim şeritlerinin üstünde; geniş ekranda üç kutucuk yan yana. Kendi düzenini kurduysan sıran değişmez.
+- Cam görünümde yazı her zeminde okunur (kontrast en az 4,5:1); saydamlığı desteklemeyen ortamda ve Düz görünümde yüzeyler opak.
+- Hesap kartlarının üstündeki yazılar (banka adı, bakiye, son dört hane) her kart yüzeyinde ve iki temada okunur; cam kartta yazı açık temada koyu.
+- Bir ekranda tek vurgulu düğme: bölüm başlığındaki ve satırdaki düğmeler sade, boş ekranın tek eylemi vurgulu. Boş Hesaplar ve boş Raporlar ne yapılacağını söyler.
+- Pencere boyutu değişince açık kayıt, kaydırma yeri ve yazdığın alan korunur; iki bölmeden tek bölmeye geçince seçim kalır.
+- Değişiklik varken kapanan form "Kaydedilmedi · Geri getir" bildirimiyle geri açılır. Kayıt yazılamadıysa "eklendi" bildirimi kapanır.
+- Notlarda açık temada vurgu renkli yazı daha okunur; taşan kod ve tablo klavyeyle kaydırılır; gecikmiş kayıtlar renk dışında da işaretli; hafta çiplerinin adı ve durumu ekran okuyucuda okunur.
+- %200 yakınlaştırmada ve 320 piksel genişlikte yazı kırpılmaz. Büyük yazıda dokuz haneli tutar "…" ile kesilmez, "₺126 milyon" diye kısalır.
+
+**Telefon ve tablet**
+- Ayarlar'da bölüm sayfası yeniden düzenlendi: üstte geri ve "Bitti" aynı hizada, denetimler tam genişlikte, uzun açıklama "Daha fazla" ile açılır, en büyük yazıda kırpılan metin yok.
+- Dokunma yerleri büyüdü: en küçük düğme de parmak ucu kadar.
+- Özet'in başlığı telefonda sıkışır; net varlık ilk ekranda.
+- Yan tutulan telefonda iki bölme açılmaz.
+
+**Windows**
+- Yedek ve ek dosyaları yerine konmadan önce diske işlenir; kesintiden kalan yarım dosya açılışta temizlenir, yarım kalan ek yeniden istenince onarılır.
+
+**Android**
+- Yedek ve ek dosyaları yerine konmadan önce diske işlenir; kesintiden kalan yarım dosya açılışta temizlenir, yarım kalan ek yeniden istenince onarılır.
+- Yerel ağ izni açıklaması Android'in ayar yolunu gösterir.
+
 ## [4.8.0] – 2026-11-10
 
 Ajandam 4.8 bir kararlılık sürümü: yeni özellik yok. 4.7'de görülen kusurlar giderildi ve birkaç görünüm iyileştirildi. Hesap kartları daha okunur ve hesapları daha doğru, eşitleme ve yedek daha sağlam, hızlı ekleme saatleri ve tarihleri daha doğru anlıyor. Öne çıkanlar:
