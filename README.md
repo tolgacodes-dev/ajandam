@@ -32,7 +32,7 @@
 </p>
 
 <p align="center">
-  <a href="https://tolgacodes-dev.github.io/tr/#film"><img src="docs/tanitim-filmi.jpg" width="820" alt="Ajandam tanıtım filmi, 2 dakika 53 saniye: Türkçe seslendirme ve altyazı. İzlemek için tıkla."></a>
+  <a href="https://ajandam.dev/#film"><img src="docs/tanitim-filmi.jpg" width="820" alt="Ajandam tanıtım filmi, 2 dakika 53 saniye: Türkçe seslendirme ve altyazı. İzlemek için tıkla."></a>
 </p>
 
 ![Ajandam'ın Özet ekranı: ayın geliri ve gideri, ay sonu tahmini, net varlık, dolar hesabı dahil hesap kartları ve yaklaşan ödemeler](docs/ekran/ozet.png)
@@ -556,7 +556,7 @@ Ajandam'ın içindeki açık kaynak bileşenlerin listesi ve lisans metinleri:
 Turkey. Your records stay on your device: no account, no server, no subscription.
 
 **Film:** a three-minute tour (Turkish voice-over, English captions) on
-[tolgacodes-dev.github.io](https://tolgacodes-dev.github.io/#film).
+[ajandam.dev](https://ajandam.dev/#film).
 
 - **Money:** accounts, credit cards with statement and due dates, installments and minimum payments, budgets,
   subscriptions, goals, debts; foreign-currency accounts and expenses (150+ currencies, converted at the day's rate);
