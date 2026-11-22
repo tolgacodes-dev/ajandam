@@ -6,11 +6,11 @@
 
 <p align="center">
   <b>Kişisel finans, ajanda ve notlar; tek uygulamada, Mac'inde, Windows'ta, iPhone, iPad ve Android'de.</b><br>
-  Hesap yok, sunucu yok, abonelik yok. Yapay zekası API anahtarı istemez.
+  İstersen cihazlarının arasında şifreli eşitlenir. Reklam yok, izleme yok, abonelik yok. Yapay zekası API anahtarı istemez.
 </p>
 
 <p align="center">
-  <a href="https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg"><b>⬇ Mac için indir</b></a>
+  <a href="https://ajandam.dev/indir/mac"><b>⬇ Mac için indir</b></a>
   &nbsp;·&nbsp; <a href="https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420"><b>Mac App Store</b></a>
   &nbsp;·&nbsp; <a href="https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR"><b>⬇ Windows için: Microsoft Store</b></a>
   &nbsp;·&nbsp; <a href="https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420"><b>iPhone ve iPad: App Store</b></a>
@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/tolgacodes-dev/ajandam/releases/latest"><img alt="Son sürüm" src="https://img.shields.io/github/v/release/tolgacodes-dev/ajandam?label=s%C3%BCr%C3%BCm&color=f08a3c"></a>
+  <a href="https://ajandam.dev/#indir"><img alt="Son sürüm" src="https://img.shields.io/github/v/release/tolgacodes-dev/ajandam?label=s%C3%BCr%C3%BCm&color=f08a3c"></a>
   <img alt="macOS 12 ve üstü" src="https://img.shields.io/badge/macOS-12%2B-1f2937?logo=apple">
   <img alt="Apple çipi ve Intel" src="https://img.shields.io/badge/Apple%20%C3%A7ipi%20%2B%20Intel-evrensel-1f2937">
   <img alt="Windows 10 (1607 ve sonrası) ve 11, x64" src="https://img.shields.io/badge/Windows-10%20%2B%2011%2C%20x64-1f2937">
@@ -39,11 +39,12 @@
 
 ## Neden Ajandam?
 
-- **Kayıtların cihazında kalır.** Hesap açmazsın; Ajandam kayıtlarını hiçbir sunucuya göndermez (yalnızca senin
-  bağladığın yapay zekaya, senin izin verdiğin kadarı gider). Her gün yedekler (son 14 gün, 8 hafta ve 12 ay); istersen
-  iCloud Drive'a (Windows'ta OneDrive'a, Android'de Google Drive'a) ya da seçtiğin bir klasöre (USB bellek, ağ diski) de,
-  istersen yedek parolasıyla şifreli; istersen PIN, Touch ID ya da Windows Hello ile kilitlenir. Yeni telefona ya da
-  bilgisayara geçerken kayıtların karekodla, aynı Wi-Fi'de doğrudan aktarılır.
+- **Kayıtların cihazında kalır.** Hesap açmadan kullanırsın; istersen Apple ya da Google ile giriş yapıp kayıtlarını ve
+  eklerini cihazlarının arasında eşitlersin: kayıtların cihazından şifrelenerek çıkar, anahtar yalnızca sende kalır;
+  geliştirici de okuyamaz. Kayıtlarından yalnızca senin bağladığın yapay zekaya, senin izin verdiğin kadarı gider. Her gün
+  yedekler (son 14 gün, 8 hafta ve 12 ay); istersen iCloud Drive'a (Windows'ta OneDrive'a, Android'de Google Drive'a) ya da
+  seçtiğin bir klasöre (USB bellek, ağ diski) de, istersen yedek parolasıyla şifreli; istersen PIN, Touch ID ya da Windows
+  Hello ile kilitlenir.
 - **Türkiye için yapıldı.** Kredi kartı kesim ve son ödeme günleri, taksitler, asgari ödeme (%20 / %40), TCMB azami
   faiz oranları, TÜFE ile enflasyon raporu, kira artış sınırı, resmî tatiller, vergi takvimi, BES devlet katkısı.
 - **Yapay zeka, anahtarsız.** Apple Intelligence Mac'inde, iPhone'unda ve iPad'inde; Ollama, LM Studio gibi yerel
@@ -268,12 +269,12 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 
 | Dosya | Ne için |
 |---|---|
-| [Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg) | Mac: disk görüntüsü; açıp Ajandam'ı **Uygulamalar** klasörüne sürüklersin |
+| [Ajandam.dmg](https://ajandam.dev/indir/mac) | Mac: disk görüntüsü; açıp Ajandam'ı **Uygulamalar** klasörüne sürüklersin |
 | `kur.sh` (aşağıdaki Terminal satırı) | Mac: son sürümü indirir, doğrular, **Uygulamalar** klasörüne kurar (önerilen) |
 | [Microsoft Store](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR) | Windows 10 (1809 ve sonrası) ve Windows 11, x64: Microsoft Store'dan kurulur (önerilen); Windows uyarısı çıkmaz, güncellemeleri Store yapar |
-| [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe) | Windows 10 (1607 ve sonrası) ve Windows 11, x64: kurulum dosyası |
+| [Ajandam-Kurulum.exe](https://ajandam.dev/indir/windows) | Windows 10 (1607 ve sonrası) ve Windows 11, x64: kurulum dosyası |
 | [App Store](https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420) | iPhone ve iPad (iOS 17 ve sonrası): Mac'teki uygulamayla aynı kayıt |
-| [Ajandam-Android.apk](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Android.apk) | Android 8.0 ve sonrası: APK (Google Play'deki paketle aynı kaynaktan ve aynı anahtarla imzalı; aşağıda "Android") |
+| [Ajandam-Android.apk](https://ajandam.dev/indir/android) | Android 8.0 ve sonrası: APK (Google Play'deki paketle aynı kaynaktan ve aynı anahtarla imzalı; aşağıda "Android") |
 | `Ajandam-<sürüm>.zip`, `latest.json`, `latest-windows.json` | Ajandam'ın güncelleyicileri için; elle kurulumda gerekmez |
 | `Ajandam-Claude.mcpb` | Claude masaüstü uzantısı; Ajandam'ın içinden tek tıkla eklenir |
 | `SHA256SUMS` | Bütün dosyaların SHA-256 özetleri |
@@ -287,10 +288,10 @@ Apple çipli bir Mac gerekir; yapay zekanın diğer yolları her Mac'te çalış
 doğrular, **Uygulamalar** klasörüne kurar ve açar; macOS'un ilk açılış uyarısı çıkmaz.
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/tolgacodes-dev/ajandam/main/scripts/kur.sh | bash
+curl -fsSL https://ajandam.dev/kur.sh | bash
 ```
 
-**Disk görüntüsüyle:** [Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg)
+**Disk görüntüsüyle:** [Ajandam.dmg](https://ajandam.dev/indir/mac)
 dosyasını indir ve aç. Açılan pencerede Ajandam'ı oktaki gibi yanındaki **Uygulamalar** klasörüne sürükle, sonra
 Uygulamalar'dan ya da Launchpad'den aç. Ajandam'ı sürüklemeden, disk görüntüsünden ya da İndirilenler'den açarsan
 Ajandam taşımayı önerir (**Uygulamalar klasörüne taşı**): kendini Uygulamalar'a kopyalar, oradan yeniden açılır ve
@@ -331,7 +332,7 @@ kayıtlarla çalışır ve ikisi de hatırlatma gönderir. Store'dan kurulan Aja
 **Ayarlar › Veriler ve yedek › Yedek indir**. Microsoft Store sayfası şimdilik yalnızca Türkiye'de açık.
 
 **Kurulum dosyasıyla** (Microsoft Store'u kullanamıyorsan, ör. Store'u kapatılmış bir iş bilgisayarında, Windows 10
-1607–1803'te ya da Türkiye dışında): [Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe)
+1607–1803'te ya da Türkiye dışında): [Ajandam-Kurulum.exe](https://ajandam.dev/indir/windows)
 dosyasını indir ve çalıştır. Kurulum tek pencere: **Kur**'a basman yeter, bitince **Aç**. **Seçenekler**'den
 kurulacağı klasörü değiştirebilir, masaüstüne kısayol koyup koymamayı ve Windows açılınca başlatmayı seçebilirsin.
 
@@ -403,10 +404,8 @@ Hızlı Bakış'ta işaretleyince işaretli kopya ayrı ek olur, orijinal deği�
 ya da sözleşmeyi kamerayla tara, tek PDF olarak eklenir ve ilk sayfası okunur; faturanın karekodu da kamerayla okunur.
 Kestirmeler'deki bir Mesaj otomasyonuyla bankanın SMS'i Ajandam açılmadan Özet'te onay bekler; Ekle'ye basmadan kaydedilmez.
 
-4.6'dan **Kendiliğinden eşitle**: **Ayarlar › Veriler ve yedek**'te yedek klasörü olarak bilgisayarındaki Ajandam'ın da
-kullandığı klasörü (ör. iCloud Drive › Ajandam Yedekleri) seçip açarsan kayıtlar ve ekler bilgisayardaki Ajandam'la
-kendiliğinden eşitlenir (aşağıda "İki bilgisayarda nasıl kullanılır"); telefonda taranan fatura bilgisayardaki kayıtta da
-görünür. iPad'de ve iPhone Duo'nun iç ekranında Ajandam iki pencerede açılır; geniş ekranda Ajanda'da gün paneli takvimin,
+5.0'dan hesabınla giriş yaparsan kayıtlar ve ekler bilgisayarındaki ve öteki cihazlarındaki Ajandam'la kendiliğinden
+eşitlenir (aşağıda "Hesap ve eşitleme"); telefonda taranan fatura bilgisayardaki kayıtta da görünür. iPad'de ve iPhone Duo'nun iç ekranında Ajandam iki pencerede açılır; geniş ekranda Ajanda'da gün paneli takvimin,
 notların listesi açık notun, kaydın ayrıntısı İşlemler'in yanında. iPhone Duo'da iki ekranın tamamı kullanılır; kitap gibi
 tutunca bölmeler katlama çizgisinden ayrılır, masaya dayayınca alt yarıda "Yazarak ekle" durur. iPhone yatay da kullanılır;
 kayda, hesaba ya da nota basılı tutunca bağlam menüsü (Düzenle, Çoğalt, Sil, Yeni pencerede aç) açılır; simgenin koyu,
@@ -414,21 +413,10 @@ renkli ve şeffaf hâli var.
 
 ### Android
 
-**Gereksinimler:** Android 8.0 (API 26) ve üstü; telefon ve tablet. İki yol:
+**Gereksinimler:** Android 8.0 (API 26) ve üstü; telefon ve tablet.
 
-- **Google Play (test sürümü):** Ajandam Play'de şimdilik kapalı testte; herkes katılabilir, iki adımda:
-  1. Google hesabınla [Ajandam Test](https://groups.google.com/g/ajandam-test) grubuna katıl (**Gruba katıl**). Gruba
-     mesaj yazılmaz; e-posta adresini yalnızca grup yöneticisi görür.
-  2. Aynı hesapla [play.google.com/apps/testing/app.ajandam](https://play.google.com/apps/testing/app.ajandam) adresinde
-     **Test kullanıcısı ol**'a dokun, sonra Ajandam'ı o sayfadaki Google Play bağlantısından ya da
-     [Ajandam'ın Play sayfasından](https://play.google.com/store/apps/details?id=app.ajandam) kur. Ajandam testteyken
-     Play'in aramasında çıkmaz. Güncellemeleri Play yapar.
-
-  Telefondaki Play Store'da gruba katıldığın Google hesabı açık olmalı (birden çok hesap varsa Play Store'da sağ üstteki
-  profil simgesinden ona geç). Gruba yeni katıldıysan Ajandam'ın Play'de sana görünmesi birkaç dakika, bazen birkaç saat
-  sürer; "bulunamadı" ya da "kullanılamıyor" görürsen biraz sonra yeniden dene. Testte kalman Ajandam'ın Play'de herkese
-  açılmasını hızlandırır: Google yeni uygulamalardan en az 12 test kullanıcısının 14 gün kesintisiz katılmasını istiyor.
-- **APK:** [Ajandam-Android.apk](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Android.apk)
+- **Google Play:** yakında.
+- **APK:** [Ajandam-Android.apk](https://ajandam.dev/indir/android)
   (Play'deki paketle aynı kaynaktan ve aynı anahtarla imzalı; SHA-256 özeti yanındaki `.sha256` dosyasında). Yeni sürüm
   çıkınca uygulama haber verir, güncellemeyi sen indirirsin.
 
@@ -443,20 +431,41 @@ ana ekrana **Ajandam · Bugün** araç takımını eklersin (bugünün ajandası
 faturanın karekodu kamerayla okunur. Yapay zeka: ChatGPT hesabınla giriş; cihaz içi model ve yerel model sunucusu yok. Henüz olmayanlar: fiş
 okuma (kamera), yedek klasörü, yapay zeka uygulamalarının bağlantısı (MCP).
 
-### Cihazlar arası aktarım (karekod)
+### Hesap ve eşitleme
 
-Yeni bir telefona ya da bilgisayara geçerken: iki cihazda da **Ayarlar › Veriler ve yedek › Başka cihaza aktar**. Bir
-cihaz karekod gösterir (bilgisayar her zaman gösterir), telefon ya da tablet kamerasıyla okutur. İki cihaz aynı Wi-Fi'de
-(ya da telefonun erişim noktasında) olmalı. Kayıtların, notların ve eklerin doğrudan öbür cihaza, uçtan uca şifreli gider;
-internete ve hiçbir sunucuya çıkmaz. Gönderen taraf göndermeden önce onay ister, alan taraf uygulamadan önce neyin
-değişeceğini gösterir. Karekod 5 dakika geçerli ve tek kullanımlıktır. Windows güvenlik duvarı izin isterse **İzin ver**'e
-bas (Microsoft Store sürümünde gerekmez). İki bilgisayar arasında karekod okunamaz: aşağıdaki yedek klasörü ya da **Yedek
-indir** ve **Yedekten geri yükle**.
+5.0'la gelen hesap isteğe bağlıdır. Açarsan kayıtların ve eklerin şifreli olarak buluta yedeklenir ve cihazlarının arasında
+kendiliğinden eşitlenir; açmazsan her şey aynı çalışır ve kayıtların yalnızca cihazında durur.
 
-### İki bilgisayarda nasıl kullanılır
+- **Giriş:** **Ayarlar › Hesap**'tan Apple ya da Google ile giriş yaparsın; adın ve e-posta adresin istenmez. İkinci yöntemi
+  **Giriş yöntemi ekle** ile aynı hesaba bağlarsın; bağlamadan öbür yöntemle girersen ayrı bir hesap açılır.
+- **Yalnızca sen okursun:** kayıtların cihazından şifrelenerek çıkar. Anahtar yalnızca cihazlarında ve sana gösterilen 24
+  karakterlik hesap kurtarma anahtarında durur; geliştirici de okuyamaz.
+- **Kurtarma anahtarı:** ilk cihazda gösterilir; yazdığını doğrulamadan eşitleme açılmaz. Yeni cihazda giriş yapıp anahtarı
+  yazarsın. Anahtarı kaybedersen ve hiçbir cihazında yoksa buluttaki kopya açılamaz: **Anahtarım yok** ile bulutu sıfırlayıp o
+  cihazın kayıtlarıyla yeniden başlarsın. Cihazlarındaki kayıtlar yerinde kalır. Bu anahtar, yedek parolasının kurtarma
+  anahtarından ayrıdır.
+- **Eşitleme:** kayıtların kendiliğinden eşitlenir; **Şimdi eşitle** beklemeden yapar. **Ekleri de eşitle** fişleri,
+  faturaları ve nottaki ekleri de taşır. Hesap başına 250 MB alan vardır; ne kadarını kullandığın **Ayarlar › Hesap**'ta
+  görünür.
+- **Çakışma:** iki cihazda farklı değişen kayıtta iki hâl yan yana gösterilir; hangisinin kalacağını sen seçersin. Silinen
+  kayıt **Son silinenler**'den geri gelir.
+- **Cihazların:** hesabına bağlı cihazları görür, tek birinden ya da **Bütün cihazlardan çık** ile hepsinden çıkış yaparsın.
+- **Hesabı silmek:** **Ayarlar › Hesap › Hesabı sil**. Sunucudaki bütün kopyalar silinir; cihazlarındaki kayıtlar silinmez.
 
-Kayıtlar her bilgisayarda ayrı durur (Ajandam'ın sunucusu yok); iki bilgisayar ortak bir yedek klasörü üzerinden eşitlenir.
-Evdeki Mac'le işteki Windows gibi iki bilgisayarı birlikte kullanmak için:
+Sunucu `bulut.ajandam.dev` (Cloudflare, Avrupa Birliği); ne sakladığı [gizlilik politikasının](GIZLILIK.md) 16.
+maddesinde. 5.0'da Wi-Fi'de eşitleme, Karekodla aktar ve klasörle kendiliğinden eşitleme kaldırıldı.
+
+### Yeni cihaza geçmek ve iki cihazı birlikte kullanmak
+
+**Hesabınla:** iki cihazda da **Ayarlar › Hesap**'tan Apple ya da Google ile giriş yap; yeni cihazda sana ilk cihazda
+gösterilen 24 karakterlik hesap kurtarma anahtarını yaz. Kayıtların ve eklerin kendiliğinden gelir, sonra iki cihaz arasında
+eşitlenir; iki cihazda farklı değişen kayıtta hangisinin kalacağını sen seçersin.
+
+**Hesap açmadan:** eski cihazda **Ayarlar › Veriler ve yedek › Yedek indir**, yenisinde aynı yerden **Yedekten geri yükle**.
+İndirilen arşiv fiş, fatura ve nottaki ekleri de taşır; yedek parolası belirlediysen arşiv şifrelidir ve parolanla ya da
+kurtarma anahtarınla açılır. Mac'ten Windows'a, telefondan bilgisayara aynı yolla geçilir.
+
+Evdeki Mac'le işteki Windows gibi iki bilgisayarı hesap açmadan birlikte kullanmak için:
 
 1. İkisinde de **Ayarlar › Veriler ve yedek › Yedek klasörü**'nden aynı klasörü seç (Dropbox, OneDrive, iCloud Drive, ağ
    diski ya da USB bellek). İki Mac'te iCloud Drive yedeği, iki Windows'ta OneDrive yedeği de olur. Her bilgisayar kendi
@@ -466,12 +475,7 @@ Evdeki Mac'le işteki Windows gibi iki bilgisayarı birlikte kullanmak için:
    birleştirmeden sonra farklı değişen kayıtta iki hali yan yana görünür; hangisi kalacak, sen seçersin. Ayarlardan yalnızca burada
    olmayanlar gelir (ör. bütçeler, Asistan'a notların); yapay zeka uygulamalarının izinleri gelmez, her bilgisayarda ayrı
    verilir. Geri alınabilir.
-3. **Kendiliğinden eşitle**'yi açarsan (4.5, ikisinde de ayrı ayrı) bunu Ajandam yapar: açılışta ve açıkken 15 dakikada bir
-   öbür bilgisayarın yeni yedeğini okur, burada olmayanları, orada değişenleri ve silinenleri sormadan alır, bildirimiyle
-   geri alınabilir. İki bilgisayarda da değişen kayıtta, çok sayıda silmede ya da öbüründe daha yeni Ajandam varken sorar.
-   4.6'dan fiş ve fatura ekleri de gelir, buradaki değişiklikler birkaç dakika içinde gider; son eşitleme, henüz gitmeyen
-   değişiklikler ve hatalar Ayarlar'da görünür. iPhone ve iPad de aynı klasörü seçip eşitlenebilir.
-4. Elle birleştiriyorsan bir bilgisayardan öbürüne geçince önce son çalıştığın yerin yedeğini birleştir. Birinde sildiğin kayıt öbüründe de
+3. Bir bilgisayardan öbürüne geçince önce son çalıştığın yerin yedeğini birleştir. Birinde sildiğin kayıt öbüründe de
    silinir (ikisinde de Ajandam 4.2 ya da sonrası varsa; öbüründe sonradan değiştirdiysen kalır), burada sildiğin kayıt öbür
    cihazın yedeğinden geri gelmez. Fiş ve fatura ekleri gelmez (onlar için **Yedek indir**'in arşivini öbüründe
    **Yedekten geri yükle**).
@@ -498,8 +502,10 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
 
 ## Gizlilik ve güvenlik
 
-- Kayıtlar yalnızca bilgisayarında, kullanıcı hesabının klasöründe durur. Ajandam hesap açtırmaz; reklam, izleme kodu
-  ya da kullanım istatistiği içermez. Kayıtlarından hiçbir şey geliştiriciye gönderilmez.
+- Kayıtlar cihazında durur (bilgisayarda kullanıcı hesabının klasöründe). Ajandam'ı hesap açmadan kullanırsın; hesap
+  yalnızca cihazlarını eşitlemek istersen gerekir. Geliştirici kayıtlarını göremez: bulut eşitlemede de kayıtların
+  cihazından şifrelenmiş olarak çıkar, anahtarı yalnızca sende durur. Reklam, izleme kodu ya da kullanım istatistiği
+  yoktur.
 - Kayıtlar ve bilgisayarındaki yedekler şifrelenmez (not parolasıyla şifrelediğin notlar dışında). **Yedek parolası**
   belirlersen bilgisayarından çıkan kopyalar (iCloud Drive ve OneDrive kopyaları, seçtiğin yedek klasöründeki kopyalar ve
   **Yedek indir**'in arşivi) şifrelenir; parola ve kurtarma anahtarı hiçbir yerde saklanmaz. Belirlemediysen yedek
@@ -509,10 +515,14 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
   bu bilgisayarın aramasında görünür (Ajandam'ın kilidinin dışında); not metni, şifreli notlar ve tutarlar girmez, PIN
   kilidi açıkken dizin boş tutulur, kapatınca silinir.
 - Ajandam internetsiz de çalışır; internete yalnızca şunlar için çıkar:
-  - güncelleme denetimi ve indirme (GitHub),
-  - Türkiye verileri: TÜFE, kart faiz oranları, asgari ödeme sınırı, bayramlar ve kısa duyurular GitHub'daki,
-    Ajandam'ın imzasıyla yayımlanan bir veri dosyasından gelir (güncelleme denetimi açıkken; imzası tutmayan veri
-    kullanılmaz),
+  - güncelleme denetimi ve indirme: kurulum dosyasıyla kurulan Windows uygulamasında Ajandam'ın sitesinden (ulaşılamazsa
+    GitHub'dan), indirme sayfasından kurulan Mac uygulamasında GitHub'dan; mağazadan kurulanı mağaza günceller,
+  - Türkiye verileri: TÜFE, kart faiz oranları, asgari ödeme sınırı, bayramlar ve kısa duyurular Ajandam'ın imzasıyla
+    yayımlanan bir veri dosyasından gelir: Windows ve Android'de Ajandam'ın sitesinden (ulaşılamazsa GitHub'dan), Mac,
+    iPhone ve iPad'de GitHub'dan (güncelleme denetimi açıkken; imzası tutmayan veri kullanılmaz),
+  - hesap ve bulut eşitleme (isteğe bağlı, yalnızca giriş yaptıysan): Ajandam'ın sunucusu (`bulut.ajandam.dev`); kayıtların
+    ve eklerin cihazından şifrelenmiş olarak gider, sunucu içeriği okuyamaz; giriş Apple'ın ya da Google'ın sayfasında
+    yapılır,
   - canlı kripto, döviz ve altın fiyatları ile döviz kurları: herkese açık kaynaklar (Binance, Truncgil, TCMB ve
     jsDelivr'deki günlük kur listesi; ona ulaşılamazsa aynı listenin currency-api.pages.dev'deki kopyası); geçmiş
     tarihli dövizli kayıtlar için o günün TCMB kuru,
@@ -534,8 +544,8 @@ test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
   Ajandam'ın destek adresine gider; istersen yanıt adresini ve bir ekran görüntüsü eklersin. GitHub'da
   [Issues › Yeni](https://github.com/tolgacodes-dev/ajandam/issues/new/choose) de olur. Ekran görüntüsü eklersen
   tutarları ve adları gizle; kayıtlarını paylaşma.
-- **E-posta:** ajandamuygulamasi@gmail.com
-- **İletişim:** [github.com/tolgacodes-dev](https://github.com/tolgacodes-dev)
+- **E-posta:** destek@ajandam.dev
+- **Site:** [ajandam.dev](https://ajandam.dev)
 - **Sürüm notları:** uygulamada **Ayarlar › Hakkında › Sürüm notları**; ayrıca [CHANGELOG.md](CHANGELOG.md) ve
   [Sürümler](https://github.com/tolgacodes-dev/ajandam/releases)
 
@@ -553,7 +563,8 @@ Ajandam'ın içindeki açık kaynak bileşenlerin listesi ve lisans metinleri:
 ## English
 
 **Ajandam** is a free personal finance, calendar and notes app for Mac, Windows, iPhone, iPad and Android, made for
-Turkey. Your records stay on your device: no account, no server, no subscription.
+Turkey. Your records stay on your device; an optional account (new in 5.0) syncs them between your devices, end-to-end
+encrypted. No ads, no subscription.
 
 **Film:** a three-minute tour (Turkish voice-over, English captions) on
 [ajandam.dev](https://ajandam.dev/#film).
@@ -573,11 +584,12 @@ Turkey. Your records stay on your device: no account, no server, no subscription
 - **Turkey-specific:** CPI (TÜFE) based inflation report, rent increase cap, central bank card interest rates,
   public holidays, tax calendar, private pension (BES) state contribution; updated between releases through a signed
   data feed.
-- **Move between devices:** Settings › Data and backup › Transfer to another device: one device shows a QR code, the
-  phone scans it, and records, notes and attachments go directly over the same Wi-Fi, end-to-end encrypted, without any
-  server. On Android, an automatic daily backup to a Google Drive file you pick (no Google sign-in in the app). Two
-  computers can sync automatically through a shared backup folder (4.5; asks first on conflicts or many deletions); since
-  4.6 attachments sync too, and iPhone and iPad can join through the same folder (e.g. iCloud Drive).
+- **Sync between devices (5.0):** sign in with Apple or Google in Settings › Account (no name or e-mail asked) and your
+  records and attachments sync between your devices, end-to-end encrypted: the key stays on your devices and in a
+  24-character recovery key, so the developer can't read them. Without an account, move to a new device with Download
+  backup and Restore from backup, or merge two computers' backups from a shared folder. On Android, an automatic daily
+  backup to a Google Drive file you pick (no Google sign-in needed for it). Wi-Fi sync, QR-code transfer and
+  backup-folder auto-sync were removed in 5.0.
 - **AI without API keys:** Apple Intelligence (Mac) or local models (Ollama, LM Studio) on your computer, sign in
   with your ChatGPT Plus or Pro account, or connect Claude, ChatGPT and other MCP apps in one click. Nothing is saved
   without your approval.
@@ -600,16 +612,17 @@ Turkey. Your records stay on your device: no account, no server, no subscription
   the text grows, spacing and icons stay, so the layout holds), besides whole-page zoom (⌘+ on the Mac, Ctrl++ on Windows).
   Charts can be explored with the keyboard or read as tables; the app follows the system's increased-contrast and
   reduce-motion settings.
-- **Privacy:** no account, no ads, no tracking. Optional PIN, Touch ID or Windows Hello lock, and a privacy mode that
-  hides every amount on screen. The lock protects the app's screen only: apart from password-protected notes, records
-  and backups (including the iCloud Drive or OneDrive copies and downloaded backup files) are not encrypted, so use
-  FileVault or BitLocker. The app goes online only for update checks and the signed Turkey data feed (GitHub), public
-  price and exchange-rate feeds, the AI service you connect, and feedback you choose to send.
+- **Privacy:** no account needed, no ads, no tracking. Optional PIN, Touch ID or Windows Hello lock, and a privacy mode
+  that hides every amount on screen. The lock protects the app's screen only: apart from password-protected notes,
+  records and backups (including the iCloud Drive or OneDrive copies and downloaded backup files) are not encrypted, so
+  use FileVault or BitLocker. The app goes online only for update checks and the signed Turkey data feed (ajandam.dev or
+  GitHub), public price and exchange-rate feeds, the optional account and its encrypted sync, the AI service you connect,
+  and feedback you choose to send.
 
 **Install on Mac:** macOS 12 or later (Apple silicon and Intel). Run
-`curl -fsSL https://raw.githubusercontent.com/tolgacodes-dev/ajandam/main/scripts/kur.sh | bash` in Terminal
+`curl -fsSL https://ajandam.dev/kur.sh | bash` in Terminal
 (recommended: it verifies the download and installs into Applications), or download
-[Ajandam.dmg](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam.dmg) and drag Ajandam onto
+[Ajandam.dmg](https://ajandam.dev/indir/mac) and drag Ajandam onto
 the Applications folder next to it. Opened from the disk image or Downloads, Ajandam offers to move itself into
 Applications. Since 3.8.1 the app is signed with an Apple Developer ID and notarized by Apple, so macOS opens it
 without the **Open Anyway** step.
@@ -618,7 +631,7 @@ without the **Open Anyway** step.
 are x64 only: on Windows 11 on Arm they run under Windows' x64 emulation. In Turkey, get it from the
 [Microsoft Store](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR): no SmartScreen warning, and the Store keeps it up to
 date. Or download and run
-[Ajandam-Kurulum.exe](https://github.com/tolgacodes-dev/ajandam/releases/latest/download/Ajandam-Kurulum.exe) and
+[Ajandam-Kurulum.exe](https://ajandam.dev/indir/windows) and
 click **Kur** (Install). Ajandam installs per user into `%LOCALAPPDATA%\Programs\Ajandam`, Windows' folder for
 per-user apps, so no administrator rights are needed; earlier installs in `%LOCALAPPDATA%\Ajandam` move there on
 update. If SmartScreen warns, choose **More info › Run anyway**; with Smart App Control on, Windows 11 blocks
@@ -635,16 +648,13 @@ Updates are verified with the app's own signing key and installed automatically 
 off in Ayarlar › Hakkında, i.e. Settings › About). Each release lists SHA-256 checksums in **SHA256SUMS**. The app's interface is in Turkish.
 
 **Phones and tablets:** iPhone and iPad on the [App Store](https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420);
-Android as an APK from the [latest release](https://github.com/tolgacodes-dev/ajandam/releases/latest) (Google Play in closed
-testing: anyone can join through the [Ajandam Test](https://groups.google.com/g/ajandam-test) group, then
-[opt in](https://play.google.com/apps/testing/app.ajandam) with the same Google account and install from the
-[Play page](https://play.google.com/store/apps/details?id=app.ajandam); it doesn't show up in Play search while in testing).
+Android as an [APK](https://ajandam.dev/indir/android) (Google Play coming soon).
 Sign in with ChatGPT works on phones too (4.0). **Coming soon:** a Linux version.
 
 **Support:** use **Yardım › Geri Bildirim Gönder** (Help › Send Feedback) in the app; it goes straight to the support
-address. You can also email ajandamuygulamasi@gmail.com or
+address. You can also email destek@ajandam.dev or
 [open an issue](https://github.com/tolgacodes-dev/ajandam/issues/new/choose) ·
-[github.com/tolgacodes-dev](https://github.com/tolgacodes-dev)
+[ajandam.dev](https://ajandam.dev/en/)
 
 <sub>© 2026 tolgacodes-dev. All rights reserved. Free for personal use; see [LICENSE](LICENSE) and
 [ACIK-KAYNAK-LISANSLARI.txt](ACIK-KAYNAK-LISANSLARI.txt) for bundled open source components.</sub>

@@ -3,26 +3,98 @@
 Ajandam'ın sürüm notları. Her sürümün ilk bölümü uygulama içindeki güncelleme penceresinde de gösterilir.
 Sürüm numaraları [anlamsal sürümlemeye](https://semver.org/lang/tr/) uyar.
 
+## [5.0.0] – 2026-11-21
+
+Ajandam 5.0'da isteğe bağlı hesap geliyor: Apple ya da Google ile giriş yaparsan kayıtların ve eklerin şifreli olarak buluta yedeklenir ve cihazlarının arasında kendiliğinden eşitlenir. Hesap açmazsan her şey bugünkü gibi çalışır. 4.9'un yenilikleri de bu sürümde: yenilenen görünüm, Son silinenler, yazarak ödeme hatırlatması ve daha fazlası. Wi-Fi'de eşitleme, Karekodla aktar ve klasörle kendiliğinden eşitleme kaldırıldı. Öne çıkanlar:
+
+- **Hesap ve bulut eşitleme:** Ayarlar › Hesap'tan Apple ya da Google ile giriş yaparsın; kayıtların ve eklerin cihazlarının arasında kendiliğinden eşitlenir. Giriş isteğe bağlıdır; adın ve e-posta adresin istenmez.
+- **Yalnızca sen okursun:** kayıtların cihazından şifrelenerek çıkar. Anahtar yalnızca cihazlarında ve sana gösterilen 24 karakterlik hesap kurtarma anahtarında durur; geliştirici de okuyamaz. Anahtarı kaybedersen ve hiçbir cihazında yoksa buluttaki kopya açılamaz; cihazlarındaki kayıtlar yerinde kalır.
+- **Hesapsız da aynı:** giriş yapmazsan her şey bugünkü gibi çalışır; kayıtların yalnızca cihazında durur.
+- **Hesabını sen silersin:** Ayarlar › Hesap › Hesabı sil. Sunucudaki bütün kopyalar silinir; cihazlarındaki kayıtlar silinmez.
+- **4.9'un yenilikleri:** yeni görünüm; Son silinenler (30 gün); yazarak ödeme hatırlatması; bütçede bekleyen ödemeler; "Bu yedekte ne var"; iki kez ödenen ödeme uyarısı; Özet'in net varlıkla açılması; Asistan'da sohbet geçmişi; "Kaydedilmedi · Geri getir"; para ve Ajanda düzeltmeleri.
+- **Bilgisayarda kaldırılanlar:** Wi-Fi'de eşitleme, Karekodla aktar ve klasörle kendiliğinden eşitleme kaldırıldı. Cihazlarını eşitlemek için hesap aç; hesap açmadan taşımak için öbür cihazda Yedek indir'in arşivini burada Yedekten geri yükle ile aç. Yedeklerin bulut klasörüne ve dosyaya yazılması yerinde.
+- **iPhone ve iPad:** Wi-Fi'de eşitleme, Karekodla aktar ve klasörle kendiliğinden eşitleme kaldırıldı. Cihazlarını eşitlemek için hesap aç; hesap açmadan taşımak için öbür cihazda Yedek indir'in arşivini burada Yedekten geri yükle ile aç.
+- **Android:** Wi-Fi'de eşitleme ve Karekodla aktar kaldırıldı. Cihazlarını eşitlemek için hesap aç; hesap açmadan taşımak için öbür cihazda Yedek indir'in arşivini burada Yedekten geri yükle ile aç. Google Drive'a otomatik yedek yerinde.
+
+---
+
+**Hesap ve bulut eşitleme**
+- Ayarlar › Hesap: Apple ya da Google ile giriş. İkinci yöntemi "Giriş yöntemi ekle" ile aynı hesaba bağlarsın; bağlamadan öbür yöntemle girersen ayrı bir hesap açılır.
+- İlk cihazda 24 karakterlik hesap kurtarma anahtarı gösterilir; yazdığını doğrulamadan bulut eşitleme açılmaz. Yeni cihazda giriş yapıp anahtarı yazarsın; anahtar yoksa "Anahtarım yok" ile bulutu sıfırlayıp bu cihazın kayıtlarıyla yeniden başlarsın.
+- Ayarlar › Hesap'ta cihazların, kullanılan alan (hesap başına 250 MB), "Ekleri de eşitle", "Şimdi eşitle", çıkış ve "Bütün cihazlardan çık".
+- İki cihazda farklı değişen kayıt eskisi gibi birleşir: hangisinin kalacağını sen seçersin; Son silinenler geri getirir.
+- Hesap kurtarma anahtarı, şifreli yedeğin parolasının kurtarma anahtarından ayrıdır.
+
+**Görünüm ve durumlar**
+- Kayıtlar okunamayınca boş ekran yerine açık bir hata sayfası: "Yeniden dene" ve "Sorun giderme". Kayıtlarına dokunulmaz; okunamadıkça yeni kayıt yazılmaz, yedek ve dışa aktarma da boş dosya üretmez.
+- Yazılamayan ayarda başarı bildirimi çıkmıyor; yazım düzelince durum "Kaydedilemedi"de kalmıyor.
+- Borç ve alacak'ta kurum borcuyla çelişen etiketsiz Net kutusu kalktı; boş ekranlarda ₺0 kutuları ve yinelenen düğmeler gösterilmiyor.
+- Hesap açıkken Hakkında, Veriler ve yedek ve Sorun giderme ("Eşitleme olmuyor") hesabı ve eşitlemeyi anlatıyor.
+- Onay pencerelerinde silme düğmesi dolu kırmızı; yazarak onaylananlarda düğme, yazı eşleşene kadar pasif.
+- Özet: Kalan karosu sadeleşti, ay sonu tahmininin ayrıntısı dokununca açılıyor; Başlarken kartı kısaldı.
+- Tutarlar aynı listede, tabloda ve yan yana kutularda tek biçimde: biri kuruşluysa hepsi iki ondalıkla (₺80.000,00), hepsi tam liraysa kuruşsuz.
+- İşlemler, Ödemeler ve Hesaplar boşken ₺0 kutuları ve yinelenen ekle düğmesi yok; Ödemeler'de tarihler tek biçimde; Filtreler'de tarih aralığı yalnızca seçilince açılır.
+- Kredi hesaplayıcı, Borç kapatma planı ve Ekstre içe aktarmada tek vurgulu düğme, kısa açıklama ve "Ayrıntı"; telefonda Raporlar'ın panel başlıkları tek satırda.
+- Komut paletinde gereksiz etiketler kalktı, telefonda uzun komut adları kesilmiyor; menülerin ve paletin zemini artık saydam değil.
+- **Android:** Ekle menüsü açıkken arka plan kararıyor, + işareti × oluyor; küçük ekranda menü kayıyor.
+- Ajanda: takvime aktarma, takvimler ve haftayı kapatma başlıktaki tek menüde; telefonda takvim daha yukarıda başlıyor; gün kartı sadeleşti, yarın "Yarın" diye yazıyor.
+- Tablette dik tutuşta ve dar pencerede Hesaplar'ın kartları yan yana iki destede: ortadaki tek destenin iki yanı boş kalmıyor.
+- Asistan'da sohbetler yan panelde: telefonda soldan açılır, tablette ve bilgisayarda sohbetin yanında durur; eski sohbetlere bakarken açık sohbet kaybolmuyor. Sohbetler güne göre öbekli.
+- **Bilgisayarda:** sol menüden açılan her bölüm kendi sekmesinde açılıyor, öncekinin yerine geçmiyor. Sekmeler sürüklenerek sağa sola taşınıyor (klavyede Alt+← / Alt+→, sağ tık menüsünde "Sola taşı" ve "Sağa taşı"); sıra hatırlanıyor. Bütün sekmeler kapanınca yeni başlangıç sayfası: hızlı ekleme ve bölüm karoları.
+- Notlar'da çizim kaleme göre: kalemle çizerken elin ekrana değmesi iz bırakmıyor ("Yalnızca kalemle çiz" kalemi kullanınca kendiliğinden açılır), kalemin silgisi siliyor, uzun el yazısında çizgi kalemi geriden izlemiyor; silgi aracı ve geri alınabilir temizleme. Yeni "İmza": imzanı at, nota imza boyunda eklensin. Çizim artık notun araç çubuğunda.
+- **iPhone ve iPad:** PIN tuş takımının son sırasında 0 ve sil düğmesi.
+- **Mac:** üst çubukta bölümün adı; dar pencerede durum çubuğu yalnızca gerekince.
+- **Windows:** dar pencerede başlık çubuğu sadeleşti.
+- **iPhone ve iPad:** kaydedilemeyen değişiklik için kalıcı uyarı ve "Yeniden dene".
+- **Windows:** Kontrast temalarında takvimde bugün, seçili gün ve ay dışı günler, Kalan, bütçe ve hedef çubukları, seçili kategori, menüde odak ve paletin seçili satırı yeniden ayırt ediliyor; seçim kutularının oku görünüyor.
+
+**Telefon ve tablet**
+- Telefonda yüzen "+" aşağı kaydırınca çekiliyor; büyük yazıda İşlemler seçicisi ve satır alt yazıları kesilmiyor, kilit ekranındaki parmak izi ya da yüz tanıma düğmesi ekrandan taşmıyor.
+- Telefonda açık notun çubuğu tek satır, klasörün adı bilgi satırında. Dokunmatik ekranda menü, palet ve kategori satırlarına dokunmak kolaylaştı.
+- Telefonda ve tablette pencereler yeni çerçevede: büyük başlık, yuvarlak kapatma düğmesi, büyük alt düğmeler. Telefonda formların alt şeridinde yalnızca Vazgeç ve Kaydet; silme ve "Kaydet + yeni" formun sonunda.
+- Telefonda pencere açıkken tek bildirim; onay penceresi açılınca önceki bilgi bildirimi kapanıyor. Asistan'da örnekler ve sağlayıcının adı kesilmiyor.
+- Telefonda ve tablette bilgisayara özgü parçalar (sekme şeridi, tema düğmesi) gizli; durum çubuğu yalnızca söyleyecek bir şey varken görünüyor. Ayarlar'da dokunma alanları büyüdü; tema yalnızca Görünüm bölümünden seçiliyor.
+
 ## [4.9.0] – 2026-11-13
 
-Ajandam 4.9'da silinen kayıtlar 30 gün boyunca geri getirilebiliyor, hızlı ekleme "ödeyeceğim" diyen cümleyi gider yazmak yerine ödeme hatırlatması olarak öneriyor, bütçe bekleyen ödemeleri ayrı gösteriyor ve geri yüklemeden önce yedeğin içinde ne olduğu görünüyor. Özet net varlığınla açılıyor, cam görünümde yazılar daha okunur, telefonda Ayarlar yeniden düzenlendi. Para hesaplarında, ödemelerde, Ajanda'da ve yedekte bulunan kusurlar giderildi. Öne çıkanlar:
+4.9.0 ayrı yayımlanmadı; bu bölümdeki yenilikler 5.0.0 ile birlikte geldi.
 
+Ajandam 4.9'da silinen kayıtlar 30 gün boyunca geri getirilebiliyor, hızlı ekleme "ödeyeceğim" diyen cümleyi gider yazmak yerine ödeme hatırlatması olarak öneriyor, bütçe bekleyen ödemeleri ayrı gösteriyor ve geri yüklemeden önce yedeğin içinde ne olduğu görünüyor. Ajandam'ın görünümü baştan sona yenilendi: ışıklı zemin, cam paneller ve renkli kutular. Özet net varlığınla açılıyor; telefonda ve tablette Ayarlar alttan yükselerek açılıyor. Para hesaplarında, ödemelerde, Ajanda'da ve yedekte bulunan kusurlar giderildi. Öne çıkanlar:
+
+- **Yeni görünüm:** ışıklı zemin üstünde cam paneller; gelir, gider ve kalan renkli kutularda; her kategori kendi renginde simgesiyle; hesaplar gerçek kart gibi. Koyu ve açık temada, bütün ekranlarda ve pencerelerde.
 - **Son silinenler:** silinen işlem, ödeme, ajanda kaydı, borç ve hedef 30 gün bu cihazda durur; Ayarlar › Veriler ve yedek › Son silinenler'den bağlı kayıtlarıyla birlikte geri gelir. Öbür cihazda silindiği için eşitlemede silinen kayıt da orada durur.
 - **Yazarak ödeme hatırlatması:** "Kirayı ayın 5'inde ödeyeceğim 12.000" ya da "elektrik faturasını ödemem lazım 800" gider yazmaz, bekleyen ödeme olarak önerilir; istersen tek tuşla gider olarak eklenir. Soru cümlesi ("Hangi karta 500 TL ödeyeyim?") kayıt oluşturmaz.
 - **Bütçede bekleyen ödemeler:** kategori satırında harcanan, bekleyen ödeme ve bekleyenlerden sonra kalan ayrı görünür.
 - **Bu yedekte ne var:** geri yüklemeden önce yedeğin tarihi, sürümü ve içindeki hesap, işlem, ödeme, ajanda kaydı, not ve ek sayıları bugünkü sayılarla yan yana.
 - **İki kez ödenen ödeme uyarısı:** aynı ödeme iki cihazda "Ödendi" yapıldıysa Ajandam uyarır; hangi giderin kalacağını sen seçersin, hiçbir şey kendiliğinden silinmez.
-- **Özet net varlıkla açılır:** birincil sayı net varlık, "bu ay kalan" ikinci; kart her genişlikte en üstte, telefonda ilk ekranda.
+- **Özet net varlıkla açılır:** birincil sayı net varlık ve son ayların eğrisi, "bu ay kalan" ikinci; yaklaşan ödemeler, bugün ve hesaplar yan yana; kart her genişlikte en üstte, telefonda ilk ekranda.
 - **Daha okunur, daha kolay dokunulur:** cam görünümde ve hesap kartlarında yazı kontrastı arttı, dokunma yerleri büyüdü, bir ekranda tek vurgulu düğme var; pencere boyutu değişince açık kayıt ve yazdığın alan yerinde kalır.
 - **Kaydedilmedi · Geri getir:** değişiklik varken kapanan form onay sormaz; bildirimdeki "Geri getir" formu yazdıklarınla birlikte geri açar.
 - **Bildirimler:** bildirime dokununca ilgili kayıt açılır. "Bildirimlerde ayrıntılar" PIN olmadan da kapatılabilir; kapalıyken bildirim tutar ve ad yazmaz.
 - **Ajanda:** gece yarısında biten etkinlik her yerde aynı görünür; hızlı eklemede süre yazılabilir ("23:00 1 saat", "90 dk").
 - **Para hesapları daha doğru:** dövizli kayıtta yarım kuruş kayması, borca bağlı transferin silinmesi, art arda "Ödendi", kısmi ödemenin kalanı ve kapalı aydaki tutarsızlıklar giderildi.
-- **Telefonda Ayarlar:** bölüm sayfası yeniden düzenlendi, "Son yedek" kendi düğmesi, arama yazım hatasını hoş görür.
+- **Telefonda ve tablette Ayarlar:** alttan yükselerek açılır (telefonda ekranı kaplar, tablette ortada yüzen kart), başlığından aşağı çekince kapanır. "Son yedek" kendi düğmesi, arama yazım hatasını hoş görür.
+- **İlk açılış:** karşılamada "Başla" PIN'i, yüz ya da parmak iziyle açmayı ve otomatik kilit süresini tek akışta sorar; "Örneklerle dene" karşılamada görünür. Ardından kısa "Neyin nerede?" turu; Ayarlar › Hakkında'dan ve komut paletinden yeniden açılır.
+- **Asistan'da sohbet geçmişi:** sohbetler yalnızca bu cihazda saklanır; Sohbetler listesinden eski bir sohbet açılıp sürdürülür, tek tek ya da hepsi silinir. "Yeni sohbet" eskisini listede bırakır.
+- **Telefonda ve tablette daha akıcı:** Ayarlar'da bölüme giriş ve listeye dönüş aynı yumuşak hareketle ve beklemeden olur; bölümün içinden sağa kaydırarak geri dönülür, kaydırılmış bölüm sıçramaz. Pencerelerin, Asistan'ın ve komut paletinin kapatma düğmesi her yerde aynı görünür daire ve parmak ucu kadar büyük.
+- **"Geri al" bildirimi yenilendi:** belirgin "Geri al" ve kapatma düğmesi, kalan süreyi gösteren ince çubuk.
+- **Telefonda ve tablette bildirimler:** yana ya da aşağı kaydırınca kapanır; dokunulan bildirim artık ekranda takılı kalmaz; pencere açıkken bildirim pencerenin düğmelerini örtmez.
+- **iPhone'da pencereler ve bildirimler:** yarım ekran pencerede dokunuş doğru alana gider; pencere kapanınca arkadaki sayfa yerinde durur; "Geri al" bildirimi alt çubukların üstünde, baştan yerinde çıkar.
 - **Windows:** yedek ve ek dosyaları yazılırken elektrik kesilirse yarım dosya kalmaz.
 - **Android:** yedek ve ek dosyaları yazılırken elektrik kesilirse yarım dosya kalmaz.
 
 ---
+
+**Yeni görünüm**
+- Zeminde üç yumuşak ışık (turuncu, mavi, yeşil); paneller, pencereler, menüler ve çubuklar cam. Koyu ve açık temada aynı dil.
+- Arayüzün yazı tipi yenilendi; tutarlar eşit genişlikte rakamlarla alt alta hizalı.
+- Özet: net varlık kartında son ayların eğrisi; Gelir, Gider ve Kalan renkli kutularda; yaklaşan ödemeler tek listede, kalan gün etiketiyle; "Bugün" kutusu; hesap satırları kartın renginde. Geniş ekranda bölümler sütun sütun, boşluksuz dizilir; "Bugün" kutusu açıkken "Önümüzdeki 7 gün" yarından başlar.
+- Hesaplar: kartlar cüzdandaki gibi üst üste; seçilen kartın altında Arkası, Düzenle, Döküm aktar ve Tüm kayıtlar; "Bu ay gelen" ve "Bu ay giden" kutuları.
+- İşlemler: her satırda kategorinin renginde simge; Gelir, Gider ve Net kutuları. İleri tarihli kayıt "planlı" yazısıyla ve nötr renkli tutarla ayrılır.
+- Bütçe: toplam limitten kalan tek kutuda; yıl görünümünde yıllık bütçeden kalan.
+- Özet'teki yaklaşan ödemelerde bakiye uyarısı satırın altında ayrı şeritte: hesap eksiye düşecekse kırmızı, ek hesap limitinden kullanılacaksa sarı.
+- Ajanda: bugün turuncu işaretli; seçili günün özeti turuncu kutuda; tür süzgeçleri cam.
+- Bütün ekranlarda yazı ile zemin arasındaki kontrast koyu ve açık temada ölçüldü; ikincil yazılar güçlendirildi.
 
 **Son silinenler**
 - Silinen işlem (taksitleri ve bölünmüş parçalarıyla), ödeme, ajanda kaydı, borç ya da alacak (ödeme satırları ve bağlı transferleriyle), hedef (katkılarıyla) ve düzenli kayıt 30 gün durur. Ayarlar › Veriler ve yedek › Son silinenler: tarihe göre liste, arama, Geri getir, Kalıcı sil, Hepsini kalıcı sil. İşlemler'in "…" menüsünden de açılır. Önceden "Geri al" yalnızca birkaç saniye görünüyordu; sonrası için yedek gerekiyordu.
@@ -39,6 +111,7 @@ Ajandam 4.9'da silinen kayıtlar 30 gün boyunca geri getirilebiliyor, hızlı e
 - Yüklemi "iptal" olan cümle ("Market 250 iptal") gider yazmaz; "iptal ücreti 50" gider. "Kart ücreti 50", "otopark ücreti 40" maaş geliri sayılmaz.
 - Süre yazılabilir: "23:00 1 saat", "90 dk", "yarım saat", "1 saat 30 dk".
 - Asistan, soru ya da olumsuz cümlede para ekleyen bir işlem önermez.
+- "Markete 250 ödedim" açıklamaya "Market" yazar ("Markete ödedim" yazıyordu).
 
 **Bütçe ve ödemeler**
 - Bütçede kategori satırı "₺900 harcandı · ₺500 bekleyen ödeme" der ve bekleyenlerden sonra kalanı gösterir. Bekleyen toplamı Ödemeler'deki "Bu ay ödenecek" ile aynıdır; bekleyen ödeme günü gelmeden harcanana yazılmaz. Dönem maaş gününden başlıyorsa satır dönemi söyler.
@@ -47,8 +120,11 @@ Ajandam 4.9'da silinen kayıtlar 30 gün boyunca geri getirilebiliyor, hızlı e
 - Tam ödemenin gideri düzenlenince ödemenin ödenen tutarı ve günü de güncellenir: takvim, Ödemeler ve Raporlar aynı sayıyı verir.
 - Tutarı tahmini olan ödeme bildirimden ya da Haftayı kapat'tan sormadan yazılmaz: "Ödendi" penceresi tutar seçili açılır.
 - Aramada proje: komut paleti ve İşlemler araması proje adını tarar; kaydın projesi satırda görünür.
+- "Ödendi"nin geri alınması ödemeyi ilk haline tam döndürür (ödeme bağlı bir uygulamadan işaretlendiyse de).
 
 **Para**
+- Açılan ekranda tutarlar saymadan, hemen son değeriyle gelir: Hesaplar'ın net varlığı ve Bütçe'nin toplam gideri ekran açılırken sıfırdan sayıyor, ilk anda aynı ekrandaki öbür tutarlardan farklı görünüyordu. Açık ekranda tutar değişince eskisi gibi sayar.
+- Kaydı düzenle'de "Böl…" artık "Kategorilere böl…", "Bölüş…" artık "Kişilerle bölüş…".
 - Dövizli kaydın TL karşılığı yarım kuruşu aşağı yuvarlayabiliyordu ve iade başka hesaplanıyordu. Kayıt, hesabın TL değeri, kart borcu, net varlık, iade, düzenli kayıt ve hızlı ekleme artık aynı kuruşu verir.
 - Borca bağlı transfer İşlemler'den silinince ya da düzenlenince borç kaydındaki ödeme satırı da güncellenir; kapanmış borç yeniden açılır ve bildirim bunu söyler; tek Geri al ikisini birlikte getirir. Kalanı aşan tutar formda reddedilir.
 - "Ödendi" art arda gelince (liste, pencere, bildirim düğmesi) tek gider yazılır.
@@ -60,19 +136,28 @@ Ajandam 4.9'da silinen kayıtlar 30 gün boyunca geri getirilebiliyor, hızlı e
 - Hafta görünümünde gece yarısını geçen kısa etkinlik iki günde de görünür. Sabah özeti ikinci sabah "dün 23:30–04:15" der.
 - Bildirime dokununca ilgili ajanda kaydı ya da ödeme açılır. Ertelenen hatırlatma, kayıt başka güne taşındıysa gelmez.
 - "Tüm seri" kaydırılınca "yapıldı" işaretleri doğru tekrarlarda kalır (yapılmamış tekrar yapılmış görünmez); tek Geri al eski hale döner.
+- Tekrarlayan etkinlikte "Bu tekrarı sil"den sonra Geri al tekrarı geri getirir (seriden silinen tek tekrar geri gelmiyordu); geri alınan tekrar Son silinenler'de kalmaz. "Yapıldı" işaretinin geri alınması da kaydı ilk haline döndürür.
+- Tek günde tekrarlanan haftalık etkinliğin tarihi formda değişince işaretli gün de yeni tarihin gününe geçer (etkinlik eski günde tekrarlanıyordu). Günleri kendin seçtiysen seçimin kalır.
 
 **Yedek ve veriler**
 - Yedekten geri yüklerken dosya seçilince yedeğin tarihi, sürümü ve içerik sayıları bugünkü sayılarla birlikte görünür. Boş yedek "Bu yedek boş" der; yedekteki her şey zaten varsa "yüklenecek bir şey yok". Şifreli yedekte özet şifre girildikten sonra görünür.
 - 3.8, 4.2, 4.5 ve 4.7 yedeklerinden geri yükleme kayıt sayılarını, tutar toplamlarını, bakiyeleri, hedef katkılarını, borç ödemelerini, notları ve ekleri korur; yarıda kesilen geri yükleme toparlanır.
 - Deneme kipine girerken yatırım geçmişi sıfırlanır (gerçek veriden iz kalıyordu).
 - Kayıtlar okunamadığında Hesaplar'a dokunmak hiçbir şey yapmıyordu; artık açılır.
+- Kendiliğinden eşitleme: bu cihazda yedek parolası açıkken başka bir cihazın şifresiz yedeği sormadan birleştirilmez. "… ile eşitleme seni bekliyor" çıkar, İncele… ile bakıp birleştirirsin.
+- Bozulmuş şifreli yedek dosyası seçilince Ajandam "yedek bozuk" der ("Ajandam yedeği gibi görünmüyor" diyordu).
 
 **Ayarlar**
+- Devre dışı anahtar artık kapalı görünür: PIN yokken "Ajandam'dan çıkınca kilitle" (açıklamasında "Önce bir PIN belirle"), sistem bildirimleri ya da sabah özeti kapalıyken ona bağlı on uyarı anahtarı açık gibi duruyordu.
+- Takvim › "Dosya seç…" ve fiş seçme Ayarlar'ı kapatmaz; seçilen dosyanın önizlemesi Ayarlar'ın üstünde açılır.
+- Fiyat uyarılarının ve hesap kartlarında "Otomatik" görünümün açıklaması her cihazda kendi cümlesiyle (fiyatlara ne zaman bakıldığı; pencerenin ya da ekranın genişliği).
+- ChatGPT girişi başlatılamazsa yalnızca hata bildirimi çıkar (önce "giriş açıldı" da yazıyordu).
 - Telefon bilgisayarla eşleşmişken kart "yalnızca bu telefonda" demez: "Kayıtların bu telefonda; ‹bilgisayar› ile eşitlenir". Karttaki "Son yedek" ayrı düğme: Veriler ve yedek'i yedek satırları başta açar.
 - Arama: "yedek" yazınca yedek işlemleri önde gelir; "yedekle", "yedekten" aynı kökten bulunur; dört ve üstü harfli aramada bir harflik yazım hatası hoş görülür ("yedk", "bildrim"). "Tüm verileri sil" yalnızca kendi sözcükleriyle çıkar. Arama sonucuna girip geri dönünce arama ve kaydırma yeri korunur.
 - "Yedeğe dön", Fiyat uyarıları ve Takvime aktar pencereleri Ayarlar'ı kapatmaz.
 - "Bildirimlerde ayrıntılar" PIN olmadan da görünür. Kapalıyken sabah özeti, ödeme ve ajanda bildirimleri tutar ve ad yazmaz ("2 ödeme yaklaşıyor").
 - Bildirim izni kapalıyken uyarı açıklamanın başında görünür.
+- Bildirim izni sistemde kapalıyken Ayarlar listesindeki Bildirimler satırı "İzin kapalı" der ("Açık" yazıyordu).
 
 **Görünüm ve erişilebilirlik**
 - Özet: birincil sayı net varlık, "bu ay kalan" ikinci. Kart varsayılan düzende bildirim şeritlerinin üstünde; geniş ekranda üç kutucuk yan yana. Kendi düzenini kurduysan sıran değişmez.
@@ -80,15 +165,56 @@ Ajandam 4.9'da silinen kayıtlar 30 gün boyunca geri getirilebiliyor, hızlı e
 - Hesap kartlarının üstündeki yazılar (banka adı, bakiye, son dört hane) her kart yüzeyinde ve iki temada okunur; cam kartta yazı açık temada koyu.
 - Bir ekranda tek vurgulu düğme: bölüm başlığındaki ve satırdaki düğmeler sade, boş ekranın tek eylemi vurgulu. Boş Hesaplar ve boş Raporlar ne yapılacağını söyler.
 - Pencere boyutu değişince açık kayıt, kaydırma yeri ve yazdığın alan korunur; iki bölmeden tek bölmeye geçince seçim kalır.
+- Notun "…" menüsündeki Yazım denetimi canlı düzenleyicide de açılıp kapanır (hiçbir şey olmuyordu).
+- Menüden açılan pencerenin arkasında menü açık kalmaz (notun "…" › Taşı…).
 - Değişiklik varken kapanan form "Kaydedilmedi · Geri getir" bildirimiyle geri açılır. Kayıt yazılamadıysa "eklendi" bildirimi kapanır.
 - Notlarda açık temada vurgu renkli yazı daha okunur; taşan kod ve tablo klavyeyle kaydırılır; gecikmiş kayıtlar renk dışında da işaretli; hafta çiplerinin adı ve durumu ekran okuyucuda okunur.
 - %200 yakınlaştırmada ve 320 piksel genişlikte yazı kırpılmaz. Büyük yazıda dokuz haneli tutar "…" ile kesilmez, "₺126 milyon" diye kısalır.
+- Ekran okuyucuda Özet'teki hesap satırlarının, not listesinin ve başlıktaki düğmelerin adı görünen yazıyla başlar (sesle denetimde adıyla seçilebilir).
+- iPhone'da yazarak ekleme penceresindeki süs simgesi ekran okuyucuda okunmaz, kapatma düğmesinin adı "Kapat".
+- iPhone'da en büyük yazı boyutlarında Para sekmesinin ve aramanın listesi ile "Yazarak ekle" kapsülü taşmaz (Para'da ekrana iki satır sığıyor, kapsülün yazısı üstündeki içeriğe biniyordu); kapsüle basılı tutunca adı büyük gösterilir.
+- Masaüstünde üst üste çıkan bildirimler açık pencerenin Kaydet düğmesini örtmez.
+
+**İlk açılış**
+- Karşılamada tek birincil düğme: "Başla". Altında "Örneklerle dene" (örnek kayıtlar ayrı bir alanda durur, çıkınca silinir) ve "Yedekten geri yükle".
+- "Başla" kilit adımını açar: PIN belirle, yüz ya da parmak iziyle açma, Şimdi değil. PIN belirlenince "Ne zaman kilitlensin?" (Ayarlar › Güvenlik'teki seçenekler).
+- Ardından "Neyin nerede?": beş kartlık kısa tur (Özet; + ve yazarak ekleme; para; Ajanda ve Notlar; arama, Asistan ve Ayarlar); kaydırarak, ok tuşlarıyla ya da İleri ve Geri ile gezilir, "Atla" ile kapanır. Bir kez çıkar; Ayarlar › Hakkında › Yardım › "Kısa tur" ve komut paleti yeniden açar.
+- Bildirim izni karşılama ekranının üstünde sorulmaz: hatırlatılacak ilk kayıt eklendiğinde ya da Ayarlar › Bildirimler'den deneme bildirimi gönderildiğinde sorulur. Kayıt yokken boş ay özeti bildirimi de kurulmaz.
+
+**Asistan**
+- Sohbet geçmişi: başlıktaki "Sohbetler" düğmesi eski sohbetleri listeler (başlık, tarih, mesaj sayısı); açılan sohbet kaldığı yerden sürer. Satırdaki düğmeyle tek tek, "Tümünü sil" ile hepsi silinir; silmeler "Geri al"la geri alınabilir.
+- Sohbetler yalnızca bu cihazda durur (en çok 50 sohbet): yedeğe, eşitlemeye ve yapay zeka uygulamalarına girmez. Tüm verileri sil onları da siler; kilitliyken Asistan açılmaz.
+- Eski sohbette kalmış, uygulanmamış öneri "eski bir sohbette kaldı" diye görünür, uygulanamaz.
 
 **Telefon ve tablet**
-- Ayarlar'da bölüm sayfası yeniden düzenlendi: üstte geri ve "Bitti" aynı hizada, denetimler tam genişlikte, uzun açıklama "Daha fazla" ile açılır, en büyük yazıda kırpılan metin yok.
+- Ayarlar alttan yükselerek açılır: telefonda ekranı kaplar, başlığından aşağı çekince kapanır. Listede solda kapat, sağda Hakkında; bölümde solda geri, sağda kapat. Denetimler tam genişlikte, uzun açıklama "Daha fazla" ile açılır, en büyük yazıda kırpılan metin yok. Tablette ve katlanır telefonun iç ekranında ortada yüzen kart olarak durur; geniş tablette liste ve bölüm yan yana.
 - Dokunma yerleri büyüdü: en küçük düğme de parmak ucu kadar.
+- Ayarlar'da bölümden listeye dokunarak dönüş beklemeden olur (her dönüşte bütün Ayarlar yeniden kuruluyordu); kaydırılmış bölüm çıkarken en başa sıçramaz. Hesaplar'da örtülü kartın içi dokunmatikte ilk dokunuşu almaz.
+- Pencerelerin, yarım ekran pencerelerin, Asistan'ın ve komut paletinin kapatma düğmesi aynı görünür cam daire (en az 44 nokta, Android'de 48); komut paletine dokunmatikte kapatma düğmesi geldi.
+- Uygulama içi bildirimler: cam kapsül; solda simge, "Geri al" vurgulu düğme, yanında görünür kapatma düğmesi (dokunmatikte 44 nokta, Android'de 48); geri alınabilir bildirimde kalan süre çubuğu (parmak, fare ya da odak üstündeyken durur). Yana ya da aşağı kaydırınca kapanır; bilgisayarda odak bildirimdeyken Esc kapatır. En çok üç bildirim.
+- Telefonda bildirimin gövdesine dokununca süre bir daha işlemiyor, bildirim kapanmıyordu: düzeldi. Pencere ya da Ayarlar açıkken bildirim üstte çıkar (alttaki Kaydet ve öbür düğmeler örtülmez); klavye açıkken klavyenin üstünde. Tablette altta ortada.
+- Hiç hesap yokken Hesaplar'ın başlığındaki "Ekstre içe aktar" ve "Hesap ekle" düğmeleri taşmaz; Raporlar › Nakit akışı boş durumda ne yapılacağını söyler.
+- Kaydı düzenle: altta yalnızca Vazgeç ve Kaydet kalır; Kopyala, Kategorilere böl…, Kişilerle bölüş… ve Sil formun sonunda tam adlarıyla (adlar kesiliyor, düğmeler üst üste yer kaplıyordu).
+- Android'de pencerelerin alt düğmeleri tek düzende: Vazgeç ve birincil düğme yan yana, birincil sağda.
+- Az içerikli pencereler (Kayıtları denetle, Bakiye neden değişti?, Yedeğe dön, Birikim hedefine bağla) iPhone'da içeriği kadar yüksek açılır.
+- Borç kapatma planı kart düzeninde; Birikim hedefine bağla listesi öbür seçim listeleri gibi.
+- Dar ekranda açılan menü ekranın dışına taşmaz (notun İçindekiler'i sola taşıyordu).
+- Kısa turun "Atla" düğmesi ekranın üst kenarında kesilmez.
+- Pencere açıkken çıkan bildirim pencerenin kapatma düğmesini örtmez: pencerenin üstünde yer varsa orada, yoksa başlığın hemen altında durur (kısa ekranda ve onay pencerelerinde başlığın üstüne biniyordu).
+- Açılıp kapanan başlıklar ve işaret kutulu satırlar parmak ucu kadar dokunma alanı aldı.
+- Komut paletinin ve yazarak eklemenin ipucu yazısı telefonda alana sığar (sözcüğün ortasında kesiliyordu).
+- Dokunuştan sonra düğmenin çevresinde odak halkası kalmaz (klavyeyle gezinirken görünür). Renk seçicileri, kural satırlarındaki simgeler ve kategori çipleri parmak ucu kadar dokunma alanı aldı.
+- Katlanır telefonun iç ekranında Ajanda'nın araç çubuğu düğmeleri birlikte alt satıra geçer; dar ekranda Bütçe'nin "Bütün giderler" satırı sıkışmaz.
 - Özet'in başlığı telefonda sıkışır; net varlık ilk ekranda.
 - Yan tutulan telefonda iki bölme açılmaz.
+- iPhone'da yarım ekran pencerede bir alana dokununca dokunuş o alana gider: pencere dokunuş sürerken büyüyor, Tutar'a dokunuş Tarih'e düşüyordu. Pencere artık parmak kalkınca büyür. Pencere açılırken dokununca da açılış o anda, olduğu yerde durur.
+- Kaydet'e art arda iki kez dokununca ikinci dokunuş, o anda aynı yerde beliren bildirimdeki "Geri al"a gitmez: yeni çıkan bildirim ilk an dokunuş almaz (kayıt fark edilmeden geri alınabiliyordu).
+- iPhone'da "Geri al" bildirimi sekme çubuğunun ve "Yazarak ekle"nin üstünde çıkar (altlarında kalıyor, "Geri al"a dokunulamıyordu). Kaydet'ten sonra çıkan bildirim, pencere kapanıp çubuklar yerine oturunca tek yerde belirir (önce ekranın tepesinde, sonra altta görünüp yerine oturuyor, bir an "Yazarak ekle"nin arkasına iniyordu).
+- Android'de bildirim listenin son kartının düğmelerini kapatmaz; tam boy pencerede alt düğmelerin üstünde durur.
+- Ayarlar'da bölüme giriş dönüşle aynı hareket: yarım saniyelik yumuşak eğri, bölüm parmak değdiği anda hazırlanır (giriş ilk karelerde yolun çoğunu alıyor, yavaş cihazda takılıyordu). Bölümün içinden sağa kaydırınca listeye dönülür; parmak bırakılınca hareket aynı hızla sürer.
+- iPhone'da pencere kapanınca arkadaki sayfa açıldığı yerdedir (formdaki bir alana dokununca arkadaki sayfa kayıyor, pencere kapanınca başka yerde kalıyordu).
+- iPhone'da klavye açıkken Kaydet'e basınca form tek hareketle ekrandan çıkar (klavye inerken yarım görünür halde bekleyip birden kayboluyordu).
+- iPhone'da kayda dokununca açılan formda Kaydet ve Vazgeç klavyenin üstünde durur (klavyenin arkasında kalabiliyor, klavye kapatılmadan kaydedilemiyordu).
 
 **Windows**
 - Yedek ve ek dosyaları yerine konmadan önce diske işlenir; kesintiden kalan yarım dosya açılışta temizlenir, yarım kalan ek yeniden istenince onarılır.

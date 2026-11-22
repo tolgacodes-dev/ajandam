@@ -20,7 +20,11 @@ kullanılır.
   gerekenleri yazabilirsin (ör. "Kısa ve maddeli cevap ver", "Maaşım ayın 15'inde yatar"): Asistan her soruda bunlara
   tercih olarak uyar; kuralları değiştirmez, kayıt eklemeden önce yine onayını alır. Bulutta çalışan bir yapay zeka
   (ChatGPT) seçiliyse notlar her istekte ona gider (kişisel bilgiler gizlenir); bilgisayarında çalışan modellerde
-  bilgisayarından çıkmaz. Notlar yedeklere girer; sohbetler saklanmaz.
+  bilgisayarından çıkmaz. Notlar yedeklere girer.
+- **Sohbet geçmişi (4.9):** Asistan'la sohbetlerin yalnızca bu cihazda saklanır (en çok 50 sohbet); yedeklere, eşitlemeye ve
+  yapay zeka uygulamalarına (MCP) girmez. Asistan'daki **Sohbetler** listesinden eski bir sohbeti açıp kaldığın yerden
+  sürdürebilir, tek tek ya da hepsini silebilirsin; **Yeni sohbet** eskisini listede bırakır. Eski sohbette kalmış, uygulanmamış
+  öneriler uygulanamaz. Tüm verileri sil sohbetleri de siler.
 - **Ekstre ve hesap dökümü okuma:** kurallarla okunamayan dökümleri, taranmış (resim) PDF'leri ve fotoğrafları okur.
   Okuduğu satırların toplamı ekstredeki dönem borcuyla ya da hesap bakiyesiyle karşılaştırılır (mutabakat);
   tutmazsa uyarır. Kategorisi belirsiz satırlar için öneri getirir; öneriler ✦ işaretiyle gösterilir.

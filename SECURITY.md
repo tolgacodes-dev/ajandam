@@ -4,7 +4,7 @@
 
 Ajandam'da bir güvenlik açığı bulduysan lütfen ayrıntıları herkese açık bir Issue'ya yazma. GitHub'ın
 [özel güvenlik bildirimi](https://github.com/tolgacodes-dev/ajandam/security/advisories/new) sayfasını kullan;
-o sayfa açılmazsa ayrıntı vermeden bir Issue açıp ulaşmak istediğini yaz ya da ajandamuygulamasi@gmail.com adresine
+o sayfa açılmazsa ayrıntı vermeden bir Issue açıp ulaşmak istediğini yaz ya da destek@ajandam.dev adresine
 e-posta gönder. Etkilenen sürüm, işletim sistemi (macOS ya da Windows sürümü) ve adım adım nasıl tekrarlanacağı işi
 hızlandırır.
 
@@ -17,8 +17,11 @@ Ajandam güncellemeyi hazır olunca haber verir; kurmak için **Şimdi kur** ve 
 ## Ajandam'ın güvenlik modeli
 
 - **Veriler:** Kayıtlar Mac'te `~/Library/Application Support/Ajandam`, Windows'ta `%APPDATA%\Ajandam` altında,
-  yalnızca senin kullanıcı hesabının okuyabildiği dosyalarda durur. Ajandam bir sunucuya kayıt göndermez; hesap,
-  reklam, izleme kodu ya da kullanım istatistiği yoktur.
+  yalnızca senin kullanıcı hesabının okuyabildiği dosyalarda durur. Reklam, izleme kodu ya da kullanım istatistiği
+  yoktur. Hesap isteğe bağlıdır (5.0): giriş yaparsan kayıtlar ve ekler cihazdan çıkmadan önce hesabın anahtarıyla
+  şifrelenir ve Ajandam'ın sunucusu (`bulut.ajandam.dev`) üzerinden eşitlenir; anahtar yalnızca cihazlarında ve 24
+  karakterlik hesap kurtarma anahtarında durur, sunucuya gitmez. Giriş yapmazsan Ajandam bir sunucuya kayıt göndermez.
+  Ayrıntılar: [ajandam.dev/guvenlik](https://ajandam.dev/guvenlik/).
 - **Kurulum (3.8):** Windows'ta Ajandam varsayılan olarak yalnızca o kullanıcı için, kullanıcının programlar klasörüne
   (`%LOCALAPPDATA%\Programs\Ajandam`) kurulur; yönetici izni istemez ve program dosyaları (3.7 ve öncesinde olduğu
   gibi) o kullanıcının yazabildiği bir klasördedir. Kurulumda **Bu bilgisayardaki herkes için** seçilirse Program
@@ -105,8 +108,7 @@ Ajandam güncellemeyi hazır olunca haber verir; kurmak için **Şimdi kur** ve 
   (ekstre, döküm, başka uygulamanın defteri, yedek) ve sunuculardan gelen her metin sayfaya kaçışla yazılır; 4.0'da hesap
   kartındaki son 4 hane, taşıma önizlemesindeki karşı hesap ve ekstre hatası da bu kurala bağlandı. Yedekten gelen
   tanınmayan alanlar ve yerel deponun birleştirmesi nesne adı taşıyan anahtarları (`__proto__`, `constructor`,
-  `prototype`) almaz. claude.ai'da PDF ve Excel kütüphaneleri cdnjs'ten alt kaynak bütünlüğü (SRI, SHA-384) ile yüklenir:
-  dosya değişmişse çalışmaz.
+  `prototype`) almaz.
 - **Güncellemeler:** Sürümler GitHub Actions'ta derlenip Ajandam'ın kendi imza anahtarıyla imzalanır.
   - Mac: uygulama indirdiği güncellemenin SHA-256 özetini `latest.json` ile, imzasını uygulamaya gömülü sertifika
     parmak iziyle doğrular. Terminal'deki kurulum betiği (`scripts/kur.sh`) de aynı iki denetimi yapar. 3.8'den

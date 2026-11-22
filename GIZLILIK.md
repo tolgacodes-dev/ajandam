@@ -1,13 +1,14 @@
 # Ajandam gizlilik politikası
 
-Son güncelleme: 7 Kasım 2026
+Son güncelleme: 21 Kasım 2026
 
 Ajandam'ı tolgacodes-dev geliştirir. Bu politika Ajandam'ın Mac uygulamasını (Mac App Store'dan ya da indirme sayfasından
 kurulan), Windows uygulamasını (Microsoft Store'dan ya da kurulum dosyasıyla kurulan), iPhone ve iPad uygulamasını (App
 Store) ve Android uygulamasını (Google Play) kapsar.
 
-**Kayıtların cihazında kalır.** Girdiğin işlemler, hesaplar, ödemeler, etkinlikler, notlar ve ekler yalnızca bu
-cihazda, Ajandam'ın klasöründe saklanır:
+**Kayıtların cihazında kalır.** Hesap açıp bulut eşitlemeyi kurarsan şifreli bir kopyası Ajandam'ın sunucusunda da durur
+(aşağıda 16. madde). Girdiğin işlemler, hesaplar, ödemeler, etkinlikler, notlar ve ekler bu cihazda, Ajandam'ın klasöründe
+saklanır:
 
 - Mac App Store'dan kurulan Ajandam: `~/Library/Containers/app.ajandam.mac` (macOS'un Ajandam'a ayırdığı klasör)
 - indirme sayfasından kurulan Mac uygulaması: `~/Library/Application Support/Ajandam`
@@ -33,17 +34,14 @@ uygulamasında yedek klasörü yoktur; Ayarlar › Veriler ve yedek › Google D
 her gün seçtiğin dosyaya (Google Drive, OneDrive, telefon…) yazar, dosyayı o hizmetin uygulaması eşitler. Yedek parolası
 belirlediysen bu yedek ve Yedek indir'in arşivi de şifrelenir (.ajandamyedek).
 
-Kendiliğinden eşitle'yi açarsan (bilgisayarda, iPhone'da ve iPad'de; Ayarlar › Veriler ve yedek) Ajandam yedek klasöründeki
-(ya da iCloud Drive veya OneDrive kopyasındaki) öbür cihazlarının yedeklerini okuyup kayıtları ve ekleri bu cihaza alır.
-Bunun için her cihaz eklerinin bir kopyasını da yedek klasörüne ve bulut kopyasına yazar (yedek parolası belirlediysen
-şifreli). Eşitleme yalnızca senin seçtiğin klasör üzerinden olur; arada Ajandam'ın ya da başka birinin sunucusu yoktur.
-
 İstersen (Mac, iPhone ve iPad; Ayarlar › Güvenlik › Spotlight'ta göster; varsayılan kapalı) not ve ajanda kayıtlarının
 yalnızca başlıkları bu cihazın arama dizinine de (Spotlight) yazılır: dizin bu cihazdadır, not metni, şifreli notlar ve
 tutarlar girmez, PIN kilidi açıkken boş tutulur, seçeneği kapatınca silinir.
 
-Ajandam hesap açtırmaz; reklam, izleme kodu, kullanım istatistiği ya da geliştiriciye gönderilen çökme raporu içermez.
-Geliştirici kayıtlarını göremez. Mac App Store'dan kurulan Ajandam'ı Launchpad'den silmek, Microsoft Store'dan kurulanı
+Ajandam'ı hesap açmadan kullanırsın; hesap yalnızca cihazlarını bulut üzerinden eşitlemek istersen gerekir (16. madde).
+Ajandam reklam, izleme kodu, kullanım istatistiği ya da geliştiriciye gönderilen çökme raporu içermez. Geliştirici
+kayıtlarını göremez: bulut eşitlemede de kayıtların cihazından şifrelenmiş olarak çıkar, anahtarı yalnızca sende durur.
+Mac App Store'dan kurulan Ajandam'ı Launchpad'den silmek, Microsoft Store'dan kurulanı
 kaldırmak ya da Windows Ayarları'nda sıfırlamak, iPhone'da ya da iPad'de Ajandam'ı silmek, Android'de kaldırmak ya da
 uygulama verilerini temizlemek bu kayıtları da siler; önce yedek indir.
 
@@ -55,12 +53,15 @@ uygulama verilerini temizlemek bu kayıtları da siler; önce yedek indir.
    jsDelivr'deki günlük kur listesi (`cdn.jsdelivr.net`, `fastly.jsdelivr.net`) ve ona ulaşılamazsa aynı listenin
    `currency-api.pages.dev`'deki kopyası. Bu isteklerde kayıtlarından hiçbir şey gönderilmez.
 2. *Türkiye verileri* (TÜFE, kart faiz oranları, asgari ödeme sınırı, bayramlar, kısa duyurular; açılıştan kısa süre sonra
-   ve 6 saatte bir, Ayarlar › Hakkında › Türkiye verileri açıkken): Ajandam'ın GitHub'daki indirme deposundan
-   (`raw.githubusercontent.com`), Ajandam'ın imzasıyla doğrulanan bir veri dosyası. Kayıtlarından hiçbir şey gönderilmez.
+   ve 6 saatte bir, Ayarlar › Hakkında › Türkiye verileri açıkken): Ajandam'ın imzasıyla doğrulanan bir veri dosyası.
+   Windows ve Android'de Ajandam'ın sitesinden (`ajandam.dev`; Cloudflare'de barınır), siteye ulaşılamazsa ya da dosya
+   doğrulanamazsa yayımlandığı depodan (`raw.githubusercontent.com`); Mac, iPhone ve iPad'de depodan alınır. Kayıtlarından
+   hiçbir şey gönderilmez.
 3. *Güncellemeler:* Mac App Store'dan kurulan Ajandam'ı Mac App Store, Microsoft Store'dan kurulanı Microsoft Store,
    iPhone ve iPad uygulamasını App Store, Android uygulamasını Google Play günceller; Ajandam bunlarda güncelleme
-   denetlemez. İndirme sayfasından ya da kurulum dosyasıyla kurulan Ajandam yeni sürümü aynı depodan (`github.com`)
-   denetler ve indirir; bu istekte kayıtlarından hiçbir şey gönderilmez.
+   denetlemez. Kurulum dosyasıyla kurulan Windows uygulaması yeni sürümü Ajandam'ın sitesinden (`ajandam.dev`), siteye
+   ulaşılamazsa ya da dosya doğrulanamazsa yayımlandığı depodan (`github.com`); indirme sayfasından kurulan Mac uygulaması
+   depodan (`github.com`) denetler ve indirir. Bu isteklerde kayıtlarından hiçbir şey gönderilmez.
 4. *ChatGPT ile giriş* (isteğe bağlı; Mac, Windows, iPhone, iPad ve Android): girişi tarayıcında OpenAI'nin sayfasında
    yaparsın (`auth.openai.com`; iPhone ve iPad'de uygulamanın içinde açılan Safari sayfasında, Android'de tarayıcında). Asistan bir soruyu yanıtlamak, ekstre okumak ya da kategori önermek için gereken bilgiyi
    (sorun, hesap ve kategori adları, ilgili kayıtların tarihi, tutarı ve açıklaması, toplamlar ve yazdıysan Ayarlar ›
@@ -125,7 +126,7 @@ uygulama verilerini temizlemek bu kayıtları da siler; önce yedek indir.
     İzinler › Takvim'den geri alabilirsin.
 12. Ajandam'ın ekranı Mac'te macOS'un, iPhone ve iPad'de iOS'un WebKit'i, Windows'ta Microsoft Edge WebView2, Android'de
     Android System WebView ile çalışır; WebView2'nin ve Android System WebView'in kendi güncellemeleri ve güvenlik
-    denetimleri Microsoft'un ve Google'ın gizlilik bildirimlerine tabidir. Bağlantılar (ör. GitHub)
+    denetimleri Microsoft'un ve Google'ın gizlilik bildirimlerine tabidir. Bağlantılar (ör. ajandam.dev)
     yalnızca sen tıklayınca tarayıcında açılır.
 13. *Ara sunucu (proxy, Windows):* yukarıdaki bağlantılar Windows'un ara sunucu ayarını izler. Windows'ta otomatik
     yapılandırma betiği (PAC) ya da ayarları otomatik algılama açıksa hangi ara sunucunun kullanılacağını Windows'un
@@ -148,25 +149,41 @@ uygulama verilerini temizlemek bu kayıtları da siler; önce yedek indir.
     kendi alanında tutar. Özet yedeğe, eşitlemeye ve hiçbir sunucuya gitmez. PIN kilidi açıkken özette kayıt olmaz: araç
     takımı ve Kestirmeler yalnızca "Ajandam kilitli" der. Araç takımını ana ekrandan kaldırabilirsin; Tüm verileri sil
     özeti de siler.
+16. *Hesap ve bulut eşitleme* (isteğe bağlı; Ayarlar › Hesap): Apple ya da Google hesabınla giriş yaparsan Ajandam,
+    cihazlarındaki kayıtları ve ekleri kendi sunucusu (`bulut.ajandam.dev`) üzerinden eşitler. Girişi Apple'ın ya da
+    Google'ın sayfasında yaparsın; Ajandam parolanı görmez, onlardan adını ya da e-posta adresini istemez. Sunucuda şunlar
+    durur: Apple'ın ya da Google'ın bu uygulama için verdiği hesap numarasının geri döndürülemeyen bir özeti, rastgele bir
+    hesap kimliği, her cihazının rastgele kimliği, türü, türüne göre verilen genel adı (ör. "Mac · 3F2A"; cihazının kendi
+    adı gönderilmez) ve son eşitleme zamanı, kayıtlarının ve eklerinin şifreli kopyaları. Kayıtların ve eklerin cihazından
+    çıkmadan önce hesabının anahtarıyla şifrelenir; bu anahtar yalnızca cihazlarında ve sana gösterilen 24 karakterlik
+    kurtarma anahtarında durur, sunucuya gitmez. Geliştirici de, sunucunun altyapısını sağlayan Cloudflare de kayıtlarını
+    okuyamaz. Kurtarma anahtarını kaybedersen buluttaki kopya açılamaz; cihazlarındaki kayıtlar yerinde durur. Veriler
+    Cloudflare'in Avrupa Birliği'ndeki veri merkezlerinde saklanır. Sunucu isteklerin günlüğünü tutmaz. Oturum bilgisi ve
+    anahtar yalnızca bu cihazda saklanır: Mac'te, iPhone'da ve iPad'de Anahtar Zinciri'nde, Windows'ta Windows'un
+    şifrelemesiyle (DPAPI), Android'de Android Keystore'daki anahtarla şifreli. Çıkış yapınca bu cihazda eşitleme durur,
+    kayıtların burada kalır. Hesabını Ayarlar › Hesap › Hesabı sil ile ya da uygulama olmadan hesap silme sayfasından
+    silersin: [bulut.ajandam.dev/v1/sil](https://bulut.ajandam.dev/v1/sil). Sunucudaki bütün kopyalar ve hesap kaydı
+    hemen silinir (hesap kaydı veritabanının yedek geçmişinden en geç 30 gün içinde tümüyle çıkar), Apple ile giriş
+    yaptıysan Apple'daki bağlantı da kaldırılır; cihazlarındaki kayıtlar silinmez. Tüm verileri sil bu cihazdaki oturumu
+    ve anahtarı da siler.
 
 **İzinler (iPhone, iPad ve Android).** Ajandam yalnızca senin açtığın özellikler için izin ister: bildirimler (ödeme ve
 etkinlik hatırlatmaları), Face ID, Touch ID ya da parmak izi ve yüz tanıma (kilidi açmak için; biyometrik verine Ajandam
 ulaşmaz, doğrulamayı cihaz yapar), kamera (iPhone ve iPad'de fiş fotoğrafı ve belge tarama; telefonda ve tablette
-karekod: cihazlar arası aktarım ve e-Fatura ya da e-Arşiv faturasının karekodu, cihazın içinde okunur), iPhone ve
+karekod: e-Fatura ya da e-Arşiv faturasının karekodu, cihazın içinde okunur), iPhone ve
 iPad'de ekleri Fotoğraflar'a kaydetmek ve takvim (yalnızca okuma; iPhone, iPad ve Android). Android'de bildirim erişimini
 yalnızca sen Android'in ayarında verirsin (bankadan gelenler için; yukarıda 14). SMS izni istemez, mesaj kutuna erişmez.
 Konumuna ve rehberine erişmez; dosyalarını yalnızca senin seçtiğin pencereyle açar ya da kaydeder.
 
 **Haklarını kullanma.** Kayıtların sana aittir: Ayarlar › Veriler ve yedek'ten yedek indirir, CSV olarak dışa aktarır ya
-da tümünü silersin. Geliştiricide senden bir kayıt yoktur; geri bildirimle gönderdiğin bir mesajın silinmesini uygulamadaki
-Ayarlar › Hakkında › Geri bildirim gönder'den ya da [GitHub sayfasından](https://github.com/tolgacodes-dev/ajandam/issues)
-isteyebilirsin.
+da tümünü silersin. Hesap açmadıysan geliştiricide senden bir kayıt yoktur. Hesap açtıysan sunucudakiler 16. maddede
+yazılıdır; hepsini Hesabı sil ile kendin silersin. Geri bildirimle gönderdiğin bir mesajın silinmesini uygulamadaki
+Ayarlar › Hakkında › Geri bildirim gönder'den ya da destek@ajandam.dev adresine yazarak isteyebilirsin.
 
 **Çocuklar.** Ajandam çocuklara yönelik değildir ve bilerek çocuklardan bilgi toplamaz.
 
 **Değişiklikler.** Bu politika değişirse yeni hali bu adreste, tarihiyle yayımlanır; önemli değişiklikler uygulamanın
 Yenilikler penceresinde duyurulur.
 
-**İletişim.** Ajandam'ın GitHub sayfası: [github.com/tolgacodes-dev/ajandam/issues](https://github.com/tolgacodes-dev/ajandam/issues)
-(herkese açık), uygulamada Ayarlar › Hakkında › Geri bildirim gönder (yalnızca geliştiriciye gider) ya da e-posta:
-ajandamuygulamasi@gmail.com.
+**İletişim.** Uygulamada Ayarlar › Hakkında › Geri bildirim gönder (yalnızca geliştiriciye gider) ya da e-posta:
+destek@ajandam.dev.

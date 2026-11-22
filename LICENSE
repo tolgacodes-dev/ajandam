@@ -1,19 +1,20 @@
 Ajandam — Kullanım Koşulları
 Copyright © 2026 tolgacodes-dev. Tüm hakları saklıdır.
-Son güncelleme: 7 Kasım 2026
+Son güncelleme: 21 Kasım 2026
 
 Aynı metin Ajandam'da Ayarlar › Hakkında › Kullanım koşulları'nda da okunur.
 
 Kısaca
 - Ajandam ücretsizdir; kişisel kullanımın içindir.
-- Kayıtların yalnızca senin cihazında saklanır; geliştirici onları göremez.
+- Kayıtların senin cihazında saklanır; hesap açıp bulut eşitlemeyi kurarsan şifreli bir kopyası
+  Ajandam'ın sunucusunda da durur. Geliştirici onları göremez.
 - Faiz, kur ve vergi gibi hesaplar bilgi amaçlıdır; finansal danışmanlık değildir.
 - Ajandam her gün yedek alır, yine de önemli kayıtların için kendi yedeğini de sakla.
 
 1. Kapsam
 
-   Bu koşullar Ajandam'ın Mac ve Windows uygulamalarını ve claude.ai'deki sürümünü kapsar. Ajandam'ı
-   indirerek, kurarak ya da kullanarak bu koşulları kabul etmiş olursun.
+   Bu koşullar Ajandam'ın Mac ve Windows uygulamalarını kapsar. Ajandam'ı indirerek, kurarak ya da
+   kullanarak bu koşulları kabul etmiş olursun.
 
    Metinde “Ajandam” uygulamayı, “geliştirici” Ajandam'ı geliştiren tolgacodes-dev'i, “kayıtlar”
    uygulamaya girdiğin işlemleri, hesapları, ödemeleri, notları ve diğer bilgileri anlatır.
@@ -34,13 +35,21 @@ Kısaca
 
 3. Kayıtların ve gizlilik
 
-   Kayıtların yalnızca senin cihazında, Ajandam'ın klasöründe saklanır: Mac'te ~/Library/Application
+   Kayıtların senin cihazında, Ajandam'ın klasöründe saklanır: Mac'te ~/Library/Application
    Support/Ajandam (Mac App Store'dan kurulan Ajandam'da ~/Library/Containers/app.ajandam.mac
    içinde), Windows'ta %APPDATA%\Ajandam (Microsoft Store'dan kurulan Ajandam'da Ajandam paketinin
-   klasöründe). claude.ai sürümünde kayıtlar claude.ai hesabına bağlı olarak saklanır.
+   klasöründe).
 
-   Ajandam hesap açtırmaz; reklam, izleme kodu ya da kullanım istatistiği içermez. Geliştirici
-   kayıtlarını göremez, kayıtlarından hiçbir şey geliştiriciye gönderilmez.
+   Ajandam'ı hesap açmadan kullanırsın; hesap yalnızca cihazlarını bulut üzerinden eşitlemek
+   istersen gerekir. Ajandam reklam, izleme kodu ya da kullanım istatistiği içermez. Geliştirici
+   kayıtlarını göremez.
+
+   Hesap ve bulut eşitleme isteğe bağlıdır (Ayarlar › Hesap): Apple ya da Google hesabınla giriş
+   yaparsan kayıtların ve eklerin cihazından çıkmadan önce hesabının anahtarıyla şifrelenir ve
+   Ajandam'ın sunucusu üzerinden cihazların arasında eşitlenir. Anahtar yalnızca cihazlarında ve
+   sana gösterilen kurtarma anahtarında durur; onu kaybedersen buluttaki kopya açılamaz,
+   cihazlarındaki kayıtlar yerinde durur. Hesabını Ayarlar › Hesap › Hesabı sil ile silersin.
+   Sunucuda neyin durduğu gizlilik politikasında yazılıdır.
 
    Kayıtlar sana aittir. Ayarlar › Veriler ve yedek'ten istediğin zaman yedek indirebilir, CSV
    olarak dışa aktarabilir ya da silebilirsin.
@@ -49,14 +58,17 @@ Kısaca
 
    Ajandam internetsiz de çalışır. Yalnızca şunlar için internete çıkar:
 
-   - Güncelleme denetimi ve indirme: GitHub (Mac App Store'dan ya da Microsoft Store'dan kurulan
-     Ajandam'ı Store günceller)
+   - Güncelleme denetimi ve indirme: Ajandam'ın sitesi (ajandam.dev) ya da GitHub (Mac App Store'dan
+     ya da Microsoft Store'dan kurulan Ajandam'ı Store günceller)
    - Türkiye verileri (TÜFE, kart faiz oranları, asgari ödeme sınırı, bayramlar ve kısa duyurular):
-     GitHub'daki, Ajandam'ın imzasıyla yayımlanan veri dosyası; güncelleme denetimi açıkken alınır
-     ve bu istekte kayıtlarından hiçbir şey gönderilmez
+     Ajandam'ın sitesindeki (ajandam.dev) ya da GitHub'daki, Ajandam'ın imzasıyla yayımlanan veri
+     dosyası; güncelleme denetimi açıkken alınır ve bu istekte kayıtlarından hiçbir şey gönderilmez
    - Canlı kripto, döviz ve altın fiyatları ile döviz kurları: herkese açık kaynaklar (Binance,
      Truncgil, TCMB ve jsDelivr'deki günlük kur listesi; ona ulaşılamazsa aynı listenin
      currency-api.pages.dev'deki kopyası); bu isteklerde kayıtlarından hiçbir şey gönderilmez
+   - Hesap ve bulut eşitleme (isteğe bağlı; yalnızca giriş yaptıysan): Apple'ın ya da Google'ın
+     giriş sayfası ve Ajandam'ın sunucusu (bulut.ajandam.dev); kayıtların ve eklerin cihazından
+     şifrelenmiş olarak çıkar
    - Senin bağladığın yapay zeka hizmetleri (bkz. Yapay zeka)
    - Geri bildirim: yalnızca sen gönderdiğinde, formda yazdıkların Google'ın Apps Script hizmeti
      üzerinden Ajandam'ın destek adresine e-postayla iletilir
@@ -123,9 +135,9 @@ Kısaca
 11. Açık kaynak bileşenler ve markalar
 
    Ajandam'ın içindeki açık kaynak bileşenler kendi lisanslarıyla gelir: pdf.js ve SheetJS (Apache
-   License 2.0), IBM Plex Sans ve JetBrains Mono (SIL Open Font License 1.1), LobeHub Icons ve
-   Devicon, notlar için CodeMirror, Lezer, Turndown, MiniSearch, perfect-freehand ve SortableJS
-   (MIT). Windows uygulaması ayrıca Tauri ve kullandığı Rust kütüphaneleriyle (çoğu MIT ya da Apache
+   License 2.0), Inter ve JetBrains Mono (SIL Open Font License 1.1), LobeHub Icons ve Devicon,
+   notlar için CodeMirror, Lezer, Turndown, MiniSearch, perfect-freehand ve SortableJS (MIT).
+   Windows uygulaması ayrıca Tauri ve kullandığı Rust kütüphaneleriyle (çoğu MIT ya da Apache
    License 2.0) derlenir.
 
    Bileşenlerin tam listesi ve lisans metinleri indirme sayfasındaki ACIK-KAYNAK-LISANSLARI.txt
@@ -142,7 +154,7 @@ Kısaca
 13. İletişim
 
    Soru, öneri ve hata bildirimleri için Ayarlar › Hakkında › Geri bildirim gönder'i kullanabilir ya
-   da ajandamuygulamasi@gmail.com adresine yazabilirsin.
+   da destek@ajandam.dev adresine yazabilirsin.
 
 ---
 
@@ -154,13 +166,16 @@ Kullanım koşulları).
 
 Ajandam is free to download, install and use for personal purposes. You may not copy, redistribute, sell, rent or
 modify Ajandam or any part of it, publish a modified copy under the Ajandam name, or reverse engineer it or circumvent
-its signature or update checks, except where the law allows. Your records stay on your own device and belong to you;
-Ajandam has no accounts, ads, tracking or usage statistics, and nothing from your records is sent to the developer.
-The app goes online only for update checks and the signed Turkey data feed (GitHub), public price and exchange-rate
-feeds, the AI services you connect, and feedback you choose to send (delivered by e-mail to the support address through Google Apps Script).
+its signature or update checks, except where the law allows. Your records stay on your own device and belong to you.
+Ajandam works without an account and has no ads, tracking or usage statistics. If you choose to sign in with Apple or
+Google, your records and attachments are synced between your devices through Ajandam's server; they are encrypted on
+your device with a key that only you hold, so the developer cannot read them, and you can delete the account at any time.
+The app goes online only for update checks and the signed Turkey data feed (ajandam.dev or GitHub), public price and
+exchange-rate feeds, the optional account and cloud sync (bulut.ajandam.dev), the AI services you connect, and feedback
+you choose to send (delivered by e-mail to the support address through Google Apps Script).
 Calculations are for information only and are not investment, financial, legal or tax advice. Ajandam is provided
 "as is", without warranty of any kind; to the extent permitted by law, the developer is not liable for any damages
 arising from its use or inability to use it. Keep your own backups. Bundled open source components (pdf.js and SheetJS
-under Apache License 2.0, IBM Plex Sans and JetBrains Mono under SIL Open Font License 1.1, LobeHub Icons and Devicon
+under Apache License 2.0, Inter and JetBrains Mono under SIL Open Font License 1.1, LobeHub Icons and Devicon
 under MIT, and in the Windows app Tauri and other Rust libraries, mostly under MIT or Apache License 2.0) are
-distributed under their own licenses; see ACIK-KAYNAK-LISANSLARI.txt. Contact: ajandamuygulamasi@gmail.com
+distributed under their own licenses; see ACIK-KAYNAK-LISANSLARI.txt. Contact: destek@ajandam.dev

@@ -32,7 +32,6 @@ body:
         - Windows (kurulum dosyasıyla)
         - iPhone ya da iPad
         - Android
-        - claude.ai
     validations:
       required: true
   - type: input
