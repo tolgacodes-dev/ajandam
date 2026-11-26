@@ -10,12 +10,13 @@
 </p>
 
 <p align="center">
-  <a href="https://ajandam.dev/indir/mac"><b>⬇ Mac için indir</b></a>
+  <a href="https://ajandam.dev"><b>ajandam.dev</b></a>
+  &nbsp;·&nbsp; <a href="https://ajandam.dev/indir/mac"><b>⬇ Mac için indir</b></a>
   &nbsp;·&nbsp; <a href="https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420"><b>Mac App Store</b></a>
   &nbsp;·&nbsp; <a href="https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR"><b>⬇ Windows için: Microsoft Store</b></a>
   &nbsp;·&nbsp; <a href="https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420"><b>iPhone ve iPad: App Store</b></a>
-  &nbsp;·&nbsp; <a href="#android"><b>Android</b></a>
-  &nbsp;·&nbsp; <a href="#kurulum">Kurulum</a>
+  &nbsp;·&nbsp; <a href="https://play.google.com/store/apps/details?id=app.ajandam"><b>Android: Google Play</b></a>
+  &nbsp;·&nbsp; <a href="#indir-ve-kur">Kurulum</a>
   &nbsp;·&nbsp; <a href="#yapay-zeka">Yapay zeka</a>
   &nbsp;·&nbsp; <a href="#destek-ve-iletişim">Destek</a>
   &nbsp;·&nbsp; <a href="#english">English</a>
@@ -32,10 +33,10 @@
 </p>
 
 <p align="center">
-  <a href="https://ajandam.dev/#film"><img src="docs/tanitim-filmi.jpg" width="820" alt="Ajandam tanıtım filmi, 2 dakika 53 saniye: Türkçe seslendirme ve altyazı. İzlemek için tıkla."></a>
+  <b><a href="https://ajandam.dev">ajandam.dev</a></b>: tanıtım filmi, bütün özellikler, kurulum ve destek tek yerde.
 </p>
 
-![Ajandam'ın Özet ekranı: ayın geliri ve gideri, ay sonu tahmini, net varlık, dolar hesabı dahil hesap kartları ve yaklaşan ödemeler](docs/ekran/ozet.png)
+![Ajandam'ın Özet ekranı: ayın geliri ve gideri, ay sonu tahmini, net varlık, dolar hesabı dahil hesap kartları ve yaklaşan ödemeler](docs/ekran/ozet.webp)
 
 ## Neden Ajandam?
 
@@ -57,215 +58,45 @@
 
 ## Ekranlar
 
-### Ajandam Asistanı
-
-![Ajandam Asistanı: bu ayın harcamalarını geçen ayla karşılaştırıyor ve market bütçesini değiştirmeyi öneriyor](docs/ekran/asistan.png)
-
-Üst çubuktaki **✦ Asistan** düğmesiyle ya da ⇧⌘A (Windows'ta Ctrl+Shift+A) ile açılır. "Bu ay en çok nereye harcadım?", "Kartımı yalnızca
-asgariyi ödersem ne zaman biter?" gibi soruları kayıtlarına bakarak cevaplar; hangi kayıtlara baktığını gösterir.
-İstersen kayıt eklemeyi ya da bütçe değiştirmeyi önerir; sen **Ekle** ya da **Uygula** demeden hiçbir şey değişmez.
-Kayıtlarındaki yazılar (ör. bir havale açıklaması) asistana talimat veremez. Yapay zeka bağlı değilse Asistan bunu
-söyler ve o cihazda nasıl bağlanacağını gösterir (ChatGPT ile giriş, Apple Intelligence ya da bilgisayarındaki model);
-istersen kurallarla devam edersin, basit sorular yine kayıtlarından cevaplanır.
-
-### Dövizli hesaplar ve harcamalar
-
-![Yeni gider: kredi kartına 49,99 dolar; o günün kuruyla TL karşılığı, kur ve Kuru değiştir bağlantısı](docs/ekran/doviz.png)
-
-Hesabı dolar, euro ya da 150'den fazla para biriminden biriyle açarsın; bakiyesi kendi para biriminde, TL karşılığı
-altında görünür. Yurt dışı harcamasını kartına $49,99 diye yazarsın: o günün kuruyla TL karşılığı hesaplanır, bankanın
-uyguladığı kuru biliyorsan **Kuru değiştir** ile girersin. Euro kartla dolar harcamada çapraz kur gösterilir. Net
-varlık, bütçe ve raporlar TL'ye çevrilerek hesaplanır.
-
-### Ekstre ve hesap dökümü içe aktarma
-
-![Kart ekstresi içe aktarma: 24 işlem okunmuş, toplam dönem borcuyla tutuyor, yapay zeka bilinmeyen iş yerlerine kategori önermiş](docs/ekran/ekstre.png)
-
-Bankanın internet şubesinden indirdiğin PDF ya da Excel dökümünü bırak. Satırlar okunur, toplam ekstredeki dönem
-borcuyla karşılaştırılır, daha önce girdiğin kayıtlar ikinci kez eklenmez, taksitlerin kalanı gelecek aylara
-planlanır. Kurallarla okunamayan ya da taranmış dökümleri yapay zeka okur; tanımadığı iş yerlerine kategori önerir.
-Bir kategoriyi düzeltirsen Ajandam öğrenir, sonraki dökümlerde kendiliğinden uygular.
-
-Başka bir bütçe uygulamasından geçiyorsan **Ayarlar › Veriler ve yedek › Başka uygulamadan taşı** bütün defterini getirir:
-o uygulamanın dışa aktardığı çok hesaplı CSV, Excel ya da QIF dosyası. Dosyadaki hesapları ve kategorileri Ajandam'dakilerle
-eşlersin (tanımadığı kategoriyi kendiliğinden açmaz), iki hesap arasındaki para hareketleri tek transfer olur, etiketler ve
-notlar da gelir. Önce neyin ekleneceğini görürsün; aynı dosyayı yeniden yüklersen kayıtlar çoğalmaz, tek dokunuşla geri
-alırsın.
-
-### Kredi kartı araçları
-
-![Kart araçları: güncel borç, son ekstre, asgari ödeme, TCMB faiz oranları ve yalnızca asgari ödenirse borcun ne zaman biteceği](docs/ekran/kart-araclari.png)
-
-Asgari ödeme (limite göre %20 ya da %40), akdi ve gecikme faizi, KKDF ve BSMV ile "yalnızca asgariyi ödersem" ve
-"her ay şu kadar ödersem" hesabı. Hafta sonuna ya da resmî tatile denk gelen son ödeme günü ilk iş gününe kayar.
-
-### Net varlık
-
-![Net varlık raporu: iki yıllık ay sonu net varlık grafiği, enflasyondan arındırılmış çizgi, varlık türleri ve hesaplar](docs/ekran/net-varlik.png)
-
-Banka, birikim, döviz ve altın, kripto, fon ve BES hesaplarının toplamı; kart ve banka kredisi borçları düşülür.
-İstersen kişilerle borç ve alacakların da katılır. Döviz, altın ve kripto canlı fiyatla, dövizli hesaplar güncel kurla
-TL'ye çevrilir. Bir yılda ne kadar arttığını enflasyondan arındırılmış olarak da görürsün. Net varlığını dolar ya da
-euro olarak da izleyebilirsin: her ay sonu o günün TCMB kuruyla çevrilir. Her ayın değişimi tasarruf, kur etkisi,
-piyasa etkisi ve diğer olarak ayrılır; artışın ne kadarının biriktirdiğinden, ne kadarının kurdan geldiğini görürsün.
-
-Alım-satımlarını girersen kripto, döviz ve altın, fon ve hisse (TEFAS, BIST) için ortalama maliyet, gerçekleşen ve
-gerçekleşmemiş kâr/zarar, temettü hesaplanır; enflasyondan arındırılmışı da. Fon ve hisse fiyatlarını sen girersin (birden
-çok satırı yapıştırarak ya da aracı kurumun CSV'sinden). BES'te devlet katkısı ayrı alt bakiye: hak ediş, yıllık tavan ve
-devreden katkıyla; karttan ödenen katkı payını onayınla katkıya çevirirsin. Kâr/zarar vergi hesabı değildir.
-
-### Enflasyon ve kira artışı
-
-![Enflasyon raporu: TÜFE, 12 aylık ortalama, gelir ve giderin enflasyondan arındırılmış değişimi ve kira artışı hesabı](docs/ekran/enflasyon.png)
-
-Gelir ve giderlerin TÜİK'in TÜFE verisiyle bugünün parasına çevrilir: gelirin enflasyonu yendi mi, harcaman gerçekte
-arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylık ortalamasıyla hesaplanır (TBK 344).
-
-### Ve daha fazlası
-
 <table>
   <tr>
-    <td width="50%" valign="top"><img src="docs/ekran/sag-tik.png" alt="Hesap kartında sağ tık menüsü"><br><b>Sağ tık menüleri</b><br><sub>Hesapta, işlemde, ödemede, notta ve takvim gününde o şeye ait işlemler.</sub></td>
-    <td width="50%" valign="top"><img src="docs/ekran/ozet-donem.png" alt="Özet ekranı, son 6 ay"><br><b>Özet dönemleri</b><br><sub>Tek ay ya da son 3, 6, 12, 24 ay; önceki dönemle karşılaştırmalı.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/asistan.webp" alt="Ajandam Asistanı: bu ayın harcamalarını geçen ayla karşılaştırıyor ve market bütçesini değiştirmeyi öneriyor"><br><b>Ajandam Asistanı</b><br><sub>Kayıtlarına soru sorarsın; önerdiği hiçbir şey sen onaylamadan kaydedilmez.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/ekstre.webp" alt="Kart ekstresi içe aktarma: 24 işlem okunmuş, toplam dönem borcuyla tutuyor, yapay zeka bilinmeyen iş yerlerine kategori önermiş"><br><b>Ekstre içe aktarma</b><br><sub>Banka ve kart dökümünü (PDF, Excel, CSV) sürükle; toplamı denetler, çift kaydı ayıklar.</sub></td>
   </tr>
   <tr>
-    <td width="50%" valign="top"><img src="docs/ekran/hesaplar.png" alt="Hesaplar ve kredi kartı"><br><b>Hesaplar ve kartlar</b><br><sub>Kart limiti, kullanılabilir tutar, gelecek taksitler ve ekstre durumu.</sub></td>
-    <td width="50%" valign="top"><img src="docs/ekran/ajanda.png" alt="Ajanda, ay görünümü ve yanında seçili günün paneli"><br><b>Ajanda</b><br><sub>Etkinlikler, yapılacaklar, ödeme günleri, projeler, resmî tatiller ve arifeler.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/doviz.webp" alt="Yeni gider: kredi kartına 49,99 dolar; o günün kuruyla TL karşılığı, kur ve Kuru değiştir bağlantısı"><br><b>Dövizli hesaplar ve harcamalar</b><br><sub>150'den çok para birimi; o günün kuruyla TL karşılığı.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/kart-araclari.webp" alt="Kart araçları: güncel borç, son ekstre, asgari ödeme, TCMB faiz oranları ve yalnızca asgari ödenirse borcun ne zaman biteceği"><br><b>Kredi kartı araçları</b><br><sub>Asgari ödeme, TCMB faiz oranları ve borcun ne zaman biteceği.</sub></td>
   </tr>
   <tr>
-    <td width="50%" valign="top"><img src="docs/ekran/notlar.png" alt="Not: yapılacaklar, kendiliğinden toplanan tutar tablosu ve yanında içindekiler"><br><b>Notlar</b><br><sub>Yazarken biçimlenen notlar, yapılacak listeleri, tutar tablosu, etiketler ve klasörler.</sub></td>
-    <td width="50%" valign="top"><img src="docs/ekran/ozet-acik.png" alt="Özet ekranı, açık tema"><br><b>Açık ve koyu tema</b><br><sub>Mac'in ya da Windows'un görünümünü ve saydamlık ayarını izler; Mac'te istersen cam görünüm.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/net-varlik.webp" alt="Net varlık raporu: iki yıllık ay sonu net varlık grafiği, enflasyondan arındırılmış çizgi, varlık türleri ve hesaplar"><br><b>Net varlık</b><br><sub>Ay sonu net varlığın, enflasyondan arındırılmış çizgisiyle.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/enflasyon.webp" alt="Enflasyon raporu: TÜFE, 12 aylık ortalama, gelir ve giderin enflasyondan arındırılmış değişimi ve kira artışı hesabı"><br><b>Enflasyon ve kira artışı</b><br><sub>TÜFE ile gerçek değişim ve kira artış sınırı.</sub></td>
   </tr>
   <tr>
-    <td width="50%" valign="top"><img src="docs/ekran/yapay-zeka.png" alt="Ayarlar, yapay zeka bölümü: Ajandam'a bağlanan uygulamalar"><br><b>Yapay zeka ayarları</b><br><sub>Apple Intelligence, ChatGPT, yerel modeller ve Ajandam'a bağlanan uygulamalar tek yerde.</sub></td>
-    <td width="50%" valign="top"><img src="docs/ekran/hakkinda.png" alt="Ayarlar penceresi, Hakkında bölümü"><br><b>Ayarlar</b><br><sub>Ortada açılan pencere: solda arama ve bölümler. Hakkında'da sürüm, güncellemeler ve sürüm notları.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/sag-tik.webp" alt="Hesap kartında sağ tık menüsü"><br><b>Sağ tık menüleri</b><br><sub>Hesapta, işlemde, ödemede, notta ve takvim gününde o şeye ait işlemler.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/ozet-donem.webp" alt="Özet ekranı, son 6 ay"><br><b>Özet dönemleri</b><br><sub>Tek ay ya da son 3, 6, 12, 24 ay; önceki dönemle karşılaştırmalı.</sub></td>
   </tr>
   <tr>
-    <td width="50%" valign="top"><img src="docs/ekran/kilit.png" alt="Kilit ekranı: Deniz'in Ajandası, PIN tuşları ve Touch ID ile aç"><br><b>Kilit ekranında adın</b><br><sub>PIN, Touch ID ya da Windows Hello; kilit ekranı adınla açılır.</sub></td>
-    <td width="50%" valign="top"><img src="docs/ekran/windows.png" alt="Windows'ta Ajandam: pencerenin üstünde Dosya, Düzen, Görünüm, Git ve Yardım menüleri"><br><b>Windows'ta</b><br><sub>Aynı Ajandam; menü çubuğu, bildirim alanı, görev çubuğu ve Windows bildirimleriyle.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/hesaplar.webp" alt="Hesaplar ve kredi kartı"><br><b>Hesaplar ve kartlar</b><br><sub>Kart limiti, kullanılabilir tutar, gelecek taksitler ve ekstre durumu.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/ajanda.webp" alt="Ajanda, ay görünümü ve yanında seçili günün paneli"><br><b>Ajanda</b><br><sub>Etkinlikler, yapılacaklar, ödeme günleri, projeler, resmî tatiller ve arifeler.</sub></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><img src="docs/ekran/notlar.webp" alt="Not: yapılacaklar, kendiliğinden toplanan tutar tablosu ve yanında içindekiler"><br><b>Notlar</b><br><sub>Yazarken biçimlenen notlar, yapılacak listeleri, tutar tablosu, etiketler ve klasörler.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/ozet-acik.webp" alt="Özet ekranı, açık tema"><br><b>Açık ve koyu tema</b><br><sub>Mac'in ya da Windows'un görünümünü ve saydamlık ayarını izler; Mac'te istersen cam görünüm.</sub></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><img src="docs/ekran/yapay-zeka.webp" alt="Ayarlar, yapay zeka bölümü: Ajandam'a bağlanan uygulamalar"><br><b>Yapay zeka ayarları</b><br><sub>Apple Intelligence, ChatGPT, yerel modeller ve Ajandam'a bağlanan uygulamalar tek yerde.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/hakkinda.webp" alt="Ayarlar penceresi, Hakkında bölümü"><br><b>Ayarlar</b><br><sub>Ortada açılan pencere: solda arama ve bölümler. Hakkında'da sürüm, güncellemeler ve sürüm notları.</sub></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><img src="docs/ekran/kilit.webp" alt="Kilit ekranı: Deniz'in Ajandası, PIN tuşları ve Touch ID ile aç"><br><b>Kilit ekranında adın</b><br><sub>PIN, Touch ID ya da Windows Hello; kilit ekranı adınla açılır.</sub></td>
+    <td width="50%" valign="top"><img src="docs/ekran/windows.webp" alt="Windows'ta Ajandam: menü düğmesi, arama ve pencere düğmeleri tek satırda"><br><b>Windows'ta</b><br><sub>Aynı Ajandam; Windows 11'de menü, arama ve pencere düğmeleri tek satırda, bildirim alanı, görev çubuğu ve Windows bildirimleriyle.</sub></td>
   </tr>
 </table>
 
-<sub>Ekran görüntülerindeki adlar, tutarlar ve kayıtlar uydurmadır.</sub>
+<sub>Ekran görüntülerindeki adlar, tutarlar ve kayıtlar uydurmadır. Bütün özellikler, ekran görüntüleriyle:
+[ajandam.dev/ozellikler](https://ajandam.dev/ozellikler/).</sub>
 
-## Özellikler
-
-- **Para:** gelir ve gider, hesaplar arası transfer, kredi kartları (kesim ve son ödeme günü, taksit, asgari ödeme),
-  banka kredileri (kalan anapara borç olarak, taksit planı, ara ödeme ve erken kapama; taksidin yalnızca faizi gider),
-  düzenli kayıtlar, ödemeler ve faturalar, abonelikler (kendiliğinden yakalanır; zamlanınca aylık ve yıllık farkıyla), bütçe, hedefler (istersen birikim
-  ya da fon hesabına bağlanır: katkı o hesaba transfer olarak yazılır, her ay otomatik katkı kurulur), kişilerle borç ve
-  alacak (istersen hesaptan düşülür, net varlığa katılır, taksit planıyla izlenir).
-  Dövizli hesaplar ve harcamalar: 150'den fazla para birimi; TL karşılığı o günün kuruyla, istersen kendi kurunla.
-  Etiketler (#tatil), iade kaydı (iade gelir sayılmaz, kategorisinin harcamasından düşer), harcama bölme, vadeli
-  mevduat (faiz, stopaj, net getiri, vade dolunca onay), kredi hesaplayıcı (KKDF ve BSMV), gelişmiş filtreler ve
-  kayıtlı görünümler, kategori kuralları, alt kategoriler (Market altında Kasap gibi; raporlarda ve bütçede üstünde
-  toplanır). Bütçede her limit yazıldığı aydan başlayarak geçerli (geçmiş aylar kendi limitleriyle), istersen geçen
-  ayın artanı ya da aşımı devreder; aylık toplam tavan ve tatil, giyim gibi harcamalar için yıllık bütçe. Hanede
-  kimin harcadığını ayırmak için kişi etiketleri (#eşim), Kişi süzgeci ve raporu. Hesabın ayrıntısında **Geçmiş
-  bakiye**: geçmiş bir günün bakiyesi ve o günden sonra onu değiştiren kayıtlar ("Bakiye neden değişti?"). Bir ödemenin
-  hesabı son güne kadar yetmeyecekse Ödemeler'de ve Özet'te önceden söylenir (ek hesap limitiyle; döküm her kalemi
-  gösterir). **Ay kapanışı:** biten ayı kapatınca o ayın ve öncesinin işlemleri değiştirilemez; gerekirse bilerek açarsın.
-  Ay istersen maaş gününde başlar (**Ayarlar › Genel › Ay başlangıcı**): Özet, Bütçe, Raporlar ve İşlemler ayı o günden
-  sayar. **Hangi kartla öde:** bugünkü harcamanın her kredi kartında ne zaman ödeneceği, en uzun süre önce; "20.000 TL
-  harcayacağım" yazınca (aramada, hızlı eklemede ya da Asistan'da) limiti yeten kartlar, alışverişten sonra kalan limit ve
-  son ödeme günü. **Borç kapatma planı:** her ay ayıracağın tutarla kart, ek hesap, kredi ve kişisel borçların kaç ayda
-  kapanır, ne kadar faiz ödersin (en yüksek faizli ya da en küçük borç önce); ay ay ödeme planı (her ay hangi borca ne kadar,
-  faiz ve kalan) ve ek ödemenin etkisiyle. Ücretsiz denemesi biten ve yıllık yenilenen abonelik önceden hatırlatılır.
-- **Yatırımlar:** alım, satım, temettü ve bölünme; ortalama maliyetle kâr/zarar (enflasyondan arındırılmışı da), fon ve
-  hisse fiyatları elle, yapıştırarak ya da CSV'den; BES'te devlet katkısı, hak ediş ve yıllık tavan. Döviz, altın ve
-  kriptoda **fiyat uyarısı**; fon fiyatı 7 günden eskiyse hatırlatılır, fon kodunun yanında TEFAS bağlantısı.
-- **Raporlar:** genel görünüm, nakit akışı tahmini, ay özeti, net varlık, enflasyon, etiketler, kişiler ve yılın özeti. Özet
-  tek ay ya da son 3 ay, 6 ay, 1 yıl, 2 yıl için; önceki dönemle karşılaştırmalı. Özet'in **Sade** görünümü yalnızca bugünü
-  gösterir: net varlık ve hesaplar, bugünün işleri, bekleyen ödemeler. **Özeti düzenle:** Özet'in bölümlerini aç, kapat ve
-  sırala; hazır "Ajanda önce" düzeni ve Bütçe bölümü. **Akış şeması:** seçtiğin dönemde gelirler solda,
-  giderler sağda; fark birikime ya da birikimden. Sabah özetinde bütçe uyarısı. Nakit
-  akışı 30 günden 12 aya kadar; "ya şöyle olursa" senaryolarıyla (tek seferlik gider, kira artışı, kart ek ödemesi,
-  kredinin erken kapanması) iki tahmini yan yana görürsün; senaryoları adıyla kaydeder, dört senaryoya kadar dönem sonu
-  bakiyesini, en düşük bakiyeyi ve eksiye düşülen günü karşılaştırırsın. Yılın özetinde konut kira gelirinin beyan tahmini: istisna,
-  götürü ve gerçek gider karşılaştırması, tahmini vergi ve iki taksit (istersen vergi takvimine öneri olarak); işyeri
-  kirası (#işyeri etiketi) için yalnızca bilgi notu. 2025 ve 2026 gelirleri için; vergi danışmanlığı değildir, beyandan
-  önce bir mali müşavire doğrulat.
-- **Hızlı ekleme:** "market 250", "telefon 24000 6 taksit kart" yaz; kategori, tarih ve hesap kendiliğinden bulunur.
-  "yarın 9 doktor" etkinlik, "her ayın 5'i kira 12.000" düzenli kayıt, "her pazartesi 10:00 toplantı" tekrarlayan
-  etkinlik olur; "$5", "akşam 7'de", "haftaya salı" da anlaşılır. Hangi uygulamada olursan ol küçük bir ekleme
-  penceresi açılır: Mac'te ⌥⌘A (menü çubuğundan da; 3.9'dan önce kurulduysa ⌃⌥A), Windows'ta Ctrl+Alt+Space (bildirim
-  alanından ve görev çubuğundan da); kısayolu değiştirebilirsin.
-- **İçe aktarma:** banka ve kart dökümleri (PDF, Excel, CSV; okunamayan dosyada sütunları kendin seçersin), başka bir
-  bütçe uygulamasından taşıma (çok hesaplı CSV, Excel ya da QIF; hesaplar, kategoriler, etiketler ve transferlerle), fiş
-  fotoğrafı, CSV dışa aktarma, takvim dosyası (.ics) içe ve dışa aktarma, tam yedek (fiş ve fatura ekleriyle tek bir
-  .zip arşivi; her dosyanın SHA-256 özetiyle) ve geri yükleme; geri yüklemeden önce neyin değişeceği gösterilir,
-  **Seçerek geri yükle** ile yedekten yalnızca aradığın kayıtları (buradakiyle farkını görerek) geri getirirsin,
-  **Yedeği doğrula** bir arşivin ya da yedeğin sağlam olduğunu hiçbir şey yazmadan denetler. **Yedek parolası**
-  belirlersen bilgisayarından çıkan kopyalar (arşiv, iCloud Drive ya da OneDrive, yedek klasörü) AES-256 ile şifrelenir
-  (.ajandamyedek); parolanı unutursan kurulurken verilen kurtarma anahtarıyla açarsın. e-Fatura ve e-Arşiv faturasının
-  karekodu eklenen PDF'ten ya da fotoğraftan okunur (telefonda kamerayla da): tutar, tarih ve satıcı yazılır, aynı fatura
-  ikinci kez kaydedilirken uyarılır. Geniş pencerede dökümü içe aktarırken seçili satırın PDF sayfası listenin yanında açılır.
-- **Ajanda:** ay, hafta ve liste görünümü (liste önümüzdeki 14 günü ya da bu ayı gösterir); yapılacaklar ve
-  hatırlatmalar (bir kayda beşe kadar, "1 gün ve 15 dakika önce" gibi hazır seçeneklerle). **Projeler:** bir işin
-  yapılacakları, etkinlikleri, ödemeleri, harcamaları, notları ve belgeleri tek sayfada; son tarih, ilerleme, bütçe ve
-  sıradaki iş. Hafta görünümünde kaydı fareyle ya da kalemle sürükleyerek başka saate ya da güne taşır, alt kenarından
-  çekip süresini değiştirirsin (bilgisayarda ve tablette); etkinliğe hazırlık ve yol için ara süre eklenir, tüm gün meşgul
-  işaretlenir. **Haftayı kapat:** gecikmiş ödemeler, bitmemiş yapılacaklar ve Gelen kutusu tek pencerede; tamamla,
-  gelecek haftaya taşı ya da bırak. **Boş zaman bul:** etkinlik ya da yapılacak eklerken çalışma saatlerinin içindeki
-  boşluklar önerilir (ara süre ve meşgul gün dolu sayılır). Yapılacaklarda öncelik (öncelikliler önce gelir; hızlı eklemede "!!" ya da "!") ve alt görevler
-  (satırda 2/5). Tekrarlayan etkinlikler: her gün, N günde ya da haftada bir, seçtiğin günler, ayın son cuması;
-  değiştirirken "yalnızca bu", "bu ve sonrakiler" ya da "tümü". Birden çok gün süren etkinlikler (tatil, kamp, fuar) ay
-  ve hafta görünümünde şerit olarak. Google Takvim, Apple Takvim ya da Outlook'tan dışa aktardığın takvim dosyasını
-  (.ics) içe aktarırsın: tekrarlar, istisnalar ve hatırlatmalar gelir, önce ne ekleneceği gösterilir, aynı dosyayı yeniden
-  aktarınca kayıtlar çoğalmaz. Fikstür, okul ya da tatil takvimi gibi paylaşılan takvimlere abone olursun (webcal):
-  Ajandam yalnızca senin eklediğin adresi 6 saatte bir indirir, etkinlikler ayrı renkte, salt okunur görünür, istediğini
-  ajandana kopyalarsın. Mac'te, iPhone'da, iPad'de ve Android'de istersen cihazın takvimindeki etkinliklerin de (iCloud,
-  Google, Exchange, Outlook hesapların) ajandada salt okunur görünür; Ajandam takvime bir şey yazmaz. İki yönlü eşitleme yok. Mac'te istersen ödemelerin ve yapılacakların
-  (önceliğiyle; ayrıca açarsan etkinliklerin ve borçların da) Anımsatıcılar üzerinden iPhone'una da düşer; Windows'ta
-  takvim dosyasıyla ödemeler ve borçlar da telefonunun takviminde hatırlatılır. Etkinliğin notundaki toplantı bağlantısı
-  (Zoom, Meet, Teams) ajandada "Katıl" ile açılır.
-- **Notlar:** yazarken biçimlenir: başlıklar büyük, kalın ve vurgulu yazı yazdığın anda öyle görünür, yapılacak kutusu
-  doğrudan işaretlenir; biçim işaretleri yalnızca imleç üstlerindeyken çıkar (istersen klasik düzenleyici). Notun metni düz
-  Markdown (kod blokları, bağlantılar, iç içe listeler). Liste Bugün, Dün, Önceki 7 gün gibi gruplu; her satırda özet,
-  klasör, yapılacakların ilerlemesi, ekler ve etiketler. **Tutar tablosu:** son satırı "Toplam" olan tablo kendiliğinden
-  toplanır ve birikim hedefine bağlanır. Satırın başında / yazınca tutar tablosu, tarih ve saat, kayda bağla, çizim ve
-  şablonlar. Not iki cihazda aynı anda değişirse değişiklikler birleştirilir; not geçmişinde şimdiki hâlle fark;
-  yapıştırılan biçimli metin biçimiyle gelir; aramada yazım hatasına rağmen benzer notlar. Yapılacak listeleri, tablolar,
-  etiketler, alt klasörler, sürükle-bırak, arşiv, sabitleme, yazdırma; vurgulama, fotoğraf ve PDF ekleme, dipnotlar, not kutuları
-  (`> [!NOT]`, `> [!UYARI]`, `> [!İPUCU]`), işlem, etkinlik ve ödemelere
-  bağlantı, yapılacak satırını ajandaya ekleme, hatırlatıcı, etkinlikten tek tıkla toplantı notu (iki yönlü bağlantılı),
-  bugünün günlüğü (Git menüsünde de); istediğin notu not parolasıyla şifreleme (parola güç
-  ölçeriyle; istersen Touch ID ya da Windows Hello ile açarsın), Son silinenler (30 gün), not geçmişi, `[[Başlık]]` ile
-  not bağlantıları, şablonlar, notta bul ve değiştir, içindekiler; .md ve .txt içe aktarma, bütün notları .zip olarak
-  dışa aktarma.
-- **Mac:** Ayarlar ortada bir pencerede (solda arama ve bölümler, sağda seçili bölüm), her şeyde sağ tık menüsü (hesap,
-  işlem, ödeme, not, takvim günü), ⌘Z ile geri alma, bildirimlerde
-  "Ödendi", "Yarın hatırlat", "Yapıldı" ve "10 dk ertele", Ajandam'ın kendi bildirim sesleri, Dock rozeti, Mac açılınca
-  başlat (macOS 13 ve üstü), istersen PIN ve Touch ID kilidi (Mac uyuyunca ya da ekran kilitlenince Ajandam da
-  kilitlenir; PIN'i unutursan Mac parolanla sıfırlarsın), sürükle-bırak, klavye kısayolları, açık ve koyu tema. Dock'taki
-  simgeye sağ tıklayınca Hızlı Ekle, Yeni Not ve Bugün; bir uygulamada seçtiğin metin sağ tık › Servisler ile Ajandam'a not
-  olur ya da hızlı ekleme penceresinde açılır (ör. bankanın harcama SMS'i; Enter'a basmadan bir şey eklenmez). İstersen not
-  ve ajanda başlıkların Spotlight'ta çıkar (varsayılan kapalı; yalnızca başlıklar, PIN kilidi açıkken hiçbiri).
-- **Windows:** Windows 11'de menü, arama ve pencere düğmeleri tek satırda (tümleşik başlık çubuğu, yerleşim
-  önerileriyle; istersen klasik başlık) ve istersen Mica görünüm (pencerenin zemini masaüstünün renklerini hafifçe alır;
-  **Ayarlar › Görünüm**), Ayarlar ortada bir pencerede, Dosya, Düzen, Görünüm, Git ve Yardım menüleri (Alt tuşlarıyla), her şeyde
-  sağ tık menüsü, Ctrl+Z ile geri alma, bildirimlerde "Ödendi", "Yarın hatırlat", "Yapıldı" ve "10 dk ertele", bildirim alanı ve görev çubuğu
-  rozeti, istersen PIN ve Windows Hello kilidi (Win+L ile Ajandam da kilitlenir; PIN'i unutursan Windows Hello ile
-  sıfırlarsın, Windows Hello yoksa kilit ekranı Ajandam'ı kapatıp veri klasöründeki `guvenlik.json` dosyasını silmeni
-  söyler ve klasörün yolunu gösterir), sürükle-bırak, klavye kısayolları; kurumsal ağlarda Windows'un ara sunucu
-  (proxy) ayarı kullanılır: elle girilen ara sunucu, otomatik yapılandırma betiği (PAC) ve ayarları otomatik algılama
-  (WPAD). Ara sunucu kullanıcı adı ve parola istiyorsa **Ayarlar › Windows › Ağ**'dan girersin (yalnızca o sunucuya
-  gönderilir; NTLM ve Kerberos isteyen ara sunucular desteklenmez); **Sorun giderme › Ağ tanılama** hangi yolun
-  seçildiğini gösterir.
-- **Senin Ajandan:** kilit ekranında adın, 24 kart rengi, dört uygulama simgesi, her bildirim türüne ayrı ses; Android 12 ve
-  sonrasında istersen vurgu rengi duvar kağıdından. **Ayarlar › Görünüm › Standart görünüme dön** bu cihazdaki görünüm
-  seçimlerini birden varsayılana döndürür.
-  **Tutarları gizle** (Mac'te ⇧⌘H, Windows'ta Ctrl+Shift+H) ekrandaki bütün tutarları ₺••• yapar.
-- **Erişilebilirlik:** **Ayarlar › Görünüm › Yazı boyutu** yazıları %90, %100, %115 ya da %130 yapar (yalnızca yazılar
-  büyür; boşluklar ve simgeler aynı kalır, ekran düzeni bozulmaz). Sayfanın tamamını büyüten yakınlaştırma da var: Mac'te
-  ⌘+, Windows'ta Ctrl++. Grafikler klavyeyle gezilir ve tablo olarak da okunur; Ajandam sistemin daha fazla karşıtlık ve
-  hareketi azaltma ayarlarına uyar.
-- **Örneklerle dene:** ilk açılışta ya da **Ayarlar › Hakkında › Yardım**'dan Ajandam'ı iki yıllık uydurma kayıtlarla
-  (hesaplar, kredi kartı, ödemeler, bütçe, raporlar, ajanda, notlar) dene. Kendi kayıtlarına dokunulmaz: örnekler ve
-  denemede yaptıkların yalnızca bellekte durur, üstteki şeritten **Çık** deyince silinir. Denemede bildirim, yedek, dışa
-  aktarma ve yapay zeka uygulamalarının bağlantısı kapalı; PIN kilidin denemede de geçerli.
-
-## Kurulum
+## İndir ve kur
 
 | Dosya | Ne için |
 |---|---|
@@ -274,186 +105,29 @@ arttı mı görürsün. Kira artışı, yenilemeden önceki ayın TÜFE 12 aylı
 | [Microsoft Store](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR) | Windows 10 (1809 ve sonrası) ve Windows 11, x64: Microsoft Store'dan kurulur (önerilen); Windows uyarısı çıkmaz, güncellemeleri Store yapar |
 | [Ajandam-Kurulum.exe](https://ajandam.dev/indir/windows) | Windows 10 (1607 ve sonrası) ve Windows 11, x64: kurulum dosyası |
 | [App Store](https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420) | iPhone ve iPad (iOS 17 ve sonrası): Mac'teki uygulamayla aynı kayıt |
-| [Ajandam-Android.apk](https://ajandam.dev/indir/android) | Android 8.0 ve sonrası: APK (Google Play'deki paketle aynı kaynaktan ve aynı anahtarla imzalı; aşağıda "Android") |
+| [Google Play](https://play.google.com/store/apps/details?id=app.ajandam) | Android 8.0 ve sonrası, telefon ve tablet: Google Play'den kurulur (önerilen); güncellemeleri Google Play yapar |
+| [Ajandam-Android.apk](https://ajandam.dev/indir/android) | Android 8.0 ve sonrası: APK (Google Play'deki paketle aynı kaynaktan ve aynı anahtarla imzalı) |
 | `Ajandam-<sürüm>.zip`, `latest.json`, `latest-windows.json` | Ajandam'ın güncelleyicileri için; elle kurulumda gerekmez |
 | `Ajandam-Claude.mcpb` | Claude masaüstü uzantısı; Ajandam'ın içinden tek tıkla eklenir |
 | `SHA256SUMS` | Bütün dosyaların SHA-256 özetleri |
 
-### Mac
+Adım adım kurulum, güncelleme ve kaldırma: [ajandam.dev/kurulum](https://ajandam.dev/kurulum/).
 
-**Gereksinimler:** macOS 12 Monterey ya da üstü; Apple çipli ve Intel Mac'ler. Apple Intelligence için macOS 26 ve
+- **Mac.** macOS 12 Monterey ya da üstü; Apple çipli ve Intel Mac'ler. Apple Intelligence için macOS 26 ve
 Apple çipli bir Mac gerekir; yapay zekanın diğer yolları her Mac'te çalışır.
+  En kolayı Terminal'e şu satırı yapıştırmak: son sürümü indirir, SHA-256 özetini ve imzasını doğrular,
+  **Uygulamalar** klasörüne kurar ve açar.
 
-**Terminal ile (önerilen):** aşağıdaki satırı Terminal'e yapıştır. Son sürümü indirir, SHA-256 özetini ve imzasını
-doğrular, **Uygulamalar** klasörüne kurar ve açar; macOS'un ilk açılış uyarısı çıkmaz.
-
-```sh
-curl -fsSL https://ajandam.dev/kur.sh | bash
-```
-
-**Disk görüntüsüyle:** [Ajandam.dmg](https://ajandam.dev/indir/mac)
-dosyasını indir ve aç. Açılan pencerede Ajandam'ı oktaki gibi yanındaki **Uygulamalar** klasörüne sürükle, sonra
-Uygulamalar'dan ya da Launchpad'den aç. Ajandam'ı sürüklemeden, disk görüntüsünden ya da İndirilenler'den açarsan
-Ajandam taşımayı önerir (**Uygulamalar klasörüne taşı**): kendini Uygulamalar'a kopyalar, oradan yeniden açılır ve
-disk görüntüsünü çıkarır; İndirilenler'deki kopya Çöp Sepeti'ne gider. İstemezsen **Şimdi değil** de; **Bir daha
-sorma**'yı işaretlersen bir daha sormaz. Disk görüntüsünden ya da İndirilenler'den (taşınmadan) açılan Ajandam kendini
-güncelleyemez.
-
-3.8.1'den Ajandam Apple'ın Developer ID sertifikasıyla imzalanır ve Apple'ın onayından ("notarization") geçer: disk
-görüntüsüyle kurunca ilk açılışta macOS yalnızca İnternet'ten indirildiğini söyler, **Aç**'a basman yeter; Sistem
-Ayarları'ndaki **Yine de Aç** adımı yoktur. 3.8.0 ya da öncesinden güncelleyince imza bir kez değiştiği için macOS,
-ChatGPT oturumu ve şifreli notların anahtarı için Anahtar Zinciri iznini ve Anımsatıcılar iznini bir kez yeniden
-sorabilir; kayıtların etkilenmez.
-
-Ajandam ilk açılışta boştur; kayıtlarını sen girersin ya da dökümlerini içe aktarırsın.
-
-**Güncellemeler:** yeni sürüm çıkınca Ajandam arka planda indirir, imzasını ve özetini doğrular; Ajandam menü
-çubuğundayken (pencere 10 dakikadır kapalıyken; ⌘H ile gizlediğin pencere açık sayılır) kendiliğinden kurar. İstersen
-**Ayarlar › Hakkında**'dan kapatıp "Şimdi güncelle" ile kurarsın. Kayıtların olduğu gibi kalır; kaydedilemeyen bir
-değişiklik varken (ör. disk doluyken) kendiliğinden kurulmaz, bir günü aşarsa Ajandam haber verir. **Ajandam ›
-Güncellemeleri Denetle…** ile hemen bakabilirsin.
-
-**Kaldırma:** Ajandam'ı Uygulamalar klasöründen çöp sepetine taşı. Kayıtların
-`~/Library/Application Support/Ajandam` klasöründedir; onları da silmek istersen bu klasörü sil.
-
-### Windows
-
-**Gereksinimler:** Windows 10 (1607 ve sonrası) ve Windows 11; Microsoft Store'dan kurmak için Windows 10 1809 ve
+  ```sh
+  curl -fsSL https://ajandam.dev/kur.sh | bash
+  ```
+- **Windows.** **Gereksinimler:** Windows 10 (1607 ve sonrası) ve Windows 11; Microsoft Store'dan kurmak için Windows 10 1809 ve
 sonrası. Ajandam yalnızca x64 (Intel ve AMD işlemciler) için derlenir: ARM işlemcili Windows 11 bilgisayarlarda
-Windows'un öykünmesiyle (emülasyon) çalışır, ARM işlemcili Windows 10'da çalışmaz. Ajandam, Windows'taki Microsoft Edge
-WebView2 bileşenini kullanır; bilgisayarında yoksa (çoğunda vardır) kurulum dosyası onu indirip kurar, bunun için
-internet gerekir.
+Windows'un öykünmesiyle (emülasyon) çalışır, ARM işlemcili Windows 10'da çalışmaz.
+- **iPhone ve iPad.** **Gereksinimler:** iOS 17 ve iPadOS 17 ya da üstü (Apple Intelligence için iOS 26 ve destekleyen bir cihaz).
+- **Android.** **Gereksinimler:** Android 8.0 (API 26) ve üstü; telefon ve tablet.
 
-**Microsoft Store'dan (önerilen):** [Ajandam'ı Microsoft Store'da aç](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR) ve yükle. Microsoft
-imzaladığı için Windows uyarısı çıkmaz, yönetici izni istemez; güncellemeleri Microsoft Store kendiliğinden kurar.
-Daha önce kurulum dosyasıyla kurduysan Store'dan gelen Ajandam ilk açılışta kayıtlarını kendine kopyalar (eskilerine
-dokunmaz); sonra eski Ajandam'ı **Ayarlar › Uygulamalar › Yüklü uygulamalar**'dan kaldır, yoksa iki Ajandam ayrı
-kayıtlarla çalışır ve ikisi de hatırlatma gönderir. Store'dan kurulan Ajandam'ı kaldırmak kayıtlarını da siler: önce
-**Ayarlar › Veriler ve yedek › Yedek indir**. Microsoft Store sayfası şimdilik yalnızca Türkiye'de açık.
-
-**Kurulum dosyasıyla** (Microsoft Store'u kullanamıyorsan, ör. Store'u kapatılmış bir iş bilgisayarında, Windows 10
-1607–1803'te ya da Türkiye dışında): [Ajandam-Kurulum.exe](https://ajandam.dev/indir/windows)
-dosyasını indir ve çalıştır. Kurulum tek pencere: **Kur**'a basman yeter, bitince **Aç**. **Seçenekler**'den
-kurulacağı klasörü değiştirebilir, masaüstüne kısayol koyup koymamayı ve Windows açılınca başlatmayı seçebilirsin.
-
-**Nereye kurulur:** Windows'un kullanıcı başına kurulan uygulamalar için ayırdığı klasöre,
-`%LOCALAPPDATA%\Programs\Ajandam`'a (VS Code, Obsidian ve Notion da buraya kurulur). Bu yüzden yönetici izni istemez,
-güncellemeler sorusuz kurulur ve bilgisayardaki başka kullanıcılar etkilenmez. Kayıtların ayrı bir klasörde,
-`%APPDATA%\Ajandam`'dadır; kurulum ve güncelleme onlara dokunmaz. 3.7 ve öncesi `%LOCALAPPDATA%\Ajandam`'a kurulurdu:
-Ajandam güncellenince kendiliğinden yeni yerine taşınır; Başlat menüsündeki, masaüstündeki ve görev çubuğuna
-sabitlediğin kısayollar, Windows açılınca başlatma ve yapay zeka uygulamalarındaki Ajandam ayarları yeni yeri gösterir.
-Kurulumda kendin başka bir klasör seçtiysen Ajandam orada kalır.
-
-**Bu bilgisayardaki herkes için:** **Seçenekler**'de **Bu bilgisayardaki herkes için (Program Files; yönetici izni
-ister)**'i seçersen Ajandam `C:\Program Files\Ajandam`'a kurulur; Başlat menüsünde ve masaüstünde bilgisayardaki herkese
-görünür. **Kur**'a basınca Windows yönetici izni ister; kurulum dosyası bir sertifika kuruluşunca imzalanmadığı için
-izin penceresinde yayımcı **Bilinmeyen yayımcı** görünür. Herkesin kayıtları yine kendi hesabında (`%APPDATA%\Ajandam`)
-kalır; kimse başkasının kayıtlarını görmez. Bu kurulum güncellemeleri kendiliğinden kuramaz: yeni sürüm indirilip
-doğrulanınca Ajandam "Güncelleme hazır; kurmak için Windows izin isteyecek" der, **Şimdi kur**'a basınca Windows yine
-izin ister (izin vermezsen güncelleme hazır bekler, Ajandam sonra yeniden hatırlatır). Bilgisayarda tek Ajandam kalsın
-diye kurulum öbür kopyayı kaldırır (yalnızca senin için kuruluyken herkes için kurarsan ya da tersi); kısayolların,
-Windows açılınca başlatma ve yapay zeka uygulamalarındaki Ajandam ayarları kalan kopyayı gösterir. Diğer kullanıcıların
-kendi hesaplarına kurduğu kopyalar kalır. Kaldırmak da yönetici izni ister; **Kayıtlarımı da sil** yalnızca kaldıran
-kullanıcının kayıtlarını siler.
-
-**Komut satırından (BT yöneticileri için):** `Ajandam-Kurulum.exe /S` sessiz kurar (kurulu Ajandam'ın kapsamında, hiç
-yoksa yalnızca bu kullanıcı için); `/S /ALLUSERS` bilgisayardaki herkes için, `/S /CURRENTUSER` yalnızca bu kullanıcı
-için kurar; `/D=<klasör>` (en sonda, tırnaksız) kurulum yerini seçer. Herkes için sessiz kurulum ve kaldırma yönetici
-olarak açılmış komut isteminde çalışır; değilse hiçbir şey yapmaz (kurulum 740 koduyla, ERROR_ELEVATION_REQUIRED,
-çıkar). Sessiz kaldırma: `"C:\Program Files\Ajandam\uninstall.exe" /S` (kayıtlar kalır).
-
-**İlk çalıştırma:** kurulum dosyası bir sertifika kuruluşunca imzalanmadığı için Windows ilk çalıştırmada "Windows
-kişisel bilgisayarınızı korudu" diyebilir: **Ek bilgi › Yine de çalıştır**. Bu yalnızca ilk kurulumda gerekir.
-Windows 11'de **Akıllı Uygulama Denetimi** (Smart App Control) açıksa imzasız dosyalar "Yine de çalıştır" seçeneği
-olmadan engellenir; Ajandam'ı kurmak için onu **Windows Güvenliği › Uygulama ve tarayıcı denetimi**'nden kapatman
-gerekir. Kapatmadan önce Microsoft'un açıklamasını oku: bazı Windows sürümlerinde yeniden açmak için Windows'u
-sıfırlamak gerekir. Microsoft Store'dan kurunca bu uyarıların hiçbiri çıkmaz.
-
-Kayıtların Mac'teki yedekten taşınabilir: Mac'te **Ayarlar › Veriler ve yedek › Yedek indir**, Windows'ta aynı yerden
-**Yedekten geri yükle**. İndirilen .zip arşivi fiş, fatura ve nottaki resim ve PDF'leri de taşır (yalnızca kayıtlar için
-**Daha fazla › JSON yedek indir**; ona bunlar girmez). Mac'te yedek parolası belirlediysen arşiv şifrelidir
-(.ajandamyedek): Windows'ta yedek parolasıyla ya da kurtarma anahtarıyla açılır.
-
-İndirdiğin dosyayı elle doğrulamak istersen her sürümün **SHA256SUMS** dosyasındaki özetle karşılaştır
-(Mac'te `shasum -a 256 Ajandam.dmg`, Windows'ta `certutil -hashfile Ajandam-Kurulum.exe SHA256`). Mac'te Apple'ın
-onayını `spctl -a -vv /Applications/Ajandam.app` ile görebilirsin: `source=Notarized Developer ID` yazar.
-
-**Güncellemeler:** Microsoft Store'dan kurulan Ajandam'ı Microsoft Store günceller. Kurulum dosyasıyla kurulanda yeni
-sürüm arka planda indirilir, imzası ve SHA-256 özeti Ajandam'ın kendi anahtarıyla doğrulanır; Ajandam bildirim
-alanındayken ya da çıkarken kendiliğinden kurulur (istersen **Ayarlar › Hakkında**'dan kapatıp
-"Şimdi güncelle" ile kurarsın). Kaydedilemeyen bir değişiklik varken (ör. disk doluyken) kendiliğinden kurulmaz; bir
-günü aşarsa Ajandam haber verir. Bilgisayardaki herkes için kurulu Ajandam'da **Şimdi kur** Windows'un iznini ister
-(yukarıda).
-
-**Kaldırma:** **Ayarlar › Uygulamalar › Yüklü uygulamalar › Ajandam › Kaldır**. Kaldırma penceresinde **Kayıtlarımı
-da sil (geri alınamaz)**'ı işaretlersen kayıtların
-(`%APPDATA%\Ajandam`) da silinir; işaretlemezsen kalır ve Ajandam'ı yeniden kurunca kaldığın yerden devam edersin.
-Ajandam'ın zamanlanmış bildirimleri ve pencere bileşeninin önbelleği her durumda kaldırılır.
-Microsoft Store'dan kurulan Ajandam'da kaldırma penceresi yoktur: Windows uygulamayla birlikte kayıtlarını da siler,
-önce **Ayarlar › Veriler ve yedek › Yedek indir**.
-
-### iPhone ve iPad
-
-**Gereksinimler:** iOS 17 ve iPadOS 17 ya da üstü (Apple Intelligence için iOS 26 ve destekleyen bir cihaz).
-[App Store](https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420)'dan kurulur (Mac'teki uygulamayla aynı
-kayıt). Kayıtlar telefonda; yedekler Mac'le aynı biçimde, Dosyalar'da seçtiğin yedek klasörüne de yazılır ve Mac'le
-birleştirilebilir. Yapay zeka: Apple Intelligence'ı destekleyen iPhone ve iPad'de cihazın içinde; 4.0'dan ChatGPT
-hesabınla giriş de var (Asistan, ekstre okuma ve "Ajandam'a sor" ChatGPT'yle). Fiş okuma kamerayla. Siri ve Kestirmeler:
-"Ajandam'a ekle", "Ajandam gider ekle" (tutar, hesap ve kategori; önizlemede onay) ve özet komutları. Fişi ya da faturayı
-Hızlı Bakış'ta işaretleyince işaretli kopya ayrı ek olur, orijinal değişmez. 4.5'ten **Belge tara**: çok sayfalı faturayı
-ya da sözleşmeyi kamerayla tara, tek PDF olarak eklenir ve ilk sayfası okunur; faturanın karekodu da kamerayla okunur.
-Kestirmeler'deki bir Mesaj otomasyonuyla bankanın SMS'i Ajandam açılmadan Özet'te onay bekler; Ekle'ye basmadan kaydedilmez.
-
-5.0'dan hesabınla giriş yaparsan kayıtlar ve ekler bilgisayarındaki ve öteki cihazlarındaki Ajandam'la kendiliğinden
-eşitlenir (aşağıda "Hesap ve eşitleme"); telefonda taranan fatura bilgisayardaki kayıtta da görünür. iPad'de ve iPhone Duo'nun iç ekranında Ajandam iki pencerede açılır; geniş ekranda Ajanda'da gün paneli takvimin,
-notların listesi açık notun, kaydın ayrıntısı İşlemler'in yanında. iPhone Duo'da iki ekranın tamamı kullanılır; kitap gibi
-tutunca bölmeler katlama çizgisinden ayrılır, masaya dayayınca alt yarıda "Yazarak ekle" durur. iPhone yatay da kullanılır;
-kayda, hesaba ya da nota basılı tutunca bağlam menüsü (Düzenle, Çoğalt, Sil, Yeni pencerede aç) açılır; simgenin koyu,
-renkli ve şeffaf hâli var.
-
-### Android
-
-**Gereksinimler:** Android 8.0 (API 26) ve üstü; telefon ve tablet.
-
-- **Google Play:** yakında.
-- **APK:** [Ajandam-Android.apk](https://ajandam.dev/indir/android)
-  (Play'deki paketle aynı kaynaktan ve aynı anahtarla imzalı; SHA-256 özeti yanındaki `.sha256` dosyasında). Yeni sürüm
-  çıkınca uygulama haber verir, güncellemeyi sen indirirsin.
-
-Kayıtlar cihazda, uygulamanın kendi klasöründe; Google'ın yedeğine yalnızca kayıtlar ve yalnızca ekran kilidi varken
-uçtan uca şifreli gider. 4.1'den **Ayarlar › Veriler ve yedek › Google Drive'a otomatik yedek**: Drive'da (ya da
-OneDrive, Dropbox gibi seçtiğin bir yerde) bir dosya seçersin, Ajandam yedeğini her gün oraya yazar; Google hesabını
-Ajandam'a bağlaman gerekmez, dosyayı Drive uygulaması yükler. Bildirimden Ödendi ve Yarın hatırlat, yazdırma ve PDF,
-yedek parolasıyla şifreli yedek, başka uygulamalardan paylaşılan ekstre ve dökümleri içe aktarma, simgeye basılı tutunca
-hızlı eylemler ve uygulama simgesi seçimi var. 4.5'ten bankanın uygulamasından ya da SMS'inden gelen harcama bildirimi
-Özet'te onay bekler (bildirim erişimini sen açarsın; Ekle'ye basmadan kaydedilmez), telefonun takvimleri Ajanda'da görünür,
-ana ekrana **Ajandam · Bugün** araç takımını eklersin (bugünün ajandası ve ödemeleri; PIN açıkken kayıt göstermez) ve
-faturanın karekodu kamerayla okunur. Yapay zeka: ChatGPT hesabınla giriş; cihaz içi model ve yerel model sunucusu yok. Henüz olmayanlar: fiş
-okuma (kamera), yedek klasörü, yapay zeka uygulamalarının bağlantısı (MCP).
-
-### Hesap ve eşitleme
-
-5.0'la gelen hesap isteğe bağlıdır. Açarsan kayıtların ve eklerin şifreli olarak buluta yedeklenir ve cihazlarının arasında
-kendiliğinden eşitlenir; açmazsan her şey aynı çalışır ve kayıtların yalnızca cihazında durur.
-
-- **Giriş:** **Ayarlar › Hesap**'tan Apple ya da Google ile giriş yaparsın; adın ve e-posta adresin istenmez. İkinci yöntemi
-  **Giriş yöntemi ekle** ile aynı hesaba bağlarsın; bağlamadan öbür yöntemle girersen ayrı bir hesap açılır.
-- **Yalnızca sen okursun:** kayıtların cihazından şifrelenerek çıkar. Anahtar yalnızca cihazlarında ve sana gösterilen 24
-  karakterlik hesap kurtarma anahtarında durur; geliştirici de okuyamaz.
-- **Kurtarma anahtarı:** ilk cihazda gösterilir; yazdığını doğrulamadan eşitleme açılmaz. Yeni cihazda giriş yapıp anahtarı
-  yazarsın. Anahtarı kaybedersen ve hiçbir cihazında yoksa buluttaki kopya açılamaz: **Anahtarım yok** ile bulutu sıfırlayıp o
-  cihazın kayıtlarıyla yeniden başlarsın. Cihazlarındaki kayıtlar yerinde kalır. Bu anahtar, yedek parolasının kurtarma
-  anahtarından ayrıdır.
-- **Eşitleme:** kayıtların kendiliğinden eşitlenir; **Şimdi eşitle** beklemeden yapar. **Ekleri de eşitle** fişleri,
-  faturaları ve nottaki ekleri de taşır. Hesap başına 250 MB alan vardır; ne kadarını kullandığın **Ayarlar › Hesap**'ta
-  görünür.
-- **Çakışma:** iki cihazda farklı değişen kayıtta iki hâl yan yana gösterilir; hangisinin kalacağını sen seçersin. Silinen
-  kayıt **Son silinenler**'den geri gelir.
-- **Cihazların:** hesabına bağlı cihazları görür, tek birinden ya da **Bütün cihazlardan çık** ile hepsinden çıkış yaparsın.
-- **Hesabı silmek:** **Ayarlar › Hesap › Hesabı sil**. Sunucudaki bütün kopyalar silinir; cihazlarındaki kayıtlar silinmez.
-
-Sunucu `bulut.ajandam.dev` (Cloudflare, Avrupa Birliği); ne sakladığı [gizlilik politikasının](GIZLILIK.md) 16.
-maddesinde. 5.0'da Wi-Fi'de eşitleme, Karekodla aktar ve klasörle kendiliğinden eşitleme kaldırıldı.
+İndirdiğin dosyanın özetini her sürümün `SHA256SUMS` dosyasındakiyle karşılaştırabilirsin.
 
 ### Yeni cihaza geçmek ve iki cihazı birlikte kullanmak
 
@@ -482,61 +156,35 @@ Evdeki Mac'le işteki Windows gibi iki bilgisayarı hesap açmadan birlikte kull
 
 Yedek parolası belirlediysen kopyalar şifrelidir; öbür bilgisayarda yedek parolasıyla ya da kurtarma anahtarıyla açılır.
 
+## Özellikler
+
+Tam liste sitede: [ajandam.dev/ozellikler](https://ajandam.dev/ozellikler/). Kısaca:
+
+- **Para:** hesaplar, kredi kartları (kesim ve son ödeme günü, taksit, asgari ödeme), krediler, bütçe, abonelikler,
+  hedefler, borç ve alacak; dövizli hesaplar, yatırımlar ve BES; ekstre ve hesap dökümü içe aktarma.
+- **Raporlar:** net varlık, nakit akışı, enflasyon ve kira artışı, yılın özeti, etiketler.
+- **Ajanda ve notlar:** etkinlikler, yapılacaklar, projeler, hatırlatmalar; yazarken biçimlenen notlar, tablolar, ekler.
+- **Her yerden hızlı ekleme:** "market 250" yazman yeter; Mac'te ⌥⌘A, Windows'ta Ctrl+Alt+Space ile başka uygulamadayken de.
+- **Hesap ve eşitleme (isteğe bağlı):** Apple ya da Google ile giriş; kayıtların cihazından şifrelenerek çıkar, anahtar sende kalır.
+
 ## Yapay zeka
 
-Ajandam'ın yapay zekası API anahtarı istemez; **Ayarlar › Yapay zeka** bölümünden seçersin.
-
-| | Nerede çalışır | Ne zaman |
-|---|---|---|
-| **Apple Intelligence** | Mac'inde, iPhone ve iPad'inde; kayıtların hiçbir yere gitmez | macOS 26 ve Apple çipli Mac; iOS 26 ve destekleyen iPhone ya da iPad |
-| **Yerel model** ([Ollama](https://ollama.com), [LM Studio](https://lmstudio.ai)) | Bilgisayarında | Uygulama açıkken kendiliğinden bulunur |
-| **ChatGPT** (hesabınla giriş) | OpenAI'de; soruyla ilgili kayıtların senin izninle gider (IBAN, kart ve TC kimlik numarası, telefon ve e-posta gizlenir; kişi adları gizlenmez) | ChatGPT Plus ya da Pro planın yeter, API anahtarı gerekmez; Mac, Windows, iPhone, iPad ve Android'de (4.0) |
-| **Claude** (masaüstü uygulaması, MCP) | Claude'da | Ajandam uzantısını tek tıkla eklersin |
-| **ChatGPT** (masaüstü uygulaması, MCP) | ChatGPT'de | Ajandam'ı ChatGPT'nin ayarlarına tek tıkla eklersin |
-
-Asistan, ekstre okuma ve kategori önerileri bu yollardan biriyle çalışır; **Otomatik** seçiliyken önce
-bilgisayarındaki model kullanılır. Claude, ChatGPT ya da Cursor gibi MCP destekleyen uygulamalar, sen izin verirsen
-Ajandam'daki kayıtlarına bakabilir, analiz yapabilir, ekleme ve değişiklik önerebilir; öneriler senin onayını bekler. **Ayarlar › Yapay zeka › Hangi uygulamayla çalışacaksın?** listesinden Claude, ChatGPT, Google
-Antigravity, LM Studio, Cursor, VS Code, Claude Code, OpenCode, Cline ve Kimi Code'u tek tuşla bağlar, bağlantıyı
-test edersin. Ayrıntılar: [docs/yapay-zeka.md](docs/yapay-zeka.md)
+Ajandam'ın yapay zekası API anahtarı istemez: Apple Intelligence, yerel modeller (Ollama, LM Studio), ChatGPT hesabınla
+giriş ya da Claude ve ChatGPT gibi uygulamaların bağlanması. Önerdiği hiçbir şey sen onaylamadan kaydedilmez. Yolların
+karşılaştırması ve kurulum adımları: [ajandam.dev/yapay-zeka](https://ajandam.dev/yapay-zeka/) (aynı bilgi
+[docs/yapay-zeka.md](docs/yapay-zeka.md) dosyasında).
 
 ## Gizlilik ve güvenlik
 
-- Kayıtlar cihazında durur (bilgisayarda kullanıcı hesabının klasöründe). Ajandam'ı hesap açmadan kullanırsın; hesap
-  yalnızca cihazlarını eşitlemek istersen gerekir. Geliştirici kayıtlarını göremez: bulut eşitlemede de kayıtların
-  cihazından şifrelenmiş olarak çıkar, anahtarı yalnızca sende durur. Reklam, izleme kodu ya da kullanım istatistiği
-  yoktur.
+- Kayıtların cihazında durur; hesap yalnızca cihazlarını eşitlemek istersen gerekir. Reklam, izleme kodu ya da kullanım
+  istatistiği yoktur.
 - Kayıtlar ve bilgisayarındaki yedekler şifrelenmez (not parolasıyla şifrelediğin notlar dışında). **Yedek parolası**
-  belirlersen bilgisayarından çıkan kopyalar (iCloud Drive ve OneDrive kopyaları, seçtiğin yedek klasöründeki kopyalar ve
-  **Yedek indir**'in arşivi) şifrelenir; parola ve kurtarma anahtarı hiçbir yerde saklanmaz. Belirlemediysen yedek
-  klasörünü (USB bellek, ağ diski) ve arşivi güvendiğin bir yerde sakla. PIN kilidi Ajandam'ın ekranını korur. Diskini
-  FileVault ya da BitLocker ile şifrelemeni öneririz. Ayrıntılar [SECURITY.md](SECURITY.md)'de.
-- **Spotlight'ta göster** (Ayarlar › Güvenlik; varsayılan kapalı) açıksa not ve ajanda kayıtlarının yalnızca başlıkları
-  bu bilgisayarın aramasında görünür (Ajandam'ın kilidinin dışında); not metni, şifreli notlar ve tutarlar girmez, PIN
-  kilidi açıkken dizin boş tutulur, kapatınca silinir.
-- Ajandam internetsiz de çalışır; internete yalnızca şunlar için çıkar:
-  - güncelleme denetimi ve indirme: kurulum dosyasıyla kurulan Windows uygulamasında Ajandam'ın sitesinden (ulaşılamazsa
-    GitHub'dan), indirme sayfasından kurulan Mac uygulamasında GitHub'dan; mağazadan kurulanı mağaza günceller,
-  - Türkiye verileri: TÜFE, kart faiz oranları, asgari ödeme sınırı, bayramlar ve kısa duyurular Ajandam'ın imzasıyla
-    yayımlanan bir veri dosyasından gelir: Windows ve Android'de Ajandam'ın sitesinden (ulaşılamazsa GitHub'dan), Mac,
-    iPhone ve iPad'de GitHub'dan (güncelleme denetimi açıkken; imzası tutmayan veri kullanılmaz),
-  - hesap ve bulut eşitleme (isteğe bağlı, yalnızca giriş yaptıysan): Ajandam'ın sunucusu (`bulut.ajandam.dev`); kayıtların
-    ve eklerin cihazından şifrelenmiş olarak gider, sunucu içeriği okuyamaz; giriş Apple'ın ya da Google'ın sayfasında
-    yapılır,
-  - canlı kripto, döviz ve altın fiyatları ile döviz kurları: herkese açık kaynaklar (Binance, Truncgil, TCMB ve
-    jsDelivr'deki günlük kur listesi; ona ulaşılamazsa aynı listenin currency-api.pages.dev'deki kopyası); geçmiş
-    tarihli dövizli kayıtlar için o günün TCMB kuru,
-  - senin bağladığın yapay zeka: ChatGPT'ye yalnızca sorunu cevaplamak için gereken kayıtlar, senin iznine bağlı olarak
-    gider (IBAN, TC kimlik no, kart numarası, telefon ve e-posta gizlenir, kişi adları gizlenmez; notlar ayrı izinle);
-    sormadan önce neyin gideceğini, cevaptan sonra neyin gittiğini görürsün,
-  - geri bildirim: yalnızca sen gönderdiğinde, formda yazdıkların (ve eklediğin ekran görüntüsü) Google'ın Apps Script
-    hizmeti üzerinden Ajandam'ın destek adresine e-postayla iletilir.
-
-  Güncelleme, Türkiye verileri ve fiyat isteklerinde kayıtlarına ait bilgi yoktur. Canlı fiyatları ayarlardan
-  kapatabilirsin.
-- Güncellemelerin imzası ve SHA-256 özeti doğrulanır; tutmayan güncelleme kurulmaz. Mac'te açılamayan sürümden önceki
-  sürüme dönülür.
-- Bir güvenlik açığı bulduysan lütfen [SECURITY.md](SECURITY.md)'deki yolu izle.
+  belirlersen bilgisayarından çıkan kopyalar (iCloud Drive ve OneDrive kopyaları, yedek klasörün ve **Yedek indir**'in
+  arşivi, `.ajandamyedek`) şifrelenir. Diskini FileVault ya da BitLocker ile şifrelemeni öneririz.
+- Güncellemelerin imzası ve SHA-256 özeti doğrulanır; tutmayan güncelleme kurulmaz.
+- Güvenlik modeli: [ajandam.dev/guvenlik](https://ajandam.dev/guvenlik/) ve [SECURITY.md](SECURITY.md); gizlilik
+  politikası: [ajandam.dev/gizlilik](https://ajandam.dev/gizlilik/) ve [GIZLILIK.md](GIZLILIK.md). Bir güvenlik açığı
+  bulduysan lütfen [SECURITY.md](SECURITY.md)'deki yolu izle.
 
 ## Destek ve iletişim
 
@@ -564,97 +212,27 @@ Ajandam'ın içindeki açık kaynak bileşenlerin listesi ve lisans metinleri:
 
 **Ajandam** is a free personal finance, calendar and notes app for Mac, Windows, iPhone, iPad and Android, made for
 Turkey. Your records stay on your device; an optional account (new in 5.0) syncs them between your devices, end-to-end
-encrypted. No ads, no subscription.
+encrypted. No ads, no tracking, no subscription. The app's interface is in Turkish.
 
-**Film:** a three-minute tour (Turkish voice-over, English captions) on
-[ajandam.dev](https://ajandam.dev/#film).
+**Everything in English:** [ajandam.dev/en](https://ajandam.dev/en/) has the feature list, install steps and a
+three-minute film (Turkish voice-over, English captions).
 
-- **Money:** accounts, credit cards with statement and due dates, installments and minimum payments, budgets,
-  subscriptions, goals, debts; foreign-currency accounts and expenses (150+ currencies, converted at the day's rate);
-  tags, refunds, split transactions, time deposits with withholding tax, a loan calculator, saved filters and
-  category rules; bank and card statement import (PDF, Excel, CSV) with reconciliation and duplicate detection; move
-  your whole ledger from another budgeting app (multi-account CSV, Excel or QIF, with categories, tags and transfers).
-  Since 4.5: the month can start on payday, which card to pay with today, a debt payoff plan (avalanche or snowball),
-  trial and annual renewal reminders, a money flow chart, and e-invoice QR codes read from PDFs and photos. Since 4.6:
-  type "20.000 TL harcayacağım" (I'll spend 20,000 TL) to see which cards have enough limit left, a month-by-month debt
-  payment schedule, named cash-flow scenarios compared side by side (up to four), and a customizable Overview.
-- **Investments:** buys, sells, dividends and splits with average-cost gains (also adjusted for inflation); fund and stock
-  prices entered by hand, pasted or read from a broker CSV; private pension (BES) state contribution and vesting.
-  Price alerts for currencies, gold and crypto; a reminder when a fund price is more than a week old.
-- **Turkey-specific:** CPI (TÜFE) based inflation report, rent increase cap, central bank card interest rates,
-  public holidays, tax calendar, private pension (BES) state contribution; updated between releases through a signed
-  data feed.
-- **Sync between devices (5.0):** sign in with Apple or Google in Settings › Account (no name or e-mail asked) and your
-  records and attachments sync between your devices, end-to-end encrypted: the key stays on your devices and in a
-  24-character recovery key, so the developer can't read them. Without an account, move to a new device with Download
-  backup and Restore from backup, or merge two computers' backups from a shared folder. On Android, an automatic daily
-  backup to a Google Drive file you pick (no Google sign-in needed for it). Wi-Fi sync, QR-code transfer and
-  backup-folder auto-sync were removed in 5.0.
-- **AI without API keys:** Apple Intelligence (Mac) or local models (Ollama, LM Studio) on your computer, sign in
-  with your ChatGPT Plus or Pro account, or connect Claude, ChatGPT and other MCP apps in one click. Nothing is saved
-  without your approval.
-- **Calendar and notes:** month, week and list views (the list shows the next 14 days or the month), flexible
-  recurring events, to-dos with priorities, subtasks and reminders, calendar export (.ics), quick add in plain Turkish
-  ("yarın 9 doktor"), Markdown notes with tables, highlights, images, PDF attachments, footnotes, callouts and
-  links to records, nested folders and an archive, per-note encryption (optionally unlocked with Touch ID or Windows
-  Hello), recently deleted notes, note history, import and export. On the Mac: a Dock menu, macOS Services for selected
-  text (add it as a note or open it in quick add) and optional Spotlight search of note and event titles (off by
-  default; titles only). "Find free time" suggests slots within your working hours. Since 4.6: notes that format as you
-  type, a list grouped by date, amount tables that total themselves, slash commands and line-by-line merging when a note
-  changes on two devices; projects that gather a job's to-dos, events, payments, expenses, notes and documents; up to five
-  reminders per item; drag events in the week view; a new Settings window. On iPad and the inner display of iPhone Duo,
-  two windows and side-by-side panes; landscape on iPhone. On phones (4.5): bank notifications
-  (Android) or bank texts via a Shortcuts automation (iPhone) wait in Overview until you add them, multi-page document
-  scanning on iPhone and iPad, and an "Ajandam · Bugün" home-screen widget on Android.
-- **Try it with sample data:** "Örneklerle dene" (on first launch or in Settings › About) opens two years of made-up
-  records. Your own records are untouched; the samples live in memory only and are gone when you leave.
-- **Accessibility:** text size in Settings › Appearance (Ayarlar › Görünüm › Yazı boyutu: 90%, 100%, 115% or 130%; only
-  the text grows, spacing and icons stay, so the layout holds), besides whole-page zoom (⌘+ on the Mac, Ctrl++ on Windows).
-  Charts can be explored with the keyboard or read as tables; the app follows the system's increased-contrast and
-  reduce-motion settings.
-- **Privacy:** no account needed, no ads, no tracking. Optional PIN, Touch ID or Windows Hello lock, and a privacy mode
-  that hides every amount on screen. The lock protects the app's screen only: apart from password-protected notes,
-  records and backups (including the iCloud Drive or OneDrive copies and downloaded backup files) are not encrypted, so
-  use FileVault or BitLocker. The app goes online only for update checks and the signed Turkey data feed (ajandam.dev or
-  GitHub), public price and exchange-rate feeds, the optional account and its encrypted sync, the AI service you connect,
-  and feedback you choose to send.
+- **Mac:** macOS 12 or later (Apple silicon and Intel). Run `curl -fsSL https://ajandam.dev/kur.sh | bash` in Terminal,
+  download [Ajandam.dmg](https://ajandam.dev/indir/mac), or get it from the
+  [Mac App Store](https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420).
+- **Windows:** Windows 10 (version 1607 or later; 1809 or later from the Microsoft Store) or Windows 11. Builds are x64
+  only: on Windows 11 on Arm they run under Windows' x64 emulation. In Turkey, get it from the
+  [Microsoft Store](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR); or download and run
+  [Ajandam-Kurulum.exe](https://ajandam.dev/indir/windows).
+- **iPhone and iPad:** iOS 17 and iPadOS 17 or later, on the
+  [App Store](https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420).
+- **Android:** Android 8.0 or later, on [Google Play](https://play.google.com/store/apps/details?id=app.ajandam); or download the [APK](https://ajandam.dev/indir/android).
+- **Coming soon:** a Linux version.
 
-**Install on Mac:** macOS 12 or later (Apple silicon and Intel). Run
-`curl -fsSL https://ajandam.dev/kur.sh | bash` in Terminal
-(recommended: it verifies the download and installs into Applications), or download
-[Ajandam.dmg](https://ajandam.dev/indir/mac) and drag Ajandam onto
-the Applications folder next to it. Opened from the disk image or Downloads, Ajandam offers to move itself into
-Applications. Since 3.8.1 the app is signed with an Apple Developer ID and notarized by Apple, so macOS opens it
-without the **Open Anyway** step.
+Updates are verified with the app's own signing key. Each release lists SHA-256 checksums in **SHA256SUMS**.
 
-**Install on Windows:** Windows 10 (version 1607 or later; 1809 or later from the Microsoft Store) or Windows 11. Builds
-are x64 only: on Windows 11 on Arm they run under Windows' x64 emulation. In Turkey, get it from the
-[Microsoft Store](https://apps.microsoft.com/detail/9pmn6pvqtq2c?hl=tr-TR&gl=TR): no SmartScreen warning, and the Store keeps it up to
-date. Or download and run
-[Ajandam-Kurulum.exe](https://ajandam.dev/indir/windows) and
-click **Kur** (Install). Ajandam installs per user into `%LOCALAPPDATA%\Programs\Ajandam`, Windows' folder for
-per-user apps, so no administrator rights are needed; earlier installs in `%LOCALAPPDATA%\Ajandam` move there on
-update. If SmartScreen warns, choose **More info › Run anyway**; with Smart App Control on, Windows 11 blocks
-unsigned installers without that option.
-
-To install for everyone on the PC, open **Seçenekler** (Options) and choose **Bu bilgisayardaki herkes için** (For
-everyone on this computer): Ajandam goes to `C:\Program Files\Ajandam` and Windows asks for administrator permission
-(the installer is not code-signed, so the prompt shows "Unknown publisher"). Each user's records stay in their own
-account. Such installs don't update silently: when an update is ready, **Şimdi kur** (Install now) asks Windows for
-permission. For IT: `Ajandam-Kurulum.exe /S /ALLUSERS` from an elevated prompt (`/S /CURRENTUSER` for the current user
-only); uninstall silently with `"C:\Program Files\Ajandam\uninstall.exe" /S`.
-
-Updates are verified with the app's own signing key and installed automatically in the background (you can turn this
-off in Ayarlar › Hakkında, i.e. Settings › About). Each release lists SHA-256 checksums in **SHA256SUMS**. The app's interface is in Turkish.
-
-**Phones and tablets:** iPhone and iPad on the [App Store](https://apps.apple.com/app/ajandam-finans-ve-ajanda/id6820753420);
-Android as an [APK](https://ajandam.dev/indir/android) (Google Play coming soon).
-Sign in with ChatGPT works on phones too (4.0). **Coming soon:** a Linux version.
-
-**Support:** use **Yardım › Geri Bildirim Gönder** (Help › Send Feedback) in the app; it goes straight to the support
-address. You can also email destek@ajandam.dev or
-[open an issue](https://github.com/tolgacodes-dev/ajandam/issues/new/choose) ·
-[ajandam.dev](https://ajandam.dev/en/)
+**Support:** use **Yardım › Geri Bildirim Gönder** (Help › Send Feedback) in the app, email destek@ajandam.dev or
+[open an issue](https://github.com/tolgacodes-dev/ajandam/issues/new/choose).
 
 <sub>© 2026 tolgacodes-dev. All rights reserved. Free for personal use; see [LICENSE](LICENSE) and
 [ACIK-KAYNAK-LISANSLARI.txt](ACIK-KAYNAK-LISANSLARI.txt) for bundled open source components.</sub>
